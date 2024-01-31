@@ -1,0 +1,30 @@
+<?php
+include_once $_SERVER["DOCUMENT_ROOT"].'/system/base.php';
+$title = 'Disclaimer';
+include_once $_SERVER["DOCUMENT_ROOT"].'/en/M/c/header.php';
+
+
+echo '<body class="subpage"><header><a href="#back" onclick="history.back();" class="iconfont icon-fanhui" title="返回"></a>';
+echo '<h2>'.$title.'</h2><a href="/"><img src="/favicon.ico" width="32" height="32" alt="续梦网logo" /><h1>'.$title2.'</h1>';
+include_once $_SERVER["DOCUMENT_ROOT"] . '/M/c/user.php';
+
+echo '<div id="nav" class="container"><a href="/">Home</a>';
+echo '<span>'.$title.'</span></div>';
+echo '<main class="container"><div id="main">';
+
+echo '<div class="article"><h1>'.$title.'</h1><div class="content"><p>
+When users visit this website, they are deemed to have read and agreed to the content of this statement, All game software on ContinuedMontenet is from the public content of the Internet, which is only for personal study and research, and shall not be used for any commercial purposes。 If you infringe on your trademark, copyright or other legal rights, please contact us and provide relevant certification materials, this site will verify and delete it as soon as possible。
+
+
+
+Users who visit ContinuedMontenet have fully understood that unless otherwise stated, the copyright of the downloaded program code provided by ContinuedMontenet belongs to the legal owner of the software and program code, please read and abide by the software before downloading and using it，“Authors LicenseAgreement”。
+
+
+
+ContinuedMontenet does not guarantee the accuracy, security and integrity of the download resources provided by this site。At the same time, ContinuedMontenet does not assume any form of loss or damage caused by users to themselves and others due to the use of these downloaded resources。</p><p>
+</div></div></div>';
+include_once $_SERVER["DOCUMENT_ROOT"].'/en/info/top.php';
+
+include_once $_SERVER["DOCUMENT_ROOT"].'/en/M/c/foot.php';
+
+?>

@@ -1,0 +1,141 @@
+#menu a::before {
+		font-family: "iconfont" !important;
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+	}
+
+	#menu a[href="/"]::before {
+		content: "\e685";
+	}
+
+	#menu a[href="/games"]::before {
+		content: "\e61d";
+	}
+
+	#menu a[href="/search"]::before {
+		content: "\e624";
+	}
+
+	#menu a[href="/info/3"]::before {
+		content: "\e601";
+	}
+
+	/*表单样式*/
+	input,
+	select,
+	textarea {
+		padding: 0.5em;
+	}
+
+	.small-font {
+		margin-top: 0.5rem !important;
+	}
+
+	/*所有间隔1em的*/
+	#header h1,
+	#header h2,
+	#menu li a,
+	.list.padding li,
+	.list.comment li > div div.quote,
+	.list.icon a,
+	.form div,
+	.game,
+	.topic {
+		padding: 1rem !important;
+	}
+
+	.margin-top {
+		margin-top: 1em !important;
+	}
+/*.subpage h1 {
+	display:inline-block;
+}*/
+
+#header img{
+display: inline-block;
+}
+
+main {
+display: flex;
+}
+
+	#aside {
+		flex: 1;
+		margin-top: 0 !important;
+	}
+
+	#main {
+		flex: 2;
+		margin-right: 1em;
+}
+
+	
+	#header > a[href="/"] {
+	/*返回按钮默认隐藏*/
+	display: inline-flex;
+	/grid-template-columns: auto auto;
+	/*grid-gap: .5rem;*/
+	align-items: center;
+}
+
+#header p{
+font-size:.9rem;
+opacity:.8;
+display: inline-block;
+margin-top: 2rem;
+margin-left: -3.9rem;
+color: #FDD835;
+}
+
+#user span{
+margin-left: 0.5rem;
+}
+
+@charset "utf-8";
+
+#middle {
+	max-width: 980px;
+	display: flex;
+	margin: 1rem auto;
+}
+#main {
+	flex: 4;
+}
+#aside {
+	flex: 2;
+	margin-left: 1rem;
+}
+.res {
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.login {
+	grid-template-columns: 1fr 1fr 1fr;
+}
+.game>.game_info {
+	grid-template-columns: 1fr 1fr 1fr;
+}
+.screens {
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.screens.res320×240 {
+	grid-template-columns: 1fr 1fr 1fr;
+}
+.screens.res640×360 {
+	grid-template-columns: 1fr 1fr;
+}
+
+
+.row {
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.res2 {
+  grid-template-columns: 1fr 1fr;
+}
+
+.post-body table td {
+	text-align: left;
+    font-size: 20px;
+    padding: 5px 10px;
+}

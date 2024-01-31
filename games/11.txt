@@ -1,0 +1,21 @@
+//echo file_put_contents('games.json', $st.$s.$game);
+//echo $game;
+//echo include_once '1.php';
+//echo include_once();
+   //$e = new Emp();
+    //$e->id = "".$b['id']."";
+  // $e->name = "".$b['name']."";
+   //$e->chinese = "插件";
+  // $e->system = "J2ME";
+  // $e->category = "ETC";
+   //$e->vendor = "8888";
+   //$e->download_num  = "0";
+  // $e->comment_num = "0";
+   //echo json_encode($game);
+  
+  
+//$last_char=substr($str,+1);
+//echo rtrim($str, ",");
+//echo substr($str,0,-1),'<br/>';
+//echo rtrim($str,",");
+      //echo json_encode($game); 

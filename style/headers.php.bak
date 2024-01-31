@@ -1,0 +1,16 @@
+<?php
+echo '<div id="header"><a href="#back" onclick="history.back();" class="iconfont icon-fanhui"></a>
+<a href="/">
+<img src="/favicon.ico" width="32" height="32" alt="续梦网logo">';
+echo '<h1>'.$title2.'</h1>';
+echo '';
+if(!$user){
+echo '<a href="/auth"><img src="/M/guest.png" width="20" height="20" alt="头像" />登录</a></div></div>';
+}else{
+echo '<a href="/user"><img class="Avatar" src="http://thirdqq.qlogo.cn/g?b=oidb&amp;nk='.$user['qq'].'&amp;s=40&amp;t='.$user['time'].'" width="32" height="32" alt="头像" /></a>';
+}
+echo '</div></div>';
+include_once $_SERVER["DOCUMENT_ROOT"] . '/style/menu.php';
+echo '<div id="nav" class="container"><a href="/">首页</a><span>首页</span></div>';
+echo '<div id="wrapper" class="clearfix"><main class="container"><div id="main">';
+?>

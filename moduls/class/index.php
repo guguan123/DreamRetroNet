@@ -1,0 +1,39 @@
+<?php
+
+include_once $_SERVER["DOCUMENT_ROOT"].'/system/base.php';
+
+$title = '分类';
+
+include_once $_SERVER["DOCUMENT_ROOT"].'/style/head.php';
+
+echo '<div id="header"><a href="#back" onclick="history.back();" class="iconfont icon-fanhui title="返回""></a>
+<a href="/">
+<img src="/favicon.ico" width="32" height="32" alt="续梦网logo">';
+echo '<h1>续梦网</h1><p>续写怀旧游戏新篇章，重温旧梦</p></a>';
+include_once $_SERVER["DOCUMENT_ROOT"] . '/style/user.php';
+echo '<div id="nav" class="container"><a href="/">首页</a><span>'.$title.'</span></div>';
+echo '<div id="wrapper" class="clearfix"><main class="container"><div id="main">';
+
+
+$b = $con->query("SELECT * FROM `class`");
+$ab = $con->query("SELECT * FROM `class`")->fetch_assoc();
+if(!$ab) err('这里啥也没有');
+
+echo '<div class="menu_link">';
+echo '<ul class="list comment line padding bg-white" id="comment">';
+while($w = $b->fetch_assoc()){
+echo '<li class="clearfix"></a><div><p><a href="/class/'.$w['id'].'">'.$w['name'].'</a></p>';
+echo '<div class="small-font"><a class="right">
+'.$con->query('SELECT * FROM `file` WHERE `id_raz` = "'.$w['id'].'"')->num_rows.'';
+echo '</a></div></div></li>';
+//echo '<a href="/class/'.$w['id'].'"><i class="fas fa-puzzle-piece ic"></i> '.$w['name'].' <span class="c_link">
+//'.$con->query('SELECT * FROM `file` WHERE `id_raz` = "'.$w['id'].'"')->num_rows.'</span></a>';
+if($user['admin_level']>=2){
+echo '<a href="/class_edit/'.$w['id'].'">[编辑]</a> <a href="/class_del/'.$w['id'].'">[删除]</a>';
+}
+}
+
+echo '</div>';
+
+include_once $_SERVER["DOCUMENT_ROOT"].'/style/foot.php';
+?>

@@ -1,0 +1,11 @@
+if ($qq_id){
+   if ($user_num > 0){
+    $con->query("UPDATE `user` SET `name` = '".$arr['nickname']."', `qq_key` = '".$qq_key."', `avatar` = '' WHERE `qq_id` = '$qq_id'");
+     setcookie('qq_id', $qq_id, time()+86400*365, '/');  
+    }else{
+      $con->query("INSERT INTO `user` (`id`, `qq_id`, `name`, `avatar`, `qq_key`, `data_reg`) VALUES (NULL, '{$qq_id}', '{$arr['nickname']}', '{}', '{$qq_key}', '".time()."')");
+
+ }             
+    }   
+//header("Location: ".'/');
+

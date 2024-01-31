@@ -1,0 +1,330 @@
+<?php
+include_once $_SERVER["DOCUMENT_ROOT"].'/system/base.php';
+$title = '上传应用';
+include_once $_SERVER["DOCUMENT_ROOT"].'/style/head.php';
+
+echo '<body class="subpage"><div id="header"><a href="#back" onclick="history.back();" class="iconfont icon-fanhui"></a>';
+echo '<h1>'.$title.'</h1>';
+echo '<div id="user">';
+if(!$user){
+echo '<a href="/auth">登录</a></div></div>';
+}else{
+echo '<a href="/user">'.$user['name'].'</a>';
+}
+echo '</div></div>';
+include_once $_SERVER["DOCUMENT_ROOT"] . '/style/menu.php';
+echo '<div id="nav"><span>位置：</span><span>'.$title.'</span></div>';
+echo '<div id="wrapper" class="clearfix"><div id="main">';
+
+
+if($user) {
+	if(isset($_POST['submit'])) {
+		$fileuser = strtolower($_FILES['userfile']['name']);
+		// имя и формат файла в нижнем регистре
+		$t = preg_replace('#.[^.]*$#', NULL, $filename);
+		// имя файла
+		$f = str_replace($t, '', $filename);
+		// формат файла
+		$uploaddir = $_SERVER['DOCUMENT_ROOT'].'/down/file/';
+		$rand=rand(1000000000, 9999999999);
+		if($f=='.jar' || $f=='.jad' || $f=='.sis') {
+			$t=$rand.$f;
+			//.basename($_FILES['userfile']['name']);
+			$uploadfile = $uploaddir . $rand.$f;
+			//.basename($_FILES['userfile']['name']);
+		} else {
+			echo "<div class='err'>上传失败 !</div>";
+		}
+		if (move_uploaded_file($_FILES['userfile']['tmp_name'], $uploadjar)) {
+		    $id = filtr($_POST['id']);
+			//$name = filtr($_POST['name']);
+			//名字
+			//$zhcn = filtr($_POST['zhcn']);
+			//中文名
+			$zh = filtr($_POST['zh']);
+			//语言
+			$v = filtr($_POST['v']);
+			//版本号
+			$vv = filtr($_POST['vv']);
+			//版本
+			//$platform = filtr($_POST['platform']);
+			//平台
+			//$author = filtr($_POST['author']);
+			//提供商
+			$DJ = filtr($_POST['DJ']);
+			//单人联机
+			$dpi = filtr($_POST['dpi']);
+			//分辨率
+			$pay = filtr($_POST['pay']);
+			//扣费方式
+			//$text = filtr($_POST['text']);
+			//介绍
+			$con->query("INSERT INTO `jar` (`zh`, `v`, `vv`, `DJ`,, `dpi`, `pay`, `id_user`, `time`, `down`, `format`) VALUES 
+('".$zh."', '".$v."', '".$vv."', '".$DJ."', '".$dpi."', '".$pay."', '".$user['id']."', '".$id."', '".$rand.$f."', '".$f."')");
+			header('Location: /class/'.$id);
+		} else {
+			err('Ошибка');
+		}
+	}
+	//echo '
+//<span class="title">添加</span><div class="link">
+//上传的应用需要审核过才能显示。
+//<form action="" method="post" enctype="multipart/form-data">
+//<b>分类</b></br><select name="class">';
+//$b = $con->query("SELECT * FROM `class`");
+	//while($w = $b->fetch_assoc()) {
+	echo '<h2 class="topic">上传应用</h2>
+	<form action="" method="post" enctype="multipart/form-data" class="form bg-white"><div>
+	<label>语言：</label>
+	<select name="zh" required="required">
+	<option value=""></option>
+    <option value="0">中文</option>
+    <option value="1">英文</option>
+    <option value="2">其他</option>
+    </select></div><div>
+    <label>版本号：</label>
+	<input type="text" name="v" value="" required="required" /></div><div>
+	<label>分辨率：</label>
+	<select name="dpi" required="required">
+	<option value=""></option>
+    <option value="1">128×160</option>
+    <option value="2">132×176</option>
+    <option value="3">175×220</option>
+    <option value="4">176×208</option>
+    <option value="5">176×220</option>
+    <option value="6">176×240</option>
+    <option value="7">208×208</option>
+    <option value="8">208×320</option>
+    <option value="9">240×240</option>
+    <option value="10">240×320</option>
+    <option value="11">240×400</option>
+    <option value="12">240×432</option>
+    <option value="13">320×240</option>
+    <option value="14">320×480</option>
+    <option value="15">360×640</option>
+    <option value="16">480×640</option>
+    <option value="17">480×700</option>
+    <option value="18">480×720</option>
+    <option value="19">480×800</option>
+    <option value="0">自适屏</option>
+	</select></div><div>
+	<label>版本：</label>
+	<select name="vv" required="required">
+	<option value=""></option>
+    <option value="0">完整版</option>
+    <option value="1">汉化版</option>
+    <option value="2">BT版</option>
+    <option value="3">试玩版</option>
+    </select></div><div>
+    <label>单人联机：</label>
+	<select name="DJ" required="required">
+	<option value=""></option>
+    <option value="0">单机</option>
+    <option value="1">互联网</option>
+    <option value="2">局域网</option>
+    </select></div><div>
+    <label>扣费方式：</label>
+	<select name="pay" required="required">
+	<option value=""></option>
+    <option value="0">免费</option>
+    <option value="1">短信扣费</option>
+    <option value="2">连网扣费</option>
+    </select></div><div>
+	<label>JAR包：</label>
+	<input type="hidden" name="MAX_FILE_SIZE" value="9000000000" required="required" /></div><div>
+	<input type="jar" name="userfile" id="userfile"></div><div>
+	<input type="submit" name="submit" value="提交" /></div>
+	</form></div>';
+	//echo '<label>语言：</label><select name="lang" required="required"><option value="中文">中文</option><option value="英文">英文</option><option value="其他">其他</option></select></div><div><label>单机多人：</label><select name="online" required="required"><option value="单机">单机</option><option value="互联网">互联网</option><option value="局域网">局域网</option></select></div><div>';
+	
+
+} else {
+echo '对不起！您没有有登录！';
+}
+include_once $_SERVER["DOCUMENT_ROOT"].'/style/foot.php';
+//?>
+
+//<?php
+include_once $_SERVER["DOCUMENT_ROOT"].'/system/base.php';
+$title = '上传应用';
+include_once $_SERVER["DOCUMENT_ROOT"].'/style/head.php';
+
+echo '<body class="subpage"><div id="header"><a href="#back" onclick="history.back();" class="iconfont icon-fanhui"></a>';
+echo '<h1>'.$title.'</h1>';
+echo '<div id="user">';
+if(!$user){
+echo '<a href="/auth">登录</a></div></div>';
+}else{
+echo '<a href="/user">'.$user['name'].'</a>';
+}
+echo '</div></div>';
+include_once $_SERVER["DOCUMENT_ROOT"] . '/style/menu.php';
+echo '<div id="nav"><span>位置：</span><span>'.$title.'</span></div>';
+echo '<div id="wrapper" class="clearfix"><div id="main">';
+
+
+if($user) {
+	if(isset($_POST['submit'])) {
+		$filename = strtolower($_FILES['userfile']['name']);
+		// имя и формат файла в нижнем регистре
+		$t = preg_replace('#.[^.]*$#', NULL, $filename);
+		// имя файла
+		$f = str_replace($t, '', $filename);
+		// формат файла
+		$uploaddir = $_SERVER['DOCUMENT_ROOT'].'/down/files/';
+		$rand=rand(1000000000, 9999999999);
+		if($f=='.jar' || $f=='.jad' || $f=='.sis') {
+			$t=$rand.$f;
+			//.basename($_FILES['userfile']['name']);
+			$uploadfile = $uploaddir . $rand.$f;
+			//.basename($_FILES['userfile']['name']);
+		} else {
+			echo "<div class='err'>上传失败 !</div>";
+		}
+		if (move_uploaded_file($_FILES['userfile']['tmp_name'], $uploadfile)) {
+		    $id = filtr($_POST['class']);
+			$name = filtr($_POST['name']);
+			//名字
+			$zhcn = filtr($_POST['zhcn']);
+			//中文名
+			$zh = filtr($_POST['zh']);
+			//语言
+			$v = filtr($_POST['v']);
+			//版本号
+			$vv = filtr($_POST['vv']);
+			//版本
+			$platform = filtr($_POST['platform']);
+			//平台
+			$author = filtr($_POST['author']);
+			//提供商
+			$DJ = filtr($_POST['DJ']);
+			//单人联机
+			$dpi = filtr($_POST['dpi']);
+			//分辨率
+			$pay = filtr($_POST['pay']);
+			//扣费方式
+			$text = filtr($_POST['text']);
+			//介绍
+			$con->query("INSERT INTO `file` (`name`, `zhcn`, `zh`, `v`, `vv`, `DJ`, `platform`, `dpi`, `pay`, `text`,`author`, `id_user`, `time`, `id_raz`, `down`, `format`) VALUES 
+('".$name."',  '".$zhcn."', '".$zh."', '".$v."', '".$vv."', '".$DJ."', '".$platform."', '".$dpi."', '".$pay."', '".$text."', '".$author."', '".$user['id']."', '".time()."', '".$id."', '".$rand.$f."', '".$f."')");
+			header('Location: /class/'.$id);
+		} else {
+			err('Ошибка');
+		}
+	}
+	//echo '
+//<span class="title">添加</span><div class="link">
+//上传的应用需要审核过才能显示。
+//<form action="" method="post" enctype="multipart/form-data">
+//<b>分类</b></br><select name="class">';
+//$b = $con->query("SELECT * FROM `class`");
+	//while($w = $b->fetch_assoc()) {
+	echo '<h2 class="topic">上传应用</h2>
+	<form action="" method="post" enctype="multipart/form-data" class="form bg-white"><div>
+	<label>应用名：</label>
+	<input type="text" name="name" value="" required="required" /></div><div>
+    <label>中文名：</label>
+	<input type="text" name="zhcn" value="" /></div><div>
+	<label>语言：</label>
+	<select name="zh" required="required">
+	<option value=""></option>
+    <option value="0">中文</option>
+    <option value="1">英文</option>
+    <option value="2">其他</option>
+    </select></div><div>
+	<label>提供商：</label>
+	<input type="text" name="author" value="" required="required" /></div><div>
+	<label>平台：</label>
+	<select name="platform" required="required">
+	<option value="0">J2ME</option>
+    <option value="1">S60V1</option>
+    <option value="2">S60V2</option>
+    <option value="3">S60V3</option>
+    <option value="4">S60V5</option>
+    <option value="5">Symbian3</option>
+    </select></div><div>
+    <label>版本号：</label>
+	<input type="text" name="v" value="" required="required" /></div><div>
+    <label>类型：</label>
+	<select name="class" required="required">
+	$b = $con->query("SELECT * FROM `class`");
+	while($w = $b->fetch_assoc()) {
+	<option value=""></option>
+	<option value="4">ACT - 动作游戏</option>
+	<option value="1">ARPG - 动作角色扮演</option>
+	<option value="6">AVG - 冒险游戏</option>
+	<option value="15">ETC - 其它游戏</option>
+	<option value="2">FPS - 第一人称射击</option>
+	<option value="10">FTG - 格斗游戏</option>
+	<option value="3">MUG - 音乐游戏</option>
+	<option value="7">PUZ - 解谜游戏</option>
+	<option value="5">RAC - 赛车游戏</option>
+	<option value="12">RPG - 角色扮演</option>
+	<option value="8">RTS - 即时战略</option>
+	<option value="14">SLG - 战略模拟</option>
+	<option value="9">SPG - 体育游戏</option>
+	<option value="13">STG - 射击游戏</option>
+	<option value="11">TAB - 桌面游戏</option>
+	}
+	</select></div><div>
+	<label>分辨率：</label>
+	<select name="dpi" required="required">
+	<option value=""></option>
+    <option value="1">128×160</option>
+    <option value="2">132×176</option>
+    <option value="3">175×220</option>
+    <option value="4">176×208</option>
+    <option value="5">176×220</option>
+    <option value="6">176×240</option>
+    <option value="7">208×208</option>
+    <option value="8">208×320</option>
+    <option value="9">240×240</option>
+    <option value="10">240×320</option>
+    <option value="11">240×400</option>
+    <option value="12">240×432</option>
+    <option value="13">320×240</option>
+    <option value="14">320×480</option>
+    <option value="15">360×640</option>
+    <option value="16">480×640</option>
+    <option value="17">480×700</option>
+    <option value="18">480×720</option>
+    <option value="19">480×800</option>
+    <option value="0">自适屏</option>
+	</select></div><div>
+	<label>版本：</label>
+	<select name="vv" required="required">
+	<option value=""></option>
+    <option value="0">完整版</option>
+    <option value="1">汉化版</option>
+    <option value="2">BT版</option>
+    <option value="3">试玩版</option>
+    </select></div><div>
+    <label>单人联机：</label>
+	<select name="DJ" required="required">
+	<option value=""></option>
+    <option value="0">单机</option>
+    <option value="1">互联网</option>
+    <option value="2">局域网</option>
+    </select></div><div>
+    <label>扣费方式：</label>
+	<select name="pay" required="required">
+	<option value=""></option>
+    <option value="0">免费</option>
+    <option value="1">短信扣费</option>
+    <option value="2">连网扣费</option>
+    </select></div><div>
+	<label>简介：</label>
+	<textarea name="text" rows="5" cols="30" required="required"></textarea></div><div>
+	<label>JAR包：</label>
+	<input type="hidden" name="MAX_FILE_SIZE" value="9000000000" required="required" /></div><div>
+	<input type="file" name="userfile" id="userfile"></div><div>
+	<input type="submit" name="submit" value="提交" /></div>
+	</form></div>';
+	//echo '<label>语言：</label><select name="lang" required="required"><option value="中文">中文</option><option value="英文">英文</option><option value="其他">其他</option></select></div><div><label>单机多人：</label><select name="online" required="required"><option value="单机">单机</option><option value="互联网">互联网</option><option value="局域网">局域网</option></select></div><div>';
+	
+
+} else {
+echo '对不起！您没有有登录！';
+}
+include_once $_SERVER["DOCUMENT_ROOT"].'/style/foot.php';
+?>

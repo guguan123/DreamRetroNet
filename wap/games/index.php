@@ -1,0 +1,68 @@
+<?php
+include_once $_SERVER["DOCUMENT_ROOT"].'/wap/system/base.php';
+
+include_once $_SERVER["DOCUMENT_ROOT"].'/wap/M/c/header.php';
+$title = ''.$title2.'';
+echo '<div class="header"><a href="/">'.$title2.'</a>';
+include_once $_SERVER["DOCUMENT_ROOT"] . '/wap/M/c/user.php';
+echo '<div class="wrapper"><ul>';
+	//名字
+    $system = filtr($_GET['system']);
+	$resolution = filtr($_GET['resolution']);
+	$category = filtr($_GET['category']);
+	$vendor = filtr($_GET['vendor']);
+	$users_id = filtr($_GET['users_id']);
+	$lang = filtr($_GET['lang']);
+	$online = filtr($_GET['online']);
+	$page = 1;
+if(isset($_GET['page']))
+$page = $_GET['page'];
+$k_post = $con->query("SELECT * FROM `game` WHERE `platform` LIKE '%$system%' and `raz` LIKE '%$category%' and `author` LIKE '%$vendor%' and `zh` LIKE '%$lang' and `DJ` LIKE '%$online%'")->num_rows;
+$total = $k_post;//记录数
+$count = 0;
+$pagesize = 20;
+$totalPage = ceil($total/$pagesize);//总页数
+$pages = ceil($conut/$pagesize);//共多少页
+$prepage=$page-1;
+if($prepage<=0)
+$prepage=1;
+$nextpage = $page+1;
+if($nextpage >= $pages){
+$nextpage = $pages;
+$start = ($page-1) * $pagesize;
+}
+	      $ms = $con->query("SELECT * FROM `game` WHERE `platform` LIKE '%$system%' and `raz` LIKE '%$category%' and `author` LIKE '%$vendor%' and `zh` LIKE '%$lang' and `DJ` LIKE '%$online%' order by downs DESC LIMIT $start,$pagesize");
+		//$ms = $con->query("SELECT * FROM `file` WHERE `author` = '".$author."' ORDER BY `id` DESC LIMIT 10");
+
+if($k_post  < 1) err('没有同厂游戏！');
+//echo '<span class="title">同厂游戏</span>'.$key.'<div class="block">';
+while($w = $ms->fetch_assoc()){
+echo '<li><a href="/game/'.$w['id'].'"><img src="/M/i/'.$w['icon'].'" width="24" height="24" alt="图标" />';
+if($name = $w['cn'] ?: $w['name']){
+echo ''.$name.'</a>';
+}
+echo '</li>';
+}
+echo '</ul>';
+while($count < 1){
+echo '<div class="pager"><span>第'.$page.'页/共'.$totalPage.'页</span>';
+$count++;
+}
+if ($page>2){
+echo '<a href="/games">首页</a>';
+}
+if($page>1){
+echo '<a href="/games?page='.($page-1).'">上一页</a>';
+}
+if($page < $totalPage){
+echo '<a href="/games?page='.($page+1).'">下一页</a>';
+}
+if($page < $totalPage-1){
+echo '<a href="/games?page='.$totalPage.'">尾页</a>';
+}
+echo '</div></div>';
+//if($k_post > '20') {  echo str('?system='.$system.'&',$k_page,$page.'');  }
+//}
+
+include_once $_SERVER["DOCUMENT_ROOT"].'/wap/M/c/foot.php';
+?>

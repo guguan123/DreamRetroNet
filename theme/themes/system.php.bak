@@ -1,0 +1,36 @@
+<?php
+include_once $_SERVER["DOCUMENT_ROOT"].'/wap/system/base.php';
+
+include_once $_SERVER["DOCUMENT_ROOT"].'/wap/M/c/header.php';
+$title = ''.$title2.'';
+echo '<div class="header"><a href="/">'.$title2.'</a>';
+include_once $_SERVER["DOCUMENT_ROOT"] . '/wap/M/c/user.php';
+echo '<div class="wrapper"><ul>';
+	//名字
+	$key = filtr($_GET['system']);
+$k_post = $con->query("SELECT * FROM `game` WHERE `platform` LIKE '%$key%'")->num_rows;
+	
+$k_page = k_page($k_post,20);
+	
+$page = page($k_page);
+	
+$start = 20*$page-20;
+		$ms = $con->query("SELECT * FROM `game` WHERE `platform` LIKE '%$key%' order by id DESC LIMIT $start, 20");
+		//$ms = $con->query("SELECT * FROM `file` WHERE `author` = '".$author."' ORDER BY `id` DESC LIMIT 10");
+
+if($k_post  < 1) err('没有同厂游戏！');
+//echo '<span class="title">同厂游戏</span>'.$key.'<div class="block">';
+while($w = $ms->fetch_assoc()){
+echo '<li><a href="/game/'.$w['id'].'"><img src="data:image/png;base64,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" width="24" height="24" alt="图标" />';
+if($name = $w['cn'] ?: $w['name']){
+echo ''.$name.'</a>';
+}
+echo '</li>';
+}
+echo '</ul>';
+
+if($k_post > '20') {  echo str('?system='.$system.'&',$k_page,$page.'');  }
+//}
+
+include_once $_SERVER["DOCUMENT_ROOT"].'/wap/M/c/foot.php';
+?>

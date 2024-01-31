@@ -1,0 +1,163 @@
+'use strict';
+const $d = document;
+
+function _dateline(c) {
+	const b = Math.round(new Date().getTime() / 1000),
+		d = Math.round(Date.parse(c) / 1000),
+		a = b - d;
+	if (a < 300) {
+		return "&#21018;&#21018;"
+	} else {
+		if (a < 3600) {
+			return Math.round(a / 60) + "&#20998;&#38047;&#21069;"
+		} else {
+			if (a < 86400) {
+				return Math.round(a / 3600) + "&#23567;&#26102;&#21069;"
+			} else {
+				if (a < 604800) {
+					return Math.round(a / 86400) + "&#22825;&#21069;"
+				} else {
+					return new Date(d * 1000).toLocaleDateString()
+				}
+			}
+		}
+	}
+};
+
+function _kb(a) {
+	const b = Math.round(a / 1024);
+	if (b >= 1024) {
+		return Math.round(b / 1024) + "MB"
+	}
+	return b + "KB"
+};
+Array.from($d.querySelectorAll('[href*=delete]')).concat(Array.from($d.querySelectorAll('[class=important]'))).forEach(a => {
+	a.addEventListener('click', (event) => {
+		!confirm('\u786e\u5b9a\uff1f') ? event.preventDefault() : null
+	}, false)
+});
+
+function getUID() {
+	const a = $d.querySelector('body>header>a:last-of-type');
+	return /\/user\/\d+$/.test(a.href || '') ? a.href.replace(/.+\/user\/(\d+)$/, '$1') : 0
+}
+class TPL {
+	static gamesimple(json) {
+		return json.games.map(game => {
+			return `<li><a href="/game/${game.id}"><img src="/M/i/${game.id}.png"width="46"height="46"alt="${game.name}&#22270;&#26631;"/>${game.chinese||game.name}</a></li>`
+		}).join('')
+	}
+	static commentlist(json) {
+		const uid = getUID();
+		return json.comments.map(comment => {
+			return `<li${comment.users_id==uid?' class="myself"':''}><a href="/user/${comment.users_id}"><img src="${comment.avatar}"width="46"height="46"alt="头像"/></a><div><p>${comment.content}</p>${comment.reply_uid?`<blockquote><a href="/user/${comment.reply_uid}">${comment.reply_nickname}</a>：${comment.reply_content}</blockquote>`:''}<div><a href="/user/${comment.users_id}">${comment.nickname}</a><span>${_dateline(comment.dateline)}</span><a href="/comments/reply/${comment.id}">&#22238;&#22797;</a><a href="/feedbacks/add?games_id=${comment.games_id}&amp;comments_id=${comment.id}">举报</a></div></div></li>`
+		}).join('')
+	}
+	static packagelist(json) {
+		var class_value = '';
+		switch (json.packages.length) {
+			case 1:
+				class_value = 1;
+				break;
+			case 2:
+			case 4:
+				class_value = 2;
+				break;
+			default:
+				class_value = ''
+		}
+		$d.querySelector('[data-tpl="packagelist"]').classList.add('package_num' + class_value);
+		return json.packages.map(_package => {
+			return `<a href="/game/download/${_package.id}"title="${_package.nickname || ''}"><strong>${_package.resolution}</strong><div>v${_package.version}&nbsp;${_package.size}&nbsp;${_package.online}&nbsp;${_package['lang']}</div></a>`
+		}).join('')
+	}
+	static screenlist(json) {
+		if (!json.screens.length) {
+			return ''
+		}
+		const screens = {};
+		json.screens.forEach(screen => {
+			if (!screens[screen.resolution]) {
+				screens[screen.resolution] = []
+			}
+			screens[screen.resolution].push(screen)
+		});
+		return (screens['240×320'] || screens['320×240'] || screens['640×360'] || screens[Object.keys(screens).sort()[0]]).map(screen => {
+			return `<img src="/M/s/${screen.id}.png"/>`
+		}).join('')
+	}
+	static facewall(json) {
+		return json.users.map(user => {
+			return `<a href="/user/${user.id}"><img src="${user.avatar}"width="46"height="46"/></a>`
+		}).join('')
+	}
+}
+$d.querySelectorAll('[data-url]').forEach(dom => {
+	fetch(dom.dataset.url, {
+		headers: {
+			ajax: true
+		}
+	}).then(res => {
+		return res.json()
+	}).then(json => {
+		dom.insertAdjacentHTML('afterbegin', TPL[dom.dataset.tpl](json))
+	}).catch(e => {
+		console.log(e)
+	})
+});
+$d.querySelectorAll('[data-href]').forEach(a => {
+	a.addEventListener('click', event => {
+		if ($d.querySelector('input[name="agreen"]').checked) {
+			location.href = event.currentTarget.dataset.href
+		} else {
+			alert('\u8bf7\u4ed4\u7ec6\u9605\u8bfb\u514d\u8d23\u58f0\u660e\u3002');
+			event.preventDefault()
+		}
+	}, true)
+});
+
+function Dialog(message='') {
+	var dlg = $d.querySelector('dialog');
+	if (!dlg) {
+		dlg = $d.createElement('dialog');
+		dlg.innerHTML = '<h2><a href="#close">关闭</a>消息提示</h2><p></p>';
+		$d.body.appendChild(dlg);
+		dlg.querySelector('a[href="#close"]').addEventListener('click',(event)=>{
+			event.preventDefault();
+			dlg.close();
+		},true);
+	}
+	dlg.lastChild.innerHTML = message;
+	dlg.showModal();
+}
+
+if (/games\/uploadGame$/.test($d.URL)) {
+	$d.querySelector('form[enctype="multipart/form-data"]').addEventListener('submit', (event) => {
+		event.preventDefault();
+		event.currentTarget.querySelector('input[type="submit"]').disabled = 'disabled';
+		const files = $d.getElementsByName('files[]')[0].files;
+		const myform = new FormData();
+		for(var file of files){
+			if (/\.(?:sisx?|n-gage)$/.test(file.name)) {
+				myform.append('files[]', file);
+			}
+		}
+		Dialog('正在上传，请勿关闭本窗口…');
+		fetch('/games/uploadGame', {
+			credentials: 'include',
+			method: 'POST',
+			body: myform,
+			headers: {
+				ajax: 'true'
+			}
+		}).then(res => {
+			return res.json();
+		}).then(json => {
+			console.log(json);
+			alert('上传成功，请等待管理员审核，点击后继续上传其他游戏。');
+			location.href = '/games/uploadGame';
+		}).catch(e => {
+			console.log(e);
+		});
+	}, true);
+}

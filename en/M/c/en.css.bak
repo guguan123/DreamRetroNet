@@ -1,0 +1,21 @@
+#lang-slct {cursor:pointer;position: absolute;z-index: 400;top:0;right:0;width: 2.2rem;height:40px;padding-top: 0.4rem;overflow:hidden;-moz-transition: height 0.1s;-webkit-transition: height 0.1s;-ms-transition: height 0.1s;-o-transition: height 0.1s;transition: height 0.1s;position: fixed;}
+@media only all{body{font:1em/1.3 Verdana,sans-serif;color:#444;max-width:1024px;margin:0 auto}
+.prd-ln {margin: 0;}
+#lang-slct .line1{opacity:1;display:block;background:url("/en/././fl-en.png") 100% 20%;background-repeat: no-repeat;height: 0.1rem;padding-top: 3.1rem;margin-right: 2px;}
+#lang-slct .sblng{height: 20rem;background-color: white;background-image:-webkit-linear-gradient(#fff,#f0f0f0);background-image:-moz-linear-gradient(#fff,#f0f0f0);background-image:-o-linear-gradient(#fff,#f0f0f0);background-image:linear-gradient(#fff,#f0f0f0);border-bottom:1px solid #dbdbdb;}
+.prd-ln li {border: 1px solid #eee;border-right:0px;  margin: -1px -1px 0 0px;width: 100%; position: relative;}
+.prd-ln li {float: left;}
+.lgbr {text-align:center; display: block;}
+
+.fl_en{background-position:0 0px;}.fl_hi{background-position:0 -32px;}.fl_pt{background-position:0 -64px;}.fl_es{background-position:0 -96px;}.fl_fr{background-position:0 -128px;}.fl_de{background-position:0 -160px;}.fl_it{background-position:0 -192px;}.fl_tr{background-position:0 -224px;}.fl_ar{background-position:0 -256px;}.fl_bn{background-position:0 -288px;}.fl_ms{background-position:0 -320px;}.fl_id{background-position:0 -352px;}.fl_ru{background-position:0 -384px;}.fl_uk{background-position:0 -416px;}.fl_pl{background-position:0 -448px;}.fl_vi{background-position:0 -480px;}.fl_th{background-position:0 -512px;}.fl_ja{background-position:0 -544px;}.fl_zh{background-position:0 -576px;}.fl_ko{background-position:0 -608px;}
+.fl_en,.fl_hi,.fl_pt,.fl_es,.fl_fr,.fl_de,.fl_it,.fl_tr,.fl_ar,.fl_bn,.fl_ms,.fl_id,.fl_ru,.fl_uk,.fl_pl,.fl_vi,.fl_th,.fl_ja,.fl_zh,.fl_ko{height:32px;width:32px;overflow:hidden;background-image:url("../flags.png")}
+
+
+
+#lang-slct:hover, #lang-slct:focus {z-index: 500;overflow: visible;width: 50%;-moz-transition: height 0.3s;-webkit-transition: height 0.3s;-ms-transition: height 0.3s;-o-transition: height 0.3s;transition: height 0.3s;}
+#lang-slct label {opacity:0.8;}
+#lang-slct:hover label{display:inline-block;}
+#lang-slct label:hover, #lang-slct label:focus{ opacity:1;}
+ul#lang-slct li{list-style: none; height: 65px; }
+ul#lang-slct li a {text-decoration: none ;}
+ul#lang-slct li a:hover {text-decoration: underline ;}

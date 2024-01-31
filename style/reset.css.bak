@@ -1,0 +1,61 @@
+@charset "utf-8";
+
+html {
+	background: #f5f5;
+	color: #666;
+	font: 15px/1 "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", "Helvetica Neue", Arial, sans-serif;
+}
+
+body {
+	-webkit-tap-highlight-color: transparent;
+}
+
+body,
+h1,
+h2,
+h3,
+p,
+ol,
+ul,
+li,
+dl,
+dd,
+blockquote,
+fieldset,
+button {
+	border: 0;
+	margin: 0;
+	padding: 0;
+	font-size: 1rem;
+}
+
+ul,
+ol {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+a img {
+	vertical-align: middle;
+}
+
+input,
+textarea,
+select {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	width: 100%;
+}
+
+input[type="submit"] {
+	cursor: pointer;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}

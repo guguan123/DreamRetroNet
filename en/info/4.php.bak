@@ -1,0 +1,25 @@
+
+<?php
+include_once $_SERVER["DOCUMENT_ROOT"].'/system/base.php';
+$title = 'common problem';
+include_once $_SERVER["DOCUMENT_ROOT"].'/M/c/header.php';
+
+
+echo '<body class="subpage"><header><a href="#back" onclick="history.back();" class="iconfont icon-fanhui" title="返回"></a>';
+echo '<h2>'.$title.'</h2><a href="/"><img src="/favicon.ico" width="32" height="32" alt="续梦网logo" /><h1>'.$title2.'</h1>';
+include_once $_SERVER["DOCUMENT_ROOT"] . '/M/c/user.php';
+
+echo '<div id="nav" class="container"><a href="/">首页</a>';
+echo '<span>'.$title.'</span></div>';
+echo '<main class="container"><div id="main">';
+
+echo '<div class="article"><h1>'.$title.'</h1><div class="content">
+<p><h2>How to play with android phone?
+</h2>
+There is an emulator download at the bottom of the webpage. After installation, you can use the emulator to install JAVA games。</p></div></div></div>';
+
+include_once $_SERVER["DOCUMENT_ROOT"].'/en/info/top.php';
+
+include_once $_SERVER["DOCUMENT_ROOT"].'/en/M/c/foot.php';
+
+?>

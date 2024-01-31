@@ -1,0 +1,7 @@
+
+<?php
+$dbhost = "localhost";
+$dbname = "wap";
+$dbuser = "wap";
+$dbpass = "yXxFH8fpR6Y88LSn";
+?>

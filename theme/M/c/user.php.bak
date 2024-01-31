@@ -1,0 +1,14 @@
+<?php
+
+echo ' | <a href="/games">列表</a> | <a href="/search">搜索</a>';
+
+if(!$user){
+echo ' | <a href="/login">登录</a></div>';
+}else{
+echo ' | <a href="/user/'.$user['id'].'">';
+if($name = $user['name'] ?: $user['login']){
+echo ''.$name.'</a></div>';
+}
+}
+//include_once $_SERVER["DOCUMENT_ROOT"] . '/wap/M/c/menu.php';
+?>

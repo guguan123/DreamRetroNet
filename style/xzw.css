@@ -1,0 +1,414 @@
+@charset "utf-8";
+
+/*公共样式，功能机只用这里的样式*/
+a {
+	color: black;
+}
+
+a:hover {
+	color: #c09;
+	background-color: #f5f5f5;
+}
+
+.topic a,
+#menu a,
+.small-font a {
+	color: inherit;
+}
+
+.k::after {
+	clear: both;
+	height: 0;
+	content: "";
+	display: block;
+}
+
+
+#d,
+#nav,
+#footer {
+	max-width: 50em;
+	margin: 0 auto;
+}
+
+/*顶部样式*/
+#header a,
+#header h1 {
+	padding: 0.5em;
+}
+
+#header a {
+	display: inline-block;
+}
+
+#header h1 {
+	float: left;
+}
+
+#user {
+	float: right;
+}
+
+#header > a[href="/"] {
+	/*返回按钮默认隐藏*/
+	display: grid;
+	grid-template-columns: auto auto;
+	/*grid-gap: .5rem;*/
+	align-items: center;
+}
+
+#header > a[href="#back"] {
+	/*返回按钮默认隐藏*/
+	display: none;
+}
+
+#menu {
+	text-align: center;
+}
+
+#menu li {
+	display: inline-block;
+	vertical-align: top;
+}
+
+#menu li a {
+	display: block;
+	padding: 0.5em;
+}
+
+#nav {
+	padding: 0.5em;
+}
+
+#nav a,
+#nav span {
+	display: inline-block;
+	vertical-align: top;
+	color: inherit;
+}
+
+#nav a::after {
+	content: "›";
+	margin: 0 0.5em;
+}
+
+#aside {
+	margin-top: 0.5em;
+}
+
+.right {
+	float: right;
+}
+
+.bg-white {
+	background: white;
+}
+
+.small-font {
+	font-size: 0.8em;
+	color: #999;
+}
+
+.margin-top {
+	margin-top: 0.5em;
+}
+
+/*列表*/
+li {
+	word-break: break-all;
+}
+
+.list.line li {
+	border-bottom: solid 1px #eee;
+}
+
+.list.padding li {
+	/*列表中不仅包含A的情况，需要增加一个内边距*/
+	padding: 0.5em;
+}
+
+.list.icon a {
+	/*所有列表中带图标的只有一个A的就给A一个内边距*/
+	display: block;
+	padding: 0.5em;
+}
+
+.list img {
+	/*所有列表中的图片都给一个固定大小一个右边距*/
+	margin-right: 0.5em;
+	width: 2em;
+	height: 2em;
+}
+
+.list.small img {
+	width: 1.5em;
+	height: 1.5em;
+}
+
+.list.games img {
+	/*游戏列表的图片要左浮动*/
+	float: left;
+}
+
+.list.icon li a strong,
+.list.icon li a span {
+	display: block;
+}
+
+.list.comment li > a {
+	display: block;
+	float: left;
+}
+
+.list.comment li > div {
+	margin-left: 2.5em;
+}
+
+.list.comment li > div div.quote {
+	padding: 0.5em;
+	background-color: #f5f5f5;
+}
+
+.form div {
+	padding: 0.5em;
+}
+
+.form label {
+	display: block;
+	margin-bottom: 0.5em;
+}
+
+.game {
+	padding: 0.5em;
+}
+
+.game > a {
+	float: left;
+	margin-right: 0.5em;
+}
+
+.game > a img {
+	width: 2em;
+	height: 2em;
+}
+
+.topic {
+	padding: 0.5em;
+	border-bottom: solid 1px #ddd;
+	background-color: #fff;
+}
+
+.pager span,
+.pager a {
+	display: inline-block;
+	vertical-align: top;
+	padding: 0.5em;
+}
+
+.notice p {
+	text-align: center;
+}
+
+.table {
+	width: 100%;
+	font-size: 0.8em;
+}
+
+.table th,
+.table td {
+	border-bottom: solid 1px #ddd;
+	padding: 0.5em;
+}
+
+.faces a {
+	display: inline-block;
+	vertical-align: top;
+	width: 10%;
+}
+
+.faces a img {
+	width: 100%;
+	height: auto;
+}
+
+a.red {
+	color: #f00;
+}
+
+.info h1 {
+	padding: 1em;
+	border-bottom: dashed 1px #ddd;
+}
+
+.info .content h2 {
+	margin: 1em 0;
+}
+
+.info .content p {
+	text-indent: 2em;
+	margin: 1em;
+}
+
+.info img {
+	max-width: 90%;
+	margin: auto;
+	display: block;
+}
+
+#notice {
+	margin: 1em;
+}
+
+/*智能机和电脑共同*/
+@media (min-width: 321px) {
+	#menu a::before {
+		font-family: "iconfont" !important;
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+	}
+
+	#menu a[href="/"]::before {
+		content: "\e685";
+	}
+
+	#menu a[href="/games"]::before {
+		content: "\e61d";
+	}
+
+	#menu a[href="/search"]::before {
+		content: "\e624";
+	}
+
+	#menu a[href="/info/3"]::before {
+		content: "\e601";
+	}
+
+	/*表单样式*/
+	input,
+	select,
+	textarea {
+		padding: 0.5em;
+	}
+
+	.small-font {
+		margin-top: 0.5rem !important;
+	}
+
+	/*所有间隔1em的*/
+	#header a,
+	#header h1,
+	#header h2,
+	#menu li a,
+	#nav,
+	.list.padding li,
+	.list.icon a,
+	.list.comment li > div div.quote,
+	.form div,
+	.game,
+	.topic {
+		padding: 1em !important;
+	}
+
+	.margin-top {
+		margin-top: 1em !important;
+	}
+}
+
+/*电脑*/
+@media (min-width: 641px) {
+	#wrapper {
+		display: flex;
+	}
+
+	#aside {
+		flex: 1;
+		margin-top: 0 !important;
+	}
+
+	#main {
+		flex: 2;
+		margin-right: 1em;
+	}
+}
+
+/*智能机*/
+@media (min-width: 321px) and (max-width: 640px) {
+
+	html,
+	body {
+		height: 100%;
+	}
+
+	#header {
+		position: fixed;
+		width: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		background: #fff !important;
+		color: #000 !important;
+		border-bottom: solid 1px #ddd;
+	}
+
+	.subpage #header > div,
+	.subpage #menu {
+		display: none;
+	}
+
+	.subpage #header > a[href="#back"],
+	.subpage #header > h2 {
+		display: block;
+	}
+
+	.subpage #header > h1 {
+		flex: 1;
+	}
+
+	#footer {
+		padding-bottom: 4rem !important;
+		font-size: 0.8rem;
+		text-align: center;
+	}
+
+	#aside {
+		margin-top: 1em !important;
+	}
+
+	#menu {
+		position: fixed;
+		bottom: 0;
+		width: 100%;
+		display: flex;
+		border-top: solid 1px #ddd;
+	}
+
+	#menu li {
+		flex: 1;
+	}
+
+	#menu li a {
+		font-size: 0.8rem;
+		line-height: 1;
+		padding: 0.5rem !important;
+	}
+
+	#menu li a::before {
+		display: block;
+		font-size: 1.5rem;
+		margin-bottom: 0.2rem;
+	}
+}
+
+/*夜间模式*/
+@media (prefers-color-scheme: dark) {}
+
+.flex {
+	display: flex;
+}
+
+.flex li {
+	flex: 1;
+	background: white;
+	padding: 1rem;
+	text-align: center;
+}

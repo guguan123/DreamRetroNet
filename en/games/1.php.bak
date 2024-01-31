@@ -1,0 +1,13 @@
+<?php
+class Emp {
+       public $id = "";
+       public $name = "";
+       public $chinese  = "";
+       public $system = "";
+       public $category = "";
+       public $vendor = "";
+       public $download_num = "";
+       public $comment_num = "";
+   }
+   $json = new Emp();
+   ?>

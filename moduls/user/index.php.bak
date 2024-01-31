@@ -1,0 +1,70 @@
+<?php
+include_once $_SERVER["DOCUMENT_ROOT"].'/system/base.php';
+
+$title = ''.$user['name'].'';
+include_once $_SERVER["DOCUMENT_ROOT"].'/style/head.php';
+aut();
+echo '<body class="subpage"><div id="header"><a href="#back" onclick="history.back();" class="iconfont icon-fanhui title="返回""></a>';
+echo '<h1>'.$user['name'].'</h1></a>';
+include_once $_SERVER["DOCUMENT_ROOT"] . '/style/user.php';
+echo '<div id="nav" class="container"><a href="/">首页</a><span>'.$user['name'].'</span></div>';
+echo '<div id="wrapper" class="clearfix"><main class="container"><div id="main">';
+
+
+$arr_pol = array('1' => '♂', '2' => '♀');
+$arr_adm = array('0' => '用户', '1' => '版主', '2' => '管理员', '3' => '<font color="red">创始人</font>');
+
+$f = $con->query("SELECT * FROM `file` WHERE `id_user` = '".$user['id']."'")->fetch_assoc();
+
+$coun_jor = $con->query('SELECT * FROM `msg` WHERE `id_user` = "'.$user['id'].'" and `read` = "0"')->num_rows;
+$file = $con->query("SELECT * FROM `file` WHERE `id_user` = {$user['id']} ORDER BY `id` DESC LIMIT 10");
+//echo '<h2 class="topic bg-white">个人信息</h2>';
+echo '<ul class="user-avatar">';
+echo '<img src="/icon/85" width="200" height="200" alt="图标" /><strong>'.$user['name'].'</strong><span class="small-font">'.$arr_pol{$user['pol']}.'&nbsp;4下载&nbsp;0评论&nbsp;ARPG&nbsp</span></a>';
+echo '</ul>';
+if($user['id']==$f['id_user']){
+echo '<h2 class="topic bg-white"><a href="/uploads" class="right">更多</a>'.$user['name'].'上传的应用</h2>';
+echo '<ul class="list icon line games bg-white">';
+while($u = $file->fetch_assoc()){
+echo '<li><a href="/file/'.$u['id'].'" class="clearfix"><img src="/icon/'.$u['id'].'" width="46" height="46" alt="图标" />';
+if($name = $u['zhcn'] ?: $u['name']){
+echo '<strong>'.$name.'</strong>';
+}
+echo '<span class="small-font">'.platform($u['platform']).'&nbsp;'.$u['downs'].'下载&nbsp;';
+$number = $con->query('SELECT * FROM `comment` WHERE `id_obmen` = "'.$u['id'].'"')->num_rows;
+echo ''.$number.'评论&nbsp;';
+$msssa = $con->query("SELECT * FROM `class` WHERE `id` = '".$u['id_raz']."'"); 
+while($wss = $msssa->fetch_assoc()){
+echo ''.$wss['name'].'</span></a></li>';
+}
+}
+
+}
+//$uw = $con->query("SELECT * FROM `file` ORDER BY `id_user` = {$user['id']} DESC");
+$uw = $con->query("SELECT * FROM `file` WHERE `id_user` ={$user['id']} ORDER BY `id` DESC");
+$uc = $con->query("SELECT * FROM `comment` WHERE `id_user` ={$user['id']} ORDER BY `id` DESC");
+$uk = $con->query("SELECT * FROM `files` WHERE `id_user` ={$user['id']} ORDER BY `id` DESC");
+echo '</ul></div><div id="aside">';
+echo '<h2 class="topic">'.$user['name'].'</h2><ul class="list padding line bg-white"><li>注册日期：'.data($user['data_reg']).'</li><li>上传应用：'.$uw->num_rows.'个</li><li>下载应用：'.$user['downs'].'个</li><li>应用列表：'.$uk->num_rows.'个</li><li>发布评论：'.$uc->num_rows.'条</li><li>应用列表：'.$uk->num_rows.'个</li><li><a href="/log_login">登录历史</li></ul><h2 class="topic margin-top">管理菜单</h2><ul class="list padding line bg-white"><li><a href="/exit">注销登录</a></li><li>用户名：'.$user['login'].'</li><li><a href="/info/2">重置登录码请联系管理员</a></li><li><a href="/user/setPhone">设置我的功能机</a></li><li><a href="/upload">上传应用</a></li><li><a href="https://wj.qq.com/s2/8194727/7d55/">增加应用</a></li>';
+if($user['admin_level']>=1){
+echo '<li><a href="/admin">管理员面板</a></li>';
+}
+echo '</ul></div></div>';
+//upload
+
+//echo '<div class="razdel"><center>用户名, <b>'.$user['login'].'</b> </center></div>';
+//echo '<div class="link"><a href="/uploads"><img src="/style/image/index/up.png"> 我上传的</a></div>';
+//if($coun_jor < 1){
+//echo '<div class="link"><a href="/msg"><img src="/style/image/index/msg.png"> 我的消息</a></div>';
+//}else{
+
+//echo '<div class="link"><a href="/msg"><img src="/style/image/index/msg.png"> 我的消息 (<font color="red">'.$coun_jor.'123 个</font>)</a></div>';
+
+//}
+//echo '<div class="link"><a href="/log_auth"><img src="/style/image/index/log_auth.png"> 登录历史</a></div>';
+//echo '<div class="link"><a href="/exit"><img src="/style/image/index/exit.png"> 退出登录</a></div>';
+//if($user['admin_level']>=1){
+//echo '<div class="link"><a href="/admin"><img src="/style/image/index/adm_panel.png"> 管理员面板</a></div>';
+//}
+include_once $_SERVER["DOCUMENT_ROOT"].'/style/foot.php';
+?>

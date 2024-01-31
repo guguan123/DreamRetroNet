@@ -1,0 +1,758 @@
+@charset "utf-8";
+
+html {
+	background: #f5f5f5;
+	color: #666;
+	font: 15px/1 "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", "Helvetica Neue", Arial, sans-serif;
+}
+
+img {
+-webkit-filter: grayscale(1);
+filter:gray;
+filter: grayscale(1);
+}
+
+body {
+	-webkit-tap-highlight-color: transparent;
+}
+
+body,
+h1,
+h2,
+h3,
+p,
+ol,
+ul,
+li,
+dl,
+dd,
+blockquote,
+fieldset,
+button {
+	border: 0;
+	margin: 0;
+	padding: 0;
+	font-size: 1rem;
+}
+
+ul,
+ol {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+a img {
+	vertical-align: middle;
+}
+
+input,
+textarea,
+select {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	width: 100%;
+}
+
+input[type="submit"] {
+	cursor: pointer;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.box {
+	background: #fff;
+	/*padding: 1rem;*/
+}
+
+.game h2 {
+	font-size: 1.5rem;
+	margin-bottom: 1rem;
+	border-bottom: dashed 1px #ddd;
+	padding-bottom: 1rem;
+}
+
+.game>.game_info {
+	display: grid;
+	grid-gap: 1rem 0.5rem;
+	margin-bottom: 1rem;
+}
+
+.game >p {
+	margin-bottom: 1rem;
+	padding: 1rem;
+	line-height: 1.5;
+	background: #f5f5f5;
+}
+
+.screens {
+	display: grid;
+	grid-gap: 1rem;
+	margin-bottom: 1rem;
+}
+
+.screens img {
+	max-width: 100%;
+}
+
+a[href^="/package"],
+a[href^="/vmrp"]{
+	display: block;
+	padding: 1rem;
+	background: #69c;
+	color: #fff;
+	margin: 0 auto 1rem auto;
+}
+
+.download p {
+	line-height: 2;
+	padding: 1rem;
+	border-top: dashed 1px #ccc;
+	color:#999;
+}
+
+
+/*自己设计，请勿盗取*/
+a {
+color: black;
+}
+
+[data-tpl="commentlist"] li.myself > div {
+	order: 1;
+	margin-right: 1rem
+}
+
+[data-tpl="commentlist"] li.myself > a {
+	order: 2
+}
+
+[data-tpl="commentlist"] li:not(.myself) > div {
+	margin-left: 1.5rem
+}
+
+.tabs {
+	color: #ccc;
+}
+
+.tabs a {
+	display: inline-block;
+	padding: 1rem;
+	margin-right: 1rem;
+	background: #555;
+}
+
+.tabs a.current {
+	background: #eee;
+	color: #555;
+}
+
+.topic {
+padding:.5rem;
+border-bottom:solid 3px #FF1744;
+background-color:#fff;
+}
+
+.bg-white {
+	background: white;
+}
+
+/*请勿抄袭*/
+@charset "utf-8";
+
+.list.comment li>a {
+display:block;
+float:left;
+}
+.list.comment li>div {
+margin-left:3rem;
+}
+.list.comment li>div div.quote,
+div.small-font.quote > p {
+padding:.5rem;
+background-color:#f5f5f5;
+}
+.list.comments li>div div.quotes {
+padding:.5rem;
+background-color:#f5f5f5;
+}
+.list.comments li>div {
+margin-left:3rem;
+}
+.list.comments li>a {
+display:block;
+float:left;
+}
+
+.info h1 {
+	padding: 0.1em;
+	/*border-bottom: dashed 1px #ddd;*/
+}
+
+.info .content h2 {
+	margin: 1em 0;
+}
+
+.info .content p {
+	text-indent: 2em;
+	margin: 1em;
+}
+
+.info img {
+	max-width: 90%;
+	margin: auto;
+	display: block;
+}
+
+.game {
+	padding: 0.5em;
+}
+
+.game > a {
+	float: left;
+	margin-right: 0.5em;
+}
+
+.game > a img {
+	width: 2em;
+	height: 2em;
+}
+
+
+
+ #screens {
+		white-space: nowrap;
+		overflow-x: auto;
+		scroll-snap-type: x mandatory;
+		-webkit-overflow-scrolling: touch;
+		overflow-scrolling: touch;
+	}
+
+	#screens img {
+		max-width: 240px;
+		display: inline-block;
+	    margin-right: 0.5rem;
+		scroll-snap-align: center;
+	}
+	
+.covers240 {
+display:grid;
+grid-gap:1rem;
+}
+
+.covers240 a{
+position:relative;
+}
+.covers240 a:hover{
+outline:solid 3px #fff;
+}
+
+.covers240 img{
+width:100%;
+max-width:240px;
+height:auto;
+}
+
+.covers240 span{
+display:block;
+padding:0.5em;
+box-sizing:border-box;
+width:100%;
+position:absolute;
+bottom:0;
+background:rgba(0,0,0,0.7);
+color:#fff;
+font-size:.8rem;
+text-overflow:ellipsis;
+overflow:hidden;
+white-space:nowrap;
+text-align:center;
+}
+
+.covers240 {
+grid-template-columns:repeat(3,1fr);
+}
+
+a {
+	color: inherit;
+}
+
+.c {
+background: #fff;
+}
+
+#user {
+	float: right;
+}
+
+/*头像边框*/
+.Avatar {
+border-radius:50%;
+border:solid 2px #eee;
+box-sizing:border-box;
+background:#eee;
+}
+
+.user-img {
+border-radius: 50%;
+position: relative;
+}
+/*v认证对齐*/
+.user-img>.m-icon-user {
+right: -0.3rem;
+bottom: -0.7rem;
+}
+
+.user-img>.m-icon-comment {
+right: 0.2rem;
+bottom: -0.7rem;
+}
+
+.user-img>.m-icon-us {
+right: 0.1rem;
+bottom: -0.7rem;
+}
+
+.user-img .m-icon {
+position:absolute;
+z-index: 3;
+fight: .0625rem;
+}
+
+.m-icon {
+background-size: 3em 57em!important;
+}
+
+.m-icon{
+font-size: 14px;
+}
+.m-icon-yellowv {
+background-position: -1em -1em;
+}
+
+.m-icon{
+display:inline-block;
+vertical-align: top;
+background-image: url(/style/image/sprite.svg);
+width: 1em;
+height: 1em;
+}
+
+ .user-avatar {
+    border-bottom: 1px solid #e5e5e5;
+    padding: 20px 0;
+}
+
+.user-avatar {
+    overflow: hidden;
+} 
+
+.user-avatar img {
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    margin-bottom: 10px;
+    border: 5px solid #fff;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, .1);
+} 
+
+.user-avatar:hover img {
+    box-shadow: 0 0 10px #00c3b6;
+}
+
+.user-avatar h2 {
+    font-weight: normal;
+    line-height: 1.2;
+    color: #000;
+    text-transform: capitalize;
+}
+
+.faces a {
+	display: inline-block;
+	vertical-align: top;
+	width: 10%;
+}
+
+.faces a img {
+	width: 100%;
+	height: auto;
+}
+
+.container {
+max-width:980px;
+margin:auto;
+}
+
+/*顶部样式*/
+#header a,
+#header h1 {
+	padding: .5rem 1rem;
+}
+
+#header a {
+	display: inline-block;
+}
+
+#header {
+background: #fff;
+}
+
+#header h1 {
+	float: left;
+	color: #666;
+}
+
+#header h2 {
+float: left;
+color: #666;
+display:none;
+}
+
+#header a[href="/"] {
+/*隐藏续梦网标题*/
+display: none;
+}
+
+#header > a[href="#back"] {
+	/*返回按钮默认隐藏*/
+	display: none;
+}
+.container {
+margin:0 1rem;
+/*background-color:#fff;*/
+}
+
+a:hover {
+	color: #c09;
+	background-color: #f5f5f5;
+}
+.topic a,
+.small-font a {
+	color: inherit;
+}
+#menu a{
+color: inherit;
+}
+
+#menu {
+	text-align: center;
+	background: #fff;
+}
+
+#menu li {
+	display: inline-block;
+	vertical-align: top;
+}
+
+#menu li a {
+	display: block;
+	padding: 0.5em;
+}
+
+#nav {
+	padding: 1rem;
+	/*color: #999;*/
+}
+
+#nav a,
+#nav span {
+	display: inline-block;
+	vertical-align: top;
+	color: inherit;
+}
+
+#nav a::after {
+	content: "›";
+	margin: 0 0.5em;
+}
+
+#aside {
+	margin-top: 0.5em;
+}
+
+/*.top-white { 
+padding:0.5em;
+border-bottom:solid 3px #FF1744;
+}  */
+
+h2 {
+font-family:"Times New Roman", Times, serif;
+}
+
+.right {
+float: right;
+padding:-0.5em;
+}
+/*.list.file_list li{
+	border-bottom: solid 1px #fff;
+}
+/*列表*/
+li {
+	word-break: break-all;
+}
+.list.line li {
+	border-bottom: solid 1px #ccc;
+}
+
+.list.line1 li {
+width: 50%;
+display: inline-block;
+	border-bottom: solid 1px #ccc;
+}
+
+.list.padding li {
+	/*列表中不仅包含A的情况，需要增加一个内边距*/
+	padding: 0.5em;
+}
+
+.list.icon a {
+	/*所有列表中带图标的只有一个A的就给A一个内边距*/
+	display: block;
+	padding: 0.5em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.list img {
+	/*所有列表中的图片都给一个固定大小一个右边距*/
+	margin-right: 0.5em;
+	width: 2em;
+	height: 2em;
+}
+
+.list.small img {
+	width: 1.5em;
+	height: 1.5em;
+}
+
+.list.games img {
+	/*游戏列表的图片要左浮动*/
+	float: left;
+}
+
+.list.icon li a strong,
+.list.icon li a span {
+	display: block;
+}
+
+.game[style] > div {
+	background: rgba(0, 0, 0, 0.5);
+	-webkit-backdrop-filter: blur(2px);
+	backdrop-filter: blur(2px);
+}
+
+.res {
+  display: grid;
+  grid-gap: 1rem;
+}
+
+.res li {
+  color: #999;
+}
+
+.res li {
+  text-align: center;
+}
+
+.res li > a {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.res li > a img {
+  max-width: 100%;
+  height: auto;
+}
+
+.res li h3 {
+  word-break: break-all;
+}
+
+.res li div {
+  margin-top: 0.5rem;
+  font-size: 0.8rem;
+}
+
+.res2 {
+  display: grid;
+  grid-gap: 1rem;
+}
+
+/*欢迎提供安装包*/
+.tip {
+  line-height: 1;
+  padding: 1rem;
+  /*border-top: dashed 1px #ccc;*/
+  color: #999;
+}
+
+.tip a {
+  color: black;
+}
+
+
+
+
+#lightboxOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  background-color: #000;
+  filter: alpha(Opacity=80);
+  opacity: .8;
+  display: none;
+}
+#lightbox {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  z-index: 10000;
+  font-weight: 400;
+}
+.lb-outerContainer {
+  position: relative;
+  width: 250px;
+  height: 250px;
+  margin: 0 auto;
+  border-radius: 4px;
+  background-color: #fff;
+}
+#lightbox {
+  /*! font-weight: 400; */
+}
+.lightbox .lb-image {
+  display: block;
+  height: auto;
+  max-width: inherit;
+  max-height: none;
+  border-radius: 3px;
+  border: 4px solid #fff;
+}
+.lb-nav {
+  top: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 10;
+}
+.lb-nav a.lb-prev {
+  width: 34%;
+  left: 0;
+  float: left;
+  background: url(../images/prev.png) left 48% no-repeat;
+  filter: alpha(Opacity=0);
+  opacity: 0;
+  -webkit-transition: opacity .6s;
+  -moz-transition: opacity .6s;
+  -o-transition: opacity .6s;
+  transition: opacity .6s;
+}
+.lb-nav a {
+  outline: 0;
+  background-image: url(data:image/gif;base64,R0lGODlhAQABAPAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==);
+}
+.lb-next, .lb-prev {
+  height: 100%;
+  cursor: pointer;
+  display: block;
+}
+.lb-nav a.lb-next {
+  width: 64%;
+  right: 0;
+  float: right;
+  background: url(../images/next.png) right 48% no-repeat;
+  filter: alpha(Opacity=0);
+  opacity: 0;
+  -webkit-transition: opacity .6s;
+  -moz-transition: opacity .6s;
+  -o-transition: opacity .6s;
+  transition: opacity .6s;
+}
+.lb-loader {
+  top: 43%;
+  height: 25%;
+  width: 100%;
+}
+.lb-loader, .lb-nav {
+  position: absolute;
+  left: 0;
+}
+.lb-loader, .lightbox {
+  /*! text-align: right; */
+  /*! line-height: 5; */
+}
+.lb-cancel {
+  display: block;
+  width: 32px;
+  height: 32px;
+  margin: 0 auto;
+  background: url(../images/loading.gif) no-repeat;
+}
+.lb-number {
+  display: block;
+  clear: left;
+  padding-bottom: 1em;
+  font-size: 12px;
+  color: #999;
+}
+.lb-data .lb-details {
+  width: 85%;
+  float: left;
+  text-align: right;
+  line-height: 4em;
+}
+
+
+.post-body table {
+    width: auto;
+    margin: 0 auto;
+    -webkit-box-shadow: 0 2px 12px 0 rgba(0, 0, 0, .05);
+    box-shadow: 0 2px 12px 0 rgba(0, 0, 0, .1)
+}
+
+table {
+ background-color:#fff;
+}
+
+table {
+ border-collapse:collapse;
+ border-spacing:0
+}
+
+a {
+ background-color:transparent
+}
+
+* {
+ -webkit-box-sizing:border-box;
+ -moz-box-sizing:border-box;
+ box-sizing:border-box
+}
+
+.post-body img {
+    
+    vertical-align: top;
+    margin: 5px 0;
+    max-width: 100%;
+}
+
+td,
+th {
+ padding:0
+}
+
+.post-title {
+    font-size: 24px;
+    line-height: 32px;
+    text-align: center;
+    padding: 0 20px;
+    color: #04152c;
+    margin: 0;
+    padding: 0;
+}

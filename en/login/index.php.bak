@@ -1,0 +1,21 @@
+<?php
+session_start();
+require_once 'baidu/config.php';
+$getcode_url = "http://openapi.baidu.com/oauth/2.0/authorize?response_type=code&amp;client_id=$api_key&amp;redirect_uri=$redirect_url&amp;state=baidu";
+?>
+<?php
+include_once $_SERVER["DOCUMENT_ROOT"].'/system/base.php';
+$title = 'login';
+include_once $_SERVER["DOCUMENT_ROOT"].'/en/M/c/header.php';
+echo '<body class="subpage"><header><a href="#back" onclick="history.back();" class="iconfont icon-fanhui" title="返回"></a>';
+echo '<h2>'.$title.'</h2><a href="/"><img src="/favicon.ico" width="32" height="32" alt="续梦网logo" /><h1>'.$title.'</h1>';
+include_once $_SERVER["DOCUMENT_ROOT"] . '/en/M/c/user.php';
+echo '<div id="nav" class="container"><a href="/">Home</a>';
+echo '<span>'.$title.'</span></div>';
+echo '<main class="container"><div id="main"><div class="area"><ul id="login">';
+?>
+<li><a href="###" data-href="<?php echo $getcode_url ?>" class="iconfont icon-baidu">baidu login</a></li><li><a href="###" data-href="/log">old user login</a></li>
+<?php
+echo '</ul><div><input type="checkbox" name="agreen" value="true" />&nbsp;Agree to&nbsp;<a href="/info/1" target="_blank">the disclaimer</a></div></div></main>';
+include_once $_SERVER["DOCUMENT_ROOT"].'/en/M/c/foot.php';
+?>
