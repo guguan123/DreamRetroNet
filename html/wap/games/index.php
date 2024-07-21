@@ -3,10 +3,10 @@ include_once $_SERVER["DOCUMENT_ROOT"].'/system/base.php';
 
 $title = '列表 - 续梦网';
 
-include_once $_SERVER["DOCUMENT_ROOT"].'/mi/M/c/header.php';
+include_once $_SERVER["DOCUMENT_ROOT"].'/wap/M/c/header.php';
 
 //echo '<div class="header"><a href="/">'.$title2.'</a>';
-include_once $_SERVER["DOCUMENT_ROOT"] . '/mi/M/c/user.php';
+include_once $_SERVER["DOCUMENT_ROOT"] . '/wap/M/c/user.php';
 
 	//名字
     $system = filtr($_GET['system']);
@@ -73,5 +73,5 @@ if($page < $totalPage-1){
 //if($k_post > '20') {  echo str('?system='.$system.'&',$k_page,$page.'');  }
 //}
 
-include_once $_SERVER["DOCUMENT_ROOT"].'/mi/M/c/foot.php';
+include_once $_SERVER["DOCUMENT_ROOT"].'/wap/M/c/foot.php';
 ?>

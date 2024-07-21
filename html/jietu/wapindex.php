@@ -25,7 +25,7 @@ $font = './simsun.ttc';//字体
 $black = imagecolorallocate($dst, 0xff, 0xff, 0xff);//字体颜色
 list($dst_w, $dst_h, $dst_wh) = getimagesize($dst_path);
 //$dst_wh =''.$dst_w.''.$dst_h.'';
-$text = 'rmct.cn';
+$text = 'jvzh.org';
 if ($dst_w == 240 & $dst_h == 320){
 // 设置新图片的宽高
 $dst_w = 120;
@@ -161,7 +161,7 @@ break;
 
 }else if($b['format'] == ".gif"){
 header("Content-type: image/png");
-echo file_get_contents($_SERVER["DOCUMENT_ROOT"]."/M/s/".$b['id'].".gif");
+echo file_get_contents($_SERVER["DOCUMENT_ROOT"]."/wap/M/s/".$b['id'].".gif");
 }else{
 header("Content-type: image/png");
 echo file_get_contents($_SERVER["DOCUMENT_ROOT"]."/M/s/00.png");

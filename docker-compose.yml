@@ -1,6 +1,6 @@
 services:
   nginx:
-    image: nginx:latest
+    build: ./nginx
     container_name: nginx
     ports:
       - 80:80
@@ -9,9 +9,13 @@ services:
       - ./nginx/conf.d:/etc/nginx/conf.d
       - ./html:/var/www/html
       - ./nginx/logs:/var/log/nginx
+      - ./nginx/scripts:/scripts
+      - ./nginx/conf.d/letsencrypt:/etc/letsencrypt
+      - ./nginx/logs/letsencrypt:/var/log/letsencrypt
     depends_on:
       - php
       - phpmyadmin
+    entrypoint: bash /scripts/start.sh
     networks:
       - webnet
 

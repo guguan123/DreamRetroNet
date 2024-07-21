@@ -1,10 +1,10 @@
 <?php
 
-include_once $_SERVER["DOCUMENT_ROOT"].'/mi/system/base.php';
+include_once $_SERVER["DOCUMENT_ROOT"].'/wap/system/base.php';
 
 $id = abs(intval($_GET['id'])); # ФИЛЬТР ГЕТ
 $use = $con->query("SELECT * FROM `user` WHERE `id` = '".$id."'")->fetch_assoc();
-$f = $con->query("SELECT * FROM `package` WHERE `id_user` = '".$use['id']."'")->fetch_assoc();
+$f = $con->query("SELECT * FROM `game` WHERE `id_user` = '".$use['id']."'")->fetch_assoc();
 if($name = $use['name'] ?: $use['login']){
 $title = ''.$name.'';
 }
@@ -12,7 +12,7 @@ include_once $_SERVER["DOCUMENT_ROOT"].'/wap/M/c/header.php';
 echo '</head><body>';
 //echo '<div class="header"><a href="/">';
 //echo ''.$title.'</a>';
-include_once $_SERVER["DOCUMENT_ROOT"] . '/mi/M/c/user.php';
+include_once $_SERVER["DOCUMENT_ROOT"] . '/wap/M/c/user.php';
 //echo '<div class="wrapper">';
 
 
@@ -28,7 +28,7 @@ $on_off = '离线';
 
 if($use){
 //echo '<body class="subpage"><div id="header"><a href="#back" onclick="history.back();" class="iconfont icon-fanhui"></a><h1>'.$use['name'].'</h1><div id="user">'
-$file = $con->query("SELECT * FROM `package` WHERE `id_user` = '".$id."' ORDER BY `id` DESC LIMIT 5");
+$file = $con->query("SELECT * FROM `game` WHERE `id_user` = '".$id."' ORDER BY `id` DESC LIMIT 5");
 if($use['id']==$f['id_user']){
 if($name = $use['name'] ?: $use['login']){
 echo '<br><a href="/game/1?user_id='.$use['id'].'" class="right">'.$more.'</a>'.$name.''.$uploaded.'';
@@ -45,12 +45,12 @@ $str=str_replace('.','',$str);
 echo '('.$size.'/'.$str.')';
 }
 }
-$dow = $con->query("SELECT * FROM `package` ORDER BY `id` DESC");
+$dow = $con->query("SELECT * FROM `game` ORDER BY `id` DESC");
 if($name = $use['name'] ?: $use['login']){
 echo ''.$name.'最近在玩';
 }
 while($do = $dow->fetch_assoc()){
-$down = $con->query("SELECT * FROM `package_download` WHERE `package_id` = '".$do['id']."' AND `user_id` = '".$id."' ORDER BY `id` DESC LIMIT 10");
+$down = $con->query("SELECT * FROM `game_download` WHERE `game_id` = '".$do['id']."' AND `user_id` = '".$id."' ORDER BY `id` DESC LIMIT 10");
 while($download = $down->fetch_assoc()){
 
 }
@@ -84,7 +84,7 @@ function get_ip_city($ip)
     parse_str($location, $ip_location);
     return $ip_location['pro'];
 }
-$uw = $con->query("SELECT * FROM `package` WHERE `id_user` = '".$id."' ORDER BY `id` DESC");
+$uw = $con->query("SELECT * FROM `game` WHERE `id_user` = '".$id."' ORDER BY `id` DESC");
 $uc = $con->query("SELECT * FROM `comment` WHERE `id_user` = '".$id."' ORDER BY `id` DESC");
 if($name = $use['name'] ?: $use['login']){
 echo '<br>'.$name.'';
@@ -95,18 +95,18 @@ $str=str_replace('省','',$str);
 echo ''.$use['admin_level'].' ';
 echo 'ip:'.$str.' ';
 echo ''.$on_off.'';
-echo '<br>'.$Recent.':'.data($use['up_time']).'';
-echo '<br>'.$enroll.':'.data($use['data_reg']).'';
-echo '<br>'.$uploadss.':'.$uw->num_rows.' ';
-echo ''.$downloadss.':'.$use['package_downs'].' ';
-echo ''.$commentsname.':'.$uc->num_rows.'';
+echo '<br>注册:'.data($use['up_time']).'';
+echo '<br>更新:'.data($use['data_reg']).'';
+echo '<br>上传:'.$uw->num_rows.' ';
+echo '下载:'.$use['game_downs'].' ';
+echo '评论:'.$uc->num_rows.'';
 //echo '<li>封号大礼包：'.fh($use['fh']).'</li>';
 if($user['id']==$use['id']){
 echo '<br>功能';
-echo '<br><a href="/apps/upload" >'.$uploadss.''.$software.'</a> <a href="/games/upload" >'.$uploadss.''.$game.'</a> ';
+echo '<br><a href="/games/upload" >上传</a>  ';
 //echo '<li><a href="/user/edit" >修改资料</li>';
 //echo '<li><a href="/user/edit/password" >修改密码</li>';
-echo '<a href="/user/logout" >'.$logout.'</a>';
+echo '<a href="/user/logout" >退出登录</a>';
 }
 echo '</ul></div></div>';
 echo '<div class="link"><b>用户名</b> : '.$use['login'].'</div>';
@@ -119,5 +119,5 @@ echo '<div class="link"><b>最近登录</b> : '.data($use['up_time']).'</div>';
 }else{
 err('Ошибка');
 }
-include_once $_SERVER["DOCUMENT_ROOT"].'/mi/M/c/foot.php';
+include_once $_SERVER["DOCUMENT_ROOT"].'/wap/M/c/foot.php';
 ?>
