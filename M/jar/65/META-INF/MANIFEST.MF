@@ -1,0 +1,8 @@
+Manifest-Version: 1.0
+MIDlet-Name: Elevator action
+MIDlet-Version: 1.0
+MIDlet-Vendor: (C) Taito
+MicroEdition-Profile: MIDP-1.0
+MicroEdition-Configuration: CLDC-1.0
+MIDlet-1: Elevator action, /ico.png, ElevatorAction
+

@@ -1,0 +1,35 @@
+MIDlet-Version: 1.0
+DoDest: 4C8275A93ECDA86EE731C730E522C4618F6FB0566094046FEC048DC82F788636B80D3DBE354DBDA3C3BD1E07BFE604FBCDB0031092F9BE8D5F7F4FD7CBE2CEB5db8fa0f380066d23fe873cca52ad5645
+Tj1Url: http://g.3g.qq.com/g/s?cid=gamejx&aid=g_downApp&resId=MA2010042000143&chargeMethod=S&feeType=F&series=N7610
+MIDlet-Name: 神兽大陆-狩猎传说
+Tj4Url: http://g.3g.qq.com/g/s?cid=gamejx&aid=g_downApp&resId=MA2011021500005&chargeMethod=S&feeType=F&series=N7610
+needCopyRight: 1
+Ant-Version: Apache Ant 1.8.2
+GameCenterName: QQ游戏中心
+MicroEdition-Configuration: CLDC-1.0
+MIDlet-1: 神兽大陆-狩猎传说,/icon.png,Main
+MicroEdition-Profile: MIDP-2.0
+GameCenterUrl: http://g.3g.qq.com/g/s?aid=g_cp_adver&series=N7610
+MIDlet-Vendor: moonic
+DoCode: D8721AEC6C0C86609F486F83600583C0B33CE2062EAA5C68A5FC840331AD48CF3E22E0CE67560F330D321A2BC51B1851E5D226574FC70FB7522427D33237C422E3801838788E5B6B188196DCC67677186578DBB6C24B1205663BC082C3E71A14e3bebef1a25a0d101eb69fe66f6ebb78
+Manifest-Version: 1.0
+useFreeCode: 0
+MIDlet-Install-Notify: http://g3.3g.qq.com/g/s?aid=g_install&cpid=120&gameid=019&agent=N7610&feetype=S
+Created-By: 1.6.0-b105 (Sun Microsystems Inc.)
+Tj2Url: http://g.3g.qq.com/g/s?cid=gamejx&aid=g_downApp&resId=MA2010061100148&chargeMethod=S&feeType=F&series=N7610
+Term: N7610
+Tj5Url: http://g.3g.qq.com/g/s?cid=gamejx&aid=g_downApp&resId=MA2011030200203&chargeMethod=S&feeType=F&series=N7610
+FeeMode: 0 
+Tj3Url: http://g.3g.qq.com/g/s?cid=gamejx&aid=g_downApp&resId=MA2010122000031&chargeMethod=S&feeType=F&series=N7610
+MIDlet-Icon: /icon.png
+LogoLinkReco: 1;1;1 
+ChannelFirst: WEB
+ChannelSecond: CS
+InterChannel: IC
+QQ: 0
+SmsCode1: BDE20EFA3A94BC83ecef2df701ea2c9d2d9d6b9907de19de
+SmsCode2: 703A8556C5873C2105c7ba6bf54bd82353d3dbec47490ab9
+SmsDest1: ADB0FFA03412F5D8955381D98B693D1F8D2BE5AADFE85B1A323fe9e5e9a8829f60fef81d3fcae069
+SmsDest2: 06818C025AF3AF5F232A670ED269A8FDDDF78B9910BB426760a541d9253088958a77c675fed28065
+FreeCode: 5E477C897F925939ef0d3930a7b6c95bd2b32ed45989c61f
+FreeDest: 06818C025AF3AF5F5E477C897F9259397a1fa43673750e5a9f1a6b14c5f1a27e

@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+MicroEdition-Configuration: CLDC-1.0
+MIDlet-Name: 魔力I
+MIDlet-Icon: /icons/icon_60.png
+MIDlet-Vendor: 春腾科技
+MIDlet-1: 魔力I, /icons/icon_60.png, srpg1.MIDletApp
+Media-Price: 单次下载10元
+MIDlet-Version: 1.0
+MicroEdition-Profile: MIDP-2.0
+MIDlet-Description: 十分经典的游戏,RPG类型,适用于NOKIA N73
+

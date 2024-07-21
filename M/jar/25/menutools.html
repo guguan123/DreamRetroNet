@@ -1,0 +1,87 @@
+<html>
+  <head>
+    <style>
+      .dir_rtl{ DIRECTION:RTL; }
+      .dir_ltr{ DIRECTION:LTR; }
+      .menu_item { BACKGROUND-COLOR:#EFEFEF;BORDER-BOTTOM-COLOR:#BEBEBE;BORDER-BOTTOM-STYLE:SOLID;BORDER-BOTTOM-WIDTH:1.0PX;BORDER-LEFT-COLOR:#EFEFEF;BORDER-LEFT-STYLE:SOLID;BORDER-LEFT-WIDTH:1.0PX;BORDER-RIGHT-COLOR:#EFEFEF;BORDER-RIGHT-STYLE:SOLID;BORDER-RIGHT-WIDTH:1.0PX;BORDER-TOP-COLOR:#F9F9F9;BORDER-TOP-STYLE:SOLID;BORDER-TOP-WIDTH:1.0PX;MARGIN-BOTTOM:0.0PX;MARGIN-LEFT:0.0PX;MARGIN-RIGHT:0.0PX;MARGIN-TOP:0.0PX;PADDING-BOTTOM:7.0PX;PADDING-LEFT:5.0PX;PADDING-RIGHT:5.0PX;PADDING-TOP:7.0PX; }
+      .menu_item_table_padding1{ PADDING-BOTTOM:2.5PX;PADDING-LEFT:2.5PX;PADDING-RIGHT:5.0PX;PADDING-TOP:5.0PX; }
+	  .menu_padding1{ PADDING-BOTTOM:2.5PX;PADDING-LEFT:0.0PX;PADDING-RIGHT:0PX;PADDING-TOP:5.0PX; }
+	  .menu_item_text { MARGIN-BOTTOM:0.0PX;MARGIN-LEFT:0.0PX;MARGIN-RIGHT:0.0PX;MARGIN-TOP:0.0PX;PADDING-BOTTOM:4.0PX;PADDING-LEFT:4.0PX;PADDING-RIGHT:4.0PX;PADDING-TOP:4.0PX;FONT-SIZE:MEDIUM;COLOR:#555555;OVERFLOW:HIDDEN;WHITE-SPACE:NOWRAP; }
+	  .title_bar_text { FONT-SIZE:SMALL;COLOR:#FFFFFF;PADDING-BOTTOM:2.0PX;PADDING-LEFT:4.0PX;PADDING-RIGHT:4.0PX;PADDING-TOP:2.0PX;MARGIN-BOTTOM:0.0PX;MARGIN-LEFT:0.0PX;MARGIN-RIGHT:0.0PX;MARGIN-TOP:0.0PX; }
+      .title_bar_item { BACKGROUND-COLOR:#343434;MARGIN-BOTTOM:0.0PX;MARGIN-LEFT:0.0PX;MARGIN-RIGHT:0.0PX;MARGIN-TOP:0.0PX;PADDING-BOTTOM:2.0PX;PADDING-LEFT:5.0PX;PADDING-RIGHT:5.0PX;PADDING-TOP:2.0PX;BACKGROUND-IMAGE:URL('file://title_bar_background.png');BACKGROUND-REPEAT:REPEAT-X; }
+      .body { BACKGROUND-COLOR:#EFEFEF; }
+      .menu_item_table { WIDTH:100.0%; }
+      .menu_item_table_right { COLOR:#555555;OVERFLOW:HIDDEN;WHITE-SPACE:NOWRAP; }
+      .switcher_cell_width { WIDTH:30.0%; }
+      .arrow_cell_width { WIDTH:10.0PX; }
+      .visible {DISPLAY:BLOCK;}
+      .invisible {DISPLAY:NONE;}
+      .hover { COLOR:#FFFFFF;BACKGROUND-COLOR:#44aa33;OUTLINE:NONE;BORDER-BOTTOM-COLOR:#44aa33;BORDER-BOTTOM-STYLE:SOLID;BORDER-BOTTOM-WIDTH:1.0PX;BORDER-LEFT-COLOR:#44aa33;BORDER-LEFT-STYLE:SOLID;BORDER-LEFT-WIDTH:1.0PX;BORDER-RIGHT-COLOR:#44aa33;BORDER-RIGHT-STYLE:SOLID;BORDER-RIGHT-WIDTH:1.0PX;BORDER-TOP-COLOR:#44aa33;BORDER-TOP-STYLE:SOLID;BORDER-TOP-WIDTH:1.0PX; }     
+   </style>
+  </head>
+  <body class="body">
+    <div class="title_bar_item &$css_dir_ALIGNMENT;">
+      <span class="title_bar_text">&$203_STR;</span>
+    </div>
+
+    <div id="data_savings_mode">
+      <div id="data_savings_mode1" class="menu_item menu_item_table_padding1 invisible" onclick="mwl.execBrowserCommand('&$16_COMMANDID;')">
+        <table class="menu_item_table &$css_dir_ALIGNMENT;" rows="1" cols="2">
+          <tr>
+            <td class="&$css_dir_ALIGNMENT;"><span class="menu_item_text">&$32_STR;</span></td>
+            <td class="switcher_cell_width menu_item_table_right &$css_dir_OPPOSITE;">
+              <span id="data_savings_switcher_group1">
+                <span id="switcher_on"  class="invisible menu_item_table_right">&$127_STR;</span> 
+                <span id="switcher_off" class="invisible menu_item_table_right">&$125_STR;</span> 
+              </span>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div id="data_savings_mode2" class="menu_item menu_item_table_padding1 invisible">
+        <table class="menu_item_table &$css_dir_ALIGNMENT;" rows="1" cols="2">
+          <tr>
+            <td class="&$css_dir_ALIGNMENT;"><span class="menu_item_text">&$32_STR;</span></td>
+            <td class="switcher_cell_width menu_item_table_right &$css_dir_OPPOSITE;">
+              <span id="data_savings_switcher_group2">
+                <span id="switcher_no" class="menu_item_table_right">&$125_STR;</span>
+              </span>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+	
+	<div id="group_settings">
+		<div id="settings_unselected" class="menu_item menu_item_table_padding1 visible" onclick="mwl.execBrowserCommand('&$17_COMMANDID;')">
+		  <table class="menu_item_table &$css_dir_ALIGNMENT;" rows="1" cols="2">
+			<tr>
+			  <td><span class="menu_item_text &$css_dir_ALIGNMENT;">&$157_STR;</span></td>
+			  <td class="arrow_cell_width menu_item_table_right"><img src="file://arrow.png" alt="Arrow" width="10" height="16"></img></td>
+			</tr>
+		  </table>
+		</div>
+		<div id="settings_unselected_rtl" class="menu_item invisible &$css_dir_ALIGNMENT;" onclick="mwl.execBrowserCommand('&$17_COMMANDID;')">		
+		  <span class="menu_item_text">&$157_STR;</span>		  
+		</div>
+	</div>
+
+
+    <div class="menu_item &$css_dir_ALIGNMENT;" onclick="mwl.execBrowserCommand('&$18_COMMANDID;')">
+      <span class="menu_item_text">&$205_STR;</span>
+    </div>
+
+    <div class="menu_item &$css_dir_ALIGNMENT;" onclick="mwl.execBrowserCommand('&$24_COMMANDID;')">
+      <span class="menu_item_text">&$132_STR;</span>
+    </div>
+	
+	<div class="menu_item &$css_dir_ALIGNMENT;" onclick="mwl.execBrowserCommand('&$23_COMMANDID;')">
+      <span class="menu_item_text">&$80_STR;</span>
+    </div>
+
+    <div class="menu_item &$css_dir_ALIGNMENT;" onclick="mwl.execBrowserCommand('&$38_COMMANDID;')">
+      <span class="menu_item_text">&$1_STR;</span>
+    </div>
+
+  </body>
+</html>

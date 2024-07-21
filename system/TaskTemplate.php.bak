@@ -20,12 +20,12 @@ class TaskTemplate
         return get_object_vars($this);
     }
 
-    protected $host = 'smtp.163.com';
-    protected $port = '465';
+    protected $host = 'mail.jvzh.cn';
+    protected $port = '25';
     protected $smtpDebug = false;
-    protected $nickname = 'a3475272270@163.com';
-    protected $username = '3475272270';
-    protected $password = 'QTTJKOIKRLJITPMS';
+    protected $nickname = 'admin@jvzh.cn';
+    protected $username = '续梦网';
+    protected $password = 'Al3475272270';
     protected $isHTML = true;
     protected $charSet = 'utf-8';
     protected $subject = '';

@@ -1,0 +1,14 @@
+Manifest-Version: 1.0
+Ant-Version: Apache Ant 1.8.1
+MIDlet-Vendor: Midlet Suite Vendor
+MIDlet-Version: 3.3.1
+Nokia-MIDlet-On-Screen-Keypad: no
+MIDlet-1: 淘宝, /res/taobaoIcon.png, com.taobao.StartMIDlet
+MicroEdition-Configuration: CLDC-1.1
+Nokia-MIDlet-App-Orientation: portrait
+Created-By: 1.6.0_06-b02 (Sun Microsystems Inc.)
+MIDlet-Name: 淘宝
+MicroEdition-Profile: MIDP-2.0
+MIDlet-Permissions: javax.microedition.io.Connector.http, javax.microe
+ dition.io.Connector.https, javax.microedition.io.Connector.socket
+

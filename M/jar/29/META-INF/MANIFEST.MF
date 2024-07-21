@@ -1,0 +1,12 @@
+Manifest-Version: 1.0
+Ant-Version: Apache Ant 1.6.5
+Created-By: 1.5.0_05-b05 (Sun Microsystems Inc.)
+MIDlet-1: CMainScreen,/res/lockT.png,CMainScreen
+MIDlet-Permissions: javax.microedition.io.Connector.file.read, javax.m
+ icroedition.io.Connector.file.write
+MIDlet-Vendor: Amith GC
+MIDlet-Version: 1.03
+MIDlet-Name: iLock 中文版
+MicroEdition-Configuration: CLDC-1.1
+MicroEdition-Profile: MIDP-2.0
+

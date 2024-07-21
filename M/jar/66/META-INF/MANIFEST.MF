@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Ant-Version: Apache Ant 1.7.1
+Created-By: 16.0-b06 (Sun Microsystems Inc.)
+MIDlet-1: Png图片优化,/icon.png,Main
+MIDlet-Vendor: aNNiMON
+MIDlet-Name: 图片优化
+MIDlet-Version: 1.5
+MicroEdition-Configuration: CLDC-1.1
+MicroEdition-Profile: MIDP-2.0
+

@@ -23,9 +23,9 @@ class TaskTemplate
     protected $host = 'mail.jvzh.cn';
     protected $port = '25';
     protected $smtpDebug = false;
-    protected $nickname = 'admin@jvzh.cn';
+    protected $nickname = 'system@jvzh.cn';
     protected $username = '续梦网';
-    protected $password = 'Al3475272270';
+    protected $password = 'Al347527227001';
     protected $isHTML = true;
     protected $charSet = 'utf-8';
     protected $subject = '';

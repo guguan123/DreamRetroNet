@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+MicroEdition-Configuration: CLDC-1.0
+MIDlet-Name: 仙剑奇侠
+MIDlet-Icon: /icon.png
+MIDlet-Vendor: home
+MIDlet-1: 仙剑奇侠, /icon.png, nv
+MIDlet-Version: 1.0
+MicroEdition-Profile: MIDP-1.0
+MIDlet-Description: 仙剑奇侠
+

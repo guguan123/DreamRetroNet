@@ -1,0 +1,132 @@
+Manifest-Version: 1.0
+Created-By: 1.6.0_07 (Sun Microsystems Inc.)
+
+Name: res/drawable-hdpi/app_icon.png
+SHA1-Digest: ETOpfXWxzrBQlwldF4aA5OKUaWk=
+
+Name: assets/elements.png
+SHA1-Digest: nxDFaCfq4ikEGATy6EEcxbjfTFE=
+
+Name: assets/operamini.properties
+SHA1-Digest: UPKQgB2m2OENtBO+RnrnJWhOrA8=
+
+Name: res/drawable-ldpi-v11/notification_icon.png
+SHA1-Digest: NKc1Clz8R52eo+J/g5ipgOBOQQU=
+
+Name: res/drawable-nodpi/bookmark_icon_nodpi.png
+SHA1-Digest: T/LyPSWeZXDfHjsjW3epGpccmTc=
+
+Name: lib/armeabi/libom.so
+SHA1-Digest: v+YNrdoxDHD6Ppy3ke8kAVrGkkc=
+
+Name: assets/pmd_nav.json
+SHA1-Digest: RsI6Qs4Tejv8mkGzwBPsObKsnts=
+
+Name: res/drawable-xhdpi-v11/notification_icon.png
+SHA1-Digest: yUhZFmmb8d5AB72tOlT65sLrGcw=
+
+Name: assets/v-vga-touch
+SHA1-Digest: 2G64q4yOBqLR3rPyjHmyKsdpo0I=
+
+Name: resources.arsc
+SHA1-Digest: ZEjngFx8cvsfHDkIXCFoar54y0Y=
+
+Name: res/drawable-hdpi/bookmark_icon.png
+SHA1-Digest: T/LyPSWeZXDfHjsjW3epGpccmTc=
+
+Name: res/drawable-mdpi-v9/notification_icon.png
+SHA1-Digest: 2DVEaAAfCfEDfjsNBW8fcoTO9eQ=
+
+Name: assets/v-qvga-touch
+SHA1-Digest: x2ROTYcHqJGFbFTqQjtyb4z5r14=
+
+Name: res/drawable/invite_b.jpg
+SHA1-Digest: DwjTQIGqq/hs3vC9F1QUs3ZIgBI=
+
+Name: AndroidManifest.xml
+SHA1-Digest: InNQc4TKhKtDo7v3hg0R19/IiYo=
+
+Name: assets/a
+SHA1-Digest: 7nvomzfhx283145GxufFu22RQqk=
+
+Name: res/drawable-hdpi-v11/notification_icon.png
+SHA1-Digest: l1G5etJssCttCX7pLiiiHFooCnY=
+
+Name: assets/v-zh
+SHA1-Digest: it7BsydDSf2u05sBtLGjR+vtfPs=
+
+Name: res/drawable/notification_icon.png
+SHA1-Digest: KO8dsslQVPWdUWXNRJeP4kcrtRE=
+
+Name: assets/v-svga-touch
+SHA1-Digest: k6oCiKRz6Vzc66+GgiMSpxsAqgk=
+
+Name: res/drawable-mdpi-v11/notification_icon.png
+SHA1-Digest: 0191Jx9bLHmPLI6Q9bBwsfZkOmk=
+
+Name: assets/i.png
+SHA1-Digest: w/SXNb5m1OFIso1pLUJV61hqxLk=
+
+Name: assets/t
+SHA1-Digest: xlYiNtsUHP6lPRKQcZWGSOTwjOg=
+
+Name: assets/v
+SHA1-Digest: it7BsydDSf2u05sBtLGjR+vtfPs=
+
+Name: res/drawable/invite_a.jpg
+SHA1-Digest: Cw0SF04STbdBHZKxDRbr+LNagMk=
+
+Name: res/drawable-ldpi/bookmark_icon.png
+SHA1-Digest: NdqIju+tpM5tgMB3Rl86k6iQJMA=
+
+Name: assets/pmd_topsites.json
+SHA1-Digest: s8YSNBFMjVT1YEeGYoEW+7ZdV/g=
+
+Name: assets/l
+SHA1-Digest: caLF1q+l0kFAFo8P7s8a3zSR0cM=
+
+Name: classes.dex
+SHA1-Digest: 35E1v7Qc8vnXMJqif5allFrNPcQ=
+
+Name: res/drawable/bookmark_icon.png
+SHA1-Digest: xBhsAN3dslTODTxZaAHnaS2Wfrc=
+
+Name: res/drawable-ldpi-v9/notification_icon.png
+SHA1-Digest: ex90JG+a2uhbm10oqrrNKfMUO+k=
+
+Name: res/layout/main.xml
+SHA1-Digest: iHRLadBI0lvHYwi0SEzfZroBf5Q=
+
+Name: res/drawable/app_icon.png
+SHA1-Digest: K6s2VQyIHg3g7r3GOdD9fKBc3PE=
+
+Name: res/layout/layout_widget_one_image.xml
+SHA1-Digest: XbAY1kg+yI4LFhTT/VWUIWBFzvc=
+
+Name: assets/pmd_topsearch.json
+SHA1-Digest: OE5ZIQOtTQCTCq03CmFv4FCVyMg=
+
+Name: assets/resources-zh
+SHA1-Digest: Z2bDRFx7MX2gGMWfvBSYJKtjnrY=
+
+Name: res/drawable-hdpi-v9/notification_icon.png
+SHA1-Digest: bcFUPtq1CU0ddGBlitig2IhK9hQ=
+
+Name: res/drawable-xhdpi/app_icon.png
+SHA1-Digest: H/CN9+9V7kdXBHm/Uq6g88dHNhg=
+
+Name: res/drawable-ldpi/app_icon.png
+SHA1-Digest: P1qNxKdFxTvDomjgc/JdQwhJ29M=
+
+Name: assets/resources
+SHA1-Digest: Z2bDRFx7MX2gGMWfvBSYJKtjnrY=
+
+Name: assets/v-hvga-touch
+SHA1-Digest: NTbsdb+V3lnXr6Uqt245UDnCPLY=
+
+Name: res/drawable-xhdpi/bookmark_icon.png
+SHA1-Digest: yh0wuRDwach63VYlUSlY1+b53lg=
+
+Name: res/drawable/widget_bg.9.png
+SHA1-Digest: RXW7XcZza5B+2TaGZF0/aL1M2gM=
+

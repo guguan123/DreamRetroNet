@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+MicroEdition-Configuration: CLDC-1.0
+MIDlet-Name: 海贼王
+Created-By: 1.5.0_01 (Sun Microsystems Inc.)
+MIDlet-Icon: /icon/icon.png
+MIDlet-Vendor: 触通安腾
+MIDlet-1: 海贼王,/icon/icon.png, Heart
+MIDlet-Version: 8.60.0
+MicroEdition-Profile: MIDP-2.0
+MIDlet-Description: 手机网游
+

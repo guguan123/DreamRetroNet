@@ -1,0 +1,4 @@
+3,1
+aida
+17
+aida2_64X64_RGBA

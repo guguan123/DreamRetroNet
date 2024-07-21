@@ -1,11 +1,13 @@
 <?php
-include_once $_SERVER["DOCUMENT_ROOT"].'/wap/system/base.php';
+include_once $_SERVER["DOCUMENT_ROOT"].'/system/base.php';
 
-include_once $_SERVER["DOCUMENT_ROOT"].'/wap/M/c/header.php';
-$title = ''.$title2.'';
-echo '<div class="header"><a href="/">'.$title2.'</a>';
-include_once $_SERVER["DOCUMENT_ROOT"] . '/wap/M/c/user.php';
-echo '<div class="wrapper"><ul>';
+$title = '列表 - 续梦网';
+
+include_once $_SERVER["DOCUMENT_ROOT"].'/mi/M/c/header.php';
+
+//echo '<div class="header"><a href="/">'.$title2.'</a>';
+include_once $_SERVER["DOCUMENT_ROOT"] . '/mi/M/c/user.php';
+
 	//名字
     $system = filtr($_GET['system']);
 	$resolution = filtr($_GET['resolution']);
@@ -20,7 +22,7 @@ $page = $_GET['page'];
 $k_post = $con->query("SELECT * FROM `game` WHERE `platform` LIKE '%$system%' and `raz` LIKE '%$category%' and `author` LIKE '%$vendor%' and `zh` LIKE '%$lang' and `DJ` LIKE '%$online%'")->num_rows;
 $total = $k_post;//记录数
 $count = 0;
-$pagesize = 20;
+$pagesize = 10;
 $totalPage = ceil($total/$pagesize);//总页数
 $pages = ceil($conut/$pagesize);//共多少页
 $prepage=$page-1;
@@ -31,38 +33,45 @@ if($nextpage >= $pages){
 $nextpage = $pages;
 $start = ($page-1) * $pagesize;
 }
-	      $ms = $con->query("SELECT * FROM `game` WHERE `platform` LIKE '%$system%' and `raz` LIKE '%$category%' and `author` LIKE '%$vendor%' and `zh` LIKE '%$lang' and `DJ` LIKE '%$online%' order by downs DESC LIMIT $start,$pagesize");
+	      $ms = $con->query("SELECT * FROM `game` WHERE `platform` LIKE '%$system%' and `raz` LIKE '%$category%' and `author` LIKE '%$vendor%' and `zh` LIKE '%$lang' and `DJ` LIKE '%$online%' order by id DESC LIMIT $start,$pagesize");
 		//$ms = $con->query("SELECT * FROM `file` WHERE `author` = '".$author."' ORDER BY `id` DESC LIMIT 10");
 
 if($k_post  < 1) err('没有同厂游戏！');
 //echo '<span class="title">同厂游戏</span>'.$key.'<div class="block">';
 while($w = $ms->fetch_assoc()){
-echo '<li><a href="/game/'.$w['id'].'"><img src="/M/i/'.$w['icon'].'" width="24" height="24" alt="图标" />';
+$mu = $con->query("SELECT * FROM `image` WHERE `id_game` = '".$w['id']."' ORDER BY `id` ASC limit 1")->fetch_assoc();
+if($mu > 0){
+$image = $mu['id'];
+}else{
+$image = '0';
+}
+	//$con->query("UPDATE `package` SET `platform` = 'java' WHERE `id` = '".$w['id']."'");
+echo '<br><a href="/game/'.$w['id'].'"><img src="/jietu/'.$image.'"  width="80" height="80">';
 if($name = $w['cn'] ?: $w['name']){
-echo ''.$name.'</a>';
+echo ''.$name.' '.$w['dpi'].'</a>';
 }
-echo '</li>';
+$size = getFilesize($_SERVER['DOCUMENT_ROOT'].'/download/'.$w['down'].'');
+echo '<br><span>'.$w['platform'].'  '.$w['raz'].' '.$w['v'].' 下载 '.$w['downs'].' '.$size.'</span>';
 }
-echo '</ul>';
+
 while($count < 1){
-echo '<div class="pager"><span>第'.$page.'页/共'.$totalPage.'页</span>';
+echo '<br>第'.$page.'页/共'.$totalPage.'页';
 $count++;
 }
 if ($page>2){
-echo '<a href="/games">首页</a>';
+//echo '<a href="/games">首页</a>';
 }
 if($page>1){
-echo '<a href="/games?page='.($page-1).'">上一页</a>';
+echo ' | <a href="/games/'.($page-1).'">上一页</a>';
 }
 if($page < $totalPage){
-echo '<a href="/games?page='.($page+1).'">下一页</a>';
+echo ' | <a href="/games/'.($page+1).'">下一页</a>';
 }
 if($page < $totalPage-1){
-echo '<a href="/games?page='.$totalPage.'">尾页</a>';
+//echo '<a href="/games?page='.$totalPage.'">尾页</a>';
 }
-echo '</div></div>';
 //if($k_post > '20') {  echo str('?system='.$system.'&',$k_page,$page.'');  }
 //}
 
-include_once $_SERVER["DOCUMENT_ROOT"].'/wap/M/c/foot.php';
+include_once $_SERVER["DOCUMENT_ROOT"].'/mi/M/c/foot.php';
 ?>

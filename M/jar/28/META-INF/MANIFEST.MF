@@ -1,0 +1,11 @@
+Nokia-Platform: *
+Manifest-Version: 1.0
+MIDlet-1: Windows Phone S, /icon.png,net.nokia.webapps.Launcher
+Midlet-Vendor-To-Launch: Nokia
+MicroEdition-Configuration: CLDC-1.1
+MIDlet-Version: 1.1.2
+MIDlet-Name: Windows Phone S
+MIDlet-Vendor: Nokia
+MicroEdition-Profile: MIDP-2.0
+Nokia-Webapp-URL: http://wam.browser.ovi.com/wam/v1_0/clients/608f4de1073532889e1b238db0dfdfd6/webapps/9997d163de9a8b6893b6412f6e4b495/?name=Windows%20Phone%20S&type=webapp
+Midlet-Name-To-Launch: OviBrowser

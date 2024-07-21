@@ -1,0 +1,119 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Animation imageName0=".\pic\0.png" imageName1=".\pic\1.png" imageName2=".\pic\2.png" imageName3=".\pic\3.png" imageName4=".\pic\4.png" imageName5=".\pic\5.png" imageName6=".\pic\6.png" imageName7=".\pic\7.png" imageName8=".\pic\8.png" imageName9=".\pic\9.png" imageCount="10" version="5" RotateType="2.0UI">
+  <Modules>
+    <Module SelfId="1" ImageId="7" X="0" Y="0" W="43" H="123" />
+    <Module SelfId="2" ImageId="8" X="0" Y="0" W="30" H="100" />
+    <Module SelfId="3" ImageId="4" X="0" Y="0" W="13" H="27" />
+    <Module SelfId="4" ImageId="4" X="14" Y="0" W="15" H="74" />
+    <Module SelfId="5" ImageId="4" X="0" Y="32" W="14" H="41" />
+    <Module SelfId="6" ImageId="2" X="1" Y="0" W="24" H="28" />
+    <Module SelfId="7" ImageId="2" X="0" Y="28" W="26" H="71" />
+    <Module SelfId="8" ImageId="9" X="0" Y="0" W="20" H="45" />
+    <Module SelfId="9" ImageId="0" X="0" Y="0" W="34" H="35" />
+    <Module SelfId="10" ImageId="0" X="0" Y="35" W="31" H="59" />
+    <Module SelfId="11" ImageId="5" X="40" Y="0" W="20" H="120" />
+    <Module SelfId="12" ImageId="5" X="0" Y="0" W="40" H="120" />
+    <Module SelfId="13" ImageId="5" X="60" Y="0" W="40" H="120" />
+    <Module SelfId="14" ImageId="3" X="0" Y="12" W="7" H="42" />
+    <Module SelfId="15" ImageId="3" X="7" Y="0" W="32" H="54" />
+    <Module SelfId="16" ImageId="5" X="42" Y="37" W="15" H="17" />
+    <Module SelfId="17" ImageId="6" X="0" Y="0" W="20" H="47" />
+    <Module SelfId="18" ImageId="1" X="0" Y="0" W="15" H="81" />
+    <Module SelfId="19" ImageId="1" X="0" Y="81" W="16" H="17" />
+  </Modules>
+  <Layers />
+  <Frames>
+    <Frame Name="1" SelfId="1">
+      <childSprite Type="0" Id="2" X="-30" Y="-102" Trans="0" Visible="1" />
+      <childSprite Type="0" Id="2" X="0" Y="-102" Trans="4" Visible="1" />
+      <childSprite Type="0" Id="1" X="27" Y="-123" Trans="4" Visible="1" />
+      <childSprite Type="0" Id="1" X="-70" Y="-123" Trans="0" Visible="1" />
+      <childSprite Type="0" Id="4" X="-15" Y="-56" Trans="0" Visible="1" />
+      <childSprite Type="0" Id="4" X="0" Y="-56" Trans="4" Visible="1" />
+      <childSprite Type="0" Id="5" X="-29" Y="-24" Trans="0" Visible="1" />
+      <childSprite Type="0" Id="5" X="15" Y="-24" Trans="4" Visible="1" />
+      <childSprite Type="0" Id="3" X="-42" Y="-16" Trans="0" Visible="1" />
+      <childSprite Type="0" Id="3" X="29" Y="-16" Trans="4" Visible="1" />
+    </Frame>
+    <Frame Name="2" SelfId="2">
+      <childSprite Type="0" Id="2" X="-30" Y="-102" Trans="0" Visible="1" />
+      <childSprite Type="0" Id="2" X="0" Y="-102" Trans="4" Visible="1" />
+      <childSprite Type="0" Id="7" X="-26" Y="-54" Trans="0" Visible="1" />
+      <childSprite Type="0" Id="7" X="0" Y="-54" Trans="4" Visible="1" />
+      <childSprite Type="0" Id="6" X="-1" Y="-54" Trans="0" Visible="1" />
+    </Frame>
+    <Frame Name="3" SelfId="3">
+      <childSprite Type="0" Id="12" X="-50" Y="-120" Trans="0" Visible="1" />
+      <childSprite Type="0" Id="11" X="-10" Y="-120" Trans="0" Visible="1" />
+      <childSprite Type="0" Id="13" X="10" Y="-120" Trans="0" Visible="1" />
+      <childSprite Type="0" Id="15" X="-16" Y="-84" Trans="0" Visible="1" />
+      <childSprite Type="0" Id="14" X="-23" Y="-72" Trans="0" Visible="1" />
+      <childSprite Type="0" Id="14" X="16" Y="-72" Trans="4" Visible="1" />
+      <childSprite Type="0" Id="8" X="-10" Y="-34" Trans="0" Visible="1" />
+    </Frame>
+    <Frame Name="4" SelfId="4">
+      <childSprite Type="0" Id="12" X="-40" Y="-120" Trans="0" Visible="1" />
+      <childSprite Type="0" Id="13" X="0" Y="-120" Trans="0" Visible="1" />
+      <childSprite Type="0" Id="10" X="-31" Y="-29" Trans="0" Visible="1" />
+      <childSprite Type="0" Id="10" X="0" Y="-29" Trans="4" Visible="1" />
+      <childSprite Type="0" Id="9" X="-17" Y="-65" Trans="0" Visible="1" />
+      <childSprite Type="0" Id="17" X="-60" Y="-63" Trans="0" Visible="1" />
+      <childSprite Type="0" Id="17" X="40" Y="-63" Trans="0" Visible="1" />
+      <childSprite Type="0" Id="18" X="56" Y="-92" Trans="0" Visible="1" />
+      <childSprite Type="0" Id="18" X="71" Y="-92" Trans="4" Visible="1" />
+      <childSprite Type="0" Id="18" X="-71" Y="-92" Trans="4" Visible="1" />
+      <childSprite Type="0" Id="18" X="-86" Y="-92" Trans="0" Visible="1" />
+      <childSprite Type="0" Id="19" X="-9" Y="-83" Trans="0" Visible="1" />
+    </Frame>
+    <Frame Name="5" SelfId="5">
+      <childSprite Type="0" Id="12" X="-40" Y="-120" Trans="0" Visible="1" />
+      <childSprite Type="0" Id="13" X="0" Y="-120" Trans="0" Visible="1" />
+      <childSprite Type="0" Id="10" X="-31" Y="-29" Trans="0" Visible="1" />
+      <childSprite Type="0" Id="10" X="0" Y="-29" Trans="4" Visible="1" />
+      <childSprite Type="0" Id="9" X="-17" Y="-65" Trans="0" Visible="1" />
+      <childSprite Type="0" Id="19" X="-9" Y="-83" Trans="0" Visible="1" />
+    </Frame>
+  </Frames>
+  <Actions>
+    <Action Name="双柱房" SelfId="1">
+      <childSprite Type="2" Id="1" Delay="1" SpeedX="0" SpeedY="0" AccelerateSpeedX="0" AccelerateSpeedY="0" />
+    </Action>
+    <Action Name="小平楼" SelfId="2">
+      <childSprite Type="2" Id="2" Delay="1" SpeedX="0" SpeedY="0" AccelerateSpeedX="0" AccelerateSpeedY="0" />
+    </Action>
+    <Action Name="2层3门" SelfId="3">
+      <childSprite Type="2" Id="3" Delay="1" SpeedX="0" SpeedY="0" AccelerateSpeedX="0" AccelerateSpeedY="0" />
+    </Action>
+    <Action Name="2层哨塔" SelfId="4">
+      <childSprite Type="2" Id="4" Delay="1" SpeedX="0" SpeedY="0" AccelerateSpeedX="0" AccelerateSpeedY="0" />
+    </Action>
+    <Action Name="2层独院" SelfId="5">
+      <childSprite Type="2" Id="5" Delay="1" SpeedX="0" SpeedY="0" AccelerateSpeedX="0" AccelerateSpeedY="0" />
+    </Action>
+  </Actions>
+  <AtkRectangles>
+    <AtkRectangle />
+    <AtkRectangle />
+    <AtkRectangle />
+    <AtkRectangle />
+    <AtkRectangle />
+  </AtkRectangles>
+  <ColRectangles>
+    <ColRectangle>
+      <childRect ParentType="2" ParentId="1" X="-66" Y="-66" W="130" H="74" />
+    </ColRectangle>
+    <ColRectangle>
+      <childRect ParentType="2" ParentId="2" X="-30" Y="-62" W="59" H="64" />
+    </ColRectangle>
+    <ColRectangle>
+      <childRect ParentType="2" ParentId="3" X="-51" Y="-72" W="99" H="71" />
+    </ColRectangle>
+    <ColRectangle>
+      <childRect ParentType="2" ParentId="4" X="-82" Y="-54" W="162" H="79" />
+    </ColRectangle>
+    <ColRectangle>
+      <childRect ParentType="2" ParentId="5" X="-40" Y="-73" W="79" H="98" />
+    </ColRectangle>
+  </ColRectangles>
+  <ReferencedLines />
+</Animation>

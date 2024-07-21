@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+MIDlet-Vendor: www.m3gworks.com
+MIDlet-Version: 2.0.0
+MicroEdition-Configuration: CLDC-1.1
+MIDlet-1: Counter Attack,,com.m3gworks.engine.GameMIDlet
+MIDlet-Icon: /res/image2d/icon.png
+MIDlet-Info-URL: www.m3gworks.com
+MIDlet-Name: Counter Attack by luan17
+MicroEdition-Profile: MIDP-2.0
+

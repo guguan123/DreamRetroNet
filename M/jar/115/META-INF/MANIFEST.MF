@@ -1,0 +1,8 @@
+Manifest-Version: 1.0
+MIDlet-Vendor: Tencent
+MIDlet-Version: 12.05.4
+MIDlet-1: 手机QQ2008,/icon.png,com.tencent.kqq2006.ui.MainMIDlet
+MicroEdition-Configuration: CLDC-1.1
+MIDlet-Name: 手机QQ2008
+MicroEdition-Profile: MIDP-2.0
+

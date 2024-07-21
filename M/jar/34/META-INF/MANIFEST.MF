@@ -1,0 +1,17 @@
+Manifest-Version: 1.0
+MIDlet-Name: 尐木专属→UC
+MIDlet-1: UC浏览器,/l.png,cn.uc.application.app.WebClient
+MIDlet-Version: 9.4.0
+MIDlet-Vendor: 小木作
+MIDlet-Permissions: javax.microedition.io.Connector.http
+MicroEdition-Profile: MIDP-2.0
+MicroEdition-Configuration: CLDC-1.0
+MIDlet-Icon: /l.png
+MIDlet-Permissions-Opt: javax.microedition.io.Connector.https,javax.mi
+ croedition.io.Connector.file.read,javax.microedition.io.Connector.fil
+ e.write,javax.microedition.io.Connector.socket,javax.microedition.io.
+ sms,javax.microedition.io.Connector.sms,javax.wireless.messaging.sms.
+ send,javax.wireless.messaging.sms.receive,javax.microedition.media.co
+ ntrol.VideoControl.getSnapshot,javax.microedition.pim.ContactList.rea
+ d,javax.microedition.content.ContentHandler
+MIDlet-Info-URL: http://wap.ucweb.com

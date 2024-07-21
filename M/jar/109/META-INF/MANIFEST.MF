@@ -1,0 +1,17 @@
+Manifest-Version: 1.0
+MIDlet-Vendor: QQ:329071896
+SysFolder2: e:/
+MIDlet-Version: 5.0.1
+MIDlet-Permissions-Opt: javax.microedition.io.Connector.file.read,java
+ x.microedition.io.Connector.file.write
+MIDlet-Name: 千千静听-劲舞
+SysFolder: c:/Other/
+MobilePhone: SonyEricsson
+MIDlet-1: LyricShow, /icons/icon.png, lyricshow.LyricShow
+MicroEdition-Configuration: CLDC-1.0
+UsrKey: -1,-2,-3,-4,-5,-6,-7,-8,-11,-13,-14,-39
+MIDlet-Icon: /icons/icon.png
+MicroEdition-Profile: MIDP-2.0
+MIDlet-Permissions: javax.wireless.messaging.sms.receive,javax.wireles
+ s.messaging.sms.send
+

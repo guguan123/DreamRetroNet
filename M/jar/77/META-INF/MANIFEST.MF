@@ -1,0 +1,25 @@
+Manifest-Version: 1.0
+Ant-Version: Apache Ant 1.7.0
+Created-By: 10.0-b19 (Sun Microsystems Inc.)
+MIDlet-1: 宠物王国3(金)-华娱版,/icon.png,XConnection
+MIDlet-Vendor: 华娱无线
+MicroEdition-Profile: MIDP-1.0
+MIDlet-Name: 宠物王国3(金)-华娱版
+MicroEdition-Configuration: CLDC-1.0
+MIDlet-Icon: /icon.png
+MIDlet-Install-Notify: http://g3.3g.qq.com/g/s?aid=g_install&cpid=58&g
+ ameid=032&agent=N7610&feetype=S
+MIDlet-Description: 这里有数十种可爱、搞怪或凶猛的宠
+ 物们等着与你一起去冒险哦！角色扮演类游戏,适合
+ 于Nokia-N7610
+MIDlet-Version: 1.0
+ChannelFirst: WAP
+ChannelSecond: CS
+InterChannel: IC
+QQ: 0
+SmsCode1: BDE20EFA3A94BC83ecef2df701ea2c9d2d9d6b9907de19de
+SmsCode2: 703A8556C5873C2105c7ba6bf54bd82353d3dbec47490ab9
+SmsDest1: ADB0FFA03412F5D8955381D98B693D1F8D2BE5AADFE85B1A323fe9e5e9a8829f60fef81d3fcae069
+SmsDest2: 06818C025AF3AF5F232A670ED269A8FDDDF78B9910BB426760a541d9253088958a77c675fed28065
+FreeCode: 5E477C897F925939ef0d3930a7b6c95bd2b32ed45989c61f
+FreeDest: 06818C025AF3AF5F5E477C897F9259397a1fa43673750e5a9f1a6b14c5f1a27e

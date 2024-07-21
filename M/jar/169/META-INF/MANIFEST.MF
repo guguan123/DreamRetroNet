@@ -1,0 +1,9 @@
+Manifest-Version: 1.0 
+MicroEdition-Configuration: CLDC-1.0 
+MIDlet-Version: 1.0.0 
+MIDlet-Icon: /icon.png 
+MIDlet-Vendor: Gamewave 
+MIDlet-1: 凡人修仙传, /icon.png, Midlet 
+MicroEdition-Profile: MIDP-1.0 
+MIDlet-Name: 凡人修仙传 
+MIDlet-Description: 回合RPG游戏;Nokia N73;凡人修仙传 

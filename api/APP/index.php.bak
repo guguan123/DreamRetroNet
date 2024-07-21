@@ -5,7 +5,7 @@ include_once $_SERVER["DOCUMENT_ROOT"].'/system/base.php';
 include_once $_SERVER["DOCUMENT_ROOT"].'/system/system.php';
 $title = '续梦网APP主页';
 //include_once $_SERVER["DOCUMENT_ROOT"].'/M/c/header.php';
-$new = $con->query("SELECT * FROM `game` ORDER BY `id` DESC 20");
+$new = $con->query("SELECT * FROM `game` ORDER BY `id` DESC LIMIT 20");
 function get_basename($filename){
     return preg_replace('/^.+[\\\\\\/]/', '', $filename);
 }

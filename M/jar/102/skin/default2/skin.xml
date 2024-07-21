@@ -1,0 +1,448 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<Theme Name="彩智动感" Author="TTPod" Ver="1.1" EMail="Support@ttpod.com"
+	WebPage="http://www.ttpod.com">
+
+	<Bitmap ID="BACKGROUND" File="/background.png" />
+	<Bitmap ID="BACKGROUND_ROT" File="/background_rot.png" />
+	<Bitmap ID="BAR" File="/bar.png" />
+	<Bitmap ID="GUAGE" File="/guage.png" />
+	<Bitmap ID="BUTTONS" File="/buttons.png" />
+	<Bitmap ID="ICONS" File="/icons.png" />
+	<Bitmap ID="LISTICON" File="/listicon.png" />
+	<Bitmap ID="EQBAR" File="/eqbar.png" />
+	<Bitmap ID="GUAGE_ROT" File="/guage_rot.png" />
+	<Bitmap ID="BAR_ROT" File="/bar_rot.png" />
+	<Bitmap ID="DIALOG" File="/dialog.png" />
+
+	<View ID="Portait">
+		<Panel ID="Main" Background="BACKGROUND" Rect="0,0,240,320" TransRect="0,20,240,268">
+			<Dialog Title="#FFFFFF" Command="#FFFFFF" Font="0" Foreground="#FFFFFF" Background="DIALOG" />
+			
+			<Text ID="IconBKG" Rect="0,0,240,58" Background="#A0000000" />
+			
+			<Icon Rect="2,2,16,16" Background="ICONS|16,16,16,16" />
+			<Icon ID="List" Rect="20, 2, 16, 16" Background="ICONS|0,32,16,16|256" />
+			<Icon ID="Lyric" Rect="38, 2, 16, 16" Background="ICONS|0,48,16,16|256" />
+			<Icon ID="Equalizer" Rect="56, 2, 16, 16" Background="ICONS|0,64,16,16|256" />
+			
+			<Text ID="Clock" Rect="100, 1, 60, 15" Foreground="#ffffff" Background="#FFFF0000" Font="#10"/>
+			<Icon ID="AlarmIcon" Rect="168, 2, 16, 16" Bitmap="ICONS|32,16,32,16" IconNum="2" Background="#FFFF0000"/>
+			<Icon ID="SleepIcon" Rect="186, 2, 16, 16" Bitmap="ICONS|0,80,32,16" IconNum="2" Background="#FFFF0000"/>
+			<Icon ID="LightIcon" Rect="204, 2, 16, 16" Bitmap="ICONS|32,32,32,16" IconNum="2" Background="#FFFF0000"/>
+			<Icon ID="PlayIcon" Rect="222, 2, 16, 16" Bitmap="ICONS|0,0,64,16" IconNum="4" Background="#FFFF0000"/>
+			<Icon ID="RepeatIcon" Name=",A-,A-B" Rect="200, 16, 32, 16" Foreground="#0ac8ff" IconNum="3" Background="#FFFF0000"/>
+			
+			<Text ID="MusicInfo" Rect="8,20,225,20" Foreground="#ffffff" FontShadow="0" Background="#FFFF0000" Font="#10" Align="1"/>
+			<Text ID="ListIndex" Rect="8,40,225,16" Foreground="#ffffff" FontShadow="0" Background="#FFFF0000" Font="#10" Align="1"/>
+			
+			<Animation ID="NetAnimation" Rect="2,43,16,15" Bitmap="ICONS|0,96,64,15"
+				FrameNum="4" Background="#FFFF0000" Visible="false"/>
+				
+			<Analyzer ID="Analyzer" Rect="5,56,230,210" 
+			SlideWidth="6"
+			SlideForeground="#75C7EF,#FFFFFF"
+			SlideFade="#0,#75C7EF"
+			FadeSize="70"
+			 Foreground="#ffffff" 
+			 Background="#FFFF0000" SlideNum="29"/>
+			 
+			<Text ID="ControlBKG" Rect="0,196,240,104" Background="#A0000000"/>
+			
+			<LyricShow ID="LyricShow" Rect="5,266,230,18" 
+			Background="#FF000000" 
+			Foreground="#FFFFFF" 
+			FontColorSelected="#0ac8ff" 
+			Style="#110"/>
+			
+			<Slide ID="Guage" Rect="5,256,230,7" Handle="ICONS|32,48,7,7" Slide="GUAGE|0,7,230,7" Style="#100" Background="GUAGE|0,0,230,7|256" />
+			<Text ID="Lapse" Rect="2,284,44,16" Foreground="#ffffff" Background="#FFFF0000" Font="#10" FontShadow="0"/>
+			<Text ID="Duration" Rect="195,284,44,16" Foreground="#ffffff" Background="#FFFF0000" Font="#10" Align="2" FontShadow="0"/>
+			
+			<Text ID="ButtonBKG" Rect="44,289,151,31" Background="BAR|0x100"/>
+			<Button ID="PlayPauseButton" Rect="100,288,40,30" Background="0xFF000000" Bitmap="BUTTONS|0,0,120,60" StateNum="2"/>
+			<Button ID="PrevButton" Rect="45,288,40,30" Bitmap="BUTTONS|0,90,120,30" Background="0xFF000000" />
+			<Button ID="NextButton" Rect="151,288,40,30" Bitmap="BUTTONS|0,120,120,30" Background="0xFF000000" />
+			
+			<Text ID="Hint" Rect="50, 302, 140, 20" Visible="0" Foreground="#FFFFFF" Background="#FF000000" Align="1"/>
+			
+			<Slide ID="Volume" Rect="240,202,7,48" Handle="ICONS|32,48,7,7" Slide="ICONS|39,48,7,48" Style="#111" Background="ICONS|46,48,7,48|256"/>
+			
+			<Menu ID="Menu" Background="#0,#595353" 
+			Foreground="#FFFFFF" 
+			ScrollBackground="#FF000000"
+			ScrollButton="#FF000000"
+			FontColorSelected="#0ac8ff" Shadow="#0" BarSelected="#FF000000" />
+			<MenuBar ID="MenuBar" Font="#10" Background="#A0000000" Rect="0, 300, 240, 20" Padding="1,1,1,1" Foreground="#FFFFFF"/>
+			
+			<Event ID="Stop|Pause"
+				ButtonBKG="move(44,289,10,0)"
+				PlayPauseButton="move(100,288,10,0)"
+				PrevButton="move(45,288,10,0)"
+				NextButton="move(151,288,10,0)"
+			/>
+			
+			<Event ID="Play"
+				ButtonBKG="move(44,321,5,0)"
+				PlayPauseButton="move(100,320,5,0)"
+				PrevButton="move(45,320,5,0)"
+				NextButton="move(151,320,5,0)"
+			/>
+			
+			<Event ID="CoverBgUnloaded"
+				ControlBKG="move(0,196,15,0)"
+				Analyzer="sleep(500)|show()"
+				IconBKG="move(0,0,5,0)"
+				ListIndex="show()"
+			/>
+			
+			<Event ID="CoverBgLoaded"
+				ControlBKG="move(0,246,15,0)"
+				Analyzer="sleep(500)|hide()"
+				IconBKG="move(0,-18,5,0)"
+				ListIndex="hide()"
+			/>
+			
+			<Event ID="VolumeChange"
+				Volume="move(227,202,15,0)|wait(1000)|move(240,202,5,0)"
+			/>
+			
+			<Event ID="ScreenTouched"
+				Volume="move(227,202,15,0)|wait(1000)|move(240,202,5,0)"
+				ButtonBKG="move(44,289,10,0)|wait(1000)|move(44,321,5,0)"
+				PlayPauseButton="move(100,288,10,0)|wait(1000)|move(100,320,5,0)"
+				PrevButton="move(45,288,10,0)|wait(1000)|move(45,320,5,0)"
+				NextButton="move(151,288,10,0)|wait(1000)|move(151,320,5,0)"
+			/>
+		</Panel>
+		<Panel ID="List" Background="BACKGROUND" BackgroundFill="0,#A0" Rect="0, 0, 240, 320" TransRect="0,20,240,268">
+			
+			<Dialog Title="#FFFFFF" Command="#FFFFFF" Font="0" Foreground="#FFFFFF" Background="DIALOG" />
+			
+			<ListBox ID="PlayList" 
+			Rect="0, 22, 236, 273" 
+			Background="#FFFFFFFF" 
+			Font="0" 
+			Foreground="#FFFFFF" 
+			FontColorSelected="#0ac8ff" 
+			IconBitmap="LISTICON" 
+			BarSelected="#A0000000" 
+			ScrollBackground="#FF000000"
+			ItemSpace="10"
+			/>
+			
+			<Icon Rect="20,2,16,16" Background="ICONS|16,32,16,16|256" />
+			<Icon ID="Main" Rect="2, 2, 16, 16" Background="ICONS|0,16,16,16" />
+			<Icon ID="Lyric" Rect="38, 2, 16, 16" Background="ICONS|0,48,16,16|256" />
+			<Icon ID="Equalizer" Rect="56, 2, 16, 16" Background="ICONS|0,64,16,16|256" />
+			
+			<Text ID="Clock" Rect="100, 1, 60, 15" Foreground="#ffffff" Background="#FFFF0000" Font="#10"/>
+			<Icon ID="AlarmIcon" Rect="168, 2, 16, 16" Bitmap="ICONS|32,16,32,16" IconNum="2" Background="#FFFF0000"/>
+			<Icon ID="SleepIcon" Rect="186, 2, 16, 16" Bitmap="ICONS|0,80,32,16" IconNum="2" Background="#FFFF0000"/>
+			<Icon ID="LightIcon" Rect="204, 2, 16, 16" Bitmap="ICONS|32,32,32,16" IconNum="2" Background="#FFFF0000"/>
+			<Icon ID="PlayIcon" Rect="222, 2, 16, 16" Bitmap="ICONS|0,0,64,16" IconNum="4" Background="#FFFF0000"/>
+			<Icon ID="RepeatIcon" Name=",A-,A-B" Rect="200, 16, 32, 16" Foreground="#0ac8ff" IconNum="3" Background="#FFFF0000"/>
+			
+			<Animation ID="NetAnimation" Rect="2,43,16,15" Bitmap="ICONS|0,96,64,15"
+				FrameNum="4" Background="#FFFF0000" Visible="false"/>
+				
+			<Text ID="Hint" Rect="50, 302, 140, 20" Visible="0" Foreground="#FFFFFF" Background="#FF000000" Align="1"/>
+			
+			<Slide ID="Volume" Rect="240,202,7,48" Handle="ICONS|32,48,7,7" Slide="ICONS|39,48,7,48" Style="#111" Background="ICONS|46,48,7,48|256"/>
+			<Menu ID="Menu" Background="#0,#595353" 
+			Foreground="#FFFFFF" 
+			ScrollBackground="#FF000000"
+			FontColorSelected="#0ac8ff" Shadow="#0" BarSelected="#FF000000" />
+			<MenuBar Font="#10" ID="MenuBar" Rect="0, 300, 240, 20" Padding="1,1,1,1" Background="#FF000000" Foreground="#FFFFFF"/>
+			
+			<Event ID="VolumeChange"
+				Volume="move(227,202,15,0)|wait(1000)|move(240,202,5,0)"
+			/>
+		</Panel>
+
+		<Panel ID="Lyric" Background="BACKGROUND" BackgroundFill="0,#A0" Rect="0, 0, 240, 320" TransRect="0,20,240,268">
+			<Dialog Title="#FFFFFF" Command="#FFFFFF" Font="0" Foreground="#FFFFFF" Background="DIALOG" />
+			
+			<LyricShow ID="LyricShow" 
+			Background="#FF000000" 
+			Rect="1, 22, 238, 278" 
+			ItemSpace="3" 
+			Foreground="#FFFFFF" 
+			FontColorSelected="#0ac8ff" 
+			/>
+			
+			<Icon Rect="38, 2, 16, 16" Background="ICONS|16,48,16,16|256" />
+			<Icon ID="Main" Rect="2, 2, 16, 16" Background="ICONS|0,16,16,16" />
+			<Icon ID="List" Rect="20, 2, 16, 16" Background="ICONS|0,32,16,16|256" />
+			<Icon ID="Equalizer" Rect="56, 2, 16, 16" Background="ICONS|0,64,16,16|256" />
+			
+			<Text ID="Clock" Rect="100, 1, 60, 15" Foreground="#ffffff" Background="#FFFF0000" Font="#10"/>
+			<Icon ID="AlarmIcon" Rect="168, 2, 16, 16" Bitmap="ICONS|32,16,32,16" IconNum="2" Background="#FFFF0000"/>
+			<Icon ID="SleepIcon" Rect="186, 2, 16, 16" Bitmap="ICONS|0,80,32,16" IconNum="2" Background="#FFFF0000"/>
+			<Icon ID="LightIcon" Rect="204, 2, 16, 16" Bitmap="ICONS|32,32,32,16" IconNum="2" Background="#FFFF0000"/>
+			<Icon ID="PlayIcon" Rect="222, 2, 16, 16" Bitmap="ICONS|0,0,64,16" IconNum="4" Background="#FFFF0000"/>
+			<Icon ID="RepeatIcon" Name=",A-,A-B" Rect="200, 16, 32, 16" Foreground="#0ac8ff" IconNum="3" Background="#FFFF0000"/>
+			<Animation ID="NetAnimation" Rect="2,43,16,15" Bitmap="ICONS|0,96,64,15"
+				FrameNum="4" Background="#FFFF0000" Visible="false"/>
+				
+			<Text ID="Hint" Rect="50, 302, 140, 20" Visible="0" Foreground="#FFFFFF" Background="#FF000000" Align="1"/>
+			
+			<Slide ID="Volume" Rect="240,202,7,48" Handle="ICONS|32,48,7,7" Slide="ICONS|39,48,7,48" Style="#111" Background="ICONS|46,48,7,48|256"/>
+			<Menu ID="Menu" Background="#0,#595353" 
+			Foreground="#FFFFFF" 
+			ScrollBackground="#FF000000"
+			FontColorSelected="#0ac8ff" Shadow="#0" BarSelected="#FF000000" />
+			<MenuBar Font="#10" ID="MenuBar" Rect="0, 300, 240, 20" Padding="1,1,1,1" Background="#FF000000" Foreground="#FFFFFF"/>
+			
+			<Event ID="VolumeChange"
+				Volume="move(227,202,15,0)|wait(1000)|move(240,202,5,0)"
+			/>
+		</Panel>
+
+		<Panel ID="Equalizer" Background="BACKGROUND" Rect="0, 0, 240, 320" Visible="false" TransRect="0,20,240,268">
+			
+			<Equalizer ID="Equalizer" Rect="56, 116, 133, 88" 
+			Background="0xFF000000"
+			SlideBackground="EQBAR|7,0,7,87|256" 
+			SlideSelectBackground="EQBAR|0,0,7,87|256" 
+			SlideHandle="ICONS|32,48,7,7" />
+			
+			<Icon Rect="56,2,16,16" Background="ICONS|16,64,16,16|256" />
+			<Icon ID="Main" Rect="2, 2, 16, 16" Background="ICONS|0,16,16,16" />
+			<Icon ID="List" Rect="20, 2, 16, 16" Background="ICONS|0,32,16,16|256" />
+			<Icon ID="Lyric" Rect="38, 2, 16, 16" Background="ICONS|0,32,16,16|256" />
+			
+			<Text ID="Clock" Rect="100, 1, 60, 15" Foreground="#ffffff" Background="#FFFF0000" Font="#10"/>
+			<Icon ID="AlarmIcon" Rect="168, 2, 16, 16" Bitmap="ICONS|32,16,32,16" IconNum="2" Background="#FFFF0000"/>
+			<Icon ID="SleepIcon" Rect="186, 2, 16, 16" Bitmap="ICONS|0,80,32,16" IconNum="2" Background="#FFFF0000"/>
+			<Icon ID="LightIcon" Rect="204, 2, 16, 16" Bitmap="ICONS|32,32,32,16" IconNum="2" Background="#FFFF0000"/>
+			<Icon ID="PlayIcon" Rect="222, 2, 16, 16" Bitmap="ICONS|0,0,64,16" IconNum="4" Background="#FFFF0000"/>
+			<Icon ID="RepeatIcon" Name=",A-,A-B" Rect="200, 16, 32, 16" Foreground="#0ac8ff" IconNum="3" Background="#FFFF0000"/>
+			
+			<Animation ID="NetAnimation" Rect="2,43,16,15" Bitmap="ICONS|0,96,64,15"
+				FrameNum="4" Background="#FFFF0000" Visible="false"/>
+				
+			<Text ID="Hint" Rect="50, 302, 140, 20" Visible="0" Foreground="#FFFFFF" Background="#FF000000" Align="1"/>
+			
+			<Slide ID="Volume" Rect="240,202,7,48" Handle="ICONS|32,48,7,7" Slide="ICONS|39,48,7,48" Style="#111" Background="ICONS|46,48,7,48|256"/>
+			<Menu ID="Menu" Background="#0,#595353" 
+			Foreground="#FFFFFF" 
+			ScrollBackground="#FF000000"
+			FontColorSelected="#0ac8ff" Shadow="#0" BarSelected="#FF000000" />
+			<MenuBar Font="#10" ID="MenuBar" Rect="0, 300, 240, 20" Padding="1,1,1,1" Background="#FF000000" Foreground="#FFFFFF"/>
+			
+			<Event ID="VolumeChange"
+				Volume="move(227,202,15,0)|wait(1000)|move(240,202,5,0)"
+			/>
+		</Panel>
+		
+	</View>
+	
+	<View ID="Landscape">
+		<Panel ID="Main" Background="BACKGROUND_ROT" Rect="0, 0, 320, 240" TransRect="0,20,320,188">
+			<Dialog Title="#FFFFFF" Command="#FFFFFF" Font="0" Foreground="#FFFFFF" Background="DIALOG" />
+			
+			<Text ID="IconBKG" Rect="0,0,320,58" Background="#A0000000" />
+			
+			<Icon Rect="2,2,16,16" Background="ICONS|16,16,16,16" />
+			<Icon ID="List" Rect="20, 2, 16, 16" Background="ICONS|0,32,16,16|256" />
+			<Icon ID="Lyric" Rect="38, 2, 16, 16" Background="ICONS|0,48,16,16|256" />
+			<Icon ID="Equalizer" Rect="56, 2, 16, 16" Background="ICONS|0,64,16,16|256" />
+			
+			<Text ID="Clock" Rect="135,0,60,15" Foreground="#ffffff" Background="#FFFF0000" Font="#10"/>
+			<Icon ID="AlarmIcon" Rect="248,2,16,16" Bitmap="ICONS|32,16,32,16" IconNum="2" Background="#FFFF0000"/>
+			<Icon ID="SleepIcon" Rect="266,2,16,16" Bitmap="ICONS|0,80,32,16" IconNum="2" Background="#FFFF0000"/>
+			<Icon ID="LightIcon" Rect="284,2,16,16" Bitmap="ICONS|32,32,32,16" IconNum="2" Background="#FFFF0000"/>
+			<Icon ID="PlayIcon" Rect="302,2,16,16" Bitmap="ICONS|0,0,64,16" IconNum="4" Background="#FFFF0000"/>
+			<Icon ID="RepeatIcon" Name=",A-,A-B" Rect="280,16,32,16" Foreground="#0ac8ff" IconNum="3" Background="#FFFF0000"/>
+			
+			<Text ID="MusicInfo" Rect="8,20,304,20" Foreground="#ffffff" FontShadow="0" Background="#FFFF0000" Font="#10" Align="1"/>
+			<Text ID="ListIndex" Rect="8,40,304,16" Foreground="#ffffff" FontShadow="0" Background="#FFFF0000" Font="#10" Align="1"/>
+			
+			<Animation ID="NetAnimation" Rect="2,43,16,15" Bitmap="ICONS|0,96,64,15"
+				FrameNum="4" Background="#FFFF0000" Visible="false"/>
+				
+			<Analyzer ID="Analyzer" Rect="5,58,310,110" 
+			SlideWidth="8"
+			SlideForeground="#75C7EF,#FFFFFF"
+			SlideFade="#0,#75C7EF"
+			FadeSize="38"
+			 Foreground="#ffffff" 
+			 Background="#FFFF0000" SlideNum="28"/>
+			
+			<Text ID="ControlBKG" Rect="0,130,320,90" Background="#A0000000"/>
+			
+			<LyricShow ID="LyricShow" Rect="5,182,310,18" 
+			Background="#FF000000" 
+			Foreground="#FFFFFF" 
+			FontColorSelected="#0ac8ff" 
+			Style="#110"/>
+			
+			<Slide ID="Guage" Rect="5,172,310,7" Handle="ICONS|32,48,7,7" Slide="GUAGE_ROT|0,7,310,7|256" Style="#100" Background="GUAGE_ROT|0,0,310,7|256" />
+			
+			<Text ID="ButtonBKG" Rect="79,208,162,32" Background="BAR_ROT|0x100"/>
+			<Button ID="PlayPauseButton" Rect="140,208,40,30" Background="0xFF000000" Bitmap="BUTTONS|0, 0, 120, 60" StateNum="2"/>
+			<Button ID="PrevButton" Rect="82,208,40,30" Bitmap="BUTTONS|0, 90, 120, 30" Background="0xFF000000" />
+			<Button ID="NextButton" Rect="198,208,40,30" Bitmap="BUTTONS|0, 120, 120, 30" Background="0xFF000000" />
+			
+			<Text ID="Lapse" Rect="8, 200, 44, 15" Font="#10" FontShadow="0" Foreground="#ffffff" Background="#FFFF0000"/>
+			<Text ID="Duration" Rect="273, 200, 44, 15" Font="#10" FontShadow="0" Foreground="#ffffff" Background="#FFFF0000" Align="2"/>
+			
+			<Slide ID="Volume" Rect="320,132,7,48" Handle="ICONS|32,48,7,7" Slide="ICONS|39,48,7,48" Style="#111" Background="ICONS|46,48,7,48|256"/>
+			
+			<Menu ID="Menu" Background="#0,#595353" Foreground="#FFFFFF" ScrollBackground="#FF000000" FontColorSelected="#0ac8ff" Shadow="#0" BarSelected="#FF000000" />
+			<MenuBar Font="#10" ID="MenuBar" Rect="0, 220, 320, 20" Padding="1,1,1,1" Background="#A0000000" Foreground="#FFFFFF" Border="#FF000000"/>
+			
+			<Event ID="Stop|Pause"
+				ButtonBKG="move(79,208,10,0)"
+				PlayPauseButton="move(140,208,10,0)"
+				PrevButton="move(82,208,10,0)"
+				NextButton="move(198,208,10,0)"
+			/>
+			
+			<Event ID="Play"
+				ButtonBKG="move(79,240,5,0)"
+				PlayPauseButton="move(140,240,5,0)"
+				PrevButton="move(82,240,5,0)"
+				NextButton="move(198,240,5,0)"
+			/>
+			
+			<Event ID="VolumeChange"
+				Volume="move(313,132,15,0)|wait(1000)|move(320,132,5,0)"
+			/>
+			
+			<Event ID="CoverBgUnloaded"
+				ControlBKG="move(0,130,15,0)"
+				Analyzer="sleep(500)|show()"
+				IconBKG="move(0,0,5,0)"
+				ListIndex="show()"
+			/>
+			
+			<Event ID="CoverBgLoaded"
+				ControlBKG="move(0,166,15,0)"
+				Analyzer="sleep(500)|hide()"
+				IconBKG="move(0,-18,5,0)"
+				ListIndex="hide()"
+			/>
+			
+			<Event ID="ScreenTouched"
+				Volume="move(313,132,15,0)|wait(1000)|move(320,132,5,0)"
+				ButtonBKG="move(79,208,10,0)|wait(1000)|move(79,240,5,0)"
+				PlayPauseButton="move(140,208,10,0)|wait(1000)|move(140,240,5,0)"
+				PrevButton="move(82,208,10,0)|wait(1000)|move(82,240,5,0)"
+				NextButton="move(198,208,10,0)|wait(1000)|move(198,240,5,0)"
+			/>
+		</Panel>
+		
+		<Panel ID="List" Background="BACKGROUND_ROT" Rect="0, 0, 320, 240" BackgroundFill="0,#A0" TransRect="0,20,320,188">
+			<Dialog Title="#FFFFFF" Command="#FFFFFF" Font="0" Foreground="#FFFFFF" Background="DIALOG" />
+			
+			<ListBox ID="PlayList" Rect="2,22,316,196" 
+			Background="#FFFFFFFF" Font="0" 
+			Foreground="#FFFFFF" 
+			FontColorSelected="#0ac8ff" 
+			IconBitmap="LISTICON" 
+			BarSelected="#A0000000" 
+			ItemSpace="10"
+			ScrollBackground="#FF000000"
+			/>
+			
+			<Icon Rect="20,2,16,16" Background="ICONS|16,32,16,16|256" />
+			<Icon ID="Main" Rect="2, 2, 16, 16" Background="ICONS|0,16,16,16" />
+			<Icon ID="Lyric" Rect="38, 2, 16, 16" Background="ICONS|0,48,16,16|256" />
+			<Icon ID="Equalizer" Rect="56, 2, 16, 16" Background="ICONS|0,64,16,16|256" />
+			
+			<Text ID="Clock" Rect="135,0,60,15" Foreground="#ffffff" Background="#FFFF0000" Font="#10"/>
+			<Icon ID="AlarmIcon" Rect="248,2,16,16" Bitmap="ICONS|32,16,32,16" IconNum="2" Background="#FFFF0000"/>
+			<Icon ID="SleepIcon" Rect="266,2,16,16" Bitmap="ICONS|0,80,32,16" IconNum="2" Background="#FFFF0000"/>
+			<Icon ID="LightIcon" Rect="284,2,16,16" Bitmap="ICONS|32,32,32,16" IconNum="2" Background="#FFFF0000"/>
+			<Icon ID="PlayIcon" Rect="302,2,16,16" Bitmap="ICONS|0,0,64,16" IconNum="4" Background="#FFFF0000"/>
+			<Icon ID="RepeatIcon" Name=",A-,A-B" Rect="280,16,32,16" Foreground="#0ac8ff" IconNum="3" Background="#FFFF0000"/>
+			
+			<Animation ID="NetAnimation" Rect="2,43,16,15" Bitmap="ICONS|0,96,64,15"
+				FrameNum="4" Background="#FFFF0000" Visible="false"/>
+				
+			<Text ID="Hint" Rect="82, 222, 146, 20" Visible="0" Foreground="#FFFFFF" Background="#FF000000" Align="1"/>
+			
+			<Slide ID="Volume" Rect="320,132,7,48" Handle="ICONS|32,48,7,7" Slide="ICONS|39,48,7,48" Style="#111" Background="ICONS|46,48,7,48|256"/>
+			
+			<Menu ID="Menu" Background="#0,#595353" Foreground="#FFFFFF" ScrollBackground="#FF000000" FontColorSelected="#0ac8ff" Shadow="#0" BarSelected="#FF000000" />
+			<MenuBar Font="#10" ID="MENUBAR" Rect="0, 220, 320, 20" Padding="1,1,1,1" Background="#FF000000" Foreground="#FFFFFF" Border="#FF000000" />
+			
+			<Event ID="VolumeChange"
+				Volume="move(313,132,15,0)|wait(1000)|move(320,132,5,0)"
+			/>
+		</Panel>
+
+		<Panel ID="Lyric" Background="BACKGROUND_ROT" Rect="0, 0, 320, 240" BackgroundFill="0,#A0" TransRect="0,20,320,188">
+			<Dialog Title="#FFFFFF" Command="#FFFFFF" Font="0" Foreground="#FFFFFF" Background="DIALOG" />
+			
+			
+			<LyricShow ID="LyricShow" 
+			Background="#FF000000" 
+			Rect="2,22,316,196" 
+			ItemSpace="3" 
+			Foreground="#FFFFFF" 
+			FontColorSelected="#0ac8ff" 
+			/>
+			
+			<Icon Rect="38, 2, 16, 16" Background="ICONS|16,48,16,16|256" />
+			<Icon ID="Main" Rect="2, 2, 16, 16" Background="ICONS|0,16,16,16" />
+			<Icon ID="List" Rect="20, 2, 16, 16" Background="ICONS|0,32,16,16|256" />
+			<Icon ID="Equalizer" Rect="56, 2, 16, 16" Background="ICONS|0,64,16,16|256" />
+			
+			<Text ID="Clock" Rect="135,0,60,15" Foreground="#ffffff" Background="#FFFF0000" Font="#10"/>
+			<Icon ID="AlarmIcon" Rect="248,2,16,16" Bitmap="ICONS|32,16,32,16" IconNum="2" Background="#FFFF0000"/>
+			<Icon ID="SleepIcon" Rect="266,2,16,16" Bitmap="ICONS|0,80,32,16" IconNum="2" Background="#FFFF0000"/>
+			<Icon ID="LightIcon" Rect="284,2,16,16" Bitmap="ICONS|32,32,32,16" IconNum="2" Background="#FFFF0000"/>
+			<Icon ID="PlayIcon" Rect="302,2,16,16" Bitmap="ICONS|0,0,64,16" IconNum="4" Background="#FFFF0000"/>
+			<Icon ID="RepeatIcon" Name=",A-,A-B" Rect="280,16,32,16" Foreground="#0ac8ff" IconNum="3" Background="#FFFF0000"/>
+			<Animation ID="NetAnimation" Rect="2,43,16,15" Bitmap="ICONS|0,96,64,15"
+				FrameNum="4" Background="#FFFF0000" Visible="false"/>
+				
+			<Text ID="Hint" Rect="82, 222, 146, 20" Visible="0" Foreground="#FFFFFF" Background="#FF000000" Align="1"/>
+
+			<Slide ID="Volume" Rect="320,132,7,48" Handle="ICONS|32,48,7,7" Slide="ICONS|39,48,7,48" Style="#111" Background="ICONS|46,48,7,48|256"/>			
+			<Menu ID="Menu" Background="#0,#595353" Foreground="#FFFFFF" ScrollBackground="#FF000000" FontColorSelected="#0ac8ff" Shadow="#0" BarSelected="#FF000000" />
+			<MenuBar Font="#10" ID="MENUBAR" Rect="0, 220, 320, 20" Padding="1,1,1,1" Background="#FF000000" Foreground="#FFFFFF" Border="#FF000000" />
+			
+			<Event ID="VolumeChange"
+				Volume="move(313,132,15,0)|wait(1000)|move(320,132,5,0)"
+			/>
+		</Panel>
+
+		<Panel ID="Equalizer" Background="BACKGROUND_ROT" Rect="0, 0, 320, 240" Visible="false" TransRect="0,20,320,188">
+			
+			<Equalizer ID="Equalizer" Rect="94,76,133,88" 
+			Background="0xFF000000"
+			SlideBackground="EQBAR|7,0,7,87|256" 
+			SlideSelectBackground="EQBAR|0,0,7,87|256" 
+			SlideHandle="ICONS|32,48,7,7" />
+			
+			<Icon Rect="56,2,16,16" Background="ICONS|16,64,16,16|256" />
+			<Icon ID="Main" Rect="2, 2, 16, 16" Background="ICONS|0,16,16,16" />
+			<Icon ID="List" Rect="20, 2, 16, 16" Background="ICONS|0,32,16,16|256" />
+			<Icon ID="Lyric" Rect="38, 2, 16, 16" Background="ICONS|0,32,16,16|256" />
+			
+			<Text ID="Clock" Rect="135,0,60,15" Foreground="#ffffff" Background="#FFFF0000" Font="#10"/>
+			<Icon ID="AlarmIcon" Rect="248,2,16,16" Bitmap="ICONS|32,16,32,16" IconNum="2" Background="#FFFF0000"/>
+			<Icon ID="SleepIcon" Rect="266,2,16,16" Bitmap="ICONS|0,80,32,16" IconNum="2" Background="#FFFF0000"/>
+			<Icon ID="LightIcon" Rect="284,2,16,16" Bitmap="ICONS|32,32,32,16" IconNum="2" Background="#FFFF0000"/>
+			<Icon ID="PlayIcon" Rect="302,2,16,16" Bitmap="ICONS|0,0,64,16" IconNum="4" Background="#FFFF0000"/>
+			<Icon ID="RepeatIcon" Name=",A-,A-B" Rect="280,16,32,16" Foreground="#0ac8ff" IconNum="3" Background="#FFFF0000"/>
+			
+			<Animation ID="NetAnimation" Rect="2,43,16,15" Bitmap="ICONS|0,96,64,15"
+				FrameNum="4" Background="#FFFF0000" Visible="false"/>
+				
+			<Text ID="Hint" Rect="82, 222, 146, 20" Visible="0" Foreground="#FFFFFF" Background="#FF000000" Align="1"/>
+			
+			<Slide ID="Volume" Rect="320,132,7,48" Handle="ICONS|32,48,7,7" Slide="ICONS|39,48,7,48" Style="#111" Background="ICONS|46,48,7,48|256"/>
+			<Menu ID="Menu" Background="#0,#595353" Foreground="#FFFFFF" ScrollBackground="#FF000000" FontColorSelected="#0ac8ff" Shadow="#0" BarSelected="#FF000000" />
+			<MenuBar Font="#10" ID="MENUBAR" Rect="0, 220, 320, 20" Padding="1,1,1,1" Background="#FF000000" Foreground="#FFFFFF" Border="#FF000000" />
+			
+			<Event ID="VolumeChange"
+				Volume="move(313,132,15,0)|wait(1000)|move(320,132,5,0)"
+			/>
+		</Panel>
+	</View>
+</Theme>

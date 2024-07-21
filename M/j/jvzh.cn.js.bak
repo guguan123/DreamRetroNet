@@ -44,7 +44,7 @@ function getUID() {
 class TPL {
 	static gamesimple(json) {
 		return json.games.map(game => {
-			return `<li><a href="/game/${game.id}${game.local}"><img src="/M/i/${game.id}.png"width="46"height="46"alt="${game.name}&#22270;&#26631;"/>${game.chinese||game.name}</a></li>`
+			return `<li><a href="/game/${game.id}"><img src="/M/i/${game.id}.png"width="46"height="46"alt="${game.name}&#22270;&#26631;"/>${game.chinese||game.name}</a></li>`
 		}).join('')
 		//><img src="/M/i/${game.id}.png"width="46"height="46"alt="${game.name}&#22270;&#26631;"/>${game.chinese||game.name}</a>
 	}
@@ -53,7 +53,8 @@ class TPL {
 		return json.comments.map(comment => {
 		
 		//<a href="/info/'.$us['id'].'"><span class="user-img"><img class="Avatar" src="http://thirdqq.qlogo.cn/g?b=oidb&amp;nk='.$us['qq'].'&amp;s=40&amp;t='.$us['up_time'].'" width="24" height="24" alt="头像" />'.$v.'</a><div><p><a href="/info/'.$us['id'].'">'.$us['name'].''.$on_off.''.$dol.'</p><div class="quote small-font"><a href="/info/'.$us['id'].'"></a>
-			return `<li class="clearfix${comment.users_id==uid?' myself':''}"><a href="/user/${comment.users_id}${comment.local}"><img class="Avatar" src="${comment.avatar}"width="24"height="24" alt="头像"/></a><div><p><a href="/user/${comment.users_id}${comment.local}">${comment.nickname}</a>：${comment.content}</p>${comment.reply_uid?`<div class="quote small-font"><a href="/user/${comment.reply_uid}${comment.local}">${comment.reply_nickname}</a>：${comment.reply_content}</a></p>`:''}</div><div class="small-font">${_dateline(comment.dateline)}&nbsp;${comment.pro}&nbsp;<a href="/reply/${comment.id}${comment.local}">&#22238;&#22797;</a>&nbsp;<a href="/feedbacks/add?games_id=${comment.games_id}&amp;comments_id=${comment.id}${comment.local1}">举报</a>&nbsp;<a class="right" href="/game/${comment.game_id}${comment.local}">查看游戏</a></div></div></li>`
+			
+			return `<li${comment.users_id==uid?' class="myself"':''}><a href="/user/${comment.users_id}"><img src="${comment.avatar}"width="46"height="46"alt="头像"/></a><div><p>${comment.content}</p>${comment.reply_uid?`<blockquote><a href="/user/${comment.reply_uid}">${comment.reply_nickname}</a>：${comment.reply_content}</blockquote>`:''}<div><a href="/user/${comment.users_id}">${comment.nickname}</a><span>${_dateline(comment.dateline)}</span><a href="/comments/reply/${comment.id}">&#22238;&#22797;</a><a href="/feedbacks/add?games_id=${comment.games_id}&amp;comments_id=${comment.id}">举报</a></div></div></li>`
 		}).join('')
 	}
 	static packagelist(json) {
@@ -72,7 +73,7 @@ class TPL {
 		$d.querySelector('[data-tpl="packagelist"]').classList.add('package_num' + class_value);
 		return json.packages.map(_package => {
 
-			return `<li><a href="/user/${_package.users_id}" class="right" ><img class="Avatar" src="${_package.avatar}" alt="头像" width="24" height="24"></img><a href="/game/download/${_package.id}"title="${_package.nickname || ''}">${_package.resolution}</a><div class="small-font">v${_package.version}&nbsp;&nbsp;${_kb(_package.size)}&nbsp;&nbsp;${_package.online}&nbsp;&nbsp;${_package['lang']}</li>`
+			return `<a href="/user/${_package.users_id}" class="rigth"><img class="Avatar" src="${_package.avatar}" alt="头像" width="24" height="24"><a href="/game/package/${_package.id}"title="${_package.nickname || ''}"><strong>${_package.resolution}</strong><div>v${_package.version}&nbsp;${_kb(_package.size)}&nbsp;${_package.online}&nbsp;${_package['lang']}</div></a>`
 		}).join('')
 	}
 	static screenlist(json) {
@@ -164,4 +165,24 @@ if (/games\/uploadGame$/.test($d.URL)) {
 			console.log(e);
 		});
 	}, true);
-}
+};
+
+
+   $('#tab span').click(function(){
+	$navEx = $('#tab').nextAll();
+	$index = $(this).index();
+	$('#tab span').removeClass('cur');
+	$('#tab span').eq($index).addClass('cur');
+	for($ii=0;$ii<$navEx.length;$ii++){
+		$item = $($navEx[$ii]);
+		if($index == 0){
+			$item.show();
+		}else{
+			$item.hide();
+		}
+		if($item.hasClass('app_comment')){
+			$item.show();
+			break;
+		}
+	}
+})

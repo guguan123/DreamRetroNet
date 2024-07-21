@@ -1,0 +1,2 @@
+<?php die('forbidden'); ?>
+{"appid":"102054372","appkey":"QnyxlKejZAVbR1MR","callback":"https://jvzh.cn/login/qq","scope":"get_user_info","errorReport": true,"storageType":"file","host":"localhost","user":"root","password":"root","database":"test"}

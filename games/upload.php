@@ -1,21 +1,13 @@
 <?php
 include_once $_SERVER["DOCUMENT_ROOT"].'/system/base.php';
-$title = '上传';
-include_once $_SERVER["DOCUMENT_ROOT"].'/M/c/header.php';
-if($user['admin_level']=="禁言"){
+include_once $_SERVER["DOCUMENT_ROOT"].'/system/system.php';
+$title = '游戏上传';
+echo '<title>'.$title.'</title>';    
+	    if($user['admin_level']=="禁言"){
 echo '<link rel="stylesheet" href="/M/c/notice.css">';
 echo '<body id="notice"><h2 class="topic">消息提示</h2><p>请登录之后再操作</p></body>';
 exit();
 }
-echo '<body class="subpage"><div id="header"><a href="#back" onclick="history.back();" class="iconfont icon-fanhui" title="'.$exit.'"></a>';
-
-echo '<h1>'.$title.'</h1><a href="/"><img src="/favicon.ico" width="32" height="32" alt="'.$title2.'logo" /><h1>'.$title2.'</h1>';
-
-include_once $_SERVER["DOCUMENT_ROOT"] . '/M/c/user.php';
-echo '<div id="nav" class="container"><a href="/">首页</a><span>'.$title.'</span></div>';
-echo '<main class="container"><div id="main">';
-
-
 if($user) {
 	if(isset($_POST['submit'])) {
 		$filename = strtolower($_FILES['userfile']['name']);
@@ -309,24 +301,34 @@ if ($f == ".jar"){
 $list = get_file_folder_List("jar", 2, '*');
 //foreach ($list as $i => $file) {
     $ftext = readZipText("../download/".$rand."".$f."". $file, "META-INF/MANIFEST.MF"); 
-    $ticon = readZipText("../download/".$rand."".$f."". $file, getJarIconName($ftext));
 $file_login = ''.getJarIniName($ftext, "MIDlet-Name").'';
 $file_author = ''.getJarIniName($ftext, "MIDlet-Vendor").'';
+$file_vv = ''.getJarIniName($ftext, "MIDlet-Version").'';
+$file_text = ''.getJarIniName($ftext, "MIDlet-Description").'';
+$file_v = trim($file_vv);
 $jar_name = trim($file_login);
 $jar_vendor = trim($file_author);
-$platform = 'J2ME';
+$jar_version = trim($file_v);
+$jar_text = trim($file_text);
+$platform = 'java';
 }
 else if ($f == ".mrp"){
 $s=getmrp("../download/".$rand.".mrp");
+$mid = str_replace('&','&',$s['id']);
+$mmid = str_replace('&','&',$s['id2']);
+$version = $mid ?: $mmid;
 $mrp_name = $s['xn'];
 $mrp_vendor = $s['zz'];
-$fid = 'mrp';
-$platform = 'MRP';
+$mrp_version = $version;
+//$fid = 'mrp';
+$platform = 'mrp';
 }
 $size = getFilesizes($_SERVER['DOCUMENT_ROOT'].'/download/'.$rand.''.$f.'');
 $names = $jar_name ?: $mrp_name;
 $vendors = $jar_vendor ?: $mrp_vendor;
-    $upload = $con->query("SELECT name,author,dpi,size FROM `game` WHERE `name` = '".$names."' AND `author` = '".$vendors."' AND `dpi` = '".$dpi."' AND `size` = '".$size."'")->fetch_assoc();
+$versions = $jar_version ?: $mrp_version;
+$text2 = $jar_text ?: $jar_name;
+    $upload = $con->query("SELECT name,author,dpi,size FROM `game` WHERE `name` = '".$names."' AND `author` = '".$vendors."' AND `size` = '".$size."'")->fetch_assoc();
 //    $key = getJarIniName($ftext, "MIDlet-Name");
 //$uploads = $con->query("SELECT * FROM `game` WHERE `name` = '" . getJarIniName($ftext, "MIDlet-Name") . "' ORDER BY `id` DESC")->num_rows;
   //  $f = $upload['id'];
@@ -340,30 +342,13 @@ exit();
    // echo "Error: " . $sql . "<br>" . $con->error;
 //}
 //$con->query("UPDATE `games` SET `id_game` = '".$up."', `id_user` = '".$user['id']."', `baidu_pic` = '".$_SESSION['smallpic']."' WHERE `baidu_id` = '$baidu_id'"););
-}else{
-if ($f == ".jar"){
-$file = "../download/".$rand."".$f."";
-$outPath = "../M/jar/".$fid."/";
-$zip = new ZipArchive();
-$openRes = $zip->open($file);
-if ($openRes === TRUE) {
-  $zip->extractTo($outPath);
-  $zip->close();
-}
-
-$file_path='../M/jar/'.$fid.'/' . getJarIconName($ftext) . '';
-$to_file_path='../M/i/'.$fid.'.png';
-if(copy($file_path,$to_file_path)){
-  echo 'copy ok';
-}else{
-  echo 'error';
-  $fid = 'jar';
-}
 }
 //echo copy("../download/".$fid."/" .getJarIconName($ftext) ."","../M/i/".$fid.".png"); 
 //$con->query("INSERT INTO `game` (`id_raz`, `id_user`, `name`, `author`, `icon`, `platform`) VALUES ('{$id_raz}', '{$user['id']}', '" .$jar_name."', '".$jar_vendor."', '$fid.png', 'J2ME')");
-$con->query("INSERT INTO `game` (`id`, `raz`, `id_user`, `icon`, `name`, `author`, `platform`, `down`, `zh`, `size`, `DJ`, `dpi`, `time`, `format`) VALUES (NULL, '".$raz."', '".$user['id']."', '".$fid.".png', '".$names."', '".$vendors."', '".$platform."', '".$rand.$f."', '".$zh."', '".$size."', '".$DJ."', '".$dpi."', '".time()."', '".$f."')");
+if ($names){
+$con->query("INSERT INTO `game` (`id`, `raz`, `id_user`,  `name`, `author`, `platform`, `down`, `zh`, `size`, `DJ`, `dpi`, `text`, `v`, `time`, `format`) VALUES (NULL, '".$raz."', '".$user['id']."', '".$names."', '".$vendors."', '".$platform."', '".$rand.$f."', '".$zh."', '".$size."', '".$DJ."', '".$dpi."', '".$text2."', '".$versions."', '".time()."', '".$f."')");
 }
+
 //if ($con->query("INSERT INTO `games` (`id`, `id_game`, `id_user`, `down`, `zh`, `vv`, `DJ`, `pay`, `dpi`, `time`, `format`) VALUES (NULL, '$up', '{$user['id']}', '$rand$f', '{$zh}', '{$vv}', '{$DJ}',  '{$pay}', '{$dpi}', '".time()."', '{$f}')"); === TRUE) {
     //echo "新记录插入成功";
 //} else {
@@ -390,6 +375,13 @@ exit();
 //<b>分类</b></br><select name="class">';
 //$b = $con->query("SELECT * FROM `class`");
 	//while($w = $b->fetch_assoc()) {
+		    include_once $_SERVER["DOCUMENT_ROOT"].'/M/c/header.php';
+
+	    include_once $_SERVER["DOCUMENT_ROOT"] . '/M/c/user.php';
+	echo '</header><div id="where"><a href="/">首页</a>'.$title.'</div>';
+	
+echo '<main class="container"><div id="main">';
+	
 	echo '<h2 class="topic">上传游戏</h2>
 	<form action="" method="post" enctype="multipart/form-data" class="form"><div>
 	<label>分辨率：</label>
@@ -420,6 +412,7 @@ exit();
     <label>类型：</label>
 	<select name="raz" required="required">
 	<option value=""></option>
+	<option value="GAL">GAL - 美少女游戏</option>
 	<option value="ACT">ACT - 动作游戏</option>
 	<option value="ARPG">ARPG - 动作角色扮演</option>
 	<option value="AVG">AVG - 冒险游戏</option>
@@ -433,7 +426,8 @@ exit();
 	<option value="SLG">SLG - 战略模拟</option>
 	<option value="SPG">SPG - 体育游戏</option>
 	<option value="STG">STG - 射击游戏</option>
-	<option value="APP">APP - 应用软件</option>
+    <option value="PUZ">PUZ - 益智游戏</option>
+    <option value="TAB">TAB - 桌面游戏</option>
 	</select></div><div>
 	<label>语言：</label>
 	<select name="zh" required="required">
@@ -447,11 +441,11 @@ exit();
     <option value="互联网">互联网</option>
     <option value="局域网">局域网</option>
     </select></div><div>
-	<label>JAR包：</label>
+	<label>安装包：</label>
 	<input type="file" name="userfile" required="required" id="userfile"></div><div>
 	<input type="submit" name="submit" value="提交" /></div>
 	</form></div>';
-	echo '<div id="aside"><h2 class="topic">注意事项</h2><ul class="list list1"><li>1、请选择正确的分辨率和游戏类型</li><li>2、目前仅可上传JAR格式的手机游戏</li><li>3、SIS和Ngage格式<a href="/games/uploadGame"><em>点击这里</em></a></li><li>4、最大上传容量10MB</li></ul></div></main>';
+	echo '<div id="aside"><h2 class="topic">注意事项</h2><ul class="list list1"><li>1、请选择正确的分辨率和游戏类型</li><li>2、目前仅可上传MRP,JAR格式的手机游戏</li><li>3、SIS和Ngage格式<a href="/games/uploadGame"><em>点击这里</em></a></li><li>4、最大上传容量10MB</li></ul></div></main>';
 	
 
 } else {

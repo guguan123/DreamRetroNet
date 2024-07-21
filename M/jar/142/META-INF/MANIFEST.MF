@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+MIDlet-Name: 轩辕传奇
+MIDlet-Version: 1.00
+MIDlet-Vendor: X6GAME
+MIDlet-Description: 角色扮演,X6GAME,看主角成为真正的轩辕剑
+MIDlet-Icon: /icon.png
+MIDlet-1: 轩辕传奇-王者之剑,/icon.png,GameMIDlet
+MicroEdition-Configuration: CLDC-1.0
+MicroEdition-Profile: MIDP-1.0
+Polish-Version: 2.0.4 (2008-06-30)

@@ -1,0 +1,7 @@
+MIDlet-1: 神兽传说3-救赎大陆, /icon.png, CMidlet
+MIDlet-Name: 神兽传说3-救赎大陆
+MIDlet-Icon: /icon.png
+MIDlet-Vendor: SPHINX
+MIDlet-Version: 1.0
+MicroEdition-Configuration: CLDC-1.0
+MicroEdition-Profile: MIDP-2.0

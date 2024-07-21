@@ -3,7 +3,8 @@
 include_once $_SERVER["DOCUMENT_ROOT"].'/system/base.php';
 $title = '常见说明';
 include_once $_SERVER["DOCUMENT_ROOT"].'/M/c/header.php';
-
+echo '<title>'.$title.'</title>';
+echo '</head>'; 
 
 echo '<body class="subpage"><div id="header"><a href="#back" onclick="history.back();" class="iconfont icon-fanhui" title="'.$exit.'"></a>';
 

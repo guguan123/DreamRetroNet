@@ -16,19 +16,7 @@ header('Location: /install/');
 //<link rel="stylesheet" href="/style/reset.css" type="text/css"/>
 //<link rel="stylesheet" href="/style/iconfont.css" type="text/css"/>
 
-echo '
-<?xml version="1.0"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML Basic 1.0//EN" "http://www.w3.org/TR/xhtml-basic/xhtml-basic10.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="zh-CN">
-<head><meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
-<meta http-equiv="Content-Type" content="application/xhtml+xml;charset=utf-8" />
-<meta name="KeyWords" content="诺基亚,索尼爱立信,怀旧游戏,功能机游戏,塞班游戏,java游戏,java游戏安卓模拟器,码农李白,塞班游戏,java应用商店">
-<meta name="description" content="码农李白续梦网，这里可以下载李白视频和直播中推荐的所有塞班JAVA游戏，还有好用的安卓塞班JAVA游戏模拟器。">
-<link href="/M/c/wap.css" type="text/css" rel="stylesheet" media="screen" />
-';
-
-
-
-include_once $_SERVER["DOCUMENT_ROOT"].'/wap/system/system.php';
+include_once $_SERVER["DOCUMENT_ROOT"].'/system/system.php';
 
 
 
@@ -49,11 +37,47 @@ $start_time = $start_array[1] + $start_array[0];
 
 
 
-if(!$title) $title = '续梦网：珍藏即将遗失的功能机JAVA游戏软件';
-if(!$title2) $title2 = '续梦网';
-echo '<title>'.$title.'</title>';
-echo '</head><body>
-';
+if(!$title) $title = '续梦网';
+if(!$title1) $title1 = ' - 续梦网';
+if(!$title2) $title2 = '续梦网 - 手机游戏开发者之家，梦起飞的地方。';
+//
+if(!$description) $description = '';
+if(!$keywords) $keywords = '';
+echo '<!--?xml version="1.0"?-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML Basic 1.0//EN" "http://www.w3.org/TR/xhtml-basic/xhtml-basic10.dtd">
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/ xml:lang=xhtml""zh-CN">
+<head>
+<link rel="canonical" href="http://wap.rmct.cn'.$_SERVER['REQUEST_URI'].'">
+<link rel="alternate" href="http://wap.rmct.cn'.$_SERVER['REQUEST_URI'].'" hreflang="zh-cn">
+<meta http-equiv="Content-Type" content="application/xhtml+xml;charset=utf-8">
+<title>'.$title.'</title>
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+<style type="text/css">
+            body{
+                line-height:1.5;
+                color:#282828;
+                background-color:#fff;
+            }
+            a{ color:#1874cd; text-decoration:none;}
+            .menu01{
+                background-color:#e84218;
+                border-top:1px solid #C0D9F1;
+                line-height:25px;
+                text-indent:0.3em;
+                width:100%;
+                color:#FFF;}
+            .menu02{ background-color:#ef8526; color:#FFF;}
+            .menu03{ background-color:#fff6ee; color:#FFF;}
+            .c_white01{ color:#FFF; text-decoration:underline;}
+            .c_white02{ color:#FFF; text-decoration:none;}
+            a.txt01{ text-decoration:underline;}
+            .info_1{ background-color:#fff;}
+            .info_2{ background-color:#e8e8e8;}
+            .content_1{ border-top:#d8d8d8 1px dotted;}
+            .content_2{ border-top:#d8d8d8 1px dotted;}
+ </style></head>';
 uphold();
 //if(!$user){
 //echo '<a href="/auth">登录</a>|<a href="/reg">注册</a>';

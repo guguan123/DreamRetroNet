@@ -1,0 +1,12 @@
+Manifest-Version: 1.0
+MIDlet-Name: Phoenix W. 2-2
+MIDlet-Version: 1.0.1
+MIDlet-Vendor: Capcom
+MIDlet-1: Phoenix W. 2-2, /icon.png, phoenix
+MicroEdition-Profile: MIDP-2.0
+MicroEdition-Configuration: CLDC-1.0
+MIDlet-Icon: /icon.png
+Created-by: J2ME suite
+Created-By: Metaflow
+
+

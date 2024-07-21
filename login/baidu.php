@@ -1,7 +1,7 @@
 <?php
 include_once $_SERVER["DOCUMENT_ROOT"].'/system/base.php';
 //$title = '搜索';
-include_once $_SERVER["DOCUMENT_ROOT"].'/M/c/header.php';
+include_once $_SERVER["DOCUMENT_ROOT"].'/system/system.php';
 //aut();
 //echo '<div id="header"><a href="#back" onclick="history.back();" class="iconfont icon-fanhui"></a>';
 //echo '<h1>续梦网</h1>';
@@ -74,7 +74,10 @@ $baidu = md5($_SESSION['baidu_id']);
   {
     $ip=$_SERVER['REMOTE_ADDR'];
   }
-
+echo $baidu;
+echo $_SESSION['baidu_id'];
+//echo $_SESSION['nickname'];
+//echo $_SESSION['smallpic'];
 if ($baidu){
  $user_num = $con->query(" SELECT * FROM `user` WHERE `baidu` = '$baidu'")->num_rows;
  $user_mss = $con->query(" SELECT * FROM `user` WHERE `baidu` = '$baidu'")->num_rows;
@@ -83,17 +86,21 @@ if ($baidu){
 //var_dump($user_num);
     if ($user_num > 0){
     $con->query("UPDATE `user` SET `name` = '".$_SESSION['nickname']."', `baidu_avatar` = '".$_SESSION['smallpic']."', `pol` = '未知' WHERE `baidu` = '$baidu'");
-     setcookie('BAEID', $baidu, time()+86400*365, '/');  
+     setcookie('BAEID', $baidu, time()+86400*365, '/', 'rmct.cn');  
 $user_mss = $con->query(" SELECT * FROM `user` WHERE `baidu` = '$baidu'")->fetch_assoc();
      $con->query("INSERT INTO `log_auth` (`id_user`, `time`, `type`, `ip`) VALUES ('".$user_mss['id']."', '".time()."', '1', '".$ip."')");
     }else{
       $us = $con->query("INSERT INTO `user` (`id`, `baidu`, `name`, `baidu_avatar`, `pol`, `data_reg`) VALUES (NULL, '{$baidu}', '{$_SESSION['nickname']}', '{$_SESSION['smallpic']}', '未知', '".time()."')");
-      setcookie('BAEID', $baidu, time()+86400*365, '/');  
+      setcookie('BAEID', $baidu, time()+86400*365, '/', 'rmct.cn');  
       $con->query("INSERT INTO `log_auth` (`id_user`, `time`, `type`, `ip`) VALUES ('".$us['id']."', '".time()."', '1', '".$ip."')");
 
- }             
+ }
+//if ($con->query("INSERT INTO `user` (`id`, `baidu`, `name`, `baidu_avatar`, `pol`, `data_reg`) VALUES (NULL, '{$baidu}', '{$_SESSION['nickname']}', '{$_SESSION['smallpic']}', '未知', '".time()."')"); === TRUE) {
+   // echo "新记录插入成功";
+//} else {
+   // echo "Error: " . $sql . "<br>" . $con->error;
+//}
     }  
-    
-header("Location: ".'/');
+header("Location: ".'/?login=baidu');
 ?>
 

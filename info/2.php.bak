@@ -3,8 +3,7 @@
 include_once $_SERVER["DOCUMENT_ROOT"].'/system/base.php';
 $title = '联系我们';
 include_once $_SERVER["DOCUMENT_ROOT"].'/M/c/header.php';
-
-
+echo '<title>'.$title.'</title>';
 echo '<body class="subpage"><header><a href="#back" onclick="history.back();" class="iconfont icon-fanhui" title="返回"></a>';
 echo '<h2>'.$title.'</h2><a href="/"><img src="/favicon.ico" width="32" height="32" alt="续梦网logo" /><h1>'.$title2.'</h1>';
 include_once $_SERVER["DOCUMENT_ROOT"] . '/M/c/user.php';
@@ -14,8 +13,21 @@ echo '<span>'.$title.'</span></div>';
 echo '<main class="container"><div id="main">';
 
 echo '<div class="article"><h1>'.$title.'</h1><div class="content"><p>Email：3475272270@qq.com</p>
-<p><a href="https://wpa.qq.com/msgrd?v=3&uin=3475272270&site=qq&menu=yes">联系QQ：3475272270</a></p>
-<p><a target="_blank" href="https://qm.qq.com/cgi-bin/qm/qr?k=l0TAHn1YjcTGmUsxWeBu1JrHM5FD8ysy&jump_from=webapi"><img border="0" src="//pub.idqqimg.com/wpa/images/group.png" alt="续梦网官方交流①群" title="续梦网官方交流①群"></a></p>
+<p><a href="https://wpa.qq.com/msgrd?v=3&uin=3475272270&site=qq&menu=yes">联系QQ：3475272270（不安全）</a></p>
+<p><a href="//www.larksuite.com/invitation/page/add_contact/?token=878t7b14-252f-4a6a-bf6e-d9606491de8r&amp;unique_id=xYSS7muHhM0-gtUYB4MPyw==">Lark：啊龙（推荐）</a></p>
+<p><a href="//applink.larksuite.com/client/chat/chatter/add_by_link%3Flink_token=067j5ae0-af7f-4f77-ad81-9758c52d045i">Lark群：续梦网粉丝养老院（推荐）</a></p>
+<p><a target="_blank" href="https://qm.qq.com/cgi-bin/qm/qr?k=jsbueNJbM-eR_qNaIouq9pNRgzr9BBWs&jump_from=webapi&authKey=YBadFpnnZ/z43lS2Xc4T8KqjpmtYM7tMh4ygNG4tNR8i9mTVEZYmyJR4RE6lSCF2">QQ群：457212821（不安全）</a></p>
+<p><a href="//t.me/miniworldal">Telegram：miniworldal</a></p>
+<p><a href="//t.me/minijvzh">Telegram群：续梦网 Nokia Ovi</a></p>
+<p>Discord：迷你世界☘️啊龙Mini World ☘️ Ah Dragon#4967</p>
+<p><a href="//discord.gg/a5gP4R6e">Discord服务器：续梦网 Nokia Ovi</a></p>
+<p><a href="https://hd.yixin.im/hd/static/talk-personal-web/index.html?id=301086481">易信：迷你世界☘️啊龙</a></p>
+<h1>相关自媒体</h1>
+<p><a href="//v.kuaishou.com/OEWwcf">快手：迷你世界☘️啊龙</a></p>
+<p><a href="//b23.tv/2Drlm0q">哔哩哔哩：迷你世界啊龙</a></p>
+<p><a href="//v.ixigua.com/SC5ceuq/">西瓜视频：迷你世界啊龙</a></p>
+<p><a href="//m.acfun.cn/upPage/50996796?sid=052efd81ad22b603">AcFun：迷你世界☘️啊龙</a></p>
+<p><a href="//h5.weishi.qq.com/weishi/personal/1551616801799230/wspersonal?_wv=1&id=1551616801799230&spid=1551616801799230">微视：迷你世界☘️啊龙</a></p>
 </div></div></div>';
 include_once $_SERVER["DOCUMENT_ROOT"].'/info/top.php';
 

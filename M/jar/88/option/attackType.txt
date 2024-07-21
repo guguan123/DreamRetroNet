@@ -1,0 +1,6 @@
+﻿////人物战斗属性
+
+@count=1
+
+@attackType|@id=0|@name=金|@color=16777215
+

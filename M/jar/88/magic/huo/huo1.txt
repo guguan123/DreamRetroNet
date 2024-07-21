@@ -1,0 +1,5 @@
+<init>
+@name:/magic/huo/huo1.ani
+@count:1
+@frames:5
+</init>

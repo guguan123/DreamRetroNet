@@ -1,0 +1,36 @@
+<?php
+
+$end_time = microtime();
+
+$end_array = explode(" ", $end_time);
+
+$end_time = $end_array[1] + $end_array[0];
+
+$time = $end_time - $start_time;
+
+echo '<script src="/static/jquery.min.js"></script><script src="/static/webset.js"></script><script src="/static/xmwds.com.js"></script><script src="/static/jquery.js"></script></script><script type="text/javascript" src="/static/script.js"></script>';
+echo '<footer>&copy;2016-';
+echo date('Y');
+echo '<a href="//beian.miit.gov.cn/">滇ICP备2023008217号-1</a><br><a href="/info/1">负责声明</a><a href="/info/2">联系我们</a><a href="/info/3">捐助我们</a><a href="/info/4">常见问题</a><a href="/link">友情链接</a><a href="//iniche.cn/static/JL-Iniche-ver.221006.2130-release.apk">安卓模拟器</a>';
+echo '</footer>';
+//echo '</div></div></div>';
+//echo '</div></div></div>';
+//</div>
+//</div>
+//</div>
+//<div class="bottom">
+//    <div id="body">java游戏<a href="/">乐园</a> 2019</div>
+//</div>';
+?>
+
+<script>
+        $(".open_btn").click(function(){
+            if($(this).hasClass("active")){
+                $(".txtcont").removeClass("active");
+                $(this).removeClass("active").text('展开');
+            }else{
+                $(".txtcont").addClass("active");
+                $(this).addClass("active").text('收起');
+            }
+        })
+    </script>

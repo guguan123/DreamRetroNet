@@ -1,0 +1,13 @@
+12,6
+a3,249
+60,90,90
+60,45
+90,60,60,60,60,60
+dingdup
+85035
+433,429,430,431,432
+dingyun_128X128_RGBA
+jiantexiao_32X32_RGBA
+jiantexiao_32X32_RGBA
+dao_64X128
+dao_64X128

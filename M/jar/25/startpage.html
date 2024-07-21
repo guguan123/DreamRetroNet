@@ -1,0 +1,123 @@
+<html>
+  <head>
+    <title>Start Page</title>
+    <style>
+      .dir_rtl{ DIRECTION:RTL; BACKGROUND-POSITION: 4.0% 50.0%;}
+      .dir_ltr{ DIRECTION:LTR; }
+      .cpanetitle{BACKGROUND-COLOR:#343434;BACKGROUND-IMAGE:URL('file://title_bar_background.png');BACKGROUND-REPEAT:REPEAT-X;PADDING-TOP:3.0PX;PADDING-LEFT:6.0PX;PADDING-BOTTOM:3.0PX;PADDING-RIGHT:0.0PX;COLOR:#FFFFFF; }
+      .hidden{DISPLAY:NONE;}
+      .shown{DISPLAY:BLOCK;}
+      .div_item { BACKGROUND-COLOR:#EFEFEF;BORDER-BOTTOM-COLOR:#BEBEBE;BORDER-BOTTOM-STYLE:SOLID;BORDER-BOTTOM-WIDTH:1.0PX;BORDER-LEFT-COLOR:#EFEFEF;BORDER-LEFT-STYLE:SOLID;BORDER-LEFT-WIDTH:1.0PX;BORDER-RIGHT-COLOR:#EFEFEF;BORDER-RIGHT-STYLE:SOLID;BORDER-RIGHT-WIDTH:1.0PX;BORDER-TOP-COLOR:#F9F9F9;BORDER-TOP-STYLE:SOLID;BORDER-TOP-WIDTH:1.0PX;MARGIN-BOTTOM:0.0PX;MARGIN-LEFT:0.0PX;MARGIN-RIGHT:0.0PX;MARGIN-TOP:0.0PX;PADDING-BOTTOM:7.0PX;PADDING-LEFT:3.0PX;PADDING-RIGHT:3.0PX;PADDING-TOP:7.0PX;TEXT-OVERFLOW-MODE:ELLIPSIS;OVERFLOW:HIDDEN; }
+      .span_item { MARGIN-BOTTOM:0.0PX;MARGIN-LEFT:0.0PX;MARGIN-RIGHT:0.0PX;MARGIN-TOP:0.0PX;PADDING-BOTTOM:4.0PX;PADDING-LEFT:4.0PX;PADDING-RIGHT:4.0PX;PADDING-TOP:4.0PX;FONT-SIZE:MEDIUM;COLOR:#555555; }      
+      .div_item_folder { BACKGROUND-COLOR:#DFDFDF;BORDER-BOTTOM-COLOR:#BEBEBE;BORDER-BOTTOM-STYLE:SOLID;BORDER-BOTTOM-WIDTH:1.0PX;BORDER-LEFT-COLOR:#EFEFEF;BORDER-LEFT-STYLE:SOLID;BORDER-LEFT-WIDTH:1.0PX;BORDER-RIGHT-COLOR:#EFEFEF;BORDER-RIGHT-STYLE:SOLID;BORDER-RIGHT-WIDTH:1.0PX;BORDER-TOP-COLOR:#F9F9F9;BORDER-TOP-STYLE:SOLID;BORDER-TOP-WIDTH:1.0PX;MARGIN-BOTTOM:0.0PX;MARGIN-LEFT:0.0PX;MARGIN-RIGHT:0.0PX;MARGIN-TOP:0.0PX;PADDING-BOTTOM:7.0PX;PADDING-LEFT:3.0PX;PADDING-RIGHT:3.0PX;PADDING-TOP:7.0PX;TEXT-OVERFLOW-MODE:ELLIPSIS;OVERFLOW:HIDDEN; }
+      .span_item_folder { MARGIN-BOTTOM:0.0PX;MARGIN-LEFT:0.0PX;MARGIN-RIGHT:0.0PX;MARGIN-TOP:0.0PX;PADDING-BOTTOM:4.0PX;PADDING-LEFT:4.0PX;PADDING-RIGHT:4.0PX;PADDING-TOP:4.0PX;FONT-SIZE:MEDIUM;COLOR:#555555; }
+	  .no_wrap { WHITE-SPACE:NOWRAP; }      
+      .td_space{MARGIN-TOP:0.0PX;MARGIN-LEFT:0.0PX;MARGIN-BOTTOM:0.0PX;MARGIN-RIGHT:0.0PX;PADDING-TOP:0.0PX;PADDING-LEFT:0.0PX;PADDING-BOTTOM:0.0PX;PADDING-RIGHT:0.0PX;}               
+      .backDiv{BACKGROUND-COLOR:#666666;WIDTH:100%;MARGIN-TOP:0.0PX;MARGIN-LEFT:0.0PX;MARGIN-BOTTOM:0.0PX;MARGIN-RIGHT:0.0PX;PADDING-TOP:2.0PX;PADDING-LEFT:0.0PX;PADDING-BOTTOM:2.0PX;PADDING-RIGHT:0.0PX;}
+      .table_url_search{BACKGROUND-COLOR:#666666;WIDTH:100%;MARGIN-TOP:0.0PX;MARGIN-LEFT:0.0PX;MARGIN-BOTTOM:0.0PX;MARGIN-RIGHT:0.0PX;PADDING-TOP:0.0PX;PADDING-LEFT:0.0PX;PADDING-BOTTOM:0.0PX;PADDING-RIGHT:0.0PX;}
+      .fav_img{WIDTH:16.0PX;HEIGHT:16.0PX;PADDING-TOP:0.0PX;PADDING-LEFT:4.0PX;PADDING-BOTTOM:0.0PX;PADDING-RIGHT:4.0PX;VERTICAL-ALIGN:MIDDLE;}
+      .width40{WIDTH:38.0%;}
+      .width60{WIDTH:60.0%;}
+      .hover{ COLOR:#FFFFFF;BACKGROUND-COLOR:#44aa33;OUTLINE:NONE;BORDER-BOTTOM-COLOR:#44aa33;BORDER-BOTTOM-STYLE:SOLID;BORDER-BOTTOM-WIDTH:1.0PX;BORDER-LEFT-COLOR:#44aa33;BORDER-LEFT-STYLE:SOLID;BORDER-LEFT-WIDTH:1.0PX;BORDER-RIGHT-COLOR:#44aa33;BORDER-RIGHT-STYLE:SOLID;BORDER-RIGHT-WIDTH:1.0PX;BORDER-TOP-COLOR:#44aa33;BORDER-TOP-STYLE:SOLID;BORDER-TOP-WIDTH:1.0PX; }     
+      .googleBack{BACKGROUND-IMAGE:URL('file://google.png');BACKGROUND-POSITION:4.0% 50.0%;BACKGROUND-REPEAT:NO-REPEAT;}
+      .bingBack{BACKGROUND-IMAGE:URL('file://bing.png');BACKGROUND-POSITION:4.0% 50.0%;BACKGROUND-REPEAT:NO-REPEAT;}
+      .yahooBack{BACKGROUND-IMAGE:URL('file://yahoo.png');BACKGROUND-POSITION:4.0% 50.0%;BACKGROUND-REPEAT:NO-REPEAT;}
+      .baiduBack{BACKGROUND-IMAGE:URL('file://baidu.png');BACKGROUND-POSITION:4.0% 50.0%;BACKGROUND-REPEAT:NO-REPEAT;}
+      .yandexBack{BACKGROUND-IMAGE:URL('file://yandex.png');BACKGROUND-POSITION:4.0% 50.0%;BACKGROUND-REPEAT:NO-REPEAT;}
+      .defBack{BACKGROUND-IMAGE:URL('file://glass.png');BACKGROUND-POSITION:4.0% 50.0%;BACKGROUND-REPEAT:NO-REPEAT;}
+      .body{BACKGROUND-COLOR:#EFEFEF;}
+      .urlSearchTable{WIDTH:100%;}
+      .enterURL{BACKGROUND-COLOR:TRANSPARENT;COLOR:#555555;BORDER-COLOR:TRANSPARENT;BORDER-WIDTH:0.0PX;FONT-SIZE:MEDIUM;WIDTH:100.0%;PADDING-TOP:3.0PX;PADDING-LEFT:4.0PX;PADDING-BOTTOM:4.0PX;PADDING-RIGHT:4.0PX;VERTICAL-ALIGN:TOP;}
+      .searchInput{BACKGROUND-COLOR:TRANSPARENT;WIDTH:100.0%;COLOR:#555555;BORDER-COLOR:TRANSPARENT;BORDER-WIDTH:0.0PX;BORDER-WIDTH:0.0PX;FONT-SIZE:MEDIUM;BACKGROUND-REPEAT:NO-REPEAT;PADDING-TOP:3.0PX;PADDING-LEFT:25.0PX;PADDING-BOTTOM:4.0PX;PADDING-RIGHT:4.0PX;}
+      .blankSearch{WIDTH:100.0%;COLOR:#555555;FONT-SIZE:MEDIUM;BACKGROUND-REPEAT:NO-REPEAT;PADDING-TOP:4.0PX;PADDING-LEFT:25.0PX;PADDING-BOTTOM:6.0PX;PADDING-RIGHT:4.0PX;}  
+	  .urlSearchBg{BACKGROUND-COLOR:#999999;BACKGROUND-IMAGE:URL('file://url_search_bg.png');BACKGROUND-REPEAT:REPEAT-X;BORDER-BOTTOM-COLOR:#ADADAD;BORDER-BOTTOM-STYLE:SOLID;BORDER-BOTTOM-WIDTH:1.0PX;BORDER-LEFT-COLOR:#EFEFEF;BORDER-LEFT-STYLE:SOLID;BORDER-LEFT-WIDTH:0.0PX;BORDER-RIGHT-COLOR:#EFEFEF;BORDER-RIGHT-STYLE:SOLID;BORDER-RIGHT-WIDTH:0.0PX;BORDER-TOP-COLOR:#F9F9F9;BORDER-TOP-STYLE:SOLID;BORDER-TOP-WIDTH:0.0PX;PADDING-TOP:5.0PX;PADDING-LEFT:5.0PX;PADDING-BOTTOM:5.0PX;PADDING-RIGHT:5.0PX;PADDING:5PX}
+      .inputCenter{BACKGROUND-IMAGE:URL('file://input_center.png');BACKGROUND-REPEAT:REPEAT-X;}
+      .inputLeft{BACKGROUND-IMAGE:URL('file://input_left.png');BACKGROUND-REPEAT:NO-REPEAT;OVERFLOW:HIDDEN;}
+      .inputRight{BACKGROUND-IMAGE:URL('file://input_right.png');BACKGROUND-POSITION:100.0% 0.0%;BACKGROUND-REPEAT:NO-REPEAT;}
+	  .folder{ BACKGROUND-COLOR:#C0BFBF;BACKGROUND-IMAGE:URL('file://folderbg.png');BACKGROUND-REPEAT:REPEAT-X;}
+	  .folder_open_dir_ltr{BACKGROUND-IMAGE:URL('file://arrow_bt.png');BACKGROUND-POSITION:92.0% 50.0%;BACKGROUND-REPEAT:NO-REPEAT;}
+	  .folder_closed_dir_ltr{BACKGROUND-IMAGE:URL('file://arrow_up.png');BACKGROUND-POSITION:92.0% 50.0%;BACKGROUND-REPEAT:NO-REPEAT;}
+	  .folder_open_dir_rtl{BACKGROUND-IMAGE:URL('file://arrow_bt.png');BACKGROUND-POSITION:8.0% 50.0%;BACKGROUND-REPEAT:NO-REPEAT;}
+	  .folder_closed_dir_rtl{BACKGROUND-IMAGE:URL('file://arrow_up.png');BACKGROUND-POSITION:8.0% 50.0%;BACKGROUND-REPEAT:NO-REPEAT;}
+	  .folder_lb{ FONT-SIZE:MEDIUM;COLOR:#555555;}
+	  .folder_section{ BORDER-BOTTOM-COLOR:#BEBEBE;BORDER-BOTTOM-STYLE:SOLID;BORDER-BOTTOM-WIDTH:0.0PX;BORDER-LEFT-COLOR:#9B9B9B;BORDER-LEFT-STYLE:SOLID;BORDER-LEFT-WIDTH:3.0PX;BORDER-RIGHT-COLOR:#9B9B9B;BORDER-RIGHT-STYLE:SOLID;BORDER-RIGHT-WIDTH:3.0PX;BORDER-TOP-COLOR:#F9F9F9;BORDER-TOP-STYLE:SOLID;BORDER-TOP-WIDTH:0.0PX;}
+	  .folder_skin_dir_ltr{ BORDER-BOTTOM-COLOR:#BEBEBE;BORDER-BOTTOM-STYLE:SOLID;BORDER-BOTTOM-WIDTH:0.0PX;BORDER-LEFT-COLOR:#EFEFEF;BORDER-LEFT-STYLE:SOLID;BORDER-LEFT-WIDTH:1.0PX;BORDER-RIGHT-COLOR:#EFEFEF;BORDER-RIGHT-STYLE:SOLID;BORDER-RIGHT-WIDTH:0.0PX;BORDER-TOP-COLOR:#F9F9F9;BORDER-TOP-STYLE:SOLID;BORDER-TOP-WIDTH:1.0PX;MARGIN-BOTTOM:0.0PX;MARGIN-LEFT:0.0PX;MARGIN-RIGHT:0.0PX;MARGIN-TOP:0.0PX;PADDING-BOTTOM:7.0PX;PADDING-LEFT:3.0PX;PADDING-RIGHT:5.0PX;PADDING-TOP:7.0PX;TEXT-OVERFLOW-MODE:ELLIPSIS;OVERFLOW:HIDDEN; }
+	  .folder_skin_dir_rtl{ BORDER-BOTTOM-COLOR:#BEBEBE;BORDER-BOTTOM-STYLE:SOLID;BORDER-BOTTOM-WIDTH:0.0PX;BORDER-LEFT-COLOR:#EFEFEF;BORDER-LEFT-STYLE:SOLID;BORDER-LEFT-WIDTH:0.0PX;BORDER-RIGHT-COLOR:#EFEFEF;BORDER-RIGHT-STYLE:SOLID;BORDER-RIGHT-WIDTH:1.0PX;BORDER-TOP-COLOR:#F9F9F9;BORDER-TOP-STYLE:SOLID;BORDER-TOP-WIDTH:1.0PX;MARGIN-BOTTOM:0.0PX;MARGIN-LEFT:0.0PX;MARGIN-RIGHT:0.0PX;MARGIN-TOP:0.0PX;PADDING-BOTTOM:7.0PX;PADDING-LEFT:5.0PX;PADDING-RIGHT:3.0PX;PADDING-TOP:7.0PX;TEXT-OVERFLOW-MODE:ELLIPSIS;OVERFLOW:HIDDEN; }
+      .minheight{MIN-HEIGHT:225PX;}
+	  .overflow_hidden{OVERFLOW:HIDDEN;WHITE-SPACE:NOWRAP;}
+	  .emptyList { MARGIN-BOTTOM:0.0PX;MARGIN-LEFT:0.0PX;MARGIN-RIGHT:0.0PX;MARGIN-TOP:0.0PX;PADDING-BOTTOM:4.0PX;PADDING-LEFT:7.0PX;PADDING-RIGHT:7.0PX;PADDING-TOP:4.0PX;FONT-SIZE:MEDIUM;COLOR:#555555; } 
+	</style>
+  </head>
+  
+  <body class="body" onload="mwl.updateGroup('#searchFormArea', 'file://search.html');mwl.updateGroup('#presetfavs', 'file://presetfavs.html');mwl.addClass('#searchForm', 'shown');mwl.updateGroup('#paneHistoryContent','application://history');mwl.updateGroup('#paneFavoritesContent_Links','application://favorites');mwl.updateGroup('#webAppsContent_Links','application://favorites/web-apps');mwl.updateGroup('#opr1','application://featured/opr1');mwl.updateGroup('#opr2','application://featured/opr2');mwl.updateGroup('#oprfolder_closed','application://featured/oprfolder');mwl.updateGroup('#oprfolder_open','application://featured/oprfolder');mwl.updateGroup('#oprsvc_Links','application://featured/oprsvc');mwl.setGroupTarget('#cPaneTabs','#tabFeatured','shown','hidden');" onshow="mwl.updateGroup('#paneHistoryContent','application://history');mwl.updateGroup('#webAppsContent_Links','application://favorites/web-apps');mwl.updateGroup('#paneFavoritesContent_Links','application://favorites');mwl.setGroupTarget('#searchFavicons','#favicon-%26$searchEngineST_STORAGE;', 'shown', 'hidden');">
+  <div id="content">
+    <div class="urlSearchBg">
+      <table cellpadding="0" cellspacing="0" rows="1" cols="3" class="urlSearchTable &$css_dir_ALIGNMENT;">
+        <tr>
+          <td class="width60"><div class="inputCenter"><div class="inputLeft"><div class="inputRight"><input type="text" name="site" class="enterURL" value="www."/></div></div></div></td>
+          <td></td>
+          <td class="width40"><div id="searchFormArea">Search Form</div></td>
+        </tr>
+      </table>
+    </div>
+    <div id="cPaneTabs">
+      <div id="tabHistory" class="hidden minheight" onswiperight="mwl.setGroupTarget('#cPaneTabs','#tabFavorites','shown','hidden');mwl.scrollTo('#content');mwl.menu('mwl.setGroupNext(\'#group-center2\',\'visible\',\'invisible\',\'prev\');');"  onswipeleft="mwl.setGroupTarget('#cPaneTabs','#tabFeatured','shown','hidden');mwl.scrollTo('#content');mwl.scrollTo('#tabFeatured');mwl.menu('mwl.setGroupNext(\'#group-center2\',\'visible\',\'invisible\',\'next\');');">
+        <div class="cpanetitle &$css_dir_ALIGNMENT;">&$83_STR;</div>
+        <div id="paneHistoryContent" class="MwlContentUpdate &$css_dir_ALIGNMENT;">
+          History Pane            
+        </div>
+      </div>
+    <div id="tabFeatured" class="shown minheight" onswiperight="mwl.setGroupTarget('#cPaneTabs','#tabHistory','shown','hidden');mwl.scrollTo('#content');mwl.menu('mwl.setGroupNext(\'#group-center2\',\'visible\',\'invisible\',\'prev\');');" onswipeleft="mwl.setGroupTarget('#cPaneTabs','#tabFavorites','shown','hidden');mwl.scrollTo('#content');mwl.menu('mwl.setGroupNext(\'#group-center2\',\'visible\',\'invisible\',\'next\');');">
+		<div class="cpanetitle &$css_dir_ALIGNMENT;">&$74_STR;</div>
+		<div id="paneFeaturedContent">
+			<div class="div_item &$css_dir_ALIGNMENT;" onclick="mwl.loadURL('localapp://jam/launch?midlet-name=Ovi Store;midlet-vendor=Nokia;deeplink.type=item;deeplink.uri=https://api.store.ovi.com/atom/2.0/content/25044;chaining=true;redirect-url=http://store.ovi.com')" >
+				<img src="file://storeIcon.png" width="16" height="16" class="fav_img" />
+				<span class="span_item">Ovi Store</span>
+		    </div>
+            <div id="opr1"></div>
+			<div id="opr2"></div>	
+			<div id="oprsvc">
+              <div id="oprsvc_closed" class="shown folder">
+                <div class="folder_skin_&$css_dir_ALIGNMENT; folder_closed_&$css_dir_ALIGNMENT; &$css_dir_ALIGNMENT;" onclick="mwl.setGroupTarget('#oprsvc','#oprsvc_open', 'shown', 'hidden');return false;">
+				  <div id="oprfolder_closed" class="hidden folder_lb &$css_dir_ALIGNMENT;">Folder</div>
+				  <div id="oprfolderDefault_closed" class="folder_lb &$css_dir_ALIGNMENT;">&$191_STR;</div>
+                </div>
+              </div>
+              <div id="oprsvc_open"  class="hidden folder">
+                <div class="folder_skin_&$css_dir_ALIGNMENT; folder_open_&$css_dir_ALIGNMENT; &$css_dir_ALIGNMENT;" onclick="mwl.setGroupTarget('#oprsvc','#oprsvc_closed', 'shown', 'hidden');return false;">
+				  <div id="oprfolder_open" class="hidden folder_lb &$css_dir_ALIGNMENT;">Folder</div>
+				  <div id="oprfolderDefault_open" class="folder_lb &$css_dir_ALIGNMENT;">&$191_STR;</div>
+                </div>
+                <div id="oprsvc_Links" class="folder_section &$css_dir_ALIGNMENT;">
+				  oprsvc links
+                </div>
+              </div>
+            </div>		
+			<div id="presetfavs"></div>
+        </div>
+    </div>
+        <div id="tabFavorites" class="hidden minheight" onswipeleft="mwl.setGroupTarget('#cPaneTabs','#tabHistory','shown','hidden');mwl.scrollTo('#content');mwl.menu('mwl.setGroupNext(\'#group-center2\',\'visible\',\'invisible\',\'next\');');" onswiperight="mwl.setGroupTarget('#cPaneTabs','#tabFeatured','shown','hidden');mwl.scrollTo('#content');mwl.menu('mwl.setGroupNext(\'#group-center2\',\'visible\',\'invisible\',\'prev\');');" >
+          <div class="cpanetitle &$css_dir_ALIGNMENT;">&$72_STR;</div>
+          <div id="paneFavoritesContent">		 
+			 <div id="webAppsFolders">
+              <div id="webAppsFolders_closed" class="shown folder">
+                <div class="folder_skin_&$css_dir_ALIGNMENT; folder_closed_&$css_dir_ALIGNMENT; &$css_dir_ALIGNMENT;" onclick="mwl.setGroupTarget('#webAppsFolders','#webAppsFolders_open', 'shown', 'hidden');return false;">
+				  <div id="webAppsFoldersDefault_closed" class="folder_lb &$css_dir_ALIGNMENT;">&$194_STR;</div>
+                </div>
+              </div>
+              <div id="webAppsFolders_open"  class="hidden folder">
+                <div class="folder_skin_&$css_dir_ALIGNMENT; folder_open_&$css_dir_ALIGNMENT; &$css_dir_ALIGNMENT;" onclick="mwl.setGroupTarget('#webAppsFolders','#webAppsFolders_closed', 'shown', 'hidden');return false;">
+				  <div id="webAppsFoldersDefault_open" class="folder_lb &$css_dir_ALIGNMENT;">&$194_STR;</div>
+                </div>
+                <div id="webAppsContent_Links" class="folder_section &$css_dir_ALIGNMENT;">Web apps</div>
+              </div>
+            </div>				
+            <div id="paneFavoritesContent_Links" class="MwlContentUpdate &$css_dir_ALIGNMENT;">
+              <br />Favorites Pane
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>  
+</html>

@@ -1,0 +1,8 @@
+Manifest-Version: 1.0
+MIDlet-Vendor: 广州酷狗计算机科技有限公司
+MIDlet-Version: 2.32
+MIDlet-1: 酷狗叮咚,/icon.png,KuGouPlayer
+MicroEdition-Configuration: CLDC-1.1
+MIDlet-Name: 酷狗叮咚
+MicroEdition-Profile: MIDP-2.0
+

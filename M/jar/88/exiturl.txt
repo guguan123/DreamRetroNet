@@ -1,0 +1,12 @@
+﻿@count=0
+
+@img=/t/jjfb.png
+@url=http://wap.maobob.com
+@intro=123231321321321312321312
+
+
+@img=/t/kdls.png
+@url=http://wap.maobob.com
+@intro=123231321321321312321312
+
+

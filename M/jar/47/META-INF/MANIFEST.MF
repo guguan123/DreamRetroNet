@@ -1,0 +1,13 @@
+Manifest-Version: 1.0
+MIDlet-Name: 空中-Opera 2.0
+MIDlet-1: 空中-Opera 2.0, /i.png, Browser
+MIDlet-Data-Size: 25600
+MicroEdition-Configuration: CLDC-1.0
+MIDlet-Icon: /i.png
+MIDlet-Info-URL: http://mini.opera.com/
+MIDlet-Install-Notify: http://mini.opera.com/n/9972Akongzhong2_cn
+MIDlet-Vendor: Opera Software ASA
+MIDlet-Version: 4.0
+MicroEdition-Profile: MIDP-2.0
+MIDlet-Description: Opera Mini
+

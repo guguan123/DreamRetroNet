@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Ant-Version: Apache Ant 1.7.0
+Created-By: 10.0-b22 (Sun Microsystems Inc.)
+MIDlet-1: Javacraft,Icon.png,Application.CMIDlet
+MIDlet-Vendor: mob.ua
+MIDlet-Name: Javacraft 240x320
+MIDlet-Version: 1.00
+MicroEdition-Configuration: CLDC-1.1
+MicroEdition-Profile: MIDP-2.0
+Nokia-MIDlet-Category: Game
+SiteURL: wap.mob.ua

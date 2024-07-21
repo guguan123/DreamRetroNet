@@ -2,14 +2,14 @@
 include_once $_SERVER["DOCUMENT_ROOT"].'/system/base.php';
 include_once $_SERVER["DOCUMENT_ROOT"].'/system/system.php';
 $title = '消息提示';
-include_once $_SERVER["DOCUMENT_ROOT"].'/M/c/header.php';
+//include_once $_SERVER["DOCUMENT_ROOT"].'/M/c/header.php';
 
 $id = abs(intval($_GET['id'])); # ФИЛЬТР ГЕТ
 //aut();
-$b = $con->query("SELECT * FROM `games` WHERE `id` = '".$id."'")->fetch_assoc();
+$b = $con->query("SELECT * FROM `game` WHERE `id` = '".$id."'")->fetch_assoc();
 
 if($b){
-if($b['ivent']==不通过){
+if($b['ivent']=="不通过"){
 echo '<link rel="stylesheet" href="/M/c/notice.css">';
 echo '<body id="notice"><h2 class="topic">消息提示</h2><p>此资源有问题，不提供下载。</p></body>';
 exit();
@@ -19,7 +19,6 @@ exit();
        // include_once $_SERVER["DOCUMENT_ROOT"].'/style/foot.php';
       //  exit;
     //  }
-    $d = $con->query("SELECT * FROM `game` WHERE `id` = '".$b['id_game']."'")->fetch_assoc();
  //   $list = get_file_folder_List("jar", 2, '*');
 //foreach ($list as $i => $file) {
 //$ftext = readZipText("../download/".$b['down']."". $file, "META-INF/MANIFEST.MF"); 
@@ -36,15 +35,15 @@ echo '<body id="notice"><h2 class="topic">消息提示</h2><p>该文件不存在
     // echo "不存在";
 
  }else{
-$con->query("UPDATE `game` SET `downs` = `downs`+'1' WHERE `id` = '".$b['id_game']."'");
+$con->query("UPDATE `game` SET `downs` = `downs`+'1' WHERE `id` = '".$b['id']."'");
 if ($user['id']){
 $con->query("UPDATE `user` SET `downs` = `downs`+'1' WHERE `id` = '".$user['id']."'");
 
-$down = $con->query(" SELECT * FROM `game_download` WHERE `user_id` = '".$user['id']."' AND `game_id` = '".$b['id_game']."'")->num_rows;
+$down = $con->query(" SELECT * FROM `game_download` WHERE `user_id` = '".$user['id']."' AND `game_id` = '".$b['id']."'")->num_rows;
 if ($down > 0){
-$con->query("UPDATE `game_download` SET `downs` = `downs`+'1' WHERE `user_id` = '".$user['id']."' AND `game_id` = '".$b['id_game']."'");
+$con->query("UPDATE `game_download` SET `downs` = `downs`+'1' WHERE `user_id` = '".$user['id']."' AND `game_id` = '".$b['id']."'");
 }else{
-$con->query("INSERT INTO `game_download` (`id`, `user_id`, `downs`, `game_id`) VALUES (NULL, '".$user['id']."', '1', '".$b['id_game']."')");
+$con->query("INSERT INTO `game_download` (`id`, `user_id`, `downs`, `game_id`) VALUES (NULL, '".$user['id']."', '1', '".$b['id']."')");
 }
 }
 

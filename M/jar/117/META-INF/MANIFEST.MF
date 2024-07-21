@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+MicroEdition-Configuration: CLDC-1.0
+MIDlet-Name: 斩妖伏魔录2(华娱)
+Created-By: 1.4.2_06 (Sun Microsystems Inc.)
+MIDlet-Vendor: 华娱无线
+MIDlet-1: 斩妖伏魔录2(华娱), /icon.png, GameMIDlet
+MIDlet-Version: 1.0
+MicroEdition-Profile: MIDP-1.0
+MIDlet-Description: 火爆激烈的动作游戏 适用机型n7610
+

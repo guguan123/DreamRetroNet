@@ -1,36 +1,10 @@
-
 <?php
 include_once $_SERVER["DOCUMENT_ROOT"].'/system/base.php';
 include_once $_SERVER["DOCUMENT_ROOT"].'/system/system.php';
+
 $pagesize = abs(intval($_GET['pagesize']));
-$games = abs(intval($_GET['games'])); # 
-include "../M/c/function.php";
-if(isset($_GET["local"])){
-  $_SESSION["language"] = $_GET["local"];
-}else{
-  $_SESSION["language"] = getDefalutlanguage();
-}
-$language_name = getLanguageName($_SESSION["language"]);
-if (!$language_name){
-echo '<link rel="stylesheet" href="/M/c/notice.css">';
-echo '<body id="notice"><h2 class="topic">消息提示</h2><p>我们没有找到语言包</p></body>';
-exit();
-}else{
-include "../M/e/".$language_name.".inc";
-}
+$package = abs(intval($_GET['package'])); # 
 
-  $language_array = array_language();
-  foreach($language_array as $key => $value){
-    if($_SESSION["language"] == $value){
-      $selected = "selected = 'selected' ";
-    }else{
-      $selected = "";
-    }
-    }
-
-  if($_GET["local"] == $value){
-      //$selected = "selected = 'selected' ";
-    }
 $new = $con->query("SELECT * FROM `comment` ORDER BY `id` DESC LIMIT 10");
 function get_ip_city($ip)
 {
@@ -62,22 +36,16 @@ foreach($new as $row){
 $users = $con->query("SELECT * FROM `user` WHERE `id` = '".$row['id_user']."'")->fetch_assoc();
 $arr = get_ip_city($users['ip']);
 $arr=str_replace('省','',$arr);
-if ($users['qq_avatar']){
-$qq = ''.$users['qq_avatar'].'&s=40&t='.$users['data_reg'].'';
-}
-if ($users['baidu_avatar']){
-$baidu = 'https://himg.bdimg.com/sys/portrait/item/'.$users['baidu_avatar'].'';
-}
-if ($avatar = $qq ?: $baidu){
-     $rowArr = json_encode(array("id" => "".$row['id']."","content" => "".$row['text']."","users_id" => "".$row['id_user']."","avatar" => "".$avatar."","nickname" => "".$users['name']."","games_id" => "".$row['id_obmen']."","reply_uid" => null,"reply_nickname" => null,"reply_content" => null,"dateline" => "".data($row['time'])."","pro" => "".$arr."","local" => "".$local1."","local1" => "".$local2.""));
+
+     $rowArr = json_encode(array("id" => "".$row['id']."","content" => "".$row['text']."","users_id" => "".$row['id_user']."","avatar" => "".avatar($users['id'])."","nickname" => "".$users['name']."","games_id" => "".$row['id_obmen']."","reply_uid" => null,"reply_nickname" => null,"reply_content" => null,"dateline" => "".data($row['time'])."","pro" => "".$arr.""));
     $str=$str.$rowArr."###";
-    }
+
 }
 $jsonArr=rtrim($str,"###");
 echo "{\"game\": {\"id\": \"0\",\"name\": \"水晶之链\",\"chinese\": \"\"},\"comments\":[".str_replace("###",",",$jsonArr)."]}";
 exit();
 }
-$gam = $con->query("SELECT * FROM `game` WHERE `id` = '".$games."'")->fetch_assoc();
+$gam = $con->query("SELECT * FROM `package` WHERE `id` = '".$games."'")->fetch_assoc();
 //$gam = $con->query("SELECT * FROM `comment` ORDER BY `id` DESC LIMIT 4");
 $num = $con->query("SELECT * FROM `comment` WHERE `id_obmen` = '".$gam['id']."'");
 //$comg = $con->query("SELECT * FROM `comment` ORDER BY `id` DESC LIMIT 10");
@@ -93,16 +61,13 @@ foreach($num as $row){
 $users = $con->query("SELECT * FROM `user` WHERE `id` = '".$row['id_user']."'")->fetch_assoc();
 $arr = get_ip_city($users['ip']);
 $arr=str_replace('省','',$arr);
-if($users['qq_avatar']){
-$qq = ''.$users['qq_avatar'].'&s=40';
-}
+
 if($users['baidu_avatar']){
 $baidu = 'https://himg.bdimg.com/sys/portrait/item/'.$users['avatar'].'';
 }
-if ($avatar = $qq ?: $baidu){
-     $rowArr = json_encode(array("id" => "".$row['id']."","content" => "".$row['text']."","users_id" => "".$row['id_user']."","avatar" => "".$avatar."","nickname" => "".$users['name']."","games_id" => "".$row['id_obmen']."","reply_uid" => "1","reply_nickname" => "1","reply_content" => "1","dateline" => "".data($row['time'])."","pro" => "".$arr."","local" => "".$local1."","local1" => "".$local2.""));
+$avatar = $baidu;
+     $rowArr = json_encode(array("id" => "".$row['id']."","content" => "".$row['text']."","users_id" => "".$row['id_user']."","avatar" => "".$avatar."","nickname" => "".$users['name']."","games_id" => "".$row['id_obmen']."","reply_uid" => "1","reply_nickname" => "1","reply_content" => "1","dateline" => "".data($row['time'])."","pro" => "".$arr.""));
     $str=$str.$rowArr."###";
-    }
 }
 $jsonArr=rtrim($str,"###");
 //$games = $con->query('SELECT * FROM `game` WHERE `id` = "'.$row['id_user'].'"')->num_rows;
@@ -110,20 +75,20 @@ echo "\"comments\":[".str_replace("###",",",$jsonArr)."]}";
 exit();
 }
 $id = abs(intval($_GET['id'])); # ФИЛЬТР ГЕТ
-$f = $con->query("SELECT * FROM `game` WHERE `id` = '".$id."'")->fetch_assoc();
+$f = $con->query("SELECT * FROM `package` WHERE `id` = '".$id."'")->fetch_assoc();
 if($name = $f['cn'] ?: $f['name']){
 $title = ''.$name.'评论';
 }
-include_once $_SERVER["DOCUMENT_ROOT"].'/style/head.php';
+include_once $_SERVER["DOCUMENT_ROOT"].'/M/c/header.php';
 
 //if($coun_komm<1){err('<body id="notice"><h2 class="topic">消息提示</h2><p>没有评论！</p></p><p><a href="/" class="button">返回</a></p>');}
-if($user['admin_level']>="禁言"){
+if($user['admin_level']=="禁言"){
 echo '<link rel="stylesheet" href="/M/c/notice.css">';
 echo '<body id="notice"><h2 class="topic">消息提示</h2><p>请登录之后再操作</p></body>';
 exit();
 }
 echo '<body class="subpage"><div id="header"><a href="#back" onclick="history.back();" class="iconfont icon-fanhui title="返回""></a>';
-if($name = $f['zhcn'] ?: $f['name']){
+if($name = $f['cn'] ?: $f['name']){
 echo '<h1>'.$name.'评论</h1></a>';
 }
 include_once $_SERVER["DOCUMENT_ROOT"] . '/style/user.php';
@@ -132,7 +97,7 @@ echo '<div id="nav" class="container"><a href="/">首页</a><span>'.$name.'评�
 }
 echo '<div id="wrapper" class="clearfix"><main class="container"><div id="main">';
 
-$b = $con->query("SELECT * FROM `game` WHERE `id` = '".$id."'")->fetch_assoc();
+$b = $con->query("SELECT * FROM `package` WHERE `id` = '".$id."'")->fetch_assoc();
 $coun_komm = $con->query('SELECT * FROM `comment` WHERE `id_obmen` = "'.$b['id'].'"')->num_rows;
 if($b){
 if(isset($_POST['add'])){
@@ -148,7 +113,7 @@ header('Location: ?');
 }
 
 if(isset($_GET['del'])){
-    if($user['admin_level']=="会员"){
+    if($user['admin_level']=="会员" ?: $user['admin_level']=="管理员"){
     $id_k = abs(intval($_GET['id_k']));
 $k = $con->query('SELECT * FROM `comment` WHERE `id` = "'.$id_k.'"')->fetch_assoc();
 if($k){
@@ -166,13 +131,7 @@ header('Location: ?');
 if($coun_komm<1){err('<h2 class="topic">消息提示</h2><p>没有评论！</p></p><p><a href="/" class="button">返回</a></p>');}
 
 $k_post = $con->query('SELECT * FROM `comment` WHERE `id_obmen` = "'.$id.'"')->num_rows;
-    
-$k_page = k_page($k_post,10);
-    
-$page = page($k_page);
-    
-$start = 10*$page-10;
-        $ms = $con->query("SELECT * FROM `comment` WHERE `id_obmen` = '".$id."' ORDER BY `id` DESC LIMIT $start, 10");
+        $ms = $con->query("SELECT * FROM `comment` WHERE `id_obmen` = '".$id."' ORDER BY `id` DESC LIMIT 10");
 echo '<ul class="list comment line padding bg-white" id="comment">';
   while($w = $ms->fetch_assoc()){
   echo '<li class="clearfix"><a href="/user/16835"><img src="http://q1.qlogo.cn/g?b=qq&nk=945794520&s=100" width="46" height="46" alt="头像" /></a><div><p><a href="/user/16835">'.user($w['id_user']).'</a>：'.text($w['text']).'</p>';
@@ -186,10 +145,10 @@ echo '</div>';
   }
   
   echo '<div id="aside"><div class="game clearfix bg-white"><a href="/file/'.$b['id'].'"><img src="/icon/'.$b['id'].'" width="46" height="46" alt="图标" /></a><div><h3><a href="/file/'.$b['id'].'">';
-  if($name = $b['zhcn'] ?: $b['name']){
+  if($name = $b['cn'] ?: $b['name']){
   echo ''.$name.'';
   }
-  echo '</a></h3><div class="small-font"><a href="/games?system="></a>&nbsp;'.platform($b['platform']).'</a>&nbsp;'.$b['downs'].'下载&nbsp;';
+  echo '</a></h3><div class="small-font"><a href="/games?system="></a>&nbsp;'.$b['platform'].'</a>&nbsp;'.$b['downs'].'下载&nbsp;';
 //  }
   $number = $con->query('SELECT * FROM `comment` WHERE `id_obmen` = "'.$id.'"')->num_rows;
   echo ''.$number.'评论</div></div></div>';

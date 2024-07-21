@@ -1,308 +1,122 @@
-html,
-	body {
-		height: 100%;
-	}
-#header {
-width:100%;
-background:#fff;
-display:flex;
-justify-content:space-between;
-align-items:center;
-top: 0;
-left: 0;
-position: fixed;
-z-index: 99;
-border-bottom: solid 1px #ddd;
-	/*	position: fixed;
-		width: 100%;
-		display: flex;
-		align-items: center;
-		justify-content: space-between;
-		background: #FBC02D !important;
-		color: #000 !important;
-		border-bottom: solid 1px #FBC02D;*/
-	}
-	
-	#header > a[href="/"] {
-	/*返回按钮默认隐藏*/
-	display: grid;
-	grid-template-columns: auto auto;
-	/*grid-gap: .5rem;*/
-	align-items: center;
+.container {
+	margin: 0 1rem
 }
 
-	#nav{
-	margin-top: 3rem;
-	}
-	
-		#menu {
-		position: fixed;
-		bottom: 0;
-		width: 100%;
-		display: flex;
-		z-index: 99;
-		border-top: solid 1px #ddd;
-	}
-		#menu li {
-		flex: 1;
-	}
-
-	#menu li a {
-		font-size: 0.8rem;
-		line-height: 1;
-		padding: 0.5rem !important;
-	}
-
-	#menu li a::before {
-		display: block;
-		font-size: 1.5rem;
-		margin-bottom: 0.2rem;
-	}
-	.subpage #header > div,
-	.subpage #menu {
-		display: none;
-	}
-   .subpage #header a[href="/"] {
-	    display: none;
+body > header {
+	top: 0;
+	left: 0;
+	position: fixed;
+	z-index: 99
 }
 
-   #header  p {
-   /*隐藏续梦网广告*/
-display: none;
+body > header a {
+	padding: .5rem 1rem
 }
 
-	.subpage #header > a[href="#back"],
-	.subpage #header > h1 {
-		display: block;
-	}
-
-	.subpage #header > h1 {
-		flex: 1;
-	}
-
-	#footer {
-		padding-bottom: 4rem !important;
-		font-size: 0.8rem;
-		text-align: center;
-	}
-	#user span{
-display: none;
+body > header h2 {
+	flex: 1;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	word-break: break-all;
 }
 
-#menu a::before {
-		font-family: "iconfont" !important;
-		-webkit-font-smoothing: antialiased;
-		-moz-osx-font-smoothing: grayscale;
-	}
-
-	#menu a[href="/"]::before {
-		content: "\e685";
-	}
-
-	#menu a[href="/games"]::before {
-		content: "\e61d";
-	}
-
-	#menu a[href="/search"]::before {
-		content: "\e624";
-	}
-
-	#menu a[href="/info/3"]::before {
-		content: "\e601";
-	}
-
-	/*表单样式*/
-	input,
-	select,
-	textarea {
-		padding: 0.5em;
-	}
-
-	.small-font {
-		margin-top: 0.5rem !important;
-	}
-
-	/*所有间隔1em的*/
-	#header h1,
-	#header h2,
-	#menu li a,
-	.list.padding li,
-	.list.comment li > div div.quote,
-	.list.icon a,
-	.form div,
-	.game,
-	.topic {
-		padding: 1rem !important;
-	}
-
-	.margin-top {
-		margin-top: 1em !important;
-	}
-/*.subpage h1 {
-	display:inline-block;
-}*/
-
-#header img{
-display: inline-block;
+body > header img {
+	width: 2.5rem;
+	height: 2.5rem
 }
 
-.info-wrap {
-  padding: 20px 24px;
-  position: relative;
-}
-.info {
-  overflow: hidden;
-  margin: 0 auto;
-  text-align: center;
-}
-.info-img {
-  width: 110px;
-  height: 110px;
-  border-radius: 12px;
-  overflow: hidden;
+body > header ul {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: #fff;
+	/*color: #eee;*/
+	z-index: 100;
+	display: flex
 }
 
-.info-img img {
-  width: 110px;
-  height: 110px;
-  /*border-radius: 12px;*/
-  overflow: hidden;
-}
-.info-title {
-  text-align: center;
-  font-size: 18px;
-  font-weight: bold;
-  color: #444;
-  line-height: 20px;
-  margin: 10px 0;
-}
-.info-text2 {
-  text-align: center;
-  font-size: 14px;
-  color: #686868;
-  margin: 5px auto 10px;
-}
-.info-btn a {
-  display: inline-block;
-  height: 30px;
-  line-height: 30px;
-  width: 98%;
-  border-radius: 14px;
-  margin: 5px 0;
-  background: #7bc71f;
-  font-size: 14px;
-  color: #fff;
-  box-shadow: 0 0 8px #7bc71f;
+body > header ul li {
+	flex: 1;
+	font-size: .8rem
 }
 
-.basebox {
-  background: #fff;
-  border-top: 6px solid #f5f5f5;
-}
-.bq_wrap {
-  padding: 5px 12px;
-  overflow: hidden;
-}
-.bq_wrap ul li {
-  width: 50%;
-  float: left;
-  height: 26px;
-  line-height: 26px;
-  font-size: 14px;
-  color: #b0b0b0;
-  overflow: hidden;
-}
-.bq_wrap ul li a {
-  color: #7bc71f;
-}
-.bq_wrap .bq_item {
-  overflow: hidden;
-  width: 100%;
-  margin: 10px 0;
+body > header > ul li a {
+	padding: .5rem 0;
 }
 
-.txtwrap {
-  overflow: hidden;
-  margin: 0 12px;
-}
-.txtwrap .txtcont {
-  font-size: 14px;
-  color: #444;
-  line-height: 28px;
-  max-height: 80px;
-  margin: 10px 0 5px 0;
-  overflow: hidden;
+body > header ul li a::before {
+	font-size: 1.5rem;
+	margin-bottom: .3rem;
+	display: block
 }
 
-.txtwrap .txtcont.active {
-  max-height: inherit;
+body.subpage > header a[href="#back"],
+body.subpage > header > h2 {
+	display: block
 }
 
-.txtwrap .txt_foot {
-  overflow: hidden;
-  margin: 10px 0;
+body > header > a[href="/"] p {
+	display: none
 }
-.txtwrap .txt_foot .open_btn {
-  float: right;
-  color: #7bc71f;
-  font-size: 14px;
+
+body > header > a:last-of-type span {
+	display: none
 }
-.txtwrap .txt_foot .open_btn::after {
-  display: inline-block;
-  content: '';
-  width: 0;
-  height: 0;
-  border-left: 5px solid transparent;
-  border-right: 5px solid transparent;
-  border-top: 5px solid #04B950;
-  margin: 0 5px 2px;
+
+body > footer {
+	margin-bottom: 3.5rem !important
+}
+
+#nav {
+	margin-top: 3.5rem
+}
+
+#aside {
+	margin-top: 1rem
+}
+
+.covers240 {
+	grid-template-columns: repeat(3, 1fr)
+}
+
+[data-tpl="packagelist"] {
+	grid-template-columns: repeat(2, 1fr)
+}
+
+.package_num1[data-tpl="packagelist"] {
+	grid-template-columns: repeat(1, 1fr)
+}
+
+.pager {
+	grid-template-columns: repeat(3, auto)
+}
+
+.hotwords li {
+	width: 33.33%
+}
+
+body.subpage > header > a[href="/"] {
+	display: none
+}
+
+body.subpage > header > ul {
+	display: none
+}
+
+#main [action^="/comments"] {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: 99;
+}
+
+#main [action^="/comments"] > div {
+	padding: 0;
 }
 
 .res {
-  grid-template-columns: 1fr 1fr 1fr;
-}
-.res2 {
-  grid-template-columns: 1fr 1fr;
-}
-
-#tab {
-  display: flex;
-  background: #fff;
-  border-bottom: 1px solid #dfdfdf;
-  margin-top: 10px;
-}
-
-#tab .cur {
-  border-bottom: 2px solid #7bc71f;
-  margin-bottom: -1px;
-  color: #7bc71f;
-}
-
-#tab span {
-  display: block;
-  flex: 1;
-  height: 38px;
-  line-height: 38px;
-  font-size: 16px;
-  font-weight: bold;
-  color: #333;
-  text-align: center;
-  cursor: pointer;
-}
-
-.post-body table td {
-  font-size: 13px;
-  line-height: 25px;
-  padding: 5px 10px;
-}
-
-.post-body table td {
-  text-align: left;
-  white-space: nowrap;
-  /*font-size: 14px;
-  padding: 5px 10px;*/
-}
-
-.post-body table img {
-  width: 200px;
+    grid-template-columns: 1fr 1fr 1fr;
 }

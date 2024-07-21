@@ -1,0 +1,14 @@
+Manifest-Version: 1.0
+MIDlet-Vendor: PiP
+Media-Price: .
+MIDlet-Version: 6.7
+Polish-Version: 2.0.2 (2008-03-27)
+Created-By: 1.6.0_13 (Sun Microsystems Inc.)
+MIDlet-Name: 武林OL
+MIDlet-Info-URL: http://wl.pipgame.cn/
+MIDlet-1: 武林OL, /icon.png, pip.WuLin2MIDLet
+MicroEdition-Configuration: CLDC-1.0
+MIDlet-Icon: /icon.png
+MIDlet-Description: 支持:MIDP2.0通用版本.
+MicroEdition-Profile: MIDP-2.0
+

@@ -28,6 +28,7 @@ echo '<li>应用列表：'.$us->num_rows.'</li>';
 echo '<li>评论：'.$uv->num_rows.'</li>';
 echo '<li>男性用户：'.$ud->num_rows.'</li>';
 echo '<li>女性用户：'.$uo->num_rows.'</li>';
+echo '<li>'.time().'</li>';
 echo '</ul></div></div>';
 $num = $con->query('SELECT * FROM `games` WHERE `id_game` = 0')->num_rows;
 echo '<h2 class="topic margin-top">网站功能</h2><ul class="list padding line bg-white">';

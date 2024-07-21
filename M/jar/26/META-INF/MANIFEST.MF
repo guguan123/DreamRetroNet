@@ -1,0 +1,13 @@
+Manifest-Version: 1.0
+MIDlet-Name: QQBrowserMini
+MIDlet-Version: 2.2.5
+MIDlet-Vendor: Tencent
+MIDlet-1: QQBrowserMini,/icon.png,com.qq.main.MainMidlet
+MIDlet-Icon: /icon.png
+MIDlet-Info-URL: http://3g.qq.com
+MIDlet-Permissions: javax.microedition.io.Connector.http
+MIDlet-Permissions-Opt: javax.microedition.io.Connector.sms,javax.wire
+ less.messaging.sms.send,javax.microedition.io.Connector.file.write,ja
+ vax.microedition.io.Connector.file.read
+MicroEdition-Profile: MIDP-2.0
+MicroEdition-Configuration: CLDC-1.0

@@ -1,0 +1,25 @@
+Manifest-Version: 1.0
+MIDlet-Name: 开心听
+MIDlet-Version: 1.0.2
+MIDlet-Vendor: KXT.com
+MIDlet-Description: 开心听
+MIDlet-Icon: /logo.png
+MIDlet-Info-URL: http://wap.kxting.com
+MIDlet-1: 开心听,/logo.png,com.yy.app.YYMidlet
+MIDlet-Permissions: javax.microedition.io.Connector.file.read,javax.mi
+ croedition.io.Connector.file.write,javax.microedition.io.Connector.sm
+ s, javax.wireless.messaging.sms.send,javax.microedition.io.Connector.
+ http,javax.microedition.io.Connector.socket,javax.microedition.io.Con
+ nector.https,javax.microedition.pim.ContactList.read,javax.microediti
+ on.pim.ContactList.write,javax.microedition.pim.EventList.read,javax.
+ microedition.pim.EventList.write
+MicroEdition-Configuration: CLDC-1.0
+MicroEdition-Profile: MIDP-2.0
+Polish-Version: 2.1.4 (2010-01-18)
+progressive_download: enabled
+Proxy: http://218.200.160.29:80/
+useProxy: false
+kKey: 42
+changeUcs: false
+oldUcsExt: gtm.ucweb.com:80
+newUcs: ucs8.xacu.gtm.ucweb.com:80

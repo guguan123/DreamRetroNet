@@ -1,0 +1,54 @@
+@charset "utf-8";
+#where {
+	max-width: 980px;
+	margin: 4rem auto 1rem auto;
+}
+#middle {
+	max-width: 980px;
+	display: flex;
+	margin: 1rem auto;
+}
+#main {
+	flex: 4;
+}
+#aside {
+	flex: 2;
+	margin-left: 1rem;
+}
+.screens img {
+	cursor: pointer;
+}
+dialog img {
+	cursor: pointer;
+}
+.res {
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.login {
+	grid-template-columns: 1fr 1fr 1fr;
+}
+.game>.game_info {
+	grid-template-columns: 1fr 1fr 1fr;
+}
+.screens {
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.screens.res320×240 {
+	grid-template-columns: 1fr 1fr 1fr;
+}
+.screens.res640×360 {
+	grid-template-columns: 1fr 1fr;
+}
+nav a[href^="/games?order"] {
+    display: none;
+}
+
+.user-img>.m-icon-uss {
+    right: 0rem;
+    bottom: -0.9rem;
+}
+
+.user-img>.m-icon-us {
+right: 0rem;
+bottom: -1.1rem;
+}

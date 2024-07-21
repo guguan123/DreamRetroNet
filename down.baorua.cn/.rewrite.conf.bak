@@ -1,0 +1,1 @@
+rewrite ^/soft/([0-9]*).html?$ /soft/index.php?id=$1 last;

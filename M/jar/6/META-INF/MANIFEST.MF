@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+MIDlet-Name: 仙镜online
+MIDlet-Version: 7.8.0
+MIDlet-Vendor: 17game
+MIDlet-Description: OnlineGame;Nokia_N73;MMORPG
+MIDlet-Icon: /icon.png
+MIDlet-1: 仙镜online,/icon.png,game.CMidlet
+Media-Price: 0
+MicroEdition-Configuration: CLDC-1.0
+MicroEdition-Profile: MIDP-2.0
+Polish-Version: 2.1.4 (2010-01-18)

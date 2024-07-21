@@ -1,0 +1,13 @@
+Manifest-Version: 1.0
+MIDlet-Vendor: troodon
+MIDlet-Version: 1.01.0
+Nokia-MIDlet-On-Screen-Keypad: no
+Nokia-MIDlet-App-Orientation: portrait
+MIDlet-1: 口袋精灵, /icon/icon.png, Heart
+MicroEdition-Configuration: CLDC-1.0
+Created-By: 1.6.0_25 (Sun Microsystems Inc.)
+MIDlet-Icon: /icon/icon.png
+MIDlet-Name: 口袋精灵
+MIDlet-Description: games
+MicroEdition-Profile: MIDP-2.0
+

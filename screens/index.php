@@ -24,8 +24,8 @@ $title = '截图';
 
 include_once $_SERVER["DOCUMENT_ROOT"].'/M/c/header.php';
 
-echo '<body class="subpage"><header><a href="#back" onclick="history.back();" class="iconfont icon-fanhui" title="返回"></a>';
-echo '<h2>'.$title.'</h2><a href="/"><img src="/favicon.ico" width="32" height="32" alt="续梦网logo" /><h1>'.$title.'</h1>';
+//echo '<body class="subpage"><header><a href="#back" onclick="history.back();" class="iconfont icon-fanhui" title="返回"></a>';
+//echo '<h2>'.$title.'</h2><a href="/"><img src="/favicon.ico" width="32" height="32" alt="续梦网logo" /><h1>'.$title.'</h1>';
 include_once $_SERVER["DOCUMENT_ROOT"] . '/M/c/user.php';
 echo '<div id="nav" class="container"><a href="/">首页</a>';
 echo '<span>'.$title.'</span></div>';

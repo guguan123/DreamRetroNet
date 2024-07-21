@@ -1,0 +1,12 @@
+Manifest-Version: 1.0
+MIDlet-Name: Metal Slug 4
+MIDlet-Version: 1.0.1
+MIDlet-Vendor: I-play
+MIDlet-Icon: /i.png
+MIDlet-Info-URL: http://www.iplay.com
+MIDlet-1: Metal Slug 4, /i.png, com.iplay.game.metalslug4.M
+MIDlet-Data-Size: 20000
+MicroEdition-Profile: MIDP-2.0
+MicroEdition-Configuration: CLDC-1.0
+Ant-Version: Apache Ant 1.7.0
+Created-By: Delivery 1.0

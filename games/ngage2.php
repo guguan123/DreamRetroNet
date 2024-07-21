@@ -93,7 +93,7 @@
 	<?php
 	include_once $_SERVER["DOCUMENT_ROOT"].'/system/base.php';
 	echo '<div class="list">';
-	$hot = $con->query("SELECT * FROM `game` WHERE `platform` = 'J2ME' ORDER BY `id` DESC");
+	$hot = $con->query("SELECT * FROM `game` WHERE `platform` = 'java' ORDER BY `id` DESC");
 	while($w = $hot->fetch_assoc()){
 	echo '<a href="/game/'.$w['id'].'"><img src="/M/i/'.$w['icon'].'" />';
 	if($name = $w['cn'] ?: $w['name']){

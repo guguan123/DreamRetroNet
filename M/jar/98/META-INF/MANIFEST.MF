@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+MIDlet-Data-Size: 512
+MicroEdition-Configuration: CLDC-1.0
+MIDlet-Name: 劲乐团-一千年以后
+Created-By: 1.4.2 (Sun Microsystems Inc.)
+MIDlet-Vendor: 久游网
+MIDlet-1: 劲乐团-一千年以后,icon.png,O2Jam9
+MIDlet-Version: 1.0
+MicroEdition-Profile: MIDP-1.0
+

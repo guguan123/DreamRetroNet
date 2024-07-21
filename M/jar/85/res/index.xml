@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<dataPage>
+<cmd>page</cmd>
+<data>
+<userId>129161532520</userId>
+<pageId>index</pageId>
+<const key="$c_url$">http://reader2.3g.qq.com/category/showCategory.sc?sid=none</const>
+<const key="$rank_url$">http://reader2.3g.qq.com/category/showRankBooks.sc?sid=none</const>
+<const key="$t_url$">http://reader2.3g.qq.com/topic/showTopicBooks.sc?sid=none</const>
+<const key="$tl_url$">http://reader2.3g.qq.com/topic/showTopics.sc?sid=none</const>
+<const key="$random_url$">http://reader2.3g.qq.com/category/showRandomBook.sc?sid=none</const>
+<const key="$b_url$">http://reader2.3g.qq.com/book/showBookInfo.sc?sid=none</const>
+</data>
+<page>
+<line height="30" style="blue-line"><a width="33%" align="middle" style="14-hover-link" url="$c_url$">分类</a><a width="33%" align="middle" margin="0" style="14-hover-link" url="$rank_url$&amp;pageNo=1">排行</a><a align="middle" width="33%" margin="0" style="14-hover-link" url="$tl_url$">专题</a></line>
+<line height="36"><active style="search" url="http://reader2.3g.qq.com/search/searchBook.sc?sid=none&amp;from=mobile" onclick="search" alt_url="http://reader2.3g.qq.com/error/notice.sc?sid=none" >搜索图书</active></line>
+<line height="22"><p style="14-block-title">书城阅读历史</p></line>
+<localActive id="history"/>
+<line height="22" ><p style="14-block-title">今日首推</p></line>
+<table height="92">
+<col width="41%">
+<line height="8"/>
+<line height="50"><i align="middle" url="1" local="1" width="40" height="50" /></line>
+<line height="32"><button width="90%" align="middle" url="$b_url$&amp;bookId=13809&amp;type=0&amp;pl=cov_1">详  情</button></line>
+</col>
+<col width="59%">
+<line height="22"><p style="14-black-text">重庆打黑</p></line>
+<line height="60"><p style="12-gray-text" span="3">讲述文强等黑社会组织犯罪活动全过程，揭开他们从发迹到毁灭</p></line>
+<line height="8"/>
+</col>
+</table>
+<line><a url="$t_url$&amp;tid=19&amp;pl=cov_2" style="14-blue-p-link" >[专题] 朝鲜是个怎样的国家？朝鲜是个怎样的国家？朝鲜是个怎样的国家？</a></line>
+<line><a url="$t_url$&amp;tid=18&amp;pl=cov_3" style="14-blue-p-link" >[专题] 喝墨水，做腹黑</a></line>
+<line height="22"><p style="14-block-title">精品推荐</p></line>
+<multiline url="$b_url$&amp;bookId=12951&amp;type=0&amp;pl=rmd_1">
+<line><p style="14-blue-p-link" width="67%">原来爱情这么伤</p><p width="30%" margin="7" style="14-yellow-text">藤瓜</p></line>
+<line  height="22"><p margin="9" style="14-yellow-text">高干子弟情缠女大学生</p></line>
+</multiline>
+<multiline url="$b_url$&amp;bookId=6071&amp;type=0&amp;pl=rmd_2">
+<line><p style="14-blue-p-link" width="67%">娶个胖妞生个娃</p><p width="30%" margin="7" style="14-yellow-text">妖艳妖血</p></line>
+<line  height="22"><p margin="9" style="14-yellow-text">她怀孕了！而两个对她有暧昧之情的男人却悄悄离开，究竟谁是</p></line>
+</multiline>
+<multiline url="$b_url$&amp;bookId=6761&amp;type=0&amp;pl=rmd_3">
+<line><p style="14-blue-p-link" width="67%">雪城绝恋：错爱</p><p width="30%" margin="7" style="14-yellow-text">宝贝鱼</p></line>
+<line  height="22"><p margin="9" style="14-yellow-text">与一个恨之入骨的男人同床</p></line>
+</multiline>
+<multiline url="$b_url$&amp;bookId=12989&amp;type=0&amp;pl=rmd_4">
+<line><p style="14-blue-p-link" width="67%">朕的爱妃太彪悍</p><p width="30%" margin="7" style="14-yellow-text">MOMO幻</p></line>
+<line  height="22"><p margin="9" style="14-yellow-text">好色太子爷碰上倾城俏王爷</p></line>
+</multiline>
+<multiline url="$b_url$&amp;bookId=12971&amp;type=0&amp;pl=rmd_5">
+<line><p style="14-blue-p-link" width="67%">【停】痞女倾城：水嫩皇后惑君心</p><p width="30%" margin="7" style="14-yellow-text">景唯</p></line>
+<line  height="22"><p margin="9" style="14-yellow-text">痞女倾城，母仪天下惑君心</p></line>
+</multiline>
+<line><a style="14-pink-link" url="http://reader2.3g.qq.com/category/showRecommandBooks.sc?sid=none&amp;pageNo=1">[更多推荐]</a></line>
+<line height="22"><p style="14-block-title">新书首发</p></line>
+<multiline url="$b_url$&amp;bookId=13012&amp;type=0&amp;pl=new_1">
+<line><p style="14-blue-p-link" width="67%">俏皮LOLITA</p><p width="30%" margin="7" style="14-yellow-text">卿袅</p></line>
+<line  height="22"><p margin="9" style="14-yellow-text">他睫毛比女孩还长，粉红皮肤</p></line>
+</multiline>
+<multiline url="$b_url$&amp;bookId=12989&amp;type=0&amp;pl=new_2">
+<line><p style="14-blue-p-link" width="67%">朕的爱妃太彪悍</p><p width="30%" margin="7" style="14-yellow-text">MOMO幻</p></line>
+<line  height="22"><p margin="9" style="14-yellow-text">好色太子爷碰上倾城俏王爷</p></line>
+</multiline>
+<multiline url="$b_url$&amp;bookId=13391&amp;type=0&amp;pl=new_3">
+<line><p style="14-blue-p-link" width="67%">不死邪魔</p><p width="30%" margin="7" style="14-yellow-text">随意而行笔</p></line>
+<line  height="22"><p margin="9" style="14-yellow-text">妖兽的乐园，弱者的坟墓</p></line>
+</multiline>
+<multiline url="$b_url$&amp;bookId=13822&amp;type=0&amp;pl=new_4">
+<line><p style="14-blue-p-link" width="67%">走吧，张小砚</p><p width="30%" margin="7" style="14-yellow-text">张小砚</p></line>
+<line  height="22"><p margin="9" style="14-yellow-text">她这一路：进过局子遇过劫匪，到了拉萨身无分文，乞讨得到一</p></line>
+</multiline>
+<multiline url="$b_url$&amp;bookId=12991&amp;type=0&amp;pl=new_5">
+<line><p style="14-blue-p-link" width="67%">超完美恋人</p><p width="30%" margin="7" style="14-yellow-text">端木雅夜</p></line>
+<line  height="22"><p margin="9" style="14-yellow-text">酷霸少女挑逗三位翩翩美少年</p></line>
+</multiline>
+<line><a style="14-pink-link" url="http://reader2.3g.qq.com/category/showNewestBooks.sc?sid=none&amp;pageNo=1">[更多新书]</a></line>
+<line height="30" style="blue-line"><a width="33%" align="middle" style="14-hover-link" url="$c_url$">分类</a><a width="33%" align="middle" margin="0" style="14-hover-link" url="$rank_url$&amp;pageNo=1">排行</a><a align="middle" width="33%" margin="0" style="14-hover-link" url="$tl_url$">专题</a></line>
+</page>
+</dataPage>

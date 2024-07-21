@@ -1,0 +1,36 @@
+<html>
+  <head>
+    <style>
+      .body { BACKGROUND-COLOR:TRANSPARENT; }
+      .full_bar { FONT-SIZE:MEDIUM;WIDTH:100.0%;BACKGROUND-IMAGE:URL('file://menu_bar_background.png');BACKGROUND-REPEAT:REPEAT-X;HEIGHT:41.0PX;}
+      .top_spacer { WIDTH:100.0%;BACKGROUND-IMAGE:URL('file://bg_gray_transparent.png');BACKGROUND-REPEAT:REPEAT-X;HEIGHT:1.0PX; }
+      .left_side { WIDTH:24.0%;TEXT-ALIGN:CENTER; }
+      .menu_divider { WIDTH:3.0PX;BACKGROUND-IMAGE:URL('file://menu_divider.png'); }
+      .align_center { TEXT-ALIGN:CENTER; }
+      .right_side { WIDTH:50.0%;TEXT-ALIGN:CENTER; }
+      .rightkey { FONT-SIZE:LARGE;TEXT-ALIGN:CENTER; }
+      .exit { COLOR:#FFFFFF;FONT-SIZE:LARGE;WIDTH:100%;HEIGHT:40PX;TEXT-ALIGN:CENTER;FONT-WEIGHT:BOLD; OVERFLOW:HIDDEN;WHITE-SPACE:NOWRAP;}
+      .hover { COLOR:#FFFFFF;BACKGROUND-COLOR:#909090;OUTLINE:NONE;BORDER-BOTTOM-COLOR:#909090;BORDER-BOTTOM-STYLE:SOLID;BORDER-BOTTOM-WIDTH:1.0PX;BORDER-LEFT-COLOR:#909090;BORDER-LEFT-STYLE:SOLID;BORDER-LEFT-WIDTH:1.0PX;BORDER-RIGHT-COLOR:#909090;BORDER-RIGHT-STYLE:SOLID;BORDER-RIGHT-WIDTH:1.0PX;BORDER-TOP-COLOR:#909090;BORDER-TOP-STYLE:SOLID;BORDER-TOP-WIDTH:1.0PX; }
+      .visible { DISPLAY:BLOCK;}
+      .invisible { DISPLAY:NONE; }
+    </style>
+  </head>
+  <body class="body">
+  <div class="top_spacer"></div>
+    <table id="wrapper" class="full_bar" cols="4" rows="1" cellspacing="0">
+      <tr>
+        <td class="left_side" id="leftkey"></td>
+        <td class="align_center" id="centerkeys"></td>
+        <td class="menu_divider"></td>
+        <td id="rightkey" class="right_side">
+            <div class="rightkey invisible" id="stop" onclick="mwl.execBrowserCommand('&$8_COMMANDID;');"><img width="40" height="40" src="file://stop.png"/></div>
+            <div class="rightkey invisible" id="back" onclick="mwl.execBrowserCommand('&$1_COMMANDID;');"><img width="40" height="40" src="file://back.png"/></div>
+            <div class="rightkey invisible" id="back-mag-minus" onclick="mwl.execBrowserCommand('&$22_COMMANDID;');"><img width="40" height="40" src="file://zoom_out.png"/></div>
+            <div class="rightkey invisible grey_item" id="back-grey" onclick="mwl.execBrowserCommand('&$9_COMMANDID;');">
+              <table cols="1" rows="1" cellspacing="0"><tr><td class="exit" valign="center">&$66_STR;</td></tr></table>
+            </div>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>

@@ -1,7 +1,0 @@
-
-<?php
-$dbhost = "localhost";
-$dbname = "111";
-$dbuser = "111";
-$dbpass = "123456";
-?>

@@ -4,9 +4,9 @@ $title = '消息提示';
 include_once $_SERVER["DOCUMENT_ROOT"].'/M/c/header.php';
 aut();
 
-setcookie('login','', time()-86400*365, '/'); 
-setcookie('pass','', time()-86400*365, '/');
-setcookie('baidu_id','', time()-86400*365, '/'); 
+setcookie('qq','', time()-86400*365, '/', 'baorua.cn'); 
+setcookie('pass','', time()-86400*365, '/', 'baorua.cn');
+setcookie('baidu_id','', time()-86400*365, '/', 'baorua.cn'); 
 header('Location: /');
 include_once $_SERVER["DOCUMENT_ROOT"].'/M/c/foot.php';
 ?>

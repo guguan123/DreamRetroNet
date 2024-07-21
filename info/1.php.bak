@@ -2,10 +2,13 @@
 include_once $_SERVER["DOCUMENT_ROOT"].'/system/base.php';
 $title = '免责声明';
 include_once $_SERVER["DOCUMENT_ROOT"].'/M/c/header.php';
+echo '<title>'.$title.'</title>';
+echo '</head>'; 
 
+echo '<body class="subpage"><div id="header"><a href="#back" onclick="history.back();" class="iconfont icon-fanhui" title="'.$exit.'"></a>';
 
-echo '<body class="subpage"><header><a href="#back" onclick="history.back();" class="iconfont icon-fanhui" title="返回"></a>';
-echo '<h2>'.$title.'</h2><a href="/"><img src="/favicon.ico" width="32" height="32" alt="续梦网logo" /><h1>'.$title2.'</h1>';
+echo '<h1>'.$title.'</h1><a href="/"><img src="/favicon.ico" width="32" height="32" alt="'.$title2.'logo" /><h1>'.$title2.'</h1>';
+
 include_once $_SERVER["DOCUMENT_ROOT"] . '/M/c/user.php';
 
 echo '<div id="nav" class="container"><a href="/">首页</a>';

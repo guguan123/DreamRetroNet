@@ -33,7 +33,7 @@ echo '<main class="container"><div class="area"><form action="#delScreen">';
 echo '<ul class="screens">';
 $scr = $con->query("SELECT * FROM `image` ORDER BY `id` DESC LIMIT 15");
  while($w = $scr->fetch_assoc()){
-echo '<li><img src="/M/s/'.$w['url'].'" width="640" height="360" data-games_id="1" /><span>240×320</span><a href="/screens/delete/'.$w['id'].'"></a><input type="checkbox" name="screen'.$w['id'].'" value="'.$w['id'].'" /></li>';
+echo '<li><img src="/M/s/'.$w['url'].'" data-games_id="1" /><span>240×320</span><a href="/screens/delete/'.$w['id'].'"></a><input type="checkbox" name="screen'.$w['id'].'" value="'.$w['id'].'" /></li>';
 }
 echo '</ul>';
 echo '<input type="submit" value="批量删除" /></form>';

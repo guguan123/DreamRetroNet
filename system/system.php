@@ -1,12 +1,22 @@
 <?php
 date_default_timezone_set("Asia/Shanghai");
 
+function qu($qid) { # Если НЕ авторизирован
+	global $qun; 
+	//if($qun['qid']==$qid){
+echo '<title>消息提示</title><link rel="stylesheet" href="/M/c/notice.css">';
+echo '<body id="notice"><h2 class="topic">消息提示</h2><p>网站维护中......</p></body>';
+exit();
+
+}
+
 function name($id_user){ // ФУНКЦИЯ ПОЛЬЗОВАТЕЛЯ
 
 	global $con;
 $id_user = intval($id_user);
 	$us = $con->query("SELECT * FROM `user` WHERE `id` = '".$id_user."' LIMIT 1")->fetch_assoc();
 	if ($us['baidu_pic']){ $pic  = '<span class="user-img"><img class="Avatar" src="http://tb.himg.baidu.com/sys/portraitn/item/'.$us['baidu_pic'].'" alt="头像" width="24" height="24"></img>'; }
+	if ($us['github_avatar']){ $pic  = '<span class="user-img"><img class="Avatar" src="'.$us['github_avatar'].'" alt="头像" width="24" height="24"></img>'; }
 	if ($us['pic']>=0){ $pic  = '<span class="user-img"><img class="Avatar" src="/M/u/'.$us['pic'].'" alt="头像" width="24" height="24"></img>'; }
 	if ($us['pic']==0){ $pic  = '<span class="user-img"><img class="Avatar" src="/M/guest.png" alt="头像" width="24" height="24"></img>'; }
 	if ($us['v']==0){ $v  = ''; }
@@ -20,6 +30,7 @@ $pic = intval($pic);
 	//$new = $con->query("SELECT * FROM `user` ORDER BY `id` DESC");
 	if ($pics['qq_avatar']){$pic = ''.$pics['qq_avatar'].'&s=40'; }
 	if ($pics['baidu_avatar']){$pic = 'https://himg.bdimg.com/sys/portrait/item/'.$pics['baidu_avatar'].'';}
+	if ($pics['github_avatar']){$pic = ''.$pics['github_avatar'].''; }
 return (empty($pics)?'system':''.$pic.'" ,');
 }
 
@@ -37,8 +48,9 @@ $id_user = intval($id_user);
 $pic = intval($pic);
 	$pics = $con->query("SELECT * FROM `user` WHERE `id` = '".$id."' LIMIT 1")->fetch_assoc();
 	//$new = $con->query("SELECT * FROM `user` ORDER BY `id` DESC");
-	if ($pics['qq_avatar']){$pic = ''.$pics['qq_avatar'].'&s=40'; }
+	if ($pics['avatar']){$pic = '/M/u/'.$pics['avatar'].''; }else{$pic = '/M/guest.png';}
 	if ($pics['baidu_avatar']){$pic = 'https://himg.bdimg.com/sys/portrait/item/'.$pics['baidu_avatar'].'';}
+	if ($pics['github_avatar']){$pic = ''.$pics['github_avatar'].'';}
 return (empty($pics)?'system':''.$pic.'" ,');
 }
 	
@@ -48,13 +60,13 @@ return (empty($pics)?'system':''.$pic.'" ,');
 
 # Проверка на авторизацию
 
-if(isset($_COOKIE['login'])  && isset($_COOKIE['pass']))
+if(isset($_COOKIE['mail'])  && isset($_COOKIE['pass']))
 //if(isset($_COOKIE['baidu_id']))  
 {
-$user = $con->query("SELECT * FROM `user` WHERE `login` = '".htmlspecialchars($_COOKIE['login'])."' && `pass` = '".htmlspecialchars($_COOKIE['pass'])."' LIMIT 1")->fetch_assoc();
+$user = $con->query("SELECT * FROM `user` WHERE `qq` = '".htmlspecialchars($_COOKIE['mail'])."' && `pass` = '".htmlspecialchars($_COOKIE['pass'])."' LIMIT 1")->fetch_assoc();
 }
 if(isset($_COOKIE['BAEID'])){
-$user = $con->query("SELECT * FROM `user` WHERE `qq` = '".htmlspecialchars($_COOKIE['BAEID'])."' OR `baidu` = '".htmlspecialchars($_COOKIE['BAEID'])."' LIMIT 1")->fetch_assoc();
+$user = $con->query("SELECT * FROM `user` WHERE `qq` = '".htmlspecialchars($_COOKIE['BAEID'])."' or `baidu` = '".htmlspecialchars($_COOKIE['BAEID'])."' or `github` = '".htmlspecialchars($_COOKIE['BAEID'])."'  LIMIT 1")->fetch_assoc();
 }
 //$user = $con->query("SELECT * FROM `user` WHERE `baidu` = '".htmlspecialchars($_COOKIE['BAEID'])."' LIMIT 1")->fetch_assoc();
 
@@ -139,6 +151,7 @@ exit();
 }
 }
 
+
 $SITE = 'http://'.$_SERVER['HTTP_HOST'];
 
 
@@ -219,6 +232,32 @@ return (empty($us)?'System':' <a href="/info/'.$us['id'].'"><span class="user-im
 }
 
 
+
+function cuser($id_user){ // ФУНКЦИЯ ПОЛЬЗОВАТЕЛЯ
+
+	global $con;
+$id_user = intval($id_user);
+	$us = $con->query("SELECT * FROM `user` WHERE `id` = '".$id_user."' LIMIT 1")->fetch_assoc();
+
+
+if($us['up_time']+300 > time()){
+$on_off = '<img src="/style/image/on_user.png" width="9px">'; 
+}else{
+$on_off = ''; 
+}
+
+if($us['admin_level'] == '0'){ $dol  = ''; }
+	elseif($us['admin_level'] == '1'){ $dol = '<font color="green">[版主]</font>'; }
+	elseif($us['admin_level'] == '2'){ $dol = '<font color="red">[管理员]</font>'; }
+	elseif($us['admin_level'] == '3'){ $dol = '<font color="blue">[创始人]</font>'; }
+	elseif($us['admin_level'] == '4'){ $dol = '<font color="blue">禁言</font>'; }
+	
+	if ($us['v']==0){ $v  = ''; }
+	if ($us['v']>=1){ $v  = '<i class="m-icon m-icon-comment m-icon-yellowv"></i></span>'; }
+	
+
+return (empty($us)?'System':' <a href="/user/'.$us['id'].'"><span class="user-img"><img class="Avatar" src="'.avatar($us['id']).'" width="24" height="24" alt="头像" />'.$v.'</a><div><p><a href="/user/'.$us['id'].'">'.$us['name'].''.$on_off.''.$dol.'');
+}
 
 //<div class="quote small-font"><a href="/info/'.$us['id'].'"> '.$on_off.' '.$dol.'
 

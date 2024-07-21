@@ -1,0 +1,13 @@
+Manifest-Version: 1.0
+MIDlet-Vendor: MuchHappy
+MIDlet-Version: 1.0.0
+Nokia-MIDlet-On-Screen-Keypad: gameactions
+MIDlet-1: 上古卷轴II-双帝传奇, /icon.png,main.MainMidlet
+MicroEdition-Configuration: CLDC-1.0
+Nokia-MIDlet-App-Orientation: portrait
+Created-By: 1.6.0_02 (Sun Microsystems Inc.)
+MIDlet-Icon: /icon.png
+MIDlet-Name: 上古卷轴II-双帝传奇
+MIDlet-Info-URL: http://j2mecloud.tpddns.cn:3092/
+MicroEdition-Profile: MIDP-1.0
+

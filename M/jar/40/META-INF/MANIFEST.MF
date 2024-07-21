@@ -1,0 +1,14 @@
+Manifest-Version: 1.0
+MIDlet-1: 网易云音乐,icon.png,com.pyy.MainMIDlet
+MIDlet-Vendor: Pyy
+MicroEdition-Configuration: CLDC-1.1
+MIDlet-Name: 网易云音乐
+MIDlet-Version: 1.6.1
+MicroEdition-Profile: MIDP-2.0
+MIDlet-Icon: icon.png
+Nokia-MIDlet-On-Screen-Keypad: no
+Nokia-MIDlet-No-Exit: true
+SmartPhone: true
+
+
+

@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+MIDlet-Vendor: HYJY
+MIDlet-Version: 1.0.0
+MicroEdition-Configuration: CLDC-1.0
+MIDlet-1: 天卦伏魔录二,/icon.png,current.RPGMIDlet
+APPID: 99999900000000000000
+MIDlet-Icon: /icon.png
+MIDlet-Name: TKFML2
+MicroEdition-Profile: MIDP-2.0
+MIDlet-Description: 单机;适用于nokia n73系列;角色类游戏
+

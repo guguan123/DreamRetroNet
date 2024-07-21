@@ -1,0 +1,74 @@
+﻿<c>
+	<id>105506056006</id>
+	<n>超级推冰块</n>
+	<pic>g1</pic>
+	<t>game</t>
+	<s>313KB</s>
+	<r>2009年度大作,将益智游戏的优点发挥到极限的超级好玩游戏</r>
+   	 <sp>106631235</sp>
+    <sc>84#4#313</sc>
+    <url>http://looke.cn/game/iceage2009_nokia_n73.jar</url>
+</c>
+
+<c>
+	<id>105505055001</id>
+	<n>俄罗斯方块</n>
+	<pic>g2</pic>
+	<t>game</t>
+	<s>158KB</s>
+	<r>009新春巨献,俄罗斯方块星座贺岁版隆重上市,还等什么,快来体验吧!</r>
+	<sp>106631235</sp>
+    <sc>84#4#299</sc>
+    <url>http://looke.cn/game/Star_Nokia_N73.jar</url>
+</c>
+
+<c>	
+	<id>105509059003</id>
+	<n>香艳美女斗地主</n>
+	<pic>g3</pic>
+	<t>game</t>
+	<s>403K</s>
+	<r>与性感美女斗地主。</r>
+    <sp>106631235</sp>
+   	<sc>84#4#337</sc>
+   	<url>http://looke.cn/game/doudizhu_nokia_N73.jar</url>
+</c>
+
+<c>
+	<id>105509059013</id>
+	<n>手机优化大师</n>
+	<pic>s1</pic>
+	<t>application</t>
+	<s>93KB</s>
+	<r>一款集查看系统内存状况、优化内存、临时文件整理于一身的系统工具软件。</r>
+	<sp>106631235</sp>
+    <sc>84#4#500</sc>
+    <url>http://looke.cn/soft/3gOptimize_b.jar</url>
+</c>
+
+<c>
+	<id>105509059015</id>
+	<n>手机安全卫士</n>
+	<pic>s2</pic>
+	<t>application</t>
+	<s>171KB</s>
+	<r>彻底清除手机病毒，提供实时监控，保护爱机。最快的病毒库更新，快速的静态扫描。</r>
+	<sp>106631235</sp>
+     <sc>84#4#</sc>
+     <url>http://looke.cn/soft/3gSD_b.jar</url>
+</c>
+
+<c>
+	<id>105509059017</id>
+	<n>荧光棒+电量清空</n>
+	<pic>s3</pic>
+	<t>application</t>
+	<s>26KB</s>
+	<r>酷炫的荧光棒，还有清空电量功能哦！</r>
+	<sp>106631235</sp>
+    	 <sc>84#4#400</sc>
+    	 <url>http://looke.cn/soft/MLight_b.jar</url>
+</c>
+
+
+

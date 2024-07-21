@@ -6,7 +6,7 @@ function name($id_user){ // ФУНКЦИЯ ПОЛЬЗОВАТЕЛЯ
 	global $con;
 $id_user = intval($id_user);
 	$us = $con->query("SELECT * FROM `user` WHERE `id` = '".$id_user."' LIMIT 1")->fetch_assoc();
-	if($username = $us['name'] ?: $us['login']){
+	if($username = $us['name']){
 	return (empty($us)?'System':' <a href="/user/'.$us['id'].'" class="right" ">'.$username.'分享</a>');
 	}
 	}
@@ -35,13 +35,13 @@ return (empty($pics)?'system':''.$pic.'" ,');
 
 # Проверка на авторизацию
 
-if(isset($_COOKIE['login'])  && isset($_COOKIE['pass']))
+if(isset($_COOKIE['qq'])  && isset($_COOKIE['pass']))
 //if(isset($_COOKIE['baidu_id']))  
 {
-$user = $con->query("SELECT * FROM `user` WHERE `login` = '".htmlspecialchars($_COOKIE['login'])."' && `pass` = '".htmlspecialchars($_COOKIE['pass'])."' LIMIT 1")->fetch_assoc();
+$user = $con->query("SELECT * FROM `user` WHERE `qq` = '".htmlspecialchars($_COOKIE['qq'])."' && `pass` = '".htmlspecialchars($_COOKIE['pass'])."' LIMIT 1")->fetch_assoc();
 }
 if(isset($_COOKIE['BAEID'])){
-$user = $con->query("SELECT * FROM `user` WHERE `qq` = '".htmlspecialchars($_COOKIE['BAEID'])."' OR `baidu` = '".htmlspecialchars($_COOKIE['BAEID'])."' LIMIT 1")->fetch_assoc();
+$user = $con->query("SELECT * FROM `user` WHERE `baidu` = '".htmlspecialchars($_COOKIE['BAEID'])."' or `github` = '".htmlspecialchars($_COOKIE['BAEID'])."' LIMIT 1")->fetch_assoc();
 }
 
 
@@ -162,10 +162,21 @@ function  data($time=NULL){
     return $timep; 
 }
 
-
+if (!empty($_SERVER['HTTP_CLIENT_IP']))
+  {
+    $ip=$_SERVER['HTTP_CLIENT_IP'];
+  }
+  elseif (!empty($_SERVER['HTTP_X_FORWARDED_FOR']))
+  {
+    $ip=$_SERVER['HTTP_X_FORWARDED_FOR'];
+  }
+  else
+  {
+    $ip=$_SERVER['REMOTE_ADDR'];
+  }
 if ($user) { // ОНЛАЙН
 	global $con;
-$con->query("UPDATE `user` SET `up_time` = '".time()."' WHERE `id` = '".$user['id']."'");
+$con->query("UPDATE `user` SET `up_time` = '".time()."',`ip` = '".$ip."' WHERE `id` = '".$user['id']."'");
 }
 
 
@@ -282,6 +293,19 @@ return $fh;
 
 
 // аргумент функции это путь к файлу
+function getFilesizes($file)
+{
+	// ошибка
+	if(!file_exists($file)) return "文件已丢失！";
+
+
+	$filesize = filesize($file);
+	// Если размер больше 1 Кб
+	if ($filesize >= 1073741824) {
+    }
+    return $filesize;
+}
+
 function getFilesize($file)
 {
 	// ошибка
@@ -292,13 +316,13 @@ function getFilesize($file)
 	// Если размер больше 1 Кб
 	if ($filesize >= 1073741824) {
         //转成GB
-        $filesize = round($filesize / 1073741824 * 100) / 100 . ' GB';
+        $filesize = round($filesize / 1073741824 * 100) / 100 . 'G';
     } elseif ($filesize >= 1048576) {
         //转成MB
-        $filesize = round($filesize / 1048576 * 100) / 100 . ' MB';
+        $filesize = round($filesize / 1048576 * 100) / 100 . 'M';
     } elseif ($filesize >= 1024) {
         //转成KB
-        $filesize = round($filesize / 1024 * 100) / 100 . ' KB';
+        $filesize = round($filesize / 1024 * 100) / 100 . 'K';
     } else {
         //不转换直接输出
         $filesize = $filesize . ' 字节';
@@ -306,4 +330,21 @@ function getFilesize($file)
     return $filesize;
 }
 
+function getSize($filesize) {
+    if ($filesize >= 1073741824) {
+        $filesize = round($filesize / 1073741824 * 100) / 100 . 'G';
+        
+    } elseif ($filesize >= 1048576) {
+        $filesize = round($filesize / 1048576 * 100) / 100 . 'M';
+        
+    } elseif ($filesize >= 1024) {
+        $filesize = round($filesize / 1024 * 100) / 100 . 'K';
+        
+    } else {
+        $filesize = $filesize . ' 字节';
+        
+    }
+    return $filesize;
+    
+}
 ?>

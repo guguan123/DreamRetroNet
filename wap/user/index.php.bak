@@ -1,20 +1,19 @@
 <?php
 
-include_once $_SERVER["DOCUMENT_ROOT"].'/system/base.php';
+include_once $_SERVER["DOCUMENT_ROOT"].'/wap/system/base.php';
 
 $id = abs(intval($_GET['id'])); # ФИЛЬТР ГЕТ
-
 $use = $con->query("SELECT * FROM `user` WHERE `id` = '".$id."'")->fetch_assoc();
-$f = $con->query("SELECT * FROM `game` WHERE `id_user` = '".$use['id']."'")->fetch_assoc();
+$f = $con->query("SELECT * FROM `package` WHERE `id_user` = '".$use['id']."'")->fetch_assoc();
 if($name = $use['name'] ?: $use['login']){
 $title = ''.$name.'';
 }
 include_once $_SERVER["DOCUMENT_ROOT"].'/wap/M/c/header.php';
-
-echo '<div class="header"><a href="/">';
-echo ''.$title.'</a>';
+echo '</head><body>';
+//echo '<div class="header"><a href="/">';
+//echo ''.$title.'</a>';
 include_once $_SERVER["DOCUMENT_ROOT"] . '/wap/M/c/user.php';
-echo '<div class="wrapper">';
+//echo '<div class="wrapper">';
 
 
 //$arr_pol = array('1' => '♂', '2' => '♀');
@@ -29,68 +28,90 @@ $on_off = '离线';
 
 if($use){
 //echo '<body class="subpage"><div id="header"><a href="#back" onclick="history.back();" class="iconfont icon-fanhui"></a><h1>'.$use['name'].'</h1><div id="user">'
-$file = $con->query("SELECT * FROM `game` WHERE `id_user` = '".$id."' ORDER BY `id` DESC LIMIT 10");
+$file = $con->query("SELECT * FROM `package` WHERE `id_user` = '".$id."' ORDER BY `id` DESC LIMIT 5");
 if($use['id']==$f['id_user']){
 if($name = $use['name'] ?: $use['login']){
-echo '<h2 class="topic top-white"><a href="/games/1?users_id='.$use['id'].'" class="right">更多</a>'.$name.'上传的应用</h2>';
+echo '<br><a href="/game/1?user_id='.$use['id'].'" class="right">'.$more.'</a>'.$name.''.$uploaded.'';
 }
-echo '<ul class="list icon line line2 games bg-white c">';
+//echo '<br>';
 while($u = $file->fetch_assoc()){
-echo '<li><a href="/game/'.$u['id'].'" class="clearfix"><img src="/M/i/'.$u['id'].'" width="46" height="46" alt="图标" />';
+echo '<br><a href="/'.$u['system'].'/'.$u['id'].'">';
 if($name = $u['cn'] ?: $u['name']){
-echo '<strong>'.$name.'</strong>';
+echo ''.$name.'</a>';
 }
-echo '<span class="small-font">'.$u['platform'].'&nbsp;'.$u['downs'].'下载&nbsp;';
-$number = $con->query('SELECT * FROM `comment` WHERE `id_obmen` = "'.$u['id'].'"')->num_rows;
-echo ''.$number.'评论&nbsp;'.$u['id_raz'].'</span></a></li>';
+$size = getFilesize($_SERVER['DOCUMENT_ROOT'].'/api-down/'.$u['down'].'');
+$str=$u['format'];
+$str=str_replace('.','',$str);
+echo '('.$size.'/'.$str.')';
 }
 }
-$dow = $con->query("SELECT * FROM `game` ORDER BY `id` DESC");
+$dow = $con->query("SELECT * FROM `package` ORDER BY `id` DESC");
 if($name = $use['name'] ?: $use['login']){
-echo '<h2 class="topic top-white">'.$name.'最近在玩</h2>';
+echo ''.$name.'最近在玩';
 }
-echo '<ul class="list icon line line2 games bg-white c">';
 while($do = $dow->fetch_assoc()){
-$down = $con->query("SELECT * FROM `game_download` WHERE `game_id` = '".$do['id']."' AND `user_id` = '".$id."' ORDER BY `id` DESC LIMIT 10");
+$down = $con->query("SELECT * FROM `package_download` WHERE `package_id` = '".$do['id']."' AND `user_id` = '".$id."' ORDER BY `id` DESC LIMIT 10");
 while($download = $down->fetch_assoc()){
-echo '<li><a href="/game/'.$download['game_id'].'" class="clearfix"><img src="/M/i/'.$download['game_id'].'" width="46" height="46" alt="图标" />';
-if($name = $do['cn'] ?: $do['name']){
-echo '<strong>'.$name.'</strong>';
-}
-echo '<span class="small-font">'.$do['platform'].'&nbsp;'.$do['downs'].'下载&nbsp;';
-$number = $con->query('SELECT * FROM `comment` WHERE `id_obmen` = "'.$do['id'].'"')->num_rows;
-echo ''.$number.'评论&nbsp;'.$do['id_raz'].'</span></a></li>';
+
 }
 }
 //$uw = $con->query("SELECT * FROM `file` WHERE `id_user` = "'.$id.'" ORDER BY `id` DESC");
-$uw = $con->query("SELECT * FROM `game` WHERE `id_user` = '".$id."' ORDER BY `id` DESC");
-$uc = $con->query("SELECT * FROM `comment` WHERE `id_user` = '".$id."' ORDER BY `id` DESC");
-$uv = $con->query("SELECT * FROM `games` WHERE `id_user` = '".$id."' ORDER BY `id` DESC");
-if($name = $use['name'] ?: $use['login']){
-echo '</div><div id="aside"><h2 class="topic top-white">'.$name.'</h2>';
+/**
+ *$ip  string  必传
+ *获取ip归属地
+ *demo 四川省成都市 电信
+ */
+function get_ip_city($ip)
+{
+    $ch = curl_init();
+    $url = 'https://whois.pconline.com.cn/ipJson.jsp?ip=' . $ip;
+    //用curl发送接收数据
+    curl_setopt($ch, CURLOPT_URL, $url);
+    curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+    //请求为https
+    curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
+    curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, false);
+    $location = curl_exec($ch);
+    curl_close($ch);
+    //转码
+    $location = mb_convert_encoding($location, 'utf-8', 'GB2312');
+    //var_dump($location);
+    //截取{}中的字符串
+    $location = substr($location, strlen('({') + strpos($location, '({'), (strlen($location) - strpos($location, '})')) * (-1));
+    //将截取的字符串$location中的‘，’替换成‘&’   将字符串中的‘：‘替换成‘=’
+    $location = str_replace('"', "", str_replace(":", "=", str_replace(",", "&", $location)));
+    //php内置函数，将处理成类似于url参数的格式的字符串  转换成数组
+    parse_str($location, $ip_location);
+    return $ip_location['pro'];
 }
-echo '<ul class="list padding line bg-white c">
-<li>UID：'.$use['id'].'</li>';
-echo '<li>在线状态：'.$on_off.'</li>';
-echo '<li>注册日期：'.data($use['data_reg']).'</li>';
-echo '<li>上传游戏：'.$uw->num_rows.'个</li>';
-echo '<li>下载游戏：'.$use['downs'].'个</li>';
-echo '<li>游戏列表：'.$uv->num_rows.'个</li>';
-echo '<li>发布评论：'.$uc->num_rows.'条</li>';
-echo '<li>封号大礼包：'.fh($use['fh']).'</li>';
-echo '</ul>';
+$uw = $con->query("SELECT * FROM `package` WHERE `id_user` = '".$id."' ORDER BY `id` DESC");
+$uc = $con->query("SELECT * FROM `comment` WHERE `id_user` = '".$id."' ORDER BY `id` DESC");
+if($name = $use['name'] ?: $use['login']){
+echo '<br>'.$name.'';
+}
+echo '<br>UID:'.$use['id'].' ';
+$str = get_ip_city($use['ip']);
+$str=str_replace('省','',$str);
+echo ''.$use['admin_level'].' ';
+echo 'ip:'.$str.' ';
+echo ''.$on_off.'';
+echo '<br>'.$Recent.':'.data($use['up_time']).'';
+echo '<br>'.$enroll.':'.data($use['data_reg']).'';
+echo '<br>'.$uploadss.':'.$uw->num_rows.' ';
+echo ''.$downloadss.':'.$use['package_downs'].' ';
+echo ''.$commentsname.':'.$uc->num_rows.'';
+//echo '<li>封号大礼包：'.fh($use['fh']).'</li>';
 if($user['id']==$use['id']){
-echo '<h2 class="topic top-white">功能</h2>';
-echo '<ul class="list padding line bg-white c"><li><a href="/games/upload" >上传游戏</li>';
-echo '<li><a href="/user/edit" >修改资料</li>';
-echo '<li><a href="/user/edit/pic" >修改头像</li>';
-echo '<li><a href="/user/edit/password" >修改密码</li>';
-echo '<li><a href="/user/logout" >注销登录</li>';
+echo '<br>功能';
+echo '<br><a href="/apps/upload" >'.$uploadss.''.$software.'</a> <a href="/games/upload" >'.$uploadss.''.$game.'</a> ';
+//echo '<li><a href="/user/edit" >修改资料</li>';
+//echo '<li><a href="/user/edit/password" >修改密码</li>';
+echo '<a href="/user/logout" >'.$logout.'</a>';
 }
 echo '</ul></div></div>';
 echo '<div class="link"><b>用户名</b> : '.$use['login'].'</div>';
 echo '<div class="link"><b>昵称</b> : '.$use['name'].'</div>';
-echo '<div class="link"><b>ID</b> : '.$use['id'].'</div>';
+echo '<div class="link"><bs>ID</b> : '.$use['id'].'</div>';
 echo '<div class="link"><b>性别</b> : '.$use['pol'].'</div>';
 echo '<div class="link"><b>注册时间</b> : '.data($use['data_reg']).'</div>';
 echo '<div class="link"><b>用户等级</b> : '.$use['admin_level'].'</div>';

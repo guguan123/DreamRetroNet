@@ -1,0 +1,33 @@
+MIDlet-Version: 1.0
+DoDest: F06E6D42E28C7724E731C730E522C461610A0F62A8746A5AEC048DC82F7886361CB7896EA92D56CCC3BD1E07BFE604FBD79232BD9938D9C55D2C05F1FD47B5071EC8562D200CF5B9C578F276F6A991334052e1dd92ae6403f606401e3b5ae94e 
+MIDlet-Name: 宿命之剑
+Tj1Url: http://g.3g.qq.com/g/s?cid=gamejx&aid=g_downApp&resId=MA2010111500124&chargeMethod=S&feeType=F&series=N73
+FreeCode: 5E477C897F925939ef0d3930a7b6c95bd2b32ed45989c61f
+Ant-Version: Apache Ant 1.7.1
+GameCenterName: QQ游戏中心
+SmsDest1: ADB0FFA03412F5D869AE2EA173E23FBEd8b18e27d15de593890d5441cecfb259
+SmsDest2: ADB0FFA03412F5D869AE2EA173E23FBEd8b18e27d15de593890d5441cecfb259
+MicroEdition-Configuration: CLDC-1.0
+MIDlet-1: 宿命之剑,/icon.png,screen.GameMIDlet
+QQ: 0
+ChannelFirst: FR
+MicroEdition-Profile: MIDP-1.0
+GameCenterUrl: http://g.3g.qq.com/g/s?aid=g_cp_adver&series=N73
+InterChannel: ICID
+MIDlet-Vendor: CWA
+DoCode: F065C5D70B899541F83780C6851E6AB4B33CE2062EAA5C68118D4767A8F9441FC7EC8588DF7F881B0D321A2BC51B185179EC674B31C622F1FA10CA0126916DEDE3801838788E5B6B7A13B9644C52F7B5F01CF1C145E276D7A880868BC062DEEB4D1E0075D61FCE380F1A18BBA77C52D89BF608EEBC85D1061ee9efc3ada7991c36af7032c3ccca61 
+Manifest-Version: 1.0
+MIDlet-Install-Notify: http://g3.3g.qq.com/g/s?aid=g_install&cpid=58&gameid=117&agent=N73&feetype=S
+Created-By: 10.0-b19 (Sun Microsystems Inc.)
+SmsCode2: 62A9BB7A09BB9FC5c4ca4238a0b923820dcc509a6f75849b
+Tj2Url: http://g.3g.qq.com/g/s?cid=gamejx&aid=g_downApp&resId=MA2011021200004&chargeMethod=S&feeType=F&series=N73
+SmsCode1: 1782A5B9ECE9820Ec81e728d9d4c2f636f067f89cc14862c
+FreeDest: 06818C025AF3AF5F5E477C897F9259397a1fa43673750e5a9f1a6b14c5f1a27e
+Term: N73
+FeeMode: 1 
+MIDlet-Icon: /icon.png
+Tj3Url: http://g.3g.qq.com/g/s?cid=gamejx&aid=g_downApp&resId=MA2009072700029&chargeMethod=S&feeType=F&series=N73
+ChannelSecond: SEC
+MIDlet-Description: 华娱角色扮演类游戏大作，数位人员精心打造，唯美的爱情故事，魔兽世界般的天赋技能，华丽的地图场景，带给你超豪华的享受！适合N73系列
+LogoLinkReco: 1;1;1 
+

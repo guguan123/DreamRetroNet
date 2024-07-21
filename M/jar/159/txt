@@ -1,0 +1,3606 @@
+$Òmes(3930)
+@H(0)
+@CH(0)
+@N(0)
+@I(0)(1)
+@I(8)(1)
+@I(6)(1)
+@I(5)(1)
+@I(3)(1)
+@I(2)(1)
+@I(1)(1)
+@I(9)(1)
+@I(14)(1)
+@I(18)(1)
+@I(11)(1)
+@I(13)(1)
+@I(15)(1)
+@I(16)(1)
+	%c(3)September 7, 10:00 AM District Court Courtroom No. 1 %c(0)%s(60)%p
+@N(10)
+	%c(3)(Muttering) %c(0)%p
+@K
+%w(20)
+%B(13)
+@H(4)
+@CH(40)
+@N(4)
+	The court is now in session for the trial of Ms. Maya Fey. %p
+@H(6)
+@CH(50)
+@N(5)
+	The prosecution is ready, Your Honor. %p
+@H(2)
+@CH(10)
+@N(1)
+	The defense is ready, Your Honor. %w(10)%c(2)(Miles Edgeworth... %w(15)I'd better not show any signs of weakness today, or he'll be on me in an instant.) %c(0)%p
+@H(4)
+@CH(41)
+@N(4)
+	Mr. Edgeworth. Please give the court your opening statement. %p
+@H(6)
+@CH(50)
+@N(5)
+	Thank you, Your Honor. The defendant, Ms. Maya Fey, was at the scene of the crime. The prosecution has evidence she committed this murder... and we have a witness who saw her do it. The prosecution sees no reason to doubt the facts of this case, Your Honor. %p
+@H(4)
+@CH(43)
+@N(4)
+%w(10)
+@CH(40)
+	I see. Thank you, Mr. Edgeworth. %w(20)%p
+@CH(41)
+	Let's begin then. You may call your first witness. %p
+@H(6)
+@CH(50)
+@N(5)
+	The prosecution calls the chief officer at the scene, Detective Gumshoe! %p
+%w(10)
+@N(0)
+@H(5)
+@CH(60)
+%w(40)
+@H(6)
+@CH(50)
+@N(5)
+	Witness, %w(15)please state your name and profession to the court. %p
+@H(5)
+@CH(61)
+@N(6)
+	Sir! My name's Dick Gumshoe, sir! I'm the detective in charge of homicides down at the precinct, sir! %p
+@H(6)
+@CH(50)
+@N(5)
+	Detective Gumshoe. Please, describe for us the details of this murder. %p
+@H(5)
+@CH(61)
+@N(6)
+	Very well, sir! %w(15)Let me use this floor map of the office to explain. %p
+%k
+@IB(0)
+@N(6)
+%w(30)
+%Pset(1)
+	The body was found by this window, here. %p
+@N(5)
+	And the cause of death? %p
+@N(6)
+	Loss of blood due to being struck by a blunt object, sir! %p
+%Pset(2)
+	The murder weapon was a statue of "The Thinker" found next to the body, sir! %p
+@DI(11)
+	It was heavy enough to be a deadly weapon, even in a girl's hands, sir! %p
+@DO
+%Pset(0)
+%k
+@H(4)
+@CH(40)
+@N(4)
+@DI(11)
+	The court accepts the statue as evidence. %p
+@DO
+@H(2)
+@CH(10)
+@N(1)
+	%c(2)(They're still calling it a "statue"...) %c(0)%s(45)%p
+@I(19)(1)
+@N(0)
+@IT(19)
+@CH(10)
+	%c(2)Floor plans added to the Court Record. %c(0)%s(60)%p
+@H(6)
+@CH(51)
+@N(5)
+	Now, %w(12)Detective... %p
+@H(5)
+@CH(60)
+@N(6)
+	Y- %w(8)yes sir! %p
+@H(6)
+@CH(51)
+@N(5)
+	You immediately arrested Ms. Maya Fey, who was found at the scene, correct? %w(7)Can you tell me why? %p
+@H(5)
+@CH(62)
+@N(6)
+	Yes sir! %w(15)I had hard evidence she did it, sir! %p
+@H(4)
+@CH(41)
+@N(4)
+	Hmm. %w(15)Detective Gumshoe, %w(10)Please testify to the court about this "hard evidence". %p
+%P(3940)
+&mes(3940)
+@H(5)
+@CH(60)
+@N(0)
+%Ss(1)
+%s(45)
+	%c(1)-- Maya Fey's Arrest -- %c(0)%w(20)%s(60)%p
+%w(20)
+%B(10)
+@N(6)
+	As soon as the phone call came in, I rushed to the scene! %w(5)There were two people there already: %w(5)The defendant, Ms. Maya Fey, and the lawyer, Mr. Phoenix Wright. %p
+@CH(62)
+	I immediately arrested Ms. Maya Fey! %w(3)Why? %w(15)We had a witness account describing her! %w(10)The witness saw Ms. Maya Fey at the very moment of the murder! %p
+%Ss(0)
+%k
+@H(4)
+@CH(46)
+@N(4)
+	Hmm... The very moment, you say. %p
+@CH(41)
+	Very well. Mr. Wright, %w(15)you may begin your cross - examination. %p
+@H(2)
+@CH(10)
+@N(1)
+	Y-yes, Your Honor. %w(5)%c(2)(Cross - examine what...?) %p
+@CH(11)
+	%c(2)(I couldn't see a single contradiction in that testimony...) %c(0)%p
+@N(0)
+	...whoosh... %p
+@CH(12)
+	SMACK! %w(30)%p
+@CH(10)
+@N(1)
+	%c(2)(Hey! %w(20)Maya just threw something at me...) %p
+@H(0)
+@CH(0)
+@DI(10)
+	%c(2)(What's this?) %s(45)%p
+@N(1)
+	%c(2)("When my sister couldn't find any contradictions in a witness's testimony %w(5)she would bluff it and press the witness on every detail! %w(5)The witness always slips up and says something wrong... %w(5)It worked lots of times!) %s(60)%p
+@N(1)
+	%c(2)(Heh... %w(15)I should have expected Maya would know some of her sister's tricks!) %p
+@DO
+@CH(0)
+	%c(2)(Alright. %w(15)Let's give this a try!) %c(0)%p
+%k
+@H(4)
+@CH(42)
+@N(4)
+	Something the matter? %p
+@H(2)
+@CH(10)
+@N(1)
+	No, Your Honor. %w(20)I'd like to begin my cross - examination. %p
+%P(4270)
+&mes(4270)
+@H(5)
+@CH(60)
+@N(0)
+%Sj
+%w(20)
+%s(45)
+	%c(1)-- Maya Fey's Arrest -- %c(0)%w(20)%s(60)%p
+%B(10)
+%w(20)
+%P(4280)
+&mes(4280)
+%l(0)(4290)
+%t(4350)
+@H(5)
+@CH(60)
+@N(6)
+	%c(3)As soon as the phone call came in, I rushed to the scene! %c(0)%l
+%P(4290)
+&mes(4290)
+%l(4280)(4300)
+%t(4360)
+@H(5)
+@CH(60)
+@N(6)
+	%c(3)There were two people there already: %c(0)%l
+%P(4300)
+&mes(4300)
+%l(4290)(4310)
+%t(4370)
+@H(5)
+@CH(60)
+@N(6)
+	%c(3)The defendant, Ms. Maya Fey, and the lawyer, Mr. Phoenix Wright. %c(0)%l
+%P(4310)
+&mes(4310)
+%l(4300)(4320)
+%t(4380)
+@H(5)
+@CH(62)
+@N(6)
+	%c(3)I immediately arrested Ms. Maya Fey! %c(0)%l
+%P(4320)
+&mes(4320)
+%l(4310)(4330)
+%t(4390)
+@H(5)
+@CH(62)
+@N(6)
+	%c(3)Why? We had a witness account describing her! %c(0)%l
+%P(4330)
+&mes(4330)
+%l(4320)(0)
+%t(4390)
+@H(5)
+@CH(62)
+@N(6)
+	%c(3)The witness saw Ms. Maya Fey at the very moment of the murder! %c(0)%l
+%P(4340)
+&mes(4340)
+@H(2)
+@CH(10)
+@N(1)
+	%c(2)(I can't see a single contradiction in there!) %p
+@CH(11)
+	%c(2)(I'll just have to take Maya's advice and %c(1)press %c(2)him on anything suspicious!) %c(0)%p
+%P(4280)
+&mes(4350)
+@H(2)
+@CH(10)
+@N(1)
+	Who did you say you got a call from? %p
+@H(5)
+@CH(62)
+@N(6)
+	Hey pal, %w(15)don't play dumb! You know who! %p
+@CH(61)
+	The call was from a customer at the Gatewater Hotel, right across from the crime scene! %p
+@H(2)
+@CH(11)
+@N(1)
+	%c(2)(Hmm... okay, I pressed. Not sure it did much, though.) %c(0)%p
+@CH(10)
+	Right. Please continue. %p
+%P(4290)
+&mes(4360)
+@H(2)
+@CH(10)
+@N(1)
+	Detective Gumshoe, how long would you say it took, between you receiving the call, and your arrival at the scene of the crime? %p
+@H(5)
+@CH(60)
+@N(6)
+	Hmm, right... %w(15)I'd say it was about 3 minutes! %p
+@H(2)
+@CH(10)
+@N(1)
+	Th-that's pretty fast! %p
+@H(5)
+@CH(61)
+@N(6)
+	Our motto this month is "quick response"! %p
+@CH(62)
+	That's how I got there before the killer got away! %p
+@H(6)
+@CH(50)
+@N(5)
+	Indeed! So, tell us who the two people you found on the scene were. %p
+@H(5)
+@CH(60)
+@N(6)
+	Yes sir! %p
+%P(4300)
+&mes(4370)
+@H(2)
+@CH(13)
+@N(1)
+	Are you absolutely sure it was us? %p
+@H(5)
+@CH(61)
+@N(6)
+	Listen pal, your dumb act will only get you so far! %p
+@CH(60)
+	With her funky hippie clothes and your spiky hair? %p
+@CH(62)
+	You two stand out like... like suspicious people at a crime scene! %p
+@H(2)
+@CH(11)
+@N(1)
+	%c(2)(Well... he does have a point about her. %w(5)She is pretty unmistakable.) %p
+@CH(10)
+	%c(2)(I should pick my points to press with a little more care...) %c(0)%p
+%P(4310)
+&mes(4380)
+@H(2)
+@CH(10)
+@N(1)
+	Why's that? %w(15)What's your reason? %p
+%P(4320)
+&mes(4390)
+%k
+@H(2)
+@CH(10)
+@N(1)
+	Hold on just one second! %p
+@H(5)
+@CH(60)
+@N(6)
+	Y-yeah? %p
+@H(2)
+@CH(11)
+@N(1)
+	If I heard correctly... %p
+@CH(14)
+	You said you arrested her because you had "hard evidence" she did it, correct? %p
+@H(5)
+@CH(60)
+@N(6)
+	Huh? %p
+@CH(60)
+	Did... did I say that? Me? %p
+@H(2)
+@CH(10)
+@N(1)
+	I heard you say it! %w(10)%S
+@H(4)
+@CH(41)
+@N(4)
+	You did say it. %w(10)%S
+@H(6)
+@CH(50)
+@N(5)
+	You said it. %w(10)%S
+@H(2)
+@CH(14)
+@N(1)
+	Exactly what about this suspicious woman in pink's claim was "hard evidence"!? %p
+@H(5)
+@CH(61)
+@N(6)
+	Wh- %w(5)what!? %w(10)Miss May isn't suspicious, and she sure isn't pink, pal! %p
+@CH(60)
+	W- %w(5)well, %w(12)I guess she is pink... %p
+@N(0)
+@H(4)
+@CH(44)
+%w(14)
+@CH(45)
+%w(14)
+@CH(41)
+@N(4)
+	That's enough, %w(30)Detective Gumshoe. %w(5)Do you have any more solid proof other than her claims, Detective? %p
+@H(5)
+@CH(60)
+@N(6)
+	Umm... %p
+@H(2)
+@CH(11)
+@N(1)
+	%c(2)(Hmm! %w(15)I guess pressing can have its advantages!) %c(0)%p
+@H(5)
+@CH(60)
+@N(6)
+	... %p
+@CH(62)
+	Yes. %p
+@H(2)
+@CH(12)
+@N(1)
+	%c(2)(Gah!) %c(0)%p
+@H(5)
+@CH(61)
+@N(6)
+	Sorry, %w(15)I got the order of things mixed up in my testimony, Your Honor Sir! There was something I should have told you about first, Your Honor! %p
+@H(4)
+@CH(43)
+@N(4)
+%w(10)
+@CH(40)
+	Very well, Detective. %w(15)Let's hear your testimony again. %p
+%P(4410)
+&mes(4410)
+@H(5)
+@CH(60)
+@N(0)
+%Ss(1)
+%s(45)
+	%c(1)-- Hard Evidence -- %c(0)%w(20)%s(60)%p
+%B(10)
+@H(5)
+@CH(60)
+@N(6)
+	After securing the suspect, I examined the scene of the crime with my own eyes. I found a memo written on a piece of paper next to the victim's body! %p
+@DI(14)
+@CH(62)
+	On it, the word "Maya" was written clearly in blood! %p
+@DO
+@CH(60)
+	Lab test results showed that the blood was the victim's! %w(5)Also, there was blood found on the victim's finger! %p
+@CH(61)
+	Before she died, the victim wrote the killer's name! %p
+%Ss(0)
+@N(10)
+	%c(3)(Muttering) %c(0)%p
+@KK
+@H(5)
+@CH(62)
+@N(6)
+	How you like that? That's my "hard evidence"! %p
+%k
+@H(4)
+@CH(46)
+@N(4)
+	Hmm... %p
+@CH(40)
+	Before we begin cross - examination, I have a question for you, Detective. %p
+@H(5)
+@CH(60)
+@N(6)
+	Y-Your Honor? %p
+@H(4)
+@CH(41)
+@N(4)
+@T
+%f
+	Why didn't you testify about this vital piece of evidence the first time!? %p
+@H(5)
+@CH(60)
+@N(6)
+@CH(67)
+	Ah... eh... %w(15)I know. I'm real embarrassed I forgot about it, Your Honor Sir. %p
+@H(4)
+@CH(41)
+@N(4)
+	Try to be more careful! %p
+@CH(40)
+	Very well, %w(11)the defense may begin its cross - examination. %p
+%P(4430)
+&mes(4430)
+@H(5)
+@CH(60)
+@N(0)
+%Sj
+%s(45)
+	%c(1)-- Hard Evidence -- %c(0)%w(20)%s(60)%p
+%B(10)
+%w(20)
+%P(4440)
+rmes(4440)
+%l(0)(4450)
+%t(4510)
+@H(5)
+@CH(60)
+@N(6)
+	%c(3)After securing the suspect, I examined the scene of the crime with my own eyes. %c(0)%l
+%P(4450)
+&mes(4450)
+%l(4440)(4460)
+%t(4520)
+%i(16)(4600)
+@H(5)
+@CH(60)
+@N(6)
+	%c(3)I found a memo written on a piece of paper next to the victim's body! %c(0)%l
+%P(4460)
+&mes(4460)
+%l(4450)(4470)
+%t(4570)
+%i(16)(4600)
+@H(5)
+@CH(62)
+@N(6)
+	%c(3)On it, the word "Maya" was written clearly in blood! %c(0)%l
+%P(4470)
+&mes(4470)
+%l(4460)(4480)
+%t(4580)
+%i(16)(4600)
+@H(5)
+@CH(60)
+@N(6)
+	%c(3)Lab test results showed that the blood was the victim's! %c(0)%l
+%P(4480)
+&mes(4480)
+%l(4470)(4490)
+%t(5150)
+%i(16)(4600)
+@H(5)
+@CH(61)
+@N(6)
+	%c(3)Also, there was blood found on the victim's finger! %c(0)%l
+%P(4490)
+&mes(4490)
+%l(4480)(0)
+%t(4590)
+%i(16)(4600)
+@H(5)
+@CH(61)
+@N(6)
+	%c(3)Before she died, the victim wrote the killer's name! %c(0)%l
+%P(4500)
+&mes(4500)
+@H(2)
+@CH(10)
+@N(1)
+	%c(2)(That's his whole testimony... %w(5)Okay, %w(15)there has to be a contradiction in there somewhere. Let's find it!) %c(0)%p
+%P(4440)
+&mes(4510)
+@H(2)
+@CH(11)
+@N(1)
+	And did you find any evidence? %p
+@H(5)
+@CH(62)
+@N(6)
+	Now, now, %w(16)don't jump the gun on me, pal. Just listen. %w(12)I'm getting to the good part! %p
+@H(2)
+@CH(12)
+@N(1)
+	%c(2)(I got a bad feeling about this...) %c(0)%s(60)%p
+%P(4450)
+&mes(4520)
+@H(2)
+@CH(14)
+@N(1)
+	Just because you found it next to the body doesn't mean the victim wrote it! %p
+@H(5)
+@CH(62)
+@N(6)
+	Ho hoh! %w(12)Then who did write it, smarty - pants? %p
+@H(2)
+@CH(10)
+@N(1)
+	Wh-who? Um... %p
+@N(1)
+	Th-the killer! Anyone can see that! %p
+@H(5)
+@CH(61)
+@N(6)
+	Hoh. %p
+@CH(62)
+	You're saying the killer wrote her OWN name!? Buddy, please! %p
+@H(2)
+@CH(13)
+@N(1)
+	She was framed! %p
+%IG(1)
+@H(6)
+@CH(50)
+@N(5)
+	Hold on. %p
+@CH(52)
+	If that's the case, where's your evidence? %p
+@H(2)
+@CH(12)
+@N(1)
+	Ah... %w(15)%c(2)(Urk!) %c(0)%p
+@H(6)
+@CH(53)
+@N(5)
+	Hah! %w(15)I guess that was a bit of a tall order for you. %w(25)Those without evidence shouldn't open their mouths, Mr. Wright. %p
+@H(5)
+@CH(62)
+@N(6)
+	Yeah, pal! %p
+@H(2)
+@CH(12)
+@N(1)
+	%c(2)(Argh...!) %c(0)%p
+@H(6)
+@CH(50)
+@N(5)
+	Well, Detective? %w(15)Tell us what was written on that memo you found. %p
+%P(4460)
+&mes(4570)
+@H(2)
+@CH(14)
+@N(1)
+	Do you have proof it was Mia who wrote that!? %p
+@H(5)
+@CH(62)
+@N(6)
+	Of course I do, pal! %s(45)%p
+@H(2)
+@CH(13)
+@N(1)
+	%c(2)(Uh oh... he sounded pretty confident. This might not be good...) %c(0)%s(60)%p
+%P(4470)
+&mes(4580)
+@H(2)
+@CH(11)
+@N(1)
+	What kind of "tests" were these again? %p
+@H(5)
+@CH(60)
+@N(6)
+	Huh? What kind? %w(15)Umm... well... %s(45)I hear they take the, %w(8)um, %w(5)little bits in the blood, the... %w(8)er... %w(5)hemo... %w(5)hemogl... Hermo... goblins... hobgob... Er...? %w(20)%s(60)Herma - goblin bobbin... %p
+@CH(61)
+@T
+	I-I refuse to testify on this matter, sir! %w(10)I'm no expert on blood tests! %p
+@H(4)
+@CH(43)
+@N(4)
+%w(10)
+@CH(40)
+	Yes, that was quite clear. You may continue with your testimony. %p
+@H(5)
+@CH(62)
+@N(6)
+	Th-thanks, pal. I mean Your Honor Sir. %p
+@H(6)
+@CH(50)
+@N(5)
+	Detective Gumshoe. %p
+@H(5)
+@CH(67)
+@N(6)
+	Y-yeah? %p
+@H(6)
+@CH(50)
+@N(5)
+	I think you can expect a pleasant bonus in your next pay check. %p
+@H(5)
+@CH(67)
+@N(6)
+	Oh? Oh hoh hoh. %p
+@H(2)
+@CH(11)
+@N(1)
+	%c(2)(That was a mess...) %c(0)%p
+@H(5)
+@CH(61)
+@N(6)
+	Right! Where was I? %p
+%P(4480)
+&mes(4590)
+@H(2)
+@CH(11)
+@N(1)
+	Detective Gumshoe! %w(5)Do you get a lot of cases where the victim actually writes the killer's name? %p
+@H(5)
+@CH(62)
+@N(6)
+	Sure! It happens all the time in books and the movies! %p
+@H(2)
+@CH(10)
+@N(1)
+	This isn't a movie, Detective. %p
+@H(5)
+@CH(67)
+@N(6)
+	Oof! %p
+@H(2)
+@CH(10)
+@N(1)
+	Let's talk about reality, shall we? %p
+@H(5)
+@CH(67)
+@N(6)
+%s(45)
+	Umm... I guess, I haven't heard of many cases... no. %s(60)%p
+@H(2)
+@CH(10)
+@N(1)
+	Don't you find it a little odd that the victim would write down a name? Especially the name of her own sister? %s(45)%p
+@H(5)
+@CH(67)
+@N(6)
+	Ah, yeah, %w(12)actually, you got a point, pal. %s(60)%p
+%IG(1)
+@H(6)
+@CH(50)
+@N(5)
+@CH(52)
+	Stop right there. %p
+@CH(53)
+	The witness's opinion on the matter is irrelevant! The facts are clear: the name of the accused... %s(45)%p
+@CH(51)
+@N(5)
+	The victim told us %c(1)the name %c(0)of her killer! %s(60)%p
+@N(10)
+	%c(3)(Muttering) %c(0)%p
+@K
+@H(4)
+@CH(41)
+@N(4)
+	Order! %w(10)Order! %p
+@H(2)
+@CH(12)
+@N(1)
+	%c(2)(That didn't go so well...) %c(0)%p
+@H(5)
+@CH(61)
+@N(6)
+	Th-that's right! What he said! %p
+%P(4490)
+&mes(5150)
+@H(2)
+@CH(10)
+@N(1)
+	On which hand was the bloody finger, Detective? %p
+@H(5)
+@CH(62)
+@N(6)
+	The right hand! %p
+@H(2)
+@CH(11)
+@N(1)
+	%c(2)(Hmm... she WAS right handed...) %c(0)%p
+@H(5)
+@CH(61)
+@N(6)
+	Hah hah hah! %w(15)Nice try! %p
+@H(2)
+@CH(12)
+@N(1)
+	%c(2)(Uh oh... %w(10)I guess it wasn't was getting at there.) %c(0)%p
+%P(4490)
+&mes(4600)
+%k
+@H(2)
+@CH(10)
+@N(1)
+	Detective Gumshoe! %w(5)There's one thing I want you to clarify for me here. %p
+@DI(14)
+@CH(15)
+	You say that the victim, Mia Fey, wrote this note. That she was accusing the defendant, Maya Fey? That's really what you're saying? %p
+@DO
+@H(5)
+@CH(60)
+@N(6)
+	Wh-what? This isn't one of those lawyer tricks, now, is it? %p
+@CH(61)
+	Of course she wrote it! Who else could have!? %p
+@H(2)
+@CH(10)
+@N(1)
+%w(20)
+%s(45)
+	You have it backwards, %w(12)Detective. %p
+@H(5)
+@CH(60)
+@N(6)
+	B-backwards? %s(60)%p
+%B(24)
+@H(2)
+@CH(15)
+@N(1)
+	The victim is the only person who absolutely could NOT have written it! %p
+@DI(16)
+	This is a report from your department, Detective. %s(45)%w(20)"Immediate death due to a blow from a blunt object". %s(60)%p
+@CH(13)
+	She died immediately! %p
+@DO
+@H(5)
+@CH(60)
+@N(6)
+@T
+	But...! %p
+@H(2)
+@CH(14)
+@N(1)
+	No "but"-ing your way out of this one, Detective! %p
+@N(10)
+	%c(3)(Muttering) %c(0)%p
+@K
+@H(4)
+@CH(40)
+@N(4)
+	Order! %w(6)Order! %w(10)The defense has a point. Someone who died immediately wouldn't have the time to write anything down. %p
+%IG(1)
+@H(6)
+@CH(50)
+@N(5)
+	Mr. Wright. %w(10)I beg your pardon, but when exactly did you obtain that autopsy report? %p
+@H(2)
+@CH(11)
+@N(1)
+	Wh-when...!? %p
+@N(1)
+	It was the day after the murder... %p
+@H(4)
+@CH(42)
+@N(4)
+	The prosecution's point being...? %s(45)%p
+@H(6)
+@CH(53)
+@N(5)
+	That %w(10)%fautopsy report is outdated, Your Honor. %w(35)%p
+@H(2)
+@CH(10)
+@N(1)
+	Wh- %w(6)what!? %p
+@H(6)
+@CH(57)
+@N(5)
+	A second autopsy was performed yesterday, at my request! %w(5)"Death was almost immediate due to a blow from a blunt object... %w(5)But there is a possibility the victim lived for several minutes after the blow". %s(60)%p
+@CH(53)
+	I received these results this morning. %p
+@H(2)
+@CH(12)
+@N(1)
+	N- %w(8)no way! %w(30)%p
+@H(6)
+@CH(52)
+@N(5)
+	Your Honor! %w(5)It's quite easy to imagine %w(8)that the victim did have time to write "Maya"! %p
+@CH(53)
+	%w(30)That is all. %p
+@H(4)
+@CH(42)
+@N(4)
+	I see! %p
+@H(2)
+@CH(10)
+@N(1)
+	%c(2)(Damn you, Edgeworth!) %p
+@CH(12)
+%s(45)
+	%c(2)(I should have known you'd have something up your sleeve!) %s(60)%c(0)%p
+@H(6)
+@CH(53)
+@N(5)
+	Why, Mr. Wright, you look shocked! %p
+@H(2)
+@CH(10)
+@N(1)
+	Mr. Edgeworth... %w(5)I've heard there's nothing you won't do to get your verdict... %p
+@CH(14)
+	What reason could you possibly have had to request a second autopsy report? %p
+@H(4)
+@CH(42)
+@N(4)
+	Mr. Wright! %w(15)The defense will refrain from personal attacks on the prosecution! %p
+@H(6)
+@CH(53)
+@N(5)
+	%w(20)No matter, Your Honor... %w(54)%p
+@CH(50)
+	Mr. Wright. %p
+@CH(57)
+	Say what you will, the evidence in this report is undeniable. %p
+%P(4690)
+!mes(4690)
+@H(6)
+@CH(57)
+@N(5)
+	Your Honor, %w(15)I submit this report to the court. %p
+@H(4)
+@CH(41)
+@N(4)
+	U-understood. %w(15)The court accepts the evidence. %s(45)%p
+@I(16)(0)
+@I(17)(1)
+@N(0)
+@IT(17)
+@CH(40)
+	%c(2)Autopsy Report updated in the Court Record. %c(0)%p
+@H(6)
+@CH(50)
+@N(5)
+	Well, %w(8)Your Honor? %w(5)The evidence strongly suggests the victim was identifying the killer. %s(60)%p
+@H(4)
+@CH(43)
+@N(4)
+%w(10)
+@CH(40)
+	I suppose that's the obvious conclusion, yes. %w(8)%p
+@H(6)
+@CH(53)
+@N(0)
+%w(30)
+@H(2)
+@CH(11)
+@N(1)
+	%c(2)(Darn! %p
+%k
+	This isn't good!) %c(0)%p
+@H(6)
+@CH(50)
+@N(5)
+	The prosecution would like to call its next witness. %s(45)%p
+@CH(52)
+	This poor, innocent girl saw the murder with her own eyes! %s(60)%p
+@N(10)
+	%c(3)(Muttering) %c(0)%p
+@K
+@H(4)
+@CH(40)
+@N(4)
+	Let the witness Miss April May take the stand. %s(45)%p
+@H(2)
+@CH(12)
+@N(1)
+	%c(2)(Exactly what part of her is "innocent"...?) %s(60)%c(0)%p
+%P(4695)
+&mes(4695)
+@N(0)
+@H(5)
+@CH(80)
+%B(22)
+%w(40)
+@H(6)
+@CH(50)
+@N(5)
+	Witness, your name, please. %p
+@H(5)
+@CH(80)
+@N(8)
+	April May! At your service! *wink* %p
+@CH(81)
+%w(20)
+@N(10)
+	%c(3)(Muttering) %c(0)%p
+@KK
+@H(4)
+@CH(40)
+@N(4)
+	Order! An introduction should not require any reaction from the crowd! %p
+@CH(42)
+	The witness will refrain from wonton winking! %p
+@H(5)
+@CH(82)
+@N(8)
+	Aww... Yes, Your Honor. %p
+@H(2)
+@CH(12)
+@N(1)
+	%c(2)(This is not good... %w(5)She's already captured the heart of every man in the court!) %c(0)%p
+@H(6)
+@CH(50)
+@N(5)
+	Tell us, where were you on the night of September 5, when the murder occurred? %p
+@H(5)
+@CH(80)
+@N(8)
+	Um... gee... %w(10)I was, %w(10)like, in my hotel room? Tee hee. I checked in right after lunch. %p
+@H(6)
+@CH(50)
+@N(5)
+	And this hotel is directly across from the Fey + Co. Law Offices? %p
+@H(5)
+@CH(80)
+@N(8)
+	Mmm... that's right, big boy. %p
+@H(4)
+@CH(40)
+@N(4)
+	Please testify to the court about what you saw. %p
+%k
+%P(4696)
+&mes(4696)
+@N(0)
+@H(5)
+@CH(80)
+%Ss(1)
+%w(20)
+	%c(1)-- Witness's Account -- %c(0)%w(20)%s(60)%p
+%B(10)
+%w(20)
+@N(8)
+	It was, like, 9:00 at night. %w(15)I looked out the window, y'know! And then, oooh! %w(12)I saw a woman with long hair being attacked! The one attacking her was the mousey girl sitting in the defendant's chair! Then the woman, like, dodged to one side and ran away! %p
+@CH(82)
+	But that girl, she caught up to her and... and... %p
+%f
+@T
+	She hit her! %s(45)%p
+%w(20)
+	Then the woman %w(6)with the long hair... %s(60)She kinda... %s(45)slumped. %s(60)%p
+@CH(80)
+	The end. %w(20)That's all I saw. %w(10)Every little bitsy witsy! %w(10) *wink* %p
+@CH(81)
+%w(20)
+%Ss(0)
+%k
+@H(4)
+@CH(46)
+@N(4)
+	Hmm... %p
+@H(6)
+@CH(53)
+@N(5)
+	Well, Your Honor? %p
+@H(4)
+@CH(46)
+@N(4)
+	I see. %w(12)It is a remarkably solid testimony. %p
+@CH(41)
+	I don't see a need to trouble the witness any... %p
+@H(2)
+@CH(10)
+@N(1)
+	W-wait, %w(6)Your Honor! %p
+@H(4)
+@CH(41)
+@N(4)
+	Yes, Mr. Wright? %p
+@H(2)
+@CH(10)
+@N(1)
+	What about my cross - examination!? %p
+@H(4)
+@CH(42)
+@N(4)
+	I thought the witness's testimony just now was quite... firm. Didn't you? %p
+@H(6)
+@CH(50)
+@N(5)
+	Mr. Wright... I understand you were Ms. Mia Fey's understudy, were you not? You must know her techniques well. %p
+@CH(50)
+	Her cowardly way of finding tiny faults in perfectly good testimonies... %p
+@H(2)
+@CH(13)
+@N(1)
+	H-hey! %w(6)How dare you! %p
+@H(4)
+@CH(41)
+@N(4)
+	Well, Mr. Wright? %w(12)Will you cross - examine the witness? %p
+%P(4710)
+&mes(4710)
+@H(2)
+@CH(10)
+@N(1)
+	I'll gladly proceed with the cross - examination. %c(2)(If only because I have a feeling Edgeworth doesn't want me to!) %p
+@CH(11)
+	%c(2)(She has to have some weakness!) %c(0)%p
+@H(4)
+@CH(40)
+@N(4)
+	Very well, %w(15)you may begin your cross - examination! %p
+%P(4730)
+&mes(4730)
+@H(5)
+@CH(80)
+@N(0)
+%Sj
+%w(20)
+%s(45)
+	%c(1)-- Witness's Account -- %c(0)%w(20)%s(60)%p
+%B(10)
+%w(20)
+%P(4740)
+&mes(4740)
+%l(0)(4750)
+%t(4830)
+@H(5)
+@CH(80)
+@N(8)
+	%c(3)It was, like, 9:00 at night. I looked out the window, y'know! %c(0)%l
+%P(4750)
+&mes(4750)
+%l(4740)(4760)
+%t(4870)
+@H(5)
+@CH(80)
+@N(8)
+	%c(3)And then, oooh! I saw a woman with long hair being attacked! %c(0)%l
+%P(4760)
+&mes(4760)
+%l(4750)(4770)
+%t(4880)
+@H(5)
+@CH(80)
+@N(8)
+	%c(3)The one attacking her was the mousey girl sitting in the defendant's chair! %c(0)%l
+%P(4770)
+&mes(4770)
+%l(4760)(4790)
+%t(4910)
+@H(5)
+@CH(80)
+@N(8)
+	%c(3)Then the woman, like, dodged to one side and ran away! %c(0)%l
+%P(4790)
+&mes(4790)
+%l(4770)(0)
+%t(4920)
+@H(5)
+@CH(82)
+@N(8)
+	%c(3)But that girl, she caught up to her and... and... %c(0)%l
+%P(4820)
+&mes(4820)
+@H(2)
+@CH(10)
+@N(1)
+	%c(2)(Hmm... that's it? Nothing really jumps out as a contradiction...) %p
+@CH(11)
+	%c(2)(There's got to be something in there somewhere!) %p
+@CH(10)
+	%c(2)(Maybe I'd better just press her on the facts a bit!) %c(0)%p
+%P(4740)
+&mes(4830)
+@H(2)
+@CH(10)
+@N(1)
+	Why did you do that? %p
+@H(5)
+@CH(80)
+@N(8)
+	Huh? %w(5)"Why"? %w(10)Like, why what? %p
+@H(2)
+@CH(10)
+@N(1)
+	Why did you look out the window? Were you expecting to see something? %p
+@H(5)
+@CH(80)
+@N(8)
+	Oh, %w(5)well, %w(5)um... %w(10)gee! %p
+@H(2)
+@CH(10)
+@N(1)
+	%c(2)(What? %w(15)That's it? She can't get out of this question that easily!) %c(0)%p
+@H(5)
+@CH(80)
+@N(8)
+	I sort of, %w(10)y'know. %p
+@CH(81)
+%w(20)
+@CH(80)
+	I had a feeling! %p
+@H(2)
+@CH(10)
+@N(1)
+	%c(2)(Well, I have a feeling she's trying to avoid the question!) %p
+@CH(11)
+@S
+	%c(2)(Maybe I should press a little harder on this one?) %c(0)%y
+	
+	Go for it %j(4850)
+	Back down %j(4840)
+
+&mes(4840)
+@H(2)
+@CH(11)
+@N(1)
+	%c(2)(If I go too deep, %w(15)I might not come back out alive... I'll back off for now.) %c(0)%p
+%P(4860)
+&mes(4850)
+@H(2)
+@CH(11)
+@N(1)
+	%c(2)(Let's see how far I can run with this...) %c(0)%p
+@CH(10)
+	Surely, you must have had a reason to look out your window at that time of night! %s(45)%p
+@H(5)
+@CH(84)
+@N(8)
+	I... %w(5)oooh! %s(60)%p
+%IG(1)
+@H(6)
+@CH(52)
+@N(5)
+	Mr. Wright! %w(12)I will not have you badgering my witness! %p
+@H(2)
+@CH(10)
+@N(1)
+	B-badgering? %p
+@H(6)
+@CH(52)
+@N(5)
+	You insist on needling her with these trivial questions. %p
+@CH(51)
+	I really don't think it should be allowed. %s(45)%p
+%k
+@N(10)
+	%c(3)(Yeah! Yeah! Stop him!) %w(30)%S
+@H(2)
+@CH(12)
+@N(10)
+	%c(3)(The poor girl!) %c(0)%w(30)%s(60)%S
+@K
+@H(4)
+@CH(40)
+@N(4)
+	Order! %p
+@CH(41)
+	Mr. Wright, %w(15)you have been warned. %p
+%B(10)
+@H(2)
+@CH(12)
+@N(1)
+%s(45)
+	%c(2)(Poor girl!? %w(12)What about poor me!?) %s(60)%c(0)%p
+%P(4860)
+&mes(4860)
+@H(6)
+@CH(50)
+@N(5)
+	You looked out the window. What did you see next? %p
+%P(4750)
+&mes(4870)
+@H(2)
+@CH(11)
+@N(1)
+	The woman with long hair... that was Mia Fey? %p
+@H(5)
+@CH(80)
+@N(8)
+	Um-hmm! %w(15)Slender, sort of, well, %w(8) some people might say %w(5)pretty, if that's your thing. %p
+@H(2)
+@CH(11)
+@N(1)
+	%c(2)(Your... thing?) %c(0)%p
+@H(6)
+@CH(50)
+@N(5)
+	And the person attacking her? %p
+%P(4760)
+&mes(4880)
+@H(2)
+@CH(13)
+@N(1)
+	How do you know she was the defendant? %p
+@H(5)
+@CH(80)
+@N(8)
+	Huh? %w(10)Well... y'know! %w(10)S-she had a girlish physique. Women know these things. %w(5)Look... I-I just know, okay? %p
+@H(6)
+@CH(50)
+@N(5)
+	There was only one person at the scene of the crime with a short, girlish figure. %p
+@CH(53)
+	The testimony is bulletproof, Your Honor. %p
+@H(2)
+@CH(11)
+@N(1)
+@S
+	%c(2)(He's right...) %c(0)%y
+	
+	Yep, he's right %j(04890)
+	I question the testimony %j(04900)
+
+&mes(4890)
+@H(2)
+@CH(11)
+@N(1)
+	%c(2)(Her testimony certainly does make sense... And everyone in the court keeps siding with her.) %s(45)%p
+@CH(10)
+	%c(2)(I'd better not press too hard on this one.) %s(60)%c(0)%p
+@H(6)
+@CH(50)
+@N(5)
+	So then, tell us what happened to the victim. %p
+%P(4770)
+&mes(4910)
+@H(2)
+@CH(11)
+@N(1)
+	She "dodged"? Dodged what!? %p
+@H(5)
+@CH(80)
+@N(8)
+	Well... %w(15)the attack! %p
+@H(6)
+@CH(50)
+@N(5)
+	Please, %w(15)continue your testimony. %p
+%P(4790)
+&mes(4920)
+@H(2)
+@CH(11)
+@N(1)
+	How did you know it was my client!? %p
+@H(5)
+@CH(80)
+@N(8)
+	Huh? %w(15)Well, I... gee! %s(45)First of all, %w(15)she had a girl's physique! %w(10)And, and secondly, %w(15)%s(60)she was... she was small! Who else could it be but her! %p
+@H(2)
+@CH(11)
+@N(1)
+@S
+	%c(2)(She has a point...) %c(0)%y
+	
+	You're right %j(04930)
+	I question your testimony %j(04900)
+
+&mes(4930)
+@H(2)
+@CH(11)
+@N(1)
+	%c(2)(Her testimony certainly does make sense... And everyone in the court keeps siding with her. I'd better not press too hard on this one.) %p
+@CH(10)
+	%c(2)(Maybe I should just listen to the testimony again.) %c(0)%p
+%P(4790)
+
+/mes(4900)
+%k
+@H(2)
+@CH(14)
+@N(1)
+	Hold on a minute! %w(21)That testimony stinks! %p
+@H(5)
+@CH(80)
+@N(8)
+	W-what!? %p
+@H(2)
+@CH(14)
+@N(1)
+@S
+	Miss May, I'm willing to bet that... %y
+	
+	You saw nothing %j(4950)
+	You're lying %j(4960)
+
+&mes(4950)
+@H(2)
+@CH(13)
+@N(1)
+	Did you really see the defendant at all!? %p
+%P(4970)
+&mes(4960)
+@H(2)
+@CH(14)
+@N(1)
+	Are you telling the truth? Did you really see the defendant!? %p
+%P(4970)
+&mes(4970)
+@H(5)
+@CH(84)
+@N(8)
+%f
+@T
+	Urp! %w(20)%S
+@N(10)
+	%c(3)(Muttering) %c(0)%p
+@K
+@H(4)
+@CH(41)
+@N(4)
+	Mr. Wright! What's the meaning of this? %p
+@H(5)
+@CH(82)
+@N(8)
+	Yes, what is the meaning! %w(10)Somebody tell me because I'm clueless! About this, I mean! %p
+@H(2)
+@CH(10)
+@N(1)
+	Okay... %w(5)If you had really witnessed my client, Maya Fey... %p
+@CH(14)
+	You would have noticed her clothes before noticing her physique! %p
+@H(5)
+@CH(84)
+@N(8)
+%B(3)
+	...! %p
+@H(0)
+@CH(20)
+@N(1)
+	No one wears clothes like this on a daily basis! Except her! %w(5)And I'm no expert on fashion, but her hairdo looks far from normal to me! %p
+@H(2)
+@CH(14)
+@N(1)
+	However, the witness's testimony mentions neither of these things! %p
+@CH(13)
+	The testimony is bogus! %p
+@H(5)
+@CH(82)
+@N(8)
+	But... %w(9)but! %s(45)%p
+@H(4)
+@CH(42)
+@N(4)
+	Still, %w(7)we don't know if %w(10)she was dressed that way the night of the murder... %p
+@H(2)
+@CH(13)
+@N(1)
+	She was, Your Honor! %w(10)I saw her. %w(12)And so did Detective Gumshoe! %w(10)What do you say to that, Miss May? %p
+@H(5)
+@CH(84)
+@N(8)
+	Rowr! %w(15)What are you trying to say, you mean lawyer! %p
+@CH(80)
+	I-I saw what I saw. %w(15)I... just didn't think all the trifling little details were necessary, darling. %p
+@H(4)
+@CH(41)
+@N(4)
+	Miss May. The court would like to remind you to please omit nothing in your testimony. %p
+@H(5)
+@CH(81)
+@N(8)
+%w(20)
+	I'm sorry, Your Honor. I'll be a good girl. I promise. *wink* %w(25)%p
+@H(4)
+@CH(40)
+@N(4)
+	Your testimony again, if you would. %p
+@H(2)
+@CH(13)
+@N(1)
+	%c(2)(Damn, I almost had her!) %s(60)%c(2)%p
+%k
+%P(4795)
+&mes(4795)
+@H(5)
+@CH(80)
+@N(0)
+%Ss(1)
+%w(20)
+%s(45)
+	%c(1)-- Witness's Account -- %c(0)%w(20)%s(60)%p
+%B(10)
+%w(30)
+%P(4796)
+&mes(4796)
+@H(5)
+@CH(82)
+@N(8)
+	I did see everything! I did! %w(5)The victim - %w(12)the woman dodged the first attack and ran off to the right. %w(5)Then the girl in the hippie clothes ran after her... %p
+%f
+@T
+@CH(80)
+	And she hit her with that weapon! %w(15)I saw it! I did! That... %w(8)that clock! Um... the kinda statue clock? %w(15)"The Thinker", I think? %w(5)Well? Does the accuracy of my report not startle you? Tee hee! %p
+%Ss(0)
+%k
+@H(4)
+@CH(46)
+@N(4)
+%s(45)
+	I... see. %s(60)%p
+@CH(41)
+	I only wish you had been so detailed from the beginning. %w(10)Please begin the cross - examination. %p
+%P(4980)
+&mes(4980)
+@H(5)
+@CH(80)
+@N(0)
+%Sj
+%w(20)
+%s(45)
+	%c(1)-- Witness's Account -- %c(0)%w(20)%s(60)%p
+%B(10)
+%w(20)
+%P(5000)
+&mes(5000)
+%l(0)(5010)
+%t(5090)
+@H(5)
+@CH(82)
+@N(8)
+	%c(3)I did see everything! I did! %c(0)%l
+%P(5010)
+&mes(5010)
+%l(5000)(5040)
+%t(5100)
+@H(5)
+@CH(80)
+@N(8)
+	%c(3)The victim - the woman dodged the first attack and ran off to the right. %c(0)%l
+%P(5040)
+&mes(5040)
+%l(5010)(5050)
+%t(5120)
+@H(5)
+@CH(80)
+@N(8)
+	%c(3)Then the girl in the hippie clothes ran after her... %c(0)%l
+%P(5050)
+&mes(5050)
+%l(5040)(5060)
+%t(5130)
+@H(5)
+@CH(80)
+@N(8)
+	%c(3)And she hit her with that weapon! I saw it! I did! %c(0)%l
+%P(5060)
+&mes(5060)
+%l(5050)(0)
+%t(5140)
+%i(11)(5160)
+@H(5)
+@CH(80)
+@N(8)
+	%c(3)That... that clock! Um... the kinda statue clock? "The Thinker", I think? %c(0)%l
+%P(5080)
+&mes(5080)
+@H(2)
+@CH(11)
+@N(1)
+	%c(2)(Her previous testimony must have been what Edgeworth wanted her to say... %w(10)So this was the testimony in her own words...?) %p
+@CH(10)
+	%c(2)(Time to press and squeeze the truth out of her! %w(12)Figuratively, of course.) %c(0)%p
+%P(5000)
+&mes(5090)
+@H(2)
+@CH(10)
+@N(1)
+	So, you saw me then, too? %p
+@H(5)
+@CH(80)
+@N(8)
+	Of course! I'd remember that %w(12)spiky hair anywhere! %p
+@H(2)
+@CH(12)
+@N(1)
+	%c(2)(Spiky...?) %c(0)%p
+@H(4)
+@CH(42)
+@N(4)
+	The witness will refrain from personal attacks on the defense attorney. %p
+@H(5)
+@CH(81)
+@N(8)
+%w(20)
+	Aww, was I a bad girl? %w(10)I'm sowwy. %p
+@H(4)
+@CH(40)
+@N(4)
+	Very well... continue. %p
+%P(5010)
+&mes(5100)
+@H(2)
+@CH(11)
+@N(1)
+	Is that "right" as in your right, as you looked from the hotel? %s(45)%p
+@H(5)
+@CH(80)
+@N(8)
+	Um... %w(10)which hand do I hold my knife in again...? %s(60)Right! It was my right hand! Right? %w(12)%p
+@H(6)
+@CH(50)
+@N(5)
+	Satisfied, Mr. Wright? %w(20)Please continue. %p
+%P(5040)
+&mes(5120)
+@H(2)
+@CH(10)
+@N(1)
+	How convenient for you to remember her "hippie" clothes! %p
+@H(5)
+@CH(80)
+@N(8)
+	That's what you-I mean, that's what she was wearing! %w(15)Oh, and her hair was all done up like a bun! %p
+@N(1)
+	%c(2)(*sigh*...) %c(0)%p
+@H(4)
+@CH(41)
+@N(4)
+	What happened then? %p
+%P(5050)
+&mes(5130)
+@H(2)
+@CH(11)
+@N(1)
+	Where did this weapon come from? %p
+@H(5)
+@CH(80)
+@N(8)
+	She picked it up from the desk! %p
+@H(4)
+@CH(41)
+@N(4)
+	I see. %w(15)What sort of weapon was it? %p
+%P(5060)
+&mes(5140)
+@H(2)
+@CH(10)
+@N(1)
+	A... %w(12)clock? %s(45)%p
+%k
+@CH(11)
+	%c(2)(Didn't this come up in another testimony %w(6)recently...?) %s(60)%c(0)%p
+@H(5)
+@CH(80)
+@N(8)
+	W-well? %w(15)Don't look so sour, Mr. Lawyer. You can't win them all. %p
+@H(2)
+@CH(10)
+@N(1)
+	%c(2)(No... but I have a feeling I'm on to something now!) %c(0)%p
+%B(10)
+%P(5060)
+&mes(5160)
+%k
+@H(2)
+@CH(10)
+@N(1)
+	Miss May. %w(8)What you said just now was quite... revealing. %p
+%B(24)
+@H(5)
+@CH(80)
+@N(8)
+	Revealing? %w(15)Oooh, you'd like that, wouldn't you. Naughty Mr. Lawyer... %p
+@H(2)
+@CH(10)
+@N(1)
+@DI(11)
+	You just said that this statue of %c(1)"The Thinker" %c(0)was a clock. But there's no way of knowing that just by looking at it! %p
+@DO
+@H(5)
+@CH(84)
+@N(8)
+@T
+	Urp! %p
+@H(2)
+@CH(10)
+@N(1)
+	Another person in much the same position as you recently called this a "clock", too... %w(20)%s(45)And he was found guilty... of murder! %s(60)%p
+@N(10)
+	%c(3)(Muttering) %c(0)%p
+@K
+@H(4)
+@CH(40)
+@N(4)
+	Order! %w(10)Order! %p
+@H(2)
+@CH(14)
+@N(1)
+	Miss May. %w(25)Can you explain how you know this was a %c(1)clock? %c(0)%p
+@H(5)
+@CH(84)
+@N(8)
+	Oooh... urp! %p
+%IG(1)
+@H(6)
+@CH(50)
+@N(5)
+	The witness saw the murder with her own eyes! %w(15)That's all that's important here! %p
+@CH(51)
+	The defense is trying to confuse the issue with trivial concerns! %p
+@H(4)
+@CH(40)
+@N(4)
+	Yes... yes, of course. %w(15)You will withdraw your question, %w(8)Mr. Wright. %p
+%IG(0)
+@H(2)
+@CH(13)
+@N(1)
+	But questions are all I have, Your Honor! And as you may recall, I've caught murderers with these questions before! %s(45)%c(2)(Well, only once...) %c(0)%p
+@H(4)
+@CH(40)
+@N(4)
+	... %w(15)... %s(60)%p
+@K
+@H(4)
+@CH(40)
+@N(4)
+	Objection sustained. %w(15)You may continue to question the witness. %s(45)%p
+@H(2)
+@CH(13)
+@N(1)
+	%c(2)(Whew, that was close.) %s(60)%p
+@CH(12)
+	%c(2)(If he stopped me there, the trial would be over!) %c(0)%p
+@H(5)
+@CH(82)
+@N(8)
+	Huh? %w(5)What? %w(25)So... what happens now? %p
+@H(2)
+@CH(14)
+@N(1)
+	What happens now is you answer my question! How did you know it was a clock? %p
+@H(5)
+@CH(82)
+@N(8)
+	What...! %w(5)Th- %w(5)that's... %s(45)... %p
+@CH(80)
+	Because... %w(5)I heard it? %s(60)Yes! %w(12)I heard it say the time! %p
+@H(2)
+@CH(14)
+@N(1)
+	So, you've been to the law offices of Fey + Co.! %p
+@H(5)
+@CH(82)
+@N(8)
+	N-n-no! %w(12)Hey, %w(10)I didn't say that! Why would I go there! %w(5)I heard from my hotel room. Hee hee! %s(60)%p
+@H(6)
+@CH(50)
+@N(5)
+	The law offices of Fey + Co., where the murder took place, are very close to the hotel. She could easily have heard the clock! %p
+@H(4)
+@CH(41)
+@N(4)
+	Hmm. Well, Mr. Wright? %w(15)Are you satisfied? %p
+%P(5300)
+
+(ýmes(5300)
+@H(2)
+@CH(10)
+@N(1)
+%w(20)
+	No, Your Honor! %s(60)%c(2)(I can't give up now!) %c(0)%p
+@S
+	I'm not satisfied because... %y
+	
+	She couldn't have heard it %j(5280)
+	It couldn't have rung %j(5290)
+
+&mes(5280)
+@H(2)
+@CH(14)
+@N(1)
+	You were at the hotel! %w(5)There's no way you could have heard a clock go off in the building next door! %p
+%IG(1)
+@H(6)
+@CH(53)
+@N(5)
+	You have proof that she could not? %p
+@H(2)
+@CH(12)
+@N(1)
+	Uh... %p
+@H(6)
+@CH(53)
+@N(5)
+	Amateurs, amateurs. Listen to me, Mr. Wright. %w(30)%p
+@CH(50)
+	In the courtroom, proof is everything. %w(25)Without it, you have nothing. You ARE nothing. %p
+@H(2)
+@CH(14)
+@N(1)
+	Then I would like to propose a test to see if she really could have heard... %p
+@H(6)
+@CH(53)
+@N(5)
+	The prosecution denies your request! %p
+@H(2)
+@CH(13)
+@N(1)
+	Wh-what!? %w(12)On what grounds? %p
+@H(6)
+@CH(53)
+@N(5)
+	This is a trivial matter with no direct bearing on the case at hand! %p
+@H(4)
+@CH(43)
+@N(4)
+%w(10)
+@CH(40)
+	Indeed. Objection sustained. %p
+@H(2)
+@CH(13)
+@N(1)
+	%c(2)(Damn! Time to switch directions... quick!) %c(0)%p
+@H(4)
+@CH(41)
+@N(4)
+	Ready to proceed, Mr. Wright? %p
+%P(5300)
+&mes(5290)
+@H(2)
+@CH(10)
+@N(1)
+	Your Honor, members of the court... %p
+@CH(13)
+	It is inconceivable that the clock in question rang! %w(15)%p
+@CH(14)
+	That clock is missing its clockwork! %p
+@N(10)
+	%c(3)(Muttering) %c(0)%p
+@KK
+@H(4)
+@CH(42)
+@N(4)
+	H-how could you possibly...? %p
+@H(2)
+@CH(14)
+@N(1)
+	Just have a look... %w(15)As soon as you can! %p
+@H(4)
+@CH(46)
+@N(4)
+@DI(11)
+	... %p
+@CH(42)
+	Oh! %p
+@DO
+@H(2)
+@CH(10)
+@N(1)
+	See anything interesting, Your Honor? %p
+@H(4)
+@CH(42)
+@N(4)
+	It is as the defense says! %p
+%P(5340)
+&mes(5340)
+@H(4)
+@CH(41)
+@N(4)
+@DI(11)
+%k
+%s(45)
+	This clock is missing its clockwork! %w(8)It's quite empty! %s(60)%p
+@DO
+@I(11)(0)
+@I(12)(1)
+@CH(41)
+@N(10)
+	%c(3)(Muttering) %c(0)%p
+@K
+@H(4)
+@CH(42)
+@N(4)
+	Mr. Wright! Would you care to explain to the court the meaning of this? %p
+@H(2)
+@CH(10)
+@N(1)
+	It is as you can see. %s(45)The "clock" was empty. %w(15)It couldn't have rung! %p
+@H(5)
+@CH(84)
+	Therefore, this witness... %s(60)%p
+@T
+%f
+	is a big, fat liar! %p
+@N(8)
+	F-fat!? %w(30)%S
+@H(2)
+@CH(14)
+@N(1)
+	Well, Miss May? %s(45)%p
+@H(6)
+@CH(53)
+@N(5)
+	Tsk tsk. %w(20)%p
+@H(2)
+@CH(10)
+@N(1)
+	? %p
+@H(6)
+@CH(53)
+@N(5)
+	Quite a show you've put on for us, %w(12)Mr. Wright. %p
+@H(2)
+@CH(10)
+@N(1)
+	%c(2)(He knew the clock was empty! Somehow... %w(10)he knew!) %c(0)%s(60)%p
+%B(13)
+@H(6)
+@CH(50)
+@N(5)
+	I'm afraid you've forgotten one thing, however. Indeed, the clock is empty. As you say... %w(15)it can't ring. However, we must ask: when was the clockwork removed? %s(45)%p
+@CH(53)
+	If it was after the witness heard the clock, then there is no contradiction! %w(20)%p
+@H(4)
+@CH(42)
+@N(4)
+	! %w(15)Hmm! That's true. That is a possibility. %p
+@CH(40)
+	The clock might have been emptied after she heard it. %p
+@H(6)
+@CH(52)
+@N(5)
+	And that is exactly what happened, Your Honor! %p
+@H(4)
+@CH(41)
+@N(4)
+	Well, Mr. Wright? %w(5)Can you prove when the clockwork was removed? %p
+@H(6)
+@CH(53)
+@N(5)
+	Ho hoh! %w(15)Impossible, of course... %w(20)%p
+@H(2)
+@CH(10)
+@N(1)
+	I have proof. %p
+@H(6)
+@CH(50)
+@N(5)
+	W- %w(12)what!? %p
+@H(2)
+@CH(10)
+@N(1)
+	Wasn't it you %w(15)who told me "proof is everything"? Well, I was listening. %p
+@CH(14)
+%k
+	And now I'll show you the "proof" you like so much! %p
+%P(5350)
+&mes(5350)
+@H(6)
+@CH(50)
+@N(1)
+%M(15)(5370)
+	The evidence that proves when the clockwork was removed is... %m
+%P(5360)
+&mes(5360)
+@H(2)
+@CH(13)
+@N(1)
+	What do you say to that? %p
+@H(5)
+@CH(82)
+@N(8)
+	W- %w(8)what? %w(8)I don't rightly understand what that's supposed to mean! %p
+@N(0)
+@H(4)
+@CH(44)
+%w(14)
+@CH(45)
+%w(14)
+@CH(41)
+@N(4)
+	I don't rightly understand either. %w(20)%p
+@H(6)
+@CH(53)
+@N(5)
+	Ho hoh! %w(20)%p
+@H(2)
+@CH(13)
+@N(1)
+	%c(2)(Uh oh... I think I blew it.) %c(0)%s(60)%p
+@H(4)
+@CH(41)
+@N(4)
+	Mr. Wright, %w(15)please refrain from flippant presentations of evidence in the future. %p
+@H(2)
+@CH(12)
+@N(1)
+	S-sorry, %w(8)Your Honor! %p
+%P(5350)
+&mes(5370)
+%B(24)
+@H(2)
+@CH(10)
+@N(1)
+@DI(15)
+	Take a look at this! %p
+@H(4)
+@CH(42)
+@N(4)
+	Hmm. %w(12)That's a very cute cell phone. %p
+@H(5)
+@CH(80)
+@N(8)
+	Ooh hoo! %w(12)You have a girlie phone! %p
+@H(2)
+@CH(10)
+@N(1)
+	W-wait! Wait! This isn't my phone! %w(5)Listen! %w(10)This is the defendant's cell phone, and it contains a recording... %p
+@CH(13)
+@N(1)
+	A recording of a conversation she had with the victim on the day of the murder! %p
+@DO
+@CH(13)
+@N(10)
+	%c(3)(Muttering) %c(0)%p
+@K
+@H(4)
+@CH(40)
+@N(4)
+	Order! %w(6)Order! %s(45)%p
+@H(6)
+@CH(59)
+@N(5)
+	The defendant's cell phone!? %w(15)Th-this wasn't brought to my attention! %s(60)%p
+@H(2)
+@CH(10)
+@N(1)
+	Perhaps Detective Gumshoe overlooked it? %s(45)%p
+@H(6)
+@CH(59)
+@N(5)
+	*grumble* %w(10)%c(2)(The good detective better remember he's up for evaluation soon...) %c(0)%s(60)%p
+@H(2)
+@CH(11)
+@N(1)
+	%c(2)(My heart goes out to you, Edgeworth. %w(12)Not.) %c(0)%p
+%k
+@CH(10)
+	Let's hear the conversation. %p
+@DI(15)
+@N(9)
+%s(45)
+	%c(1)*beep* %c(0)%s(60)%p
+@N(0)
+	%c(3)... %p
+@N(3)
+	%c(3)[So you just want me to hold on to "The Thinker" for you, then?] %p
+@N(2)
+	%c(3)[If you could. Ah... I should probably tell you, the clock isn't talking right now.] %p
+@N(3)
+	%c(3)[Huh? It's not working? %w(15)That's lame!] %p
+@N(2)
+	%c(3)[I had to take the clockwork out, sorry.] %p
+@N(0)
+	%c(3)... %p
+@N(0)
+	%c(3)[September 5, 9:27 AM] %c(0)%s(45)%p
+@N(9)
+	%c(1)*beep* %c(0)%s(60)%p
+@DO
+%B(24)
+@H(2)
+@CH(11)
+@N(1)
+	Your Honor, %w(5)I think this recording makes it clear that the clockwork was already gone... %p
+@CH(13)
+	and this was recorded in the morning, %c(1)before %c(0)the witness even arrived at her hotel! %p
+@H(5)
+@CH(84)
+@N(8)
+%f
+@T
+	Muh... %w(10)muh... muh!? %p
+@H(2)
+@CH(13)
+@N(1)
+	Well, Miss May? %w(15)Would you care to explain this to the court? %p
+@CH(14)
+	Just how did you know that weapon was a clock!? %p
+@H(5)
+@CH(84)
+@N(8)
+%s(45)
+	... W- %w(15)well...! %p
+@CH(80)
+	Well, %w(12)isn't it o-obvious? I saw that clock before! %s(60)Um... what store was that again? I-I go to so many! %p
+@CH(81)
+	Oops! I forgot! *wink* %w(20)%p
+@H(4)
+@CH(46)
+@N(4)
+	So the witness had seen it before. %w(15)That would make sense. %p
+@CH(41)
+@S
+	Does the defense have any objections, %w(15)Mr. Wright? %y
+
+	Yes %j(5380)
+	No %j(5390)
+
+&mes(5390)
+@H(2)
+@CH(11)
+@N(1)
+	Oh right... %w(12)well, if she had seen it before, I guess... %w(15)%c(2)(Wait a second!) %c(0)%p
+@H(4)
+@CH(40)
+@N(4)
+	Then, the court would like... %p
+@H(2)
+@CH(13)
+@N(1)
+	Hold on! %w(20)P-please wait, %w(5)Your Honor! %p
+@H(4)
+@CH(42)
+@N(4)
+	Y-yes...? %w(12)So you do have an objection? %p
+@H(2)
+@CH(10)
+@N(1)
+	Um, %w(10)yes, well... %p
+@H(4)
+@CH(41)
+@N(4)
+	Mr. Wright! %p
+@H(2)
+@CH(10)
+@N(1)
+%s(45)
+	Sorry, Your Honor, %w(10)%s(60)it's just... %p
+%P(5380)
+&mes(5380)
+@H(2)
+@CH(10)
+@N(1)
+	The witness claims she had "seen it before". %w(5)But this directly contradicts a piece of evidence already submitted to this court! %p
+@H(4)
+@CH(42)
+@N(4)
+	Well then, %w(15)let's see it. %p
+%P(5400)
+&mes(5400)
+%M(12)(5420)
+@H(4)
+@CH(41)
+@N(4)
+	Please produce this evidence that will prove the witness had not seen the clock before. %m
+%P(5410)
+&mes(5410)
+@H(2)
+@CH(10)
+@N(1)
+	Here is undeniable proof! %p
+@H(6)
+@CH(53)
+@N(5)
+	Hah!? %w(15)Please, this is a court case, %w(12)not some surrealist performance art piece! %p
+@H(4)
+@CH(41)
+@N(4)
+	Hmm... Perhaps the defense would like to change its mind? %p
+%P(5400)
+&mes(5420)
+@H(2)
+@CH(10)
+@N(1)
+	It's simple. %p
+@CH(10)
+	This clock was never in any store, ever! %p
+@H(5)
+@CH(84)
+@N(8)
+%f
+@T
+	W- %w(8)whaaat!? %p
+@H(2)
+@CH(10)
+@N(1)
+	A friend of mine made that clock. %w(3)Only two exist in the world. And the one that isn't here is in police custody! %p
+@H(5)
+@CH(84)
+@N(8)
+	I-impossible! %w(10)Everything is sold in stores! %p
+@H(2)
+@CH(10)
+@N(1)
+	Miss May, %w(12)I think it's high time you went shopping for a better excuse...? %p
+@H(5)
+@CH(84)
+@N(8)
+	Mmpf... %p
+@H(2)
+@CH(11)
+@N(1)
+	Oh? %w(12)Excuses not on sale today? %s(45)%p
+%k
+@H(5)
+@CH(80)
+@N(8)
+	Oooh? %w(12)Oh ho ho. Mmmrrrrph! %w(20)%p
+@CH(85)
+%s(60)
+%f
+@T
+	Ooooo %frrrrrrr %fggggg %fhhhhh %fhh... hhh %f! ! ! %f%w(30)%p
+%w(20)
+%B(24)
+@CH(85)
+@T
+	What's it to you, porcupine-head!? That stupid clock doesn't matter, okay!? She did it! And she should die for it! %w(6)Die! %p
+@N(10)
+	%c(3)(Muttering) %c(0)%p
+@KK
+@H(4)
+@CH(42)
+@N(4)
+	W-w-whoa! Let's not get ahead of ourselves. %w(12)T-this is a court of law, and the witness will remain calm! %p
+@H(5)
+@CH(85)
+@N(8)
+%s(45)
+	Hrrrgh... hrrrh... %w(40)%p
+@CH(84)
+	Hrrr... %w(20)heh. Oh? %p
+@CH(84)
+	Oh! Oh? %w(12)Oh hoh ho! S-silly me! %w(40)%p
+@CH(85)
+	*grunt* %p
+@CH(84)
+	Did I, um, %w(12)like... lose it? %p
+@CH(80)
+	I guess I did. %p
+@CH(81)
+	Tee %w(15)hee! %w(15)*wink* %p
+@H(2)
+@CH(12)
+@N(1)
+	%c(2)(S- %w(12)scary...) %c(0)%s(60)%p
+@H(4)
+@CH(41)
+@N(4)
+	Miss May, %w(15)let me ask. %p
+@CH(42)
+	Tell me, how did you know the weapon was a clock? %p
+@H(5)
+@CH(85)
+@N(8)
+%s(45)
+	... %s(60)%p
+@N(0)
+@H(4)
+@CH(44)
+%w(14)
+@CH(45)
+%w(14)
+@CH(41)
+@N(4)
+	%w(20)Hmm... oh dear. %w(20)Does the defense have an opinion on this... %w(15)behavior? %p
+@H(2)
+@CH(10)
+@N(1)
+	%c(2)(Okay, this is it!) %c(0)%w(5)Yes, Your Honor. %w(15)Allow me to explain how I see the truth of the matter. %w(15)The witness had never held the clock in her hand! However, she had heard that it was a clock! %p
+@H(4)
+@CH(42)
+@N(4)
+%s(45)
+	She "heard"...? %s(60)%p
+@H(2)
+@CH(10)
+@N(1)
+	That is correct, Your Honor. %w(20)There is no other way she could have known "The Thinker" was a clock! %p
+@CH(13)
+	And I can show you the proof! %p
+@H(4)
+@CH(42)
+@N(4)
+	Well, this is interesting. %w(13)Let's see it, then. %p
+%P(5500)
+&mes(5500)
+%M(15)(5460)
+%M(18)(5470)
+@H(4)
+@CH(40)
+@N(4)
+	Show me evidence proving that the witness had "heard" the murder weapon was a clock. %m
+%P(5490)
+&mes(5490)
+@H(2)
+@CH(14)
+@N(1)
+	This is my evidence! %p
+@N(0)
+@H(4)
+@CH(44)
+%w(14)
+@CH(45)
+%w(14)
+@CH(41)
+@N(4)
+%s(45)
+	I'm afraid I'm not sure where you are going with all of this, Mr. Wright. %p 
+@H(2)
+@CH(12)
+@N(1)
+	Um... %w(15)"where"? Well, it's not so much a place as a... er... %s(60)%p
+@H(6)
+@CH(50)
+@N(5)
+	Come to the end of your bluff, %w(12)Mr. Wright? %p
+@H(2)
+@CH(12)
+@N(1)
+	W- %w(8)wait! Wait! %w(15)That was, uh, practice! Here's the real evidence! %p
+@H(4)
+@CH(41)
+@N(4)
+	Mr. Wright, this court does not condone the presentation of evidence for "practice". %p
+@CH(40)
+	Let's see your evidence, for real this time, Mr. Wright. %p
+%P(5500)
+"ãmes(5460)
+@H(2)
+@CH(10)
+@N(1)
+@DI(15)
+	The defendant's cell phone. %p
+@H(4)
+@CH(41)
+@N(4)
+	Yes, we've seen that already. %p
+@H(2)
+@CH(10)
+@N(1)
+	Take another listen to the conversation between the defendant and victim. %p
+%k
+@CH(10)
+@N(9)
+%s(45)
+	%c(1)*beep* %c(0)%s(60)%p
+@N(0)
+	%c(3)... %p
+@N(3)
+	%c(3)[Mia! %w(15)What's up? %w(10)You haven't called in a while.] %p
+@N(2)
+	%c(3)[Well, %w(12)actually there's something I want you to hold on to for me.] %p
+@N(3)
+	%c(3)[Again? %w(12)What is it this time?] %p
+@N(2)
+	%c(3)[It's... a clock. It's made to look like that statue, "The Thinker". And it tells you the time!] %c(0)%p
+@N(0)
+	%c(3)... %c(0)%p
+@DO
+%B(24)
+@H(4)
+@CH(42)
+@N(4)
+%s(45)
+	They do mention "The Thinker". But how would the witness know of this conversation? %s(60)%p
+%P(5510)
+&mes(5510)
+%M(18)(5530)
+@CH(41)
+@H(4)
+@N(4)
+	Do you have proof that she knew of the conversation? %m
+%P(5520)
+&mes(5520)
+@H(2)
+@CH(13)
+@N(1)
+	%c(2)(Wait... %w(12)no, this can't be right! %w(7)I can't afford any mistakes now!) %c(0)%p
+@H(4)
+@CH(41)
+@N(4)
+	Mr. Wright! %w(12)Your evidence, please! %p
+%P(5510)
+&mes(5530)
+@H(2)
+@CH(10)
+@N(1)
+@DI(18)
+	Have a look at this. %p
+@H(5)
+@CH(87)
+@N(8)
+@T
+%f
+	Ah! Oooh! %w(15)Th-that!? Eh heh... %p
+@H(2)
+@CH(10)
+@N(1)
+	I found this in Miss May's room. %p
+@DO
+@CH(10)
+@N(10)
+	%c(3)(Muttering) %c(0)%p
+@KK
+@H(4)
+@CH(42)
+@N(4)
+	Mr. Wright! %w(15)Please explain to the court what this is! %p
+%P(5690)
+&mes(5470)
+@H(2)
+@CH(10)
+@N(1)
+@DI(18)
+	Have a look at this. %p
+@H(5)
+@CH(87)
+@T
+@N(8)
+	Ah! Oooh! %w(15)Th-that!? Eh heh... %p
+@H(2)
+@CH(10)
+@N(1)
+	I found this in Miss May's room. %p
+@DO
+@CH(10)
+@N(10)
+	%c(3)(Muttering) %c(0)%p
+@KK
+@H(4)
+@CH(42)
+@N(4)
+	Mr. Wright! %w(15)Please explain to the court what this is! %p
+@H(2)
+@CH(10)
+@N(1)
+	Miss April May? %p
+@CH(14)
+	You were %c(1)tapping %c(0)the victim, Ms. Mia Fey's phone, were you not? %p
+@H(5)
+@CH(87)
+@N(8)
+	Oooh. %w(8)Oooooh! %w(20)%S
+%IG(1)
+@H(6)
+@CH(51)
+@N(5)
+	Your Honor, %w(15)This is irrelevant! %p
+@H(4)
+@CH(41)
+@N(4)
+	I'm not entirely sure that it is. Objection overruled. %w(12)It troubles me that our witness was in possession of a wiretap. %p
+@H(6)
+@CH(51)
+@N(5)
+	This is outrageous! Does the defense truly claim that the witness was tapping her phone? %p
+@H(2)
+@CH(10)
+@N(1)
+	Absolutely! %p
+@H(6)
+@CH(51)
+@N(5)
+	Even if that was the case, %c(2)(which it's not) %c(0)you still have to prove one thing! %w(12)%s(45)Did the victim ever say that the %c(1)weapon %c(0)was a %c(1)clock %c(0)on the phone? %s(60)%p
+@UK(1)
+@CH(0)
+	Can you prove that? I THINK NOT! %s(45)%p
+@UK(0)
+@CH(0)
+@N(1)
+	Oh yeah? %w(12)I THINK I CAN! It's simple! %p
+@UK(1)
+@CH(0)
+@N(5)
+	WHAAAAT!? %w(30)%p
+@H(2)
+@CH(13)
+@N(1)
+	Here's my proof. %s(60)%p
+%P(5660)
+&mes(5660)
+%M(15)(5680)
+@H(4)
+@CH(46)
+@N(1)
+	The proof that the victim said, on the phone, that the weapon was a clock is... %m
+%P(5670)
+&mes(5670)
+@H(2)
+@CH(11)
+@N(1)
+	This! %p
+@CH(15)
+	I think... %p
+@N(0)
+@H(4)
+@CH(44)
+%w(14)
+@CH(45)
+%w(14)
+@CH(41)
+@N(4)
+	That's not going to prove anything, Mr. Wright. %w(15)I think... %p
+@H(2)
+@CH(12)
+@N(1)
+	W-wait! %w(15)That was just a warm up! %p
+@H(4)
+@CH(41)
+@N(4)
+	Hmm! %w(15)Okay, once again. %w(8)And I expect real proof this time! %p
+%P(5660)
+&mes(5680)
+@H(2)
+@CH(10)
+@N(1)
+@DI(15)
+	I present the defendant's cell phone. %p
+@H(4)
+@CH(41)
+@N(4)
+	Yes, we've seen that. %p
+@H(2)
+@CH(10)
+@N(1)
+	Listen once more to the conversation between the defendant and the victim. %p
+%k
+@N(9)
+%s(45)
+	%c(1)*beep* %c(0)%s(60)%p
+@N(0)
+	%c(3)... %s(60)%p
+@N(3)
+	%c(3)[Mia! %w(15)What's up? %w(10)You haven't called in a while.] %p
+@N(2)
+	%c(3)[Well, %w(12)actually there's something I want you to hold on to for me.] %p
+@N(3)
+	%c(3)[Again? %w(12)What's it this time?] %p
+@N(2)
+	%c(3)[It's... a clock. It's made to look like that statue, %c(1)"The Thinker". %c(3)And it %c(1)tells %c(3)you the time!] %c(0)%p
+@N(0)
+	%c(3)... %c(0)%p
+@DO
+%B(24)
+%P(5690)
+&mes(5690)
+@H(2)
+@CH(10)
+@N(1)
+%s(45)
+	Miss April May! %s(60)You used a wiretap to listen to this conversation! %s(45)That's how you knew %w(19)"The Thinker" was a clock! %p
+@CH(13)
+	Am I wrong!? %p
+@H(5)
+@CH(87)
+@N(8)
+%f
+@T
+	I... %w(10)I... %p
+%IG(1)
+@H(6)
+@CH(51)
+@N(5)
+	Your Honor, %w(15)this is ridiculous! %p
+@H(2)
+@CH(14)
+@N(1)
+	Your Honor, %w(12)look at the witness's face? Does she seem amused to you!? %p
+@CH(13)
+	The defense demands an answer. %s(45)%p
+@H(5)
+@CH(85)
+@N(8)
+	La... %w(10)laaa... %w(12)lrrrrgf! %s(60)%p
+@H(4)
+@CH(41)
+@N(4)
+	Witness, %w(12)answer the question. Did you tap her phone? %s(45)%p
+@H(5)
+@CH(85)
+@N(8)
+	... %s(60)%p
+@H(4)
+@CH(41)
+@N(4)
+	Miss May! %s(45)%p
+@H(5)
+@CH(87)
+@N(8)
+%f
+@T
+%k
+@CH(85)
+	Shut up, all of you! %w(20)What gives you the right to talk to ME like that! %w(30)%S
+%f
+@T
+	You... you LAWYER! %p
+@H(4)
+@CH(40)
+%f
+%w(20)
+@H(2)
+@CH(12)
+%f
+%w(20)
+@H(5)
+@CH(85)
+%f
+%w(20)
+@N(10)
+	%c(3)... %w(30)%c(0)%S
+@H(5)
+@CH(82)
+@N(8)
+	I- %w(5)it's not fair! %w(5)All of you g- %w(5)ganging up on me like that... %s(60)Oh, %w(10)so I'm the bad girl, %w(12)is that it? Is that it!? %s(45)Uh... %w(8)uh... %w(12)uwaaaaaaah! %w(20)%S
+@N(1)
+	%c(2)(That did it! The court's seen the real Miss April May now!) %p
+%P(5630)
+&mes(5630)
+@H(2)
+@CH(10)
+@N(1)
+@S
+	%c(2)(Now to deal the final blow!) %c(0)%y
+	
+	You did it, didn't you? %j(5540)
+	Why the wiretap? %j(5550)
+
+&mes(5540)
+%B(13)
+@H(2)
+@CH(13)
+@N(1)
+	Miss May! %p
+@H(5)
+@CH(85)
+@N(8)
+	What is it you little shrimp! %w(12)Talk to me in that tone of voice will you!? %p
+@H(2)
+@CH(14)
+@N(1)
+%s(45)
+	You killed her, didn't you! %s(60)%p
+@N(10)
+	%c(3)(Muttering) %c(0)%p
+@KK
+@H(4)
+@CH(40)
+@N(4)
+	Order! %w(15)There will be order! %p
+@H(5)
+@CH(85)
+@N(8)
+	What? How can you possibly say that!? Are you mad? %p
+@CH(85)
+	A-all I did was a little wiretap... %p
+@CH(84)
+	Oops! %p
+@H(2)
+@CH(10)
+@N(1)
+	So you admit you tapped her phone! %p
+@H(5)
+@CH(85)
+@N(8)
+%s(45)
+	Heh... %w(12)heh... hrrah! %s(60)B- %w(5)but wait! I didn't do ANYTHING bad like murder! %w(8)I'm a good girl! %p
+@H(2)
+@CH(13)
+@N(1)
+	Really? %s(45)Can you prove it!? %s(60)%w(20)%c(2)(No way can she prove it!) %c(0)%p
+@H(5)
+@CH(85)
+@N(8)
+	You think you're so smart, Mr. Lawyer... %p
+@CH(85)
+	But I can prove it! %w(12)And I will! %p
+%P(5620)
+&mes(5550)
+@H(2)
+@CH(10)
+@N(1)
+%B(13)
+	Why did you tap her phone? %s(45)%p
+@H(5)
+@CH(82)
+@N(8)
+	... %s(60)%p
+@H(2)
+@CH(13)
+@N(1)
+	Answer the question! %s(45)%p
+@H(5)
+@CH(82)
+@N(8)
+	Do I have to? %w(5)Isn't this a murder trial? Isn't tippity - tapping er... irrelevant? %p
+@H(2)
+@CH(13)
+@N(1)
+	%c(2)(Gah! %w(10)She's saying exactly what Edgeworth wants her to say.) %c(0)%s(60)Miss May. %w(5)You were tapping the victim's phone! %p
+@CH(14)
+@N(1)
+	I hardly call that "irrelevant"! %p
+@N(10)
+	%c(3)(Muttering) %c(0)%p
+@K
+@H(4)
+@CH(42)
+@N(4)
+	While this court does not condone the defense's tone of speech, he has a point. %p
+@CH(41)
+	Well, Miss May? %w(7)Do you have an explanation for the court? Can you prove you had nothing to do with this murder, even though you tapped her phone? %p
+@H(2)
+@CH(10)
+@N(1)
+	%c(2)(Hah! %w(12)I'd like to see her pull THAT off!) %c(0)%p
+@H(5)
+@CH(80)
+@N(8)
+	Mr. Lawyer, %w(10)I saw that evil, evil grin! You were probably thinking "I'd like to see her pull THAT off", weren't you! %p
+@H(2)
+@CH(11)
+@N(1)
+	%c(2)(Damn... %w(15)she's good!) %c(0)%p
+@H(5)
+@CH(81)
+@N(8)
+%w(10)
+	Well you're not the first man who's thought that! And of course... I can, and will! %p
+%P(5620)
+&mes(5620)
+%k
+@H(2)
+@CH(12)
+@N(1)
+%s(45)
+	You can't be serious! %w(8)No way! %s(60)%p
+@H(5)
+@CH(84)
+@N(8)
+	Way, %w(20)I say! %w(12)Way! Oh, and I assure you I'm serious, Mr. Lawyer! %p
+@CH(85)
+	Hmph! %p
+@CH(80)
+	Okay? %w(15)So, the killing happened around 9:00 at night? %w(5)Why, that's just when I was getting room service from that sweet bellboy... %p
+@H(2)
+@CH(12)
+@N(1)
+%s(45)
+	%c(1)R-room service!? %c(0)%s(60)%p
+@H(5)
+@CH(80)
+@N(8)
+	Ice coffee, %w(10)I believe it was? Ice coffee? You know? %w(12)Like normal coffee, but COLD. If you don't drink it quick, the ice melts and then you have... regular cold coffee. %p
+@H(2)
+@CH(12)
+@N(1)
+%s(45)
+	%c(1)I-ice coffee...!? %c(0)%s(60)%p
+@H(5)
+@CH(81)
+@N(8)
+%w(10)
+	Think I'm making this up? Ask the bellboy! *wink* %p
+@H(6)
+@CH(53)
+@N(5)
+	Ergo, the witness %w(10)%s(45)was not %s(60)on the scene at the time of the murder! %p
+@H(2)
+@CH(12)
+@T
+%f
+@N(1)
+	! %w(20)%S
+@N(10)
+	%c(3)(Muttering) %c(0)%p
+@K
+@H(4)
+@CH(42)
+@N(4)
+	So, %w(12)where does that leave us...? %s(45)%p
+@H(6)
+@CH(50)
+@N(5)
+	It is my great displeasure to inform you... %w(10)That the witness appears to have been tapping the victim's telephone. %s(60)%p
+@CH(51)
+	However! %w(20)That is a %c(1)separate crime, %c(0)with no bearing on the current case whatsoever! %p
+@CH(52)
+	Her testimony stands! She saw the defendant, Maya Fey, commit murder! %p
+@H(2)
+@CH(13)
+@N(1)
+	%c(2)(No! %w(12)They're going to let her just walk away! %s(45)There's no way I can win this unless I tie Miss May to the murder somehow...) %c(0)%s(60)%p
+%P(5560)
+%mes(5560)
+@H(4)
+@CH(41)
+@N(4)
+	Well, %w(15)does the defense have anything to say? %p
+@H(2)
+@CH(11)
+@N(1)
+%s(45)
+	Um, %w(5)well... %s(60)%p
+@CH(11)
+@S
+	%w(20)%c(2)(Come on, %w(15)think of something!) %c(0)%y
+	
+	Call the bellboy as a witness %j(5580)
+	Continue examining Miss May %j(5570)
+
+&mes(5580)
+@H(2)
+@CH(10)
+@N(1)
+%B(24)
+	The defense would like to call the hotel bellboy as a witness! %w(5)There's something suspicious there, and I'm going to get to the bottom of it! %s(45)%p
+@H(5)
+@CH(82)
+@N(8)
+	I think you've sunken quite low enough already. %s(60)%p
+%IG(1)
+@H(6)
+@CH(52)
+@N(5)
+	I object to calling the bellboy! %p
+@H(2)
+@CH(13)
+@N(1)
+	W-why? %w(12)What's your reason? %s(45)%p
+@H(6)
+@CH(53)
+@N(5)
+	Because I hold that the wiretapping had nothing to do with the killing! %s(60)%p
+@H(2)
+@CH(13)
+@N(1)
+	...! %p
+@H(6)
+@CH(53)
+@N(5)
+	However... %p
+@CH(53)
+	If you agree to one condition, I'll consent to calling this witness. %w(13)%p
+@H(2)
+@CH(13)
+@N(1)
+	Condition...? %p
+@H(6)
+@CH(53)
+@N(5)
+	If Miss April May's alibi is not called into question after you examine the bellboy... %w(15)Then you will recognize that Miss April May was not the killer, thus she is innocent! %p
+@CH(52)
+	Therefore you must accept the verdict of "guilty" for Ms. Maya Fey! %s(45)%w(5)That is my condition. %p
+@H(2)
+@CH(12)
+@N(1)
+	%c(2)(What...!? %w(7)I'd better find something suspicious in that bellboy's testimony... %w(8)Otherwise Maya will be declared "guilty" on the spot!)  %c(0)%p
+@S
+	%c(2)(What should I do...?) %c(0)%s(60)%y
+	
+	Accept the condition %j(5590)
+	Give up %j(5600)
+
+&mes(5590)
+@H(2)
+@CH(12)
+@N(1)
+	%c(2)(Alright! %w(12)I've got nothing to lose! Except for... well, everything!) %c(0)%s(45)%p
+@CH(14)
+	Understood. %w(15)I accept your condition. %w(25)%p
+@H(6)
+@CH(50)
+@N(5)
+	Hmph. %p
+@CH(53)
+	Fool... You fell right into my trap! %w(50)%s(60)%p
+@H(2)
+@CH(14)
+@N(1)
+	%c(2)(Uh oh!) %c(0)%s(45)%p
+@CH(12)
+	Uh... %w(5)um, %w(8)wait... %s(60)%S
+%P(5610)
+&mes(5600)
+@H(2)
+@CH(12)
+@N(1)
+	%c(2)(Grr! %w(15)I can't accept those conditions!) %c(0)%p
+@CH(12)
+	Very well. %w(15)The defense will refrain from calling the bellboy as a witness. %p
+@H(4)
+@CH(40)
+@N(4)
+	I see. %w(10)You may continue your cross - examination, Mr. Wright. %p
+%P(5570)
+&mes(5570)
+@H(2)
+@CH(10)
+@N(1)
+	Right. %w(15)On with the cross - examination. %p
+@H(6)
+@CH(53)
+@N(5)
+%w(20)
+	What exactly do you have left to examine, Mr. Wright? %p
+@CH(53)
+	Miss April May has admitted to the wiretap, yes. But that bears no relevance to the case at hand: murder! There's no way you can prove any connection! %s(45)%p
+@H(2)
+@CH(12)
+@N(1)
+	%c(2)(Uh oh! Think! %w(12)This can't be the end... but I'm out of evidence!) %s(60)%c(0)%p
+@H(4)
+@CH(42)
+@N(4)
+	Then I believe the cross - examination is over. %p
+@CH(41)
+	Mr. Edgeworth, %w(15)does the prosecution have any other witnesses to call? %p
+@H(6)
+@CH(53)
+@N(5)
+%w(20)
+	None, Your Honor. She's the last. %p
+@H(2)
+@CH(12)
+@N(1)
+	%c(2)(What!? B- %w(15)but that means... %w(15)%c(1)Maya's guilty... %c(2)!?) %c(0)%p
+@CH(13)
+	W- %w(8)wait! Your Honor! %p
+@H(4)
+@CH(42)
+@N(4)
+	Yes, %w(12)Mr. Wright? %p
+@H(2)
+@CH(13)
+@N(1)
+	The defense would like to call the bellboy after all! %w(15)%s(45)%p
+@H(6)
+@CH(50)
+@N(5)
+	... %s(45)%p
+@CH(53)
+	Tsk tsk tsk... %p
+@CH(53)
+%w(20)
+	As I thought! %s(60)%p
+@H(2)
+@CH(13)
+@N(1)
+	...? %p
+@H(6)
+@CH(53)
+@N(5)
+	May I remind you, dear Mr. Wright. Should you question the bellboy... %w(5)and Miss April May's alibi prove to be solid... %s(45)then, by default, your client Ms. Maya Fey will be pronounced "guilty"! %s(60)%p
+@CH(51)
+	Are you prepared to accept my condition? %p
+@H(2)
+@CH(13)
+@N(1)
+	%c(2)(Edgeworth... %w(8)He's got me backed into a corner... %w(7)But I don't see any other way to take this!) %c(0)%p
+@CH(10)
+%w(20)
+	I accept! %p
+%P(5610)
+&mes(5610)
+%k
+@K
+@H(4)
+@CH(40)
+@N(4)
+	Very well! %w(5)The court calls the hotel bellboy to the stand! %p
+%P(5650)
+&mes(5650)
+@H(6)
+@CH(50)
+@N(5)
+%B(13)
+%w(20)
+	I believe we're ready for the witness to testify. %s(45)He certainly does look like a bellboy. %s(60)%p
+@N(0)
+%w(10)
+@H(5)
+@CH(100)
+@N(7)
+	Yes, sir. %w(5)I received your summons in the middle of work, sir. I'm happy to be of service. %p
+@H(4)
+@CH(42)
+@N(4)
+	That tea set looks rather heavy, so without further ado, %p
+@CH(41)
+	the witness may begin his testimony. %p
+@H(5)
+@CH(100)
+@N(7)
+	Very good, sir! %p
+%k
+%P(5655)
+&mes(5655)
+@N(0)
+@H(5)
+@CH(100)
+%Ss(1)
+%w(20)
+%s(45)
+	%c(1)-- Miss May's Room Service -- %c(0)%w(20)%s(60)%p
+%B(10)
+%w(30)
+%P(5656)
+&mes(5656)
+@H(5)
+@CH(100)
+@N(7)
+	I am the head bellboy at the fine Gatewater Hotel, in business for four generations! %w(10)I believe I received a call after 8:00 in the evening from our guest, Miss May. %w(10)She asked for an ice coffee to be brought to her at 9:00, on the dot, sir. %w(10)I brought it to her at precisely the requested time, %w(12)of course. %w(10)And I delivered the ice coffee to our guest Miss May, herself. %p
+%Ss(0)
+%k
+@H(4)
+@CH(40)
+@N(4)
+	I see. %w(15)The defense may begin its cross - examination. %p
+@H(2)
+@CH(10)
+@N(1)
+	R- %w(8)right! %w(15)I'm ready. %c(2)(I hope...) %c(0) %p
+@CH(11)
+	%c(2)(This is it... %w(7)If I can't prove Miss May was involved with the murder now... %s(45)Maya will be finished!) %p
+%P(5730)
+&mes(5730)
+@H(5)
+@CH(100)
+@N(0)
+%Sj
+%w(20)
+%s(45)
+	%c(1)-- Miss May's Room Service -- %c(0)%w(60)%s(60)%p
+%B(10)
+%w(30)
+%P(5740)
+&mes(5740)
+%l(0)(5750)
+%t(5790)
+@H(5)
+@CH(100)
+@N(7)
+	%c(3)I am the head bellboy at the fine Gatewater Hotel, in business for four generations! %c(0)%l
+%P(5750)
+&mes(5750)
+%l(5740)(5760)
+%t(5800)
+@H(5)
+@CH(100)
+@N(7)
+	%c(3)I believe I received a call after 8:00 in the evening from our guest, Miss May. %c(0)%l
+%P(5760)
+&mes(5760)
+%l(5750)(5770)
+%t(5810)
+@H(5)
+@CH(100)
+@N(7)
+	%c(3)She asked for an ice coffee to be brought to her at 9:00, on the dot, sir. %c(0)%l
+%P(5770)
+&mes(5770)
+%l(5760)(5780)
+%t(5820)
+@H(5)
+@CH(100)
+@N(7)
+	%c(3)I brought it to her at precisely the requested time, of course. %c(0)%l
+%P(5780)
+&mes(5780)
+%l(5770)(0)
+%t(5830)
+@H(5)
+@CH(100)
+@N(7)
+	%c(3)And I delivered the ice coffee to our guest Miss May, herself. %c(0)%l
+%P(5840)
+&mes(5840)
+@H(2)
+@CH(11)
+@N(1)
+	%c(2)(This bellboy wouldn't have any reason to lie... But I have to find something to use in his testimony!) %p
+@CH(10)
+	%c(2)(One more time. %w(15)I'll %c(1)press %c(2)him until he spills the beans... or his tea!) %c(0)%p
+%P(5740)
+&mes(5790)
+@FO(1)
+@H(2)
+@CH(10)
+@N(1)
+	What exactly is it you do at the hotel? %p
+@H(5)
+@CH(100)
+@N(7)
+	Why, anything required of me, sir. %w(5)I check in guests, I check out guests. %w(5)I clean rooms, I make beds. I even deliver room service, sir. %w(5)I checked Miss May in personally. %p
+@I(8)(0)
+@I(7)(1)
+@H(2)
+@CH(11)
+@N(1)
+	Are you always so... so prim? %p
+@H(4)
+@CH(42)
+@N(4)
+	Mr. Wright. %p
+@CH(41)
+	You will refrain from asking frivolous questions... %p
+@FC(2)(5850)(5750)
+&mes(5800)
+@FO(1)
+@H(2)
+@CH(10)
+@N(1)
+	Are you sure it was Miss May on the phone? %p
+@H(5)
+@CH(100)
+@N(7)
+	Absolutely, sir. %p
+@H(2)
+@CH(10)
+@N(1)
+	H- %w(12)how can you be so certain!? %p
+@H(5)
+@CH(100)
+@N(7)
+	I checked Miss May in personally, sir. Not only did I see her in all her stunning radiance, %w(6)but I also heard her voice. And then I saw THEM, and I... %w(30)%p
+@CH(101)
+	Ahem. %w(10)Er... %w(20)ahem! %p
+@CH(100)
+	The point being, I remembered her quite well, sir. %p
+@H(4)
+@CH(41)
+@N(4)
+	Yes, what then? %p
+@FC(2)(5850)(5760)
+&mes(5810)
+@FO(1)
+@H(2)
+@CH(11)
+@N(1)
+%s(45)
+	9:00 "on the dot", %w(10)%s(60)you say? %p
+@H(5)
+@CH(100)
+@N(7)
+	Yes. %w(15)I confirmed that detail several times. She was watching a program on the TV, %w(12)and wished to drink after she finished, sir. %p
+@H(2)
+@CH(11)
+@N(1)
+	%c(2)(9:00... %w(20)the time of the murder!) %c(0)%p
+@FC(2)(5850)(5770)
+&mes(5820)
+@FO(1)
+@H(2)
+@CH(13)
+@N(1)
+	"Precisely" 9:00, then? %p
+@H(5)
+@CH(100)
+@N(7)
+	Precisely, %w(5)exactly, %w(5)and most definitely, %w(5)sir. %w(5) 9:00 PM %s(45)%p
+@H(2)
+@CH(12)
+@N(1)
+	How can you be so sure!? %p
+@H(5)
+@CH(100)
+@N(7)
+	Miss May was quite insistent that it be brought then. %w(10)"Oh, bellboy? Tee hee! I'd like, like, ice coffee at exactly 9:00!" %w(12)Something like that, sir. %s(60)Therefore, %w(12)I knocked on her door at the crack of 9:00, sir. %p
+@H(2)
+@CH(11)
+@N(1)
+	%c(2)(Why would she be so particular about the time?) %c(0)%p
+@FC(2)(5850)(5780)
+&mes(5830)
+@FO(2)
+@H(2)
+@CH(13)
+@N(1)
+	You are sure it was Miss April May herself? %p
+@H(5)
+@CH(100)
+@N(7)
+	Ab-SO-lutely, sir. %s(45)%p
+@H(2)
+@CH(13)
+@N(1)
+	"Ab-SO-lutely"...? %s(60)%p
+@H(5)
+@CH(100)
+@N(7)
+	Yes, sir. %w(10)As in, "so very absolutely," sir. %w(13)It's an endearing mannerism of mine. %p 
+@H(2)
+@CH(14)
+@N(1)
+	How come you're so very certain!? %p
+@H(5)
+@CH(101)
+@N(7)
+	Well, %w(10)when I brought the room service, sir... %w(9)S-she... %w(25)the guest, sir, %w(20)favored me w-with a, %w(15)um, an "embrasser," sir. %p
+@H(2)
+@CH(12)
+@N(1)
+	"Embrasser"!? %w(15)Is that French for "embrace"? %p
+@H(5)
+@CH(101)
+@N(7)
+	It's French for "kiss", sir. %w(15)But not a french kiss, sir! %w(15)More of a peck on the cheek. %p
+@H(2)
+@CH(12)
+@N(1)
+	Wh- %w(5)why would she have done that...? %p
+@H(5)
+@CH(101)
+@N(7)
+	I believe, %w(10)perhaps, she was %w(12)momentarily swayed by my prim demeanor, %w(10)sir. It was a moment I shall never, %w(15)ever forget, sir. %p
+@H(2)
+@CH(12)
+@N(1)
+	%c(2)(Sounds pretty fishy to me... %w(10)I think our Miss May was up to something and wanted the bellboy to remember her!) %c(0)%p
+@FC(1)(5850)(5780)
+Omes(5850)
+%k
+@H(2)
+@CH(13)
+@N(1)
+%s(45)
+	... %w(30)%s(60)%p
+@CH(12)
+	It's no good! %w(30)%c(2)(There's nothing there! %s(45)Is... is that it!?) %c(0)%p
+@H(6)
+@CH(53)
+@N(5)
+	Tsk tsk. %w(20)Finally, you understand. This bellboy has absolutely no reason to lie! Now... %s(60)%p
+@CH(50)
+	If you have any decency, you will end this rather tedious cross - examination here! %p
+@H(4)
+@CH(43)
+@N(4)
+%w(20)
+@CH(40)
+	Hmm. It was a bit tedious. %p
+@CH(41)
+	The witness may leave the stand. %s(45)%p
+@H(2)
+@CH(13)
+@N(1)
+@S
+	%c(2)(I can't let this happen... can I?) %c(0)%s(60)%y
+	
+	Protest %j(5980)
+	Give up %j(5990)
+
+&mes(5990)
+@H(2)
+@CH(13)
+@N(1)
+	%c(2)(No...! %w(10)If I give up now, %w(10)I lose everything... %w(8)If I just give up the case, I'd be giving up the very reason I became a lawyer!) %c(0)%p
+%P(5980)
+&mes(5980)
+@H(2)
+@CH(13)
+@N(1)
+	W- %w(12)wait! Please wait! %p
+@H(4)
+@CH(42)
+@N(4)
+	Yes? Does the defense have something to add? %p
+@H(2)
+@CH(13)
+@N(1)
+	One last question... %w(12)let me ask one last question! %p
+%IG(1)
+@H(6)
+@CH(50)
+@N(5)
+	Your Honor, I must object. %w(5)This charade of justice has gone on long enough! %p
+@H(4)
+@CH(41)
+@N(4)
+	Now, now, Mr. Edgeworth. %w(30)Alright Mr. Wright. %s(45)I'll give you one more question, that's all. %p
+@H(2)
+@CH(13)
+@N(1)
+	%c(2)(Okay. This is really it, now. This is my last chance!) %c(0)%s(60)%p
+@H(2)
+@CH(13)
+@N(1)
+	T- %w(10)tell me again about er... room service! %p
+@H(5)
+@CH(100)
+@N(7)
+	A- %w(10)again, sir? %p
+@N(7)
+	At exactly 9:00, I delivered room service to Miss May in room 303. The guest had requested ice coffee... %w(15)$18 was the charge, as I recall. %s(45)%p
+@H(2)
+@CH(13)
+@N(1)
+	I see... %p
+%k
+	...? %s(60)%p
+@CH(11)
+	E- %w(8)eighteen dollars? %w(30)%s(45)Doesn't that seem a bit expensive? %s(60)%p
+@H(5)
+@CH(100)
+@N(7)
+	Y- %w(8)yes, well, %w(15)ice coffee for two, you know. And we don't skimp on the ice, sir. %s(45)%p
+@H(2)
+@CH(13)
+@N(1)
+	%c(2)(...!) %p
+%k
+	%c(2)(What did he say!?) %c(0)%p
+@CH(14)
+@N(1)
+	What did you say!? %s(60)%p
+@H(5)
+@CH(100)
+@N(7)
+	Ah! %w(25)Oh... er... rather, quite! %p
+@H(2)
+@CH(14)
+@N(1)
+	Bellboy! %w(15)Tell us the truth now... %p
+%B(3)
+@UK(0)
+@CH(0)
+	Was %c(1)someone %c(0)else staying in Miss May's room? %p
+%P(5890)
+&mes(5890)
+%IG(1)
+@H(6)
+@CH(51)
+@N(5)
+	I object! %w(12)That was... objectionable! %p
+@N(0)
+@H(4)
+@CH(44)
+%w(14)
+@CH(45)
+%w(14)
+@CH(40)
+@N(4)
+	... %w(20)Objection overruled. %w(20)The witness will answer the question. %s(45)%p
+@H(5)
+@CH(101)
+@N(7)
+	Er... %w(8)yes, %w(15)I see. %s(60)%p
+@H(2)
+@CH(14)
+@N(1)
+	Why did you not mention this in your testimony!? %s(45)%p
+@H(5)
+@CH(101)
+@N(7)
+	W- %w(8)well, sir, you er... %w(15)you didn't ask! %p
+%s(60)
+@H(2)
+@CH(13)
+@N(1)
+	%c(2)(Nice try!) %c(0)That's the sort of thing you're normally supposed to mention! %s(45)%p
+@H(5)
+@CH(101)
+@N(7)
+	Ah, %w(6)yes, quite. Indeed... %w(30)It was the, er, good barrister there, Mr. Edgeworth, who... %p
+@H(2)
+@CH(13)
+@N(1)
+	! %p
+@H(5)
+@CH(101)
+@N(7)
+	He asked me not to mention it %w(8)if I wasn't specifically asked, sir. %s(60)%p
+@H(6)
+@CH(59)
+@T
+%k
+@N(5)
+	Oof! %w(23)%p
+@CH(59)
+@T
+	Y- %w(20)you fool! %s(45)%p
+%w(20)
+@H(0)
+@CH(0)
+@N(1)
+	I've done it... %w(25)I've won! %p
+%w(20)
+@H(2)
+@CH(10)
+@N(1)
+%B(3)
+	Miss April May checked into a twin room... with a man. %s(60)Correct? %p
+@H(5)
+@CH(101)
+@N(7)
+	Yes, sir. %p
+@I(5)(0)
+@I(4)(1)
+@H(2)
+@CH(10)
+@N(1)
+	Then, when you brought them room service, %s(45)you didn't %c(1)see that man %c(0)in the room...? %s(60)%p
+@H(5)
+@CH(101)
+@N(7)
+	That's right, sir. %p
+@H(4)
+@CH(46)
+@N(4)
+	Hmm... %p
+@H(2)
+@CH(13)
+@N(1)
+	Your Honor! %p
+@CH(14)
+	We have just learned of another person involved who may have been the murderer! In this new light, %w(12)I hold that it's impossible to judge the defendant. %w(5)You agree, Mr. Edgeworth? %p
+@H(6)
+@CH(51)
+@N(5)
+	Who! %w(15)Who is this "other person"! %p
+@H(2)
+@CH(13)
+@N(1)
+	The man who checked in with Miss May! %p
+@H(6)
+@CH(59)
+@N(5)
+@T
+	Oof! %w(53)%p
+@H(2)
+@CH(14)
+@N(1)
+	Your Honor! %w(5)As has been previously revealed, Miss April May was tapping the victim's phone. Yet Miss May herself has an alibi at the time of the murder. %p
+@CH(13)
+	However, %w(30)that does not clear the man that was with her! %p
+@UK(0)
+	The bellboy saw no one else in the room at the time of the murder!!! %p
+@H(6)
+@CH(59)
+@N(5)
+	M- %w(12)my, what a convenient little setup... but it's too late... %p
+@H(2)
+@CH(10)
+@N(1)
+	"Too late"? %w(15)I suppose you'd like it if it was too late, wouldn't you... %s(60)%p
+@CH(14)
+	After all, %w(25)it was you who hid the presence of the other man from this court! %s(45)%p
+@H(6)
+@CH(59)
+@T
+%f
+%k
+@N(5)
+	Oof! %w(26)%p
+@CH(59)
+	Upstart... %w(30)amateur...! T-these accusations are... %w(30)ludicrous! %s(60)%p
+@K
+@H(4)
+@CH(40)
+@N(4)
+	Enough! %s(45)%p
+@CH(41)
+	The court acknowledges the defense's argument. I expect the prosecution and defense to look into this matter fully! %s(60)Am I understood? %s(45)%p
+@H(6)
+@CH(59)
+@N(5)
+	Yes... *gasp* %s(60)Yes, Your Honor. %p
+%k
+@H(4)
+@CH(40)
+@N(4)
+	That is all today for the trial of Maya Fey. Court is adjourned! %p
+@K
+@H(0)
+@CH(0)
+%w(30)
+%P(5950)
+&mes(5950)
+@N(0)
+@H(0)
+@CH(0)
+%s(45)
+	%c(3)September 7, 2:24 PM District Court Defendant Lobby No. 1 %c(0)%s(60)%p
+%w(20)
+@H(1)
+@CH(21)
+@N(3)
+%B(8)
+	Mr. Wright! %w(15)You were amazing in there! %p
+@N(1)
+	R- %w(8)really? %p
+@N(3)
+%w(20)
+	I think I might be your newest fan! %p
+@N(1)
+	Oh, %w(20)I was just "doing my job" you know... %w(20)heh heh. %p
+@CH(22)
+@N(3)
+	Then again, %w(12)that other attorney was pretty cool, too... %p
+@N(1)
+	Huh? %s(45)%p
+@N(3)
+	That face of his! With his eyes wide, and trembling lips! %s(60)%p
+@CH(21)
+	It sent shivers up my spine! %p
+@N(1)
+	Hmm... %w(12)if you say so. %p
+@N(3)
+	So, %w(10)what happens with me? Do I get to go home now? %p
+@N(1)
+	Well, %w(8)no. %w(30)I don't think so. Not yet. %p
+@CH(20)
+@N(3)
+	Oh... %w(15)I see. %p
+@N(1)
+	But I got a great lead in today's trial! %p
+@N(3)
+	A "lead"? %p
+@N(1)
+	That man with Miss May! %w(12)He's the key! %p
+@CH(22)
+@N(3)
+	Oh! %w(20)%s(45)I get it. %s(60)What happened to Miss May after that, anyway? %w(10)%p
+@N(1)
+	I heard they arrested her. %w(15)I guess she's learning her charms won't work everywhere. She's probably at the detention center now. %w(12)I may have to go down there later. Anyway. %w(9)This case is far from closed. %p
+@N(3)
+	Yes sir! %p
+@N(1)
+	I'm going to find out more about this man. %s(45)%p
+@N(3)
+	Do you think he was the one who...? %p
+@CH(20)
+@N(1)
+	Maybe so. %s(60)%p
+@N(3)
+	Sis... %p
+@N(1)
+	Don't worry, %w(25)I'll find him by tomorrow. I promise. %s(45)%p
+@CH(22)
+@N(3)
+	I'm counting on you! %p
+%w(20)
+@H(0)
+@CH(0)
+@N(1)
+	I asked for a full record of April May's testimony. I thought it might come in handy during the trial tomorrow. But now that I have it, I'm not so sure. Most of her testimony was all lies... %w(8)In fact, there's only one part that got left on the record. %s(45)%p
+@N(0)
+@IT(20)
+@I(20)(1)
+@N(0)
+	%c(2)May Testimony added to the Court Record. %c(0)%p
+@N(1)
+	I don't know how much good this will do me at all, now. %w(8)Anyway, time to hit the pavement and do some investigating! Maya doesn't belong in that detention center, and it's up to me to get her free! %p
+@N(0)
+	%c(3)TO BE CONTINUED... %c(0) %p
+%k
+%P(10000)
+[mes(0)
+Mia Fey (Age 27)
+The victim. Chief attorney at Fey + Co. Law Offices, and an excellent defense lawyer. 
+&mes(1)
+Maya Fey (Age 17)
+The defendant. Mia's little sister, and a spirit medium in training. 
+&mes(2)
+Dick Gumshoe (Age 30)
+Detective at the local precinct. In charge of the initial investigation. 
+&mes(3)
+Marvin Grossberg (Age 64)
+A veteran defense attorney, and Mia's mentor. 
+&mes(4)
+April May (Age 23)
+Stayed with someone else in the hotel on the night of the murder. Tapped Mia's phone. 
+&mes(5)
+April May (Age 23)
+An eye witness to the events. Testifies that she saw Maya commit the murder. 
+&mes(6)
+Miles Edgeworth (Age 24)
+A gifted prosecutor, and a ruthless man who'd do anything to get a "guilty" verdict. 
+&mes(7)
+Bellboy (Age 26)
+Delivered room service to Miss May at the time of the murder. Also checked her in. 
+&mes(8)
+Bellboy (Age 26)
+Bellboy at the Gatewater Hotel. 
+&mes(9)
+Attorney's Badge
+No one would believe I was a defense attorney if I didn't carry this. 
+&mes(10)
+
+&mes(11)
+The Thinker
+The murder weapon. Looks like a statue, but it's actually a clock. Made by Larry Butz. 
+&mes(12)
+The Thinker
+Clock in the form of a statue. The clock's gears have been removed. Made by Larry Butz. 
+&mes(13)
+Glass Shards
+The broken remains of a glass light stand. Broken beyond all recognition. 
+&mes(14)
+Receipt
+A department store receipt with letters written in blood on the back. 
+&mes(15)
+Maya's Cell Phone
+Holds a conversation between the Chief and Maya. 
+&mes(16)
+Mia's Autopsy Report
+Time of death: 9/5 at 9:00 PM. Cause: single blunt force trauma. Death was instantaneous. 
+&mes(17)
+Mia's Autopsy Report
+Died from a blow by a blunt object. May have lived for a few minutes after being hit. 
+&mes(18)
+Wiretap
+Found in Miss May's hotel room. 
+&mes(19)
+Floor Plans
+The murder scene, the Fey + Co. Law Offices. 
+&mes(20)
+May Testimony
+"The victim dodged an attack then ran to the right, but she was caught and struck". 
+&mes(9999)
+@HP(0)
+@H(2)
+@CH(13)
+@N(1)
+	This evidence clearly proves the contradiction in the statement. %p
+@H(4)
+@CH(41)
+@N(4)
+	How is the evidence linking to the statement? %p
+@H(2)
+@CH(13)
+@N(1)
+	... it doesn't. Maybe. %p
+@H(4)
+@CH(40)
+@N(4)
+@CH(42)
+%w(14)
+@CH(43)
+%w(14)
+@CH(41)
+	Not at all. Mr. Wright. Please think more before making remarks %p
+%Del
+%w(20)
+@CH(41)
+@N(1)
+	%c(2)(It seems I made a bad impression on Judge.) %c(0) %p
+@HP(1)
+&mes(19999)
+%k
+@K
+@H(4)
+@CH(40)
+@N(4)
+	That's enough! %w(8)This court sees no reason to further prolong this trial. The defense has failed to give the court sufficient reason to doubt the prosecution's claim! %p
+@CH(41)
+	This court finds the defendant, Ms. Maya Fey... %p
+%w(20)
+@HK(1)
+	The accused will surrender to the court immediately, %w(5) to be held pending trial at a higher court within a month from today's date. %p
+@CH(40)
+	That is all. The court is adjourned! %p
+@N(10)
+	%c(3)(Muttering) %c(0)%p
+@K
+%P(0)

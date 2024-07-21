@@ -1,0 +1,125 @@
+<html>
+  <head>
+    <style>
+      .dir_rtl{ DIRECTION:RTL; }
+      .dir_ltr{ DIRECTION:LTR; }
+      .td_space{MARGIN-TOP:0.0PX;MARGIN-LEFT:0.0PX;MARGIN-BOTTOM:0.0PX;MARGIN-RIGHT:0.0PX;PADDING-TOP:0.0PX;PADDING-LEFT:0.0PX;PADDING-BOTTOM:0.0PX;PADDING-RIGHT:0.0PX;}
+      .spacer{WIDTH:0.0PX;BACKGROUND-COLOR:TRANSPARENT;}     
+      .hidden{DISPLAY:NONE;}
+      .shown{DISPLAY:BLOCK;}
+      .backDiv{BACKGROUND-COLOR:#666666;WIDTH:100%;MARGIN-TOP:0.0PX;MARGIN-LEFT:0.0PX;MARGIN-BOTTOM:0.0PX;MARGIN-RIGHT:0.0PX;PADDING-TOP:2.0PX;PADDING-LEFT:0.0PX;PADDING-BOTTOM:2.0PX;PADDING-RIGHT:0.0PX;}
+      .table_url_search{BACKGROUND-COLOR:#666666;WIDTH:100%;MARGIN-TOP:0.0PX;MARGIN-LEFT:0.0PX;MARGIN-BOTTOM:0.0PX;MARGIN-RIGHT:0.0PX;PADDING-TOP:0.0PX;PADDING-LEFT:0.0PX;PADDING-BOTTOM:0.0PX;PADDING-RIGHT:0.0PX;}
+      .fav_img{WIDTH:16.0PX;HEIGHT:16.0PX;}
+      .width40{WIDTH:38.0%;}
+      .width60{WIDTH:60.0%;}
+      .menu_item{ BACKGROUND-COLOR:#EFEFEF;BORDER-BOTTOM-COLOR:#BEBEBE;BORDER-BOTTOM-STYLE:SOLID;BORDER-BOTTOM-WIDTH:1.0PX;BORDER-LEFT-COLOR:#EFEFEF;BORDER-LEFT-STYLE:SOLID;BORDER-LEFT-WIDTH:1.0PX;BORDER-RIGHT-COLOR:#EFEFEF;BORDER-RIGHT-STYLE:SOLID;BORDER-RIGHT-WIDTH:1.0PX;BORDER-TOP-COLOR:#F9F9F9;BORDER-TOP-STYLE:SOLID;BORDER-TOP-WIDTH:1.0PX;MARGIN-BOTTOM:0.0PX;MARGIN-LEFT:0.0PX;MARGIN-RIGHT:0.0PX;MARGIN-TOP:0.0PX;PADDING-BOTTOM:7.0PX;PADDING-LEFT:5.0PX;PADDING-RIGHT:0.0PX;PADDING-TOP:7.0PX; }
+      .menu_item_table_padding{ PADDING-BOTTOM:5.0PX;PADDING-LEFT:2.5PX;PADDING-RIGHT:5.0PX;PADDING-TOP:5.0PX; }
+      .menu_item_text{ MARGIN-BOTTOM:0.0PX;MARGIN-LEFT:0.0PX;MARGIN-RIGHT:0.0PX;MARGIN-TOP:0.0PX;PADDING-BOTTOM:4.0PX;PADDING-LEFT:4.0PX;PADDING-RIGHT:4.0PX;PADDING-TOP:4.0PX;FONT-SIZE:MEDIUM;COLOR:#555555;OVERFLOW:HIDDEN;WHITE-SPACE:NOWRAP; }    
+      .menu_item_text_grey{ COLOR:#959595; }
+      .body{ BACKGROUND-COLOR:#EFEFEF; }
+      .menu_item_table{ WIDTH:100.0%; }
+      .menu_item_table_right{ TEXT-ALIGN:RIGHT; }
+      .arrow_cell_width{ WIDTH:10.0PX; }
+      .visible{ DISPLAY:BLOCK; }
+      .invisible{ DISPLAY:NONE; }
+      .hover { COLOR:#FFFFFF;BACKGROUND-COLOR:#44aa33;OUTLINE:NONE;BORDER-BOTTOM-COLOR:#44aa33;BORDER-BOTTOM-STYLE:SOLID;BORDER-BOTTOM-WIDTH:1.0PX;BORDER-LEFT-COLOR:#44aa33;BORDER-LEFT-STYLE:SOLID;BORDER-LEFT-WIDTH:1.0PX;BORDER-RIGHT-COLOR:#44aa33;BORDER-RIGHT-STYLE:SOLID;BORDER-RIGHT-WIDTH:1.0PX;BORDER-TOP-COLOR:#44aa33;BORDER-TOP-STYLE:SOLID;BORDER-TOP-WIDTH:1.0PX; }     
+      .googleBack{BACKGROUND-IMAGE:URL('file://google.png');BACKGROUND-POSITION:4.0% 50.0%;BACKGROUND-REPEAT:NO-REPEAT;}
+      .bingBack{BACKGROUND-IMAGE:URL('file://bing.png');BACKGROUND-POSITION:4.0% 50.0%;BACKGROUND-REPEAT:NO-REPEAT;}
+      .yahooBack{BACKGROUND-IMAGE:URL('file://yahoo.png');BACKGROUND-POSITION:4.0% 50.0%;BACKGROUND-REPEAT:NO-REPEAT;}
+      .baiduBack{BACKGROUND-IMAGE:URL('file://baidu.png');BACKGROUND-POSITION:4.0% 50.0%;BACKGROUND-REPEAT:NO-REPEAT;}
+      .yandexBack{BACKGROUND-IMAGE:URL('file://yandex.png');BACKGROUND-POSITION:4.0% 50.0%;BACKGROUND-REPEAT:NO-REPEAT;}
+      .defBack{BACKGROUND-IMAGE:URL('file://glass.png');BACKGROUND-POSITION:4.0% 50.0%;BACKGROUND-REPEAT:NO-REPEAT;}
+      .urlSearchTable{WIDTH:100%;}
+      .enterURL{BACKGROUND-COLOR:TRANSPARENT;COLOR:#555555;BORDER-COLOR:TRANSPARENT;BORDER-WIDTH:0.0PX;FONT-SIZE:MEDIUM;WIDTH:100.0%;PADDING-TOP:3.0PX;PADDING-LEFT:4.0PX;PADDING-BOTTOM:4.0PX;PADDING-RIGHT:4.0PX;VERTICAL-ALIGN:TOP;}
+      .searchInput{BACKGROUND-COLOR:TRANSPARENT;WIDTH:100.0%;COLOR:#555555;BORDER-COLOR:TRANSPARENT;BORDER-WIDTH:0.0PX;BORDER-WIDTH:0.0PX;FONT-SIZE:MEDIUM;BACKGROUND-REPEAT:NO-REPEAT;PADDING-TOP:3.0PX;PADDING-LEFT:25.0PX;PADDING-BOTTOM:4.0PX;PADDING-RIGHT:4.0PX;}
+      .blankSearch{WIDTH:88PX;COLOR:#555555;FONT-SIZE:MEDIUM;BACKGROUND-REPEAT:NO-REPEAT;PADDING-TOP:4.0PX;PADDING-LEFT:25.0PX;PADDING-BOTTOM:6.0PX;PADDING-RIGHT:4.0PX;}  
+	  .urlSearchBg{BACKGROUND-COLOR:#999999;BACKGROUND-IMAGE:URL('file://url_search_bg.png');BACKGROUND-REPEAT:REPEAT-X;BORDER-BOTTOM-COLOR:#ADADAD;BORDER-BOTTOM-STYLE:SOLID;BORDER-BOTTOM-WIDTH:1.0PX;BORDER-LEFT-COLOR:#EFEFEF;BORDER-LEFT-STYLE:SOLID;BORDER-LEFT-WIDTH:0.0PX;BORDER-RIGHT-COLOR:#EFEFEF;BORDER-RIGHT-STYLE:SOLID;BORDER-RIGHT-WIDTH:0.0PX;BORDER-TOP-COLOR:#F9F9F9;BORDER-TOP-STYLE:SOLID;BORDER-TOP-WIDTH:0.0PX;PADDING-TOP:5.0PX;PADDING-LEFT:5.0PX;PADDING-BOTTOM:5.0PX;PADDING-RIGHT:5.0PX;PADDING:5PX}
+      .inputCenter{BACKGROUND-IMAGE:URL('file://input_center.png');BACKGROUND-REPEAT:REPEAT-X;}
+      .inputLeft{BACKGROUND-IMAGE:URL('file://input_left.png');BACKGROUND-REPEAT:NO-REPEAT;OVERFLOW:HIDDEN;}
+      .inputRight{BACKGROUND-IMAGE:URL('file://input_right.png');BACKGROUND-POSITION:100.0% 0.0%;BACKGROUND-REPEAT:NO-REPEAT;}
+	  .overflow_hidden{OVERFLOW:HIDDEN;WHITE-SPACE:NOWRAP;}
+     </style>
+  </head>
+  <body class="body" onload="mwl.updateGroup('#searchFormArea', 'file://search.html');mwl.addClass('#searchForm', 'shown');" onshow="mwl.updateGroup('#updateAvailableArea', 'http://novsaved/Nokia/menu/browserUpdateMenu.html');mwl.setGroupTarget('#searchFavicons','#favicon-%26$searchEngineST_STORAGE;', 'shown', 'hidden');">
+    <div class="urlSearchBg">
+      <table cellpadding="0" cellspacing="0" rows="1" cols="3" class="urlSearchTable &$css_dir_ALIGNMENT;">
+        <tr>
+          <td class="width60"><div class="inputCenter"><div class="inputLeft"><div class="inputRight"><input type="text" name="site" class="enterURL" value="www."/></div></div></div></td>
+          <td></td>
+          <td class="width40 &$css_dir_ALIGNMENT;"><div id="searchFormArea">Search Form</div></td>
+        </tr>
+      </table>
+    </div>   
+    <div id="group1_start">
+      <div id="start_page_unselected" class="menu_item invisible &$css_dir_ALIGNMENT;" onclick="mwl.execBrowserCommand('&$11_COMMANDID;')">
+        <span class="menu_item_text">&$111_STR;</span>
+      </div>
+    </div>
+
+    <div id="group_edit">
+        <div id="edit_favorites_unselected" class="invisible menu_item &$css_dir_ALIGNMENT;" onclick="mwl.execBrowserCommand('&$15_COMMANDID;')">
+          <span class="menu_item_text">&$100_STR;</span>
+        </div>
+        <div id="edit_favorites_inactive" class="invisible menu_item &$css_dir_ALIGNMENT;">
+          <span class="menu_item_text menu_item_text_grey">&$100_STR;</span>
+        </div>
+    </div>
+
+	<div id="group_delete">
+        <div id="delete_history_unselected" class="invisible menu_item &$css_dir_ALIGNMENT;" onclick="mwl.execBrowserCommand('&$21_COMMANDID;')">
+          <span class="menu_item_text">&$17_STR;</span>
+        </div>
+        <div id="delete_history_inactive" class="invisible menu_item &$css_dir_ALIGNMENT;">
+          <span class="menu_item_text menu_item_text_grey">&$17_STR;</span>
+        </div>
+    
+        <div id="delete_favorites_unselected" class="invisible menu_item &$css_dir_ALIGNMENT;" onclick="mwl.execBrowserCommand('&$60_COMMANDID;')">
+          <span class="menu_item_text">&$46_STR;</span> 
+        </div>
+        <div id="delete_favorites_inactive" class="invisible menu_item &$css_dir_ALIGNMENT;">
+          <span class="menu_item_text menu_item_text_grey">&$46_STR;</span>
+        </div>
+    </div>
+
+	<div id="group_tools">
+		<div id="tools_unselected" class="menu_item menu_item_table_padding visible &$css_dir_ALIGNMENT;" onclick="mwl.subMenu('file://menutools.html')">
+		  <table class="menu_item_table &$css_dir_ALIGNMENT;" rows="1" cols="2">
+			<tr>
+			  <td><span class="menu_item_text &$css_dir_ALIGNMENT;">&$203_STR;</span></td>
+			  <td class="arrow_cell_width menu_item_table_right"><img src="file://arrow.png" width="10" height="16" alt="Arrow" /></td>
+			</tr>
+		  </table>
+		</div>	
+		<div id="tools_unselected_rtl" class="menu_item invisible &$css_dir_ALIGNMENT;" onclick="mwl.subMenu('file://menutools.html')">
+			<span class="menu_item_text">&$203_STR;</span>          		  
+		</div>
+	</div>
+
+    <div id="group3_webpage">
+      <div id="subgroup3_webpage_fav_reload" class="invisible">
+        <div id="add_to_favorites_unselected" class="menu_item &$css_dir_ALIGNMENT;" onclick="mwl.execBrowserCommand('&$12_COMMANDID;')">
+          <span class="menu_item_text">&$5_STR;</span>
+        </div>
+      </div>
+    </div>
+
+    <div id="group4_webpage_forward">
+      <div id="forward_unselected" class="menu_item invisible &$css_dir_ALIGNMENT;" onclick="mwl.execBrowserCommand('&$14_COMMANDID;')">
+        <span class="menu_item_text">&$76_STR;</span>
+      </div>
+      <div id="forward_inactive" class="menu_item invisible &$css_dir_ALIGNMENT;">
+        <span class="menu_item_text menu_item_text_grey">&$76_STR;</span>
+      </div>
+    </div>
+
+    <div id="feedback_unselected" class="menu_item &$css_dir_ALIGNMENT;" onclick="mwl.execBrowserCommand('&$19_COMMANDID;')">
+      <span class="menu_item_text">&$75_STR;</span>
+    </div>
+
+    <div id="updateAvailableArea"></div>
+
+    <div id="exit" class="menu_item &$css_dir_ALIGNMENT;" onclick="mwl.execBrowserCommand('&$9_COMMANDID;')">
+      <span class="menu_item_text">&$66_STR;</span>
+    </div>
+  </body>
+</html>

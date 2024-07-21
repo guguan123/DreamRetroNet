@@ -6,7 +6,7 @@ aut();
 
 
 $id = abs(intval($_GET['id'])); # ФИЛЬТР ГЕТ
-if($user['admin_level']>="会员"){
+if($user['admin_level']>="会员" ?: $user['admin_level']=="管理员"){
 if($user['admin_level']=="禁言"){
 echo '<link rel="stylesheet" href="/M/c/notice.css">';
 echo '<body id="notice"><h2 class="topic">消息提示</h2><p>请登录之后再操作</p></body>';
@@ -22,7 +22,7 @@ if(isset($_POST['submit'])){
 $uploaddir = $_SERVER['DOCUMENT_ROOT'].'/M/s/';
 $mds = $con->query("SELECT * FROM `image`  ORDER BY `id` DESC LIMIT 1")->fetch_assoc();
 $rand = $mds['id']+1;
-if($f=='.jpeg' || $f=='.png' || $f=='.jpg'){
+if($f=='.jpeg' || $f=='.png' || $f=='.jpg' || $f=='.gif'){
 $t=$rand.$f;
 
 $uploadfile = $uploaddir . $rand.$f;
@@ -33,9 +33,24 @@ if (move_uploaded_file($_FILES['userfile']['tmp_name'], $uploadfile)) {
 $name = filtr($_POST['name']);
 $text = filtr($_POST['text']);
 
-$con->query("INSERT INTO `image` (`id_user`, `time`, `id_game`, `url`, `format`) VALUES 
-('".$user['id']."', '".time()."', '".$id."', '".$t."', '".$f."')");    
+//限制长和宽
+$size = getimagesize('../M/s/'.$t.'');
+$width = $size[0];
 
+$height = $size[1];
+$allowsize=500*1024;
+if($size<$allowsize){
+echo "文件大小过大";
+exit;
+}
+if($width>800 || $height>480){
+echo "图片长或宽超出限制";
+exit;
+}
+$con->query("INSERT INTO `image` (`id_user`, `time`, `id_game`, `url`, `format`) VALUES 
+('".$user['id']."', '".time()."', '".$id."', '".$t."', '".$f."')");
+$con->query("UPDATE `game` SET `img` = 'cover' WHERE `id` = '".$id."'");    
+//creatWaterMark('../M/s/'.$t.'');
 header('Location: /game/'.$id);
 } else {
     err('Ошибка');

@@ -1,0 +1,14 @@
+Manifest-Version: 1.0
+MIDlet-Vendor: 谷得游戏
+handset: N73
+MIDlet-Version: 19.0
+Created-By: 11.0-b15 (Sun Microsystems Inc.)
+MIDlet-Data-Size: 20000
+MIDlet-Name: 世界OL
+cp: 2507
+MIDlet-1: 世界OL, /icon.png, com.hz.GameMIDlet
+MicroEdition-Configuration: CLDC-1.0
+MIDlet-Icon: icon.png
+MicroEdition-Profile: MIDP-1.0
+MIDlet-Description: 世界OL手机网游
+

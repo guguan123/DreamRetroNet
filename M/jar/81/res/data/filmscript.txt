@@ -1,0 +1,3 @@
+filmConfig:
+map:1,1
+npc:

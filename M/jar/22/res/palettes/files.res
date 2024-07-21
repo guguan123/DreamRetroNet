@@ -1,0 +1,9 @@
+Bmffinr3.pal
+Ccovell.pal
+FCEUltra.pal
+Loopy.pal
+Mconte.pal
+Nescube.pal
+Nesticle.pal
+Realityb.pal
+Rocknes.pal

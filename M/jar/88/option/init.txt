@@ -1,0 +1,14 @@
+﻿////游戏初始化文件
+@isDebug=false
+@initScence=35
+@initPlace=0
+@initX=279
+@initY=124
+@initDir=down
+@moveSpeed=4
+@maxLevel=35
+@attackMaxMan=1
+@allAttackMaxMan=5
+
+
+

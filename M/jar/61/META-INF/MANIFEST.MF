@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+MIDlet-1: 原神-捕风的异乡人,icon.png,com.pyy.MainMIDlet
+MIDlet-Vendor: Pyy
+MicroEdition-Configuration: CLDC-1.1
+MIDlet-Name: 原神
+MIDlet-Version: 0.6.4
+MicroEdition-Profile: MIDP-2.0
+MIDlet-Icon: icon.png
+Nokia-MIDlet-On-Screen-Keypad: no
+SmartPhone: true
+

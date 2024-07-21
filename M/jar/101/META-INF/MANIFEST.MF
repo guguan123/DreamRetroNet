@@ -1,0 +1,20 @@
+Manifest-Version: 1.0
+Ant-Version: Apache Ant 1.8.1
+Created-By: 1.6.0_18-b07 (Sun Microsystems Inc.)
+MIDlet-Vendor: NPC Interactive.Inc
+site: NDEwMA==
+limit: NTAw
+edition: 044
+reqprefix: IA==
+MicroEdition-Profile: MIDP-2.0
+reqsuffix: IA==
+MIDlet-Name: 武林
+game: 054
+MIDlet-Icon: /icon.png
+suffix: IA==
+MIDlet-Version: 1.0
+prefix: IA==
+tariff: Miw0
+MIDlet-1: 武林,/icon.png,game.GameMIDlet
+MicroEdition-Configuration: CLDC-1.0
+

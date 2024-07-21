@@ -1,0 +1,16 @@
+Manifest-Version: 1.0
+MIDlet-Vendor: PiP
+Media-Price: .
+MIDlet-Version: 4.8
+Nokia-MIDlet-On-Screen-Keypad: no
+Polish-Version: 2.0.2 (2008-03-27)
+Created-By: 1.6.0_16 (Sun Microsystems Inc.)
+MIDlet-Name: 明珠三国
+MIDlet-Info-URL: http://3g.pipgame.cn/
+MIDlet-Touch-Support: True
+MIDlet-1: 明珠三国, /icon.png, com.pip.sanguo.SanguoMIDlet
+MicroEdition-Configuration: CLDC-1.0
+MIDlet-Icon: /icon.png
+MIDlet-Description: 支持:MIDP2Touch系列.
+MicroEdition-Profile: MIDP-2.0
+

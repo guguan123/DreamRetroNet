@@ -9,14 +9,14 @@ $con = mysqli_connect(
             $dbpass,   /* Используемый пароль */ 
             $dbname);     /* База данных для запросов по умолчанию */ 
 
-if (!$con) { 
-   printf("Невозможно подключиться к базе данных. Код ошибки: %s\n", mysqli_connect_error()); 
-   exit; 
-} 
+//if (!$con) { 
+   //printf("Невозможно подключиться к базе данных. Код ошибки: %s\n", mysqli_connect_error()); 
+//   exit; 
+//} 
 
 
 /* utf8 */
-//if (!$con->set_charset("utf8")) {
-    //printf("Ошибка при загрузке набора символов utf8: %s\n", $con->error);
-//}
+if (!$con->set_charset("utf8")) {
+    printf("Ошибка при загрузке набора символов utf8: %s\n", $con->error);
+}
 ?>

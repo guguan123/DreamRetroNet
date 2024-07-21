@@ -1,0 +1,34 @@
+<html>
+  <head>
+    <style>
+      .table_class { WIDTH:100.0%; }
+      .c82 { WIDTH:100.0%;BACKGROUND-IMAGE:URL('file://menu_bar_background.png');BACKGROUND-REPEAT:REPEAT-X;HEIGHT:41.0PX; }
+      .menu_divider { WIDTH:2.0%;BACKGROUND-IMAGE:URL('file://menu_divider.png'); }
+      .leftkey { TEXT-ALIGN:CENTER;}
+      .rightkey { TEXT-ALIGN:CENTER;}
+      .left_side { WIDTH:49.0%;HEIGHT:41.0PX;}
+      .right_side { HEIGHT:41.0PX;}
+      .key_text { FONT-SIZE:LARGE;FONT-WEIGHT:BOLD;}
+      .hover { COLOR:#FFFFFF;BACKGROUND-COLOR:#909090;OUTLINE:NONE;BORDER-BOTTOM-COLOR:#909090;BORDER-BOTTOM-STYLE:SOLID;BORDER-BOTTOM-WIDTH:1.0PX;BORDER-LEFT-COLOR:#909090;BORDER-LEFT-STYLE:SOLID;BORDER-LEFT-WIDTH:1.0PX;BORDER-RIGHT-COLOR:#909090;BORDER-RIGHT-STYLE:SOLID;BORDER-RIGHT-WIDTH:1.0PX;BORDER-TOP-COLOR:#909090;BORDER-TOP-STYLE:SOLID;BORDER-TOP-WIDTH:1.0PX; }     
+    </style>
+  </head>
+  <body>
+    <div class="c82">
+      <table id="wrapper" class="table_class" cols="3" rows="1" cellspacing="0">
+        <tr>
+          <td id="leftkey" class="left_side">
+            <div class="leftkey" id="save" onclick="mwl.execBrowserCommand('&$4_COMMANDID;');">
+              <span class="key_text"> &$149_STR;</span>
+            </div>
+          </td>
+          <td class="menu_divider"></td>
+          <td id="rightkey" class="right_side">
+            <div class="rightkey" id="close" onclick="mwl.execBrowserCommand('&$3_COMMANDID;');">
+              <span class="key_text">&$31_STR;</span>
+            </div>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>

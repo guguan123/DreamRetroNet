@@ -1,0 +1,14 @@
+Manifest-Version: 1.0
+MicroEdition-Configuration: CLDC-1.1
+MIDlet-Name: 天卦伏魔录
+Created-By: 1.5.0_12-b04 (Sun Microsystems Inc.)
+MIDlet-Icon: images/title/icon.png
+MIDlet-Install-Notify: http://59.42.254.3:8081/pay/install.do?gameid=0
+ A09&ua=n73&gv=1.1.0&cpid=30321
+CP: 30321
+MIDlet-Vendor: 奥尔制作,拉阔游戏发行
+MIDlet-1: 天卦伏魔录, images/title/icon.png, current.RPGMIDlet
+MIDlet-Version: 1.1.0
+MicroEdition-Profile: MIDP-2.0
+MIDlet-Description: 天卦伏魔录（媲美PC游戏）
+

@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Ant-Version: Apache Ant 1.6.5
+Created-By: 10.0-b22 (Sun Microsystems Inc.)
+MIDlet-1: sogoyo_town,/icon.png,com.auer.title.GameMidlet
+MIDlet-Icon: /icon.png
+MIDlet-Vendor: Auer
+MIDlet-Version: 1.30.04
+MIDlet-Name: sogoyo_town
+MicroEdition-Configuration: CLDC-1.1
+MicroEdition-Profile: MIDP-2.0
+

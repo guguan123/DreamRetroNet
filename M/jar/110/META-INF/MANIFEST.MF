@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+MIDlet-Vendor: Midlet Suite Vendor
+MIDlet-Version: 1.0.0
+MIDlet-1: YouKu,e.png,GameMIDlet
+MicroEdition-Configuration: CLDC-1.1
+MIDlet-Icon: /e.png
+MIDlet-Name: 优酷
+MicroEdition-Profile: MIDP-2.0
+Media-price: 免费
+MIDlet-Description: 视频播放类软件。体验评级: B级。适用于支持Java拓展平台设备；手机优酷，视频随身带！丰富的内容推荐，流畅的播放体验，快速全面的搜索，独特的即拍即传。
+

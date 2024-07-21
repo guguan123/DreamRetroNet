@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Ant-Version: Apache Ant 1.6.5
+Created-By: 10.0-b22 (Sun Microsystems Inc.)
+MIDlet-1: LOMH4,/images/system/icon.png,current.RPGMIDlet
+MIDlet-Vendor: Auer
+MIDlet-Version: 1.30.01
+MIDlet-Description: NORMAL
+MIDlet-Name: LOMH4
+MicroEdition-Configuration: CLDC-1.1
+MicroEdition-Profile: MIDP-2.0
+

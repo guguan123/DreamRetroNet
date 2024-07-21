@@ -1,0 +1,19 @@
+MIDlet-Vendor: Opera Software ASA
+MIDlet-Version: 5.0
+Nokia-MIDlet-On-Screen-Keypad: no
+MIDlet-Permissions-Opt: javax.microedition.io.Connector.sms, javax.wir
+ eless.messaging.sms.send, javax.microedition.io.Connector.socket, jav
+ ax.microedition.media.control.VideoControl.getSnapshot, javax.microed
+ ition.io.Connector.file.write, javax.microedition.io.Connector.file.r
+ ead
+MIDlet-Data-Size: 25600
+MIDlet-Name: Opera Mini 5 beta
+MIDlet-Info-URL: http://mini.opera.com/
+Nokia-MIDlet-No-Exit: true
+MIDlet-1: Opera Mini 5 beta, /i.png, Browser
+MicroEdition-Configuration: CLDC-1.0
+MIDlet-Icon: /i.png
+MIDlet-Description: Opera Mini 5 beta
+MicroEdition-Profile: MIDP-2.0
+MIDlet-Permissions: javax.microedition.io.Connector.http
+

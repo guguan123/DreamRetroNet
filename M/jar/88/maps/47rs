@@ -1,0 +1,9 @@
+﻿@name=豪宅
+
+@noAttack
+@appearEnemy|@maxCount=2|@mID=2&50,3&50|@level=3,5|@tcount=3|@tlevel=2
+@phaseAllStart
+
+@phaseEnd
+
+

@@ -1,0 +1,17 @@
+Manifest-Version: 1.0
+Ant-Version: Apache Ant 1.7.1
+Created-By: 1.5.0_06-b05 (Sun Microsystems Inc.)
+MIDlet-1: QQ音乐,/res/logo.png,com.tencent.mqqmusic.MQQMusic
+MIDlet-Permissions: javax.microedition.io.Connector.file.read, javax.m
+ icroedition.io.Connector.file.write, javax.microedition.io.Connector.
+ http, javax.wireless.messaging.sms.receive, javax.wireless.messaging.
+ sms.send
+progressive_download: enabled
+MIDlet-Vendor: Tencent
+MIDlet-Icon: /res/logo.png
+MIDlet-Description: 音乐播放类软件。体验评级: A级。适用于支持Java拓展平台设备；手机QQ音乐提供手机在线音乐服务，让您能够真正随时随地随需收听最流行的音乐。
+MIDlet-Version: 2.8.2
+MIDlet-Name: 手机QQ音乐2012
+MicroEdition-Configuration: CLDC-1.1
+MicroEdition-Profile: MIDP-2.0
+Media-price: 免费

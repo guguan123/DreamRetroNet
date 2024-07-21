@@ -1,0 +1,4 @@
+3,1
+ps
+17
+yinying_16X16_RGBA

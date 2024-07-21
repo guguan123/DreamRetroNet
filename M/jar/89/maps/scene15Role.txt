@@ -1,0 +1,3 @@
+﻿@name=蓬莱仙岛
+
+@appearEnemy|@maxCount=3|@mID=9&5,10&5,12&5,33&5,57&5,34&5,88&3,78&30,81&30,139&7|@level=95,100|@tcount=4|@tlevel=2

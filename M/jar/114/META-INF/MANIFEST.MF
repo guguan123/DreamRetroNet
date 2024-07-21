@@ -1,0 +1,16 @@
+Manifest-Version: 1.0
+MIDlet-Vendor: youdaoweb
+dicturi: file:///c:/j2medict
+MIDlet-Version: 1.0.4
+vendor: youdaoweb
+Created-By: 14.0-b16 (Sun Microsystems Inc.)
+loguri: file:///c:/j2medict
+MIDlet-Name: 有道词典
+Ant-Version: Apache Ant 1.6.5
+MIDlet-1: 有道词典, /cidianicon.png, com.youdao.dic.Dic
+MicroEdition-Configuration: CLDC-1.1
+MIDlet-Permissions: javax.microedition.io.Connector.http,javax.microed
+ ition.io.Connector.file.read,javax.microedition.io.Connector.file.wri
+ te
+MicroEdition-Profile: MIDP-2.0
+

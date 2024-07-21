@@ -1,0 +1,6 @@
+5,3
+baoqi
+34,35,37
+baoqi2_64X64_RGBA
+baoqi2_64X64_RGBA
+baoqi_64X64_RGBA

@@ -1,0 +1,14 @@
+Manifest-Version: 1.0
+Ant-Version: Apache Ant 1.7.1
+Created-By: 1.5.0_06-b05 (Sun Microsystems Inc.)
+MIDlet-1: MQQReader,/res/Kjavalogo.png,com.tencent.mqqreader.MQQReader
+MIDlet-Permissions: javax.microedition.io.Connector.file.read, javax.m
+ icroedition.io.Connector.http, javax.microedition.io.Connector.file.w
+ rite, javax.microedition.io.Connector.sms, javax.wireless.messaging.s
+ ms.receive, javax.wireless.messaging.sms.send
+MIDlet-Vendor: Tencent
+MIDlet-Version: 1.0
+MIDlet-Name: QQ阅读
+MicroEdition-Configuration: CLDC-1.1
+MicroEdition-Profile: MIDP-2.0
+

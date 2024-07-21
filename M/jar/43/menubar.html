@@ -1,0 +1,79 @@
+<html>
+  <head>
+    <style>
+      .body { BACKGROUND-COLOR:TRANSPARENT; }
+      .top_spacer { WIDTH:100.0%;BACKGROUND-IMAGE:URL('file://bg_gray_transparent.png');BACKGROUND-REPEAT:REPEAT-X;HEIGHT:1.0PX; }
+      .table_class { WIDTH:100.0%; }
+      .full_menu_bar { WIDTH:100.0%;BACKGROUND-IMAGE:URL('file://menu_bar_background.png');BACKGROUND-REPEAT:REPEAT-X; HEIGHT:41.0PX; }
+      .mini_menu_bar { WIDTH:100.0%; }
+      .left_side { WIDTH:24.0%;TEXT-ALIGN:CENTER; }
+      .left_side_mini { WIDTH:24.0%;TEXT-ALIGN:LEFT; }
+      .menu_divider { WIDTH:3.0PX;BACKGROUND-IMAGE:URL('file://menu_divider.png'); }
+      .align_center { TEXT-ALIGN:CENTER; }
+      .right_side { WIDTH:24.0%;TEXT-ALIGN:CENTER; }
+      .right_side_mini { WIDTH:24.0%;TEXT-ALIGN:RIGHT; }
+      .leftkey { TEXT-ALIGN:CENTER;}
+      .centerkey { TEXT-ALIGN:CENTER;}
+      .rightkey { TEXT-ALIGN:CENTER;}
+      .center-homekey { WIDTH:49%;TEXT-ALIGN:CENTER;}
+      .center-reloadkey { WIDTH:50%;TEXT-ALIGN:CENTER;}
+      .center-mini { WIDTH:52.0%; }
+      .visible { DISPLAY:BLOCK;}
+      .invisible { DISPLAY:NONE; }
+      .hover { COLOR:#FFFFFF;BACKGROUND-COLOR:#909090;OUTLINE:NONE;BORDER-BOTTOM-COLOR:#909090;BORDER-BOTTOM-STYLE:SOLID;BORDER-BOTTOM-WIDTH:1.0PX;BORDER-LEFT-COLOR:#909090;BORDER-LEFT-STYLE:SOLID;BORDER-LEFT-WIDTH:1.0PX;BORDER-RIGHT-COLOR:#909090;BORDER-RIGHT-STYLE:SOLID;BORDER-RIGHT-WIDTH:1.0PX;BORDER-TOP-COLOR:#909090;BORDER-TOP-STYLE:SOLID;BORDER-TOP-WIDTH:1.0PX; }     
+    </style>
+  </head>
+  <body class="body">
+    <div class="full_menu_bar" id="full_menu_bar">
+      <div class="top_spacer"> </div>
+      <table id="wrapper" class="table_class" cols="5" rows="1" cellspacing="0">
+        <tr>
+          <td class="left_side" id="leftkey">
+            <div class="leftkey invisible" id="menu" onclick="mwl.execBrowserCommand('&$0_COMMANDID;');"><img width="40" height="40" src="file://options.png"/></div>
+            <div class="leftkey invisible" id="blank_left"></div>
+          </td>
+          <td class="menu_divider"></td>
+          <td id="centerkeys">
+            <div class="align_center invisible" id="center-left-right">
+              <table cols="3" rows="1" cellspacing="0">
+                <tr>
+                  <td class="center-homekey" onclick="mwl.execBrowserCommand('&$11_COMMANDID;');"><span id="center-left"><img width="40" height="40" src="file://home.png"/></span></td>
+                  <td class="menu_divider"></td>
+                  <td class="center-reloadkey" onclick="mwl.execBrowserCommand('&$13_COMMANDID;');"><span id="center-right"><img width="40" height="40" src="file://refresh.png"/></span></td>
+                </tr>
+              </table>
+            </div>
+            <div class="align_center invisible" id="group-center2" onclick="mwl.setGroupNext('#group-center2','visible','invisible','next');mwl.parent('mwl.setGroupNext(\'#cPaneTabs\',\'shown\',\'hidden\',\'next\');mwl.setGroupNext(\'#cPaneContent\',\'shown\',\'hidden\',\'next\');mwl.scrollTo(\'#content\');');">
+              <img width="40" height="40" class="invisible" id="center-dot-history" src="file://page_indicator_left.png"/>
+              <img width="40" height="40" class="invisible" id="center-dot-featured" src="file://page_indicator_center.png"/>
+              <img width="40" height="40" class="invisible" id="center-dot-favorites" src="file://page_indicator_right.png"/>
+            </div>
+            <div class="centerkey invisible" id="blank_center"></div>
+          </td>
+          <td class="menu_divider"></td>
+          <td class="right_side" id="rightkey">
+            <div class="rightkey invisible" id="stop" onclick="mwl.execBrowserCommand('&$8_COMMANDID;');"><img width="40" height="40" src="file://stop.png"/></div>
+            <div class="rightkey invisible" id="back" onclick="mwl.execBrowserCommand('&$1_COMMANDID;');"><img width="40" height="40" src="file://back.png"/></div>
+            <div class="rightkey invisible" id="back-mag-minus" onclick="mwl.execBrowserCommand('&$22_COMMANDID;');"><img width="40" height="40" src="file://zoom_out.png"/></div>
+            <div class="rightkey invisible" id="back-grey"><img width="40" height="40" src="file://back_d.png"/></div>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <div class="mini_menu_bar invisible" id="mini_menu_bar">
+      <table id="wrapper-mini" class="table_class" cols="3" rows="1" cellspacing="0">
+        <tr>
+          <td class="left_side_mini">
+            <div class="leftkey" onclick="mwl.execBrowserCommand('&$50_COMMANDID;');"><img width="40" height="40" src="file://full_menu.png"/></div>
+          </td>
+          <td class="center-mini"> </td>
+          <td class="right_side_mini" id="rightkey-mini">       
+            <div class="rightkey invisible" id="back-mini" onclick="mwl.execBrowserCommand('&$1_COMMANDID;');"><img width="40" height="40" src="file://back_transparent.png"/></div>
+            <div class="rightkey invisible" id="back-mag-minus-mini" onclick="mwl.execBrowserCommand('&$22_COMMANDID;');"><img width="40" height="40" src="file://zoom_out_transparent.png"/></div>
+            <div class="rightkey invisible" id="back-grey-mini"><img width="40" height="40" src="file://back_transparent_d.png"/></div>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>

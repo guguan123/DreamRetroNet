@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Animation image1="\24.png" imgNum="1" version="4">
+    <Modules>
+        <Module h="43" image_id="0" w="22" x="0" y="0"/>
+    </Modules>
+    <Frames>
+        <Frame ab="0" al="0" ar="0" at="0" cb="0" cl="0" cr="0" ct="0" name="">
+            <Sprite m00="1.0" m01="0.0" m02="-22.0" m10="0.0" m11="1.0" m12="-58.0" module_id="0"/>
+            <Sprite m00="-1.0" m01="0.0" m02="22.0" m10="0.0" m11="1.0" m12="-58.0" module_id="0"/>
+        </Frame>
+    </Frames>
+    <Actions/>
+</Animation>

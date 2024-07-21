@@ -1,0 +1,14 @@
+Manifest-Version: 0.1
+MIDlet-Name: Angry Birds - by novchik
+MIDlet-Version: 0.0.1
+MIDlet-Vendor: Zed
+MIDlet-1: Angry Birds - by novchik,/i.png,luma.BaseApp
+MicroEdition-Profile: MIDP-2.0
+MicroEdition-Configuration: CLDC-1.1
+MIDlet-Icon: /i.png
+Created-By: Metaflow
+Nokia-MIDlet-App-Orientation: landscape
+MoreGames_URLT: www.nokia5800.ws
+Nokia-MIDlet-On-Screen-Keypad: no
+MoreGames: off
+

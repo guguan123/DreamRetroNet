@@ -1,0 +1,12 @@
+Manifest-Version: 1.0
+MIDlet-1: WinMobile, /icon.png, FW
+MIDlet-Name: WinMobile
+MIDlet-Vendor: MIDletPascal
+MIDlet-Version: 1.0.0
+MicroEdition-Configuration: CLDC-1.0
+MicroEdition-Profile: MIDP-2.0
+MIDlet-Icon: /icon.png
+Created-By: 1.1.0_00 (MIDletPascal)
+MIDlet-Permissions: javax.wireless.messaging.sms.send
+Media-price: 免费
+MIDlet-Description: 模拟器类软件。体验评级: A级。适用于支持Java拓展平台设备；一款在JAVA平台上模拟Vista系统主题界面的轻便模拟器，十分经典，在桌面上还附赠俄罗斯方块游戏。

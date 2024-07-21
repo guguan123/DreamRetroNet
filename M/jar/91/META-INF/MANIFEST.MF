@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+MIDlet-Vendor: Midlet Suite Vendor
+MIDlet-Version: 1.0.0
+MIDlet-1: 魔力宝贝-勇者的冒险,,Java.Me.Main
+MicroEdition-Configuration: CLDC-1.1
+MIDlet-Icon: /Icon/1.png
+MIDlet-Name: 魔力宝贝-勇者的冒险
+MicroEdition-Profile: MIDP-2.0
+

@@ -107,7 +107,8 @@ $number = $con->query('SELECT * FROM `comment` WHERE `id_obmen` = "'.$row['id'].
 $list = get_file_folder_List("jar", 2, '*');
 //foreach ($list as $i => $file) {
     $ftext = readZipText("../../download/".$row["down"]."" . $file, "META-INF/MANIFEST.MF"); 
-    $jar_name="" . getJarIniName($ftext, "MIDlet-Name") . "";
+    $jar_nam="" . getJarIniName($ftext, "MIDlet-Name") . "";
+    $jar_name = trim($jar_nam);
     $jar_text="" . getJarIniName($ftext, "MIDlet-Description") . "";
 $size = getFilesize($_SERVER['DOCUMENT_ROOT'].'/download/'.$row['down'].'');
 $name = $row['cn'] ?: $jar_name;

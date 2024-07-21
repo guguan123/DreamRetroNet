@@ -1,0 +1,29 @@
+Manifest-Version: 1.0
+Palringo-Protocol-Version: 2.0
+MIDlet-Vendor: Palringo
+X-Pax-Capture-Orientation: landscape
+MIDlet-Version: 0.84
+Debug-Mode: false
+X-Pax-Allow-Bridge-Hist: false
+X-Pax-Palringo-Host: echo.palringo.com
+X-Pax-Palringo-Port: 38535
+Created-By: 10.0-b19 (Sun Microsystems Inc.)
+X-Pax-Track-Wheel-Only: false
+MIDlet-Name: Palringo
+Ant-Version: Apache Ant 1.7.0
+X-Pax-Audio-Capture: audio?encoding=amr
+X-Pax-Allow-PTT: true
+X-Pax-Conn-Position: left
+X-Pax-Camera-Primitive: false
+X-Pax-Key-Cycles: 0= 0 1=.,'-?!"1()@/:_ 2=abc2\u00e4\u00e6\u00e5\u00e0
+ \u00e1\u00e2\u00e3\u00e7 3=def3\u00e8\u00e9\u00ea\u00eb\u00f0 4=ghi4\
+ u00ec\u00ed\u00ee\u00ef 5=jkl5\u00a3 6=mno6\u00f6\u00f8\u00f2\u00f3\u
+ 00f4\u00f5\u00f1 7=pqrs7\u00df$ 8=tuv8\u00f9\u00fa\u00fb\u00fc 9=wxyz
+ 9\u00fd\u00fe #=[MODE]
+X-Pax-Build-Target: Nokia60
+MicroEdition-Configuration: CLDC-1.1
+MIDlet-1: Palringo, /large/Palringo.png, com.paxmodept.palringo.main.j
+ me.JmeMain
+X-Pax-Image-Capture: video
+MicroEdition-Profile: MIDP-2.0
+

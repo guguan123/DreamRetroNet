@@ -1,0 +1,7 @@
+Manifest-Version: 1.0
+MIDlet-Name: QQ游戏大厅
+MIDlet-1: QQ游戏大厅,/icon.png,client.AppMIDlet
+MIDlet-Version: 1.7.0
+MIDlet-Vendor: 腾讯
+MicroEdition-Profile: MIDP-2.0
+MicroEdition-Configuration: CLDC-1.0

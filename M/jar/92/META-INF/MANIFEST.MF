@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+MIDlet-Vendor: ruansky.com
+MIDlet-Version: 1.00
+MIDlet-1: 大宋豪侠,/csys/icon.png,Heart
+MicroEdition-Configuration: CLDC-1.0
+Created-By: 1.6.0_06 (Sun Microsystems Inc.)
+MIDlet-Icon: /csys/icon.png
+MIDlet-Name: 大宋豪侠
+MIDlet-Description: 手机网游
+MicroEdition-Profile: MIDP-2.0
+

@@ -1,0 +1,5 @@
+<init>
+@name:/magic/feng/feng4.ani
+@count:1
+@frames:5
+</init>

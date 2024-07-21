@@ -1,0 +1,510 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Theme Name="夜朦胧" Author="TTPod" Ver="1.1.0" EMail="Support@ttpod.com"
+	WebPage="http://www.ttpod.com">
+
+	<Bitmap ID="BACKGROUND" File="/small/background.png" />
+	<Bitmap ID="BACKGROUND_ROT" File="/small/background_rot.png" />
+	<Bitmap ID="COMMONICON" File="/small/commonicon.png"/>
+	<Bitmap ID="TOPBKG" File="/small/topbkg.png"/>
+	<Bitmap ID="TOPBKG_ROT" File="/small/topbkg_rot.png"/>
+	<Bitmap ID="COVER" File="/small/cover.png"/>
+	<Bitmap ID="COVER_ROT" File="/small/cover_rot.png"/>
+	<Bitmap ID="GUAGE" File="/small/guage.png"/>
+	<Bitmap ID="LISTICONS" File="/listicons.png"/>
+	
+	<View ID="Portait">
+		<Panel ID="Main" Background="BACKGROUND" BackgroundLayout="2" Rect="0,0,176,220" TransRect="0,30,176,170">
+			<Dialog 
+				Rect="10,120,150,80" 
+				Title="#b1e1ff" Command="#b1e1ff"
+				Font="#10" Shadow="0" Foreground="#b1e1ff" 
+				Background="#24242a" />
+				
+			<Text ID="TopBKG" Rect="5,4,166,26" Background="TOPBKG|0,0,166,26|256" Foreground="#FFFFFF" Align="1"/>
+			<Text ID="Clock" Rect="9,7,40,16" Foreground="#FFFFFF" FontShadow="1" Background="#FFFF0000" Font="#10" Align="0" />
+			<Text ID="Main" Rect="58,8,20,20" Background="COMMONICON|66,0,20,20|256"/>
+			<Text ID="List" Rect="82,8,20,20" Background="COMMONICON|86,20,20,20|256"/>
+			<Text ID="Lyric" Rect="103,8,20,20" Background="COMMONICON|86,40,20,20|256"/>
+			
+			<Icon ID="SleepIcon" Rect="136,9,20,14" Bitmap="COMMONICON|66,73,40,14" IconNum="2" Background="#FFFF0000" />
+			<Icon ID="PlayIcon" Rect="153,9,16,14" Bitmap="COMMONICON|0,73,64,14" IconNum="4" Background="#FFFF0000" />
+			<Animation ID="NetAnimation" Rect="10,30,40,13" Bitmap="COMMONICON|66,60,40,13" FrameNum="2" Background="#FFFF0000"/>
+			
+			<Text ID="TitleIcon" Rect="6,127,16,20" Background="COMMONICON|106,20,16,20|256"/>
+			<Text ID="Title" Rect="24,127,136,20" Background="#FF000000" Foreground="#486a2f" Align="0" Font="#10" FontShadow="0"/>
+			
+			<Text ID="Lapse" Rect="0,147,38,20" Background="#FF000000" Foreground="#a0a0a0" Align="1" Font="#10" FontShadow="0"/>
+			<Text ID="Duration" Rect="138,147,38,20" Background="#FF000000" Foreground="#a0a0a0" Align="1" Font="#10" FontShadow="0"/>
+
+			<Text ID="CoverDefault" Rect="65,47,56,56" Background="COVER|104,1,56,56|256" Foreground="#FFFFFF" Align="1"/>
+			<Text ID="Cover" Rect="63,45,60,60" Background="#FF000000"/>
+			<Text ID="CoverBKG" Rect="36,34,104,87" Background="COVER|0,0,104,87|256" Foreground="#FFFFFF" Align="1"/>
+			
+			<Text ID="GuageBKG" Visible="flase" Rect="39,153,98,7" Background="GUAGE|0,0,98,7|256"/>
+			<Slide ID="Guage" Rect="40,155,96,3" Slide="GUAGE|0,7,96,3|256" 
+				Style="#100" Background="#FF000000" Handle="GUAGE|96,7,1,3" />
+			
+			<LyricShow ID="LyricShow" Rect="3,170,170,20" Background="#FF000000" 
+				Foreground="#486a2f" 
+				FontColorSelected="#87e4f8" FontShadow="#0"
+				Style="#110" ItemSpace="5"/>
+				
+			<Menu ID="Menu" Background="#24242a" Foreground="#6b6f75" FontColorSelected="#b1e1ff" Shadow="#0" BarSelected="#68707f,#68707f" Font="#10"/>
+			<MenuBar ID="MenuBar" Rect="0,200,176,20" Padding="2,3,2,2" Background="COMMONICON|106,0,16,20|256" BackgroundLayout="2" Foreground="#FFFFFF" Font="#10"/>
+			<Text ID="Hint" Visible="false" Rect="45,202,86,16" Foreground="#FFFFFF" FontShadow="0" Background="#A0000000" Font="#10" Align="1" />
+			
+			<Text ID="CtrolBKG" Rect="13,220,151,22" Background="COMMONICON|0,87,151,22|256" BackgroundLayout="2"/>
+			<Button ID="PlayPauseButton" Rect="78,222,22,18" Bitmap="COMMONICON|0,0,66,36|256" Background="#FF000000" StateNum="2"/>
+			<Button ID="PrevButton" Rect="25,222,22,18" Bitmap="COMMONICON|0,36,66,18|256" Background="#FF000000"/>
+			<Button ID="NextButton" Rect="130,222,22,18" Bitmap="COMMONICON|0,54,66,18|256" Background="#FF000000"/>
+			
+			<Text ID="VolumeBKG" Rect="176,34,15,87" Background="COMMONICON|134,0,15,87|0x100"/>
+			<Slide ID="Volume" Rect="183,44,2,54" Slide="COMMONICON|122,0,2,54"
+				Handle="#FF000000" Style="#111" Background="#FF000000"/>
+			<Icon ID="VolumeIcon" Rect="176,99,14,18" Bitmap="COMMONICON|106,54,28,18"
+				IconNum="2" Background="#FFFF0000"/>
+			
+			<Event ID="ScreenTouched"
+				VolumeBKG="move(161,34,5,0)|wait(1000)|move(176,34,5,0)"
+				Volume="move(168,44,5,0)|wait(1000)|move(183,44,5,0)"
+				VolumeIcon="move(161,99,5,0)|wait(1000)|move(176,99,5,0)"
+				CtrolBKG="move(13,198,5,0)|wait(1000)|move(13,220,5,0)"
+				PlayPauseButton="move(78,200,5,0)|wait(1000)|move(78,222,5,0)"
+				PrevButton="move(25,200,5,0)|wait(1000)|move(25,222,5,0)"
+				NextButton="move(130,200,5,0)|wait(1000)|move(130,222,5,0)"
+			/>
+			
+			<Event ID="Stop|Pause"
+				CtrolBKG="move(13,198,5,0)"
+				PlayPauseButton="move(78,200,5,0)"
+				PrevButton="move(25,200,5,0)"
+				NextButton="move(130,200,5,0)"
+			/>
+			
+			<Event ID="Play"
+				CtrolBKG="move(13,220,5,0)"
+				PlayPauseButton="move(78,222,5,0)"
+				PrevButton="move(25,222,5,0)"
+				NextButton="move(130,222,5,0)"
+			/>
+			
+			<Event ID="VolumeChange"
+				VolumeBKG="move(161,34,5,0)|wait(1000)|move(176,34,5,0)"
+				Volume="move(168,44,5,0)|wait(1000)|move(183,44,5,0)"
+				VolumeIcon="move(161,99,5,0)|wait(1000)|move(176,99,5,0)"
+			/>
+			
+			<Event ID="CoverBgUnloaded"
+				CoverDefault="move(65,47,15,0)"
+				Cover="move(63,45,15,0)"
+				CoverBKG="move(36,34,15,0)"
+			/>
+			
+			<Event ID="CoverBgLoaded"
+				CoverDefault="move(-58,47,15,0)"
+				Cover="move(-60,45,15,0)"
+				CoverBKG="move(176,34,15,0)"
+			/>
+			
+		</Panel>
+
+		<Panel ID="List" Background="BACKGROUND" Rect="0,0,176,220" TransRect="0,30,176,170" BackgroundFill="0,#A0">
+			
+			<Dialog 
+				Rect="10,120,150,80" 
+				Title="#b1e1ff" Command="#b1e1ff"
+				Font="#10" Shadow="0" Foreground="#b1e1ff" 
+				Background="#24242a" />
+				
+			<Text ID="TopBKG" Rect="5,4,166,26" Background="TOPBKG|0,0,166,26|256" Foreground="#FFFFFF" Align="1"/>
+			<Text ID="Clock" Rect="9,7,40,16" Foreground="#FFFFFF" FontShadow="1" Background="#FFFF0000" Font="#10" Align="0" />
+			<Text ID="Main" Rect="58,8,20,20" Background="COMMONICON|86,0,20,20|256"/>
+			<Text ID="List" Rect="82,8,20,20" Background="COMMONICON|66,20,20,20|256"/>
+			<Text ID="Lyric" Rect="103,8,20,20" Background="COMMONICON|86,40,20,20|256"/>
+			
+			<Icon ID="SleepIcon" Rect="136,9,20,14" Bitmap="COMMONICON|66,73,40,14" IconNum="2" Background="#FFFF0000" />
+			<Icon ID="PlayIcon" Rect="153,9,16,14" Bitmap="COMMONICON|0,73,64,14" IconNum="4" Background="#FFFF0000" />
+			<Animation ID="NetAnimation" Rect="10,30,40,13" Bitmap="COMMONICON|66,60,40,13" FrameNum="2" Background="#FFFF0000"/>
+			
+			<ListBox ID="PlayList" 
+			Rect="0,32,174,166" 
+			Background="#FF000000" 
+			Foreground="#486a2f" 
+			FontColorSelected="#87e4f8" 
+			BarSelected="#FF000000" 
+			ScrollBackground="#FF000000"
+			ItemSpace="10"
+			IconBitmap="LISTICONS"
+			Font="#10"
+			/>
+			
+			<Menu ID="Menu" Background="#24242a" Foreground="#6b6f75" FontColorSelected="#b1e1ff" Shadow="#0" BarSelected="#68707f,#68707f" Font="#10"/>
+			<MenuBar ID="MenuBar" Rect="0,200,176,20" Padding="2,3,2,2" Background="COMMONICON|106,0,16,20|256" BackgroundLayout="2" Foreground="#FFFFFF" Font="#10"/>
+			<Text ID="Hint" Visible="false" Rect="45,202,86,16" Foreground="#FFFFFF" FontShadow="0" Background="#A0000000" Font="#10" Align="1" />
+			
+			<Text ID="CtrolBKG" Rect="13,220,151,22" Background="COMMONICON|0,87,151,22|256" BackgroundLayout="2"/>
+			<Button ID="PlayPauseButton" Rect="78,222,22,18" Bitmap="COMMONICON|0,0,66,36|256" Background="#FF000000" StateNum="2"/>
+			<Button ID="PrevButton" Rect="25,222,22,18" Bitmap="COMMONICON|0,36,66,18|256" Background="#FF000000"/>
+			<Button ID="NextButton" Rect="130,222,22,18" Bitmap="COMMONICON|0,54,66,18|256" Background="#FF000000"/>
+			
+			<Text ID="VolumeBKG" Rect="176,34,15,87" Background="COMMONICON|134,0,15,87|0x100"/>
+			<Slide ID="Volume" Rect="183,44,2,54" Slide="COMMONICON|122,0,2,54"
+				Handle="#FF000000" Style="#111" Background="#FF000000"/>
+			<Icon ID="VolumeIcon" Rect="176,99,14,18" Bitmap="COMMONICON|106,54,28,18"
+				IconNum="2" Background="#FFFF0000"/>
+				
+			<Event ID="ScreenTouched"
+				VolumeBKG="move(161,34,5,0)|wait(1000)|move(176,34,5,0)"
+				Volume="move(168,44,5,0)|wait(1000)|move(183,44,5,0)"
+				VolumeIcon="move(161,99,5,0)|wait(1000)|move(176,99,5,0)"
+				CtrolBKG="move(13,198,5,0)|wait(1000)|move(13,220,5,0)"
+				PlayPauseButton="move(78,200,5,0)|wait(1000)|move(78,222,5,0)"
+				PrevButton="move(25,200,5,0)|wait(1000)|move(25,222,5,0)"
+				NextButton="move(130,200,5,0)|wait(1000)|move(130,222,5,0)"
+			/>
+			
+			<Event ID="Stop|Pause"
+				CtrolBKG="hide()"
+				PlayPauseButton="hide()"
+				PrevButton="hide()"
+				NextButton="hide()"
+			/>
+			
+			<Event ID="Play"
+				CtrolBKG="hide()"
+				PlayPauseButton="hide()"
+				PrevButton="hide()"
+				NextButton="hide()"
+			/>
+			
+			<Event ID="VolumeChange"
+				VolumeBKG="move(161,34,5,0)|wait(1000)|move(176,34,5,0)"
+				Volume="move(168,44,5,0)|wait(1000)|move(183,44,5,0)"
+				VolumeIcon="move(161,99,5,0)|wait(1000)|move(176,99,5,0)"
+			/>
+		</Panel>
+
+		<Panel ID="Lyric" Background="BACKGROUND" Rect="0,0,176,220" TransRect="0,30,176,170" BackgroundFill="0,#A0">
+			
+			<Dialog 
+				Rect="10,120,150,80" 
+				Title="#b1e1ff" Command="#b1e1ff"
+				Font="#10" Shadow="0" Foreground="#b1e1ff" 
+				Background="#24242a" />
+				
+			<Text ID="TopBKG" Rect="5,4,166,26" Background="TOPBKG|0,0,166,26|256" Foreground="#FFFFFF" Align="1"/>
+			<Text ID="Clock" Rect="9,7,40,16" Foreground="#FFFFFF" FontShadow="1" Background="#FFFF0000" Font="#10" Align="0" />
+			<Text ID="Main" Rect="58,8,20,20" Background="COMMONICON|86,0,20,20|256"/>
+			<Text ID="List" Rect="82,8,20,20" Background="COMMONICON|86,20,20,20|256"/>
+			<Text ID="Lyric" Rect="103,8,20,20" Background="COMMONICON|66,40,20,20|256"/>
+			
+			<Icon ID="SleepIcon" Rect="136,9,20,14" Bitmap="COMMONICON|66,73,40,14" IconNum="2" Background="#FFFF0000" />
+			<Icon ID="PlayIcon" Rect="153,9,16,14" Bitmap="COMMONICON|0,73,64,14" IconNum="4" Background="#FFFF0000" />
+			<Animation ID="NetAnimation" Rect="10,30,40,13" Bitmap="COMMONICON|66,60,40,13" FrameNum="2" Background="#FFFF0000"/>
+			
+			<LyricShow ID="LyricShow" 
+			Background="#FF000000" 
+			Rect="2,32,174,166" 
+			ItemSpace="8" 
+			Foreground="#486a2f" 
+			FontColorSelected="#87e4f8"  
+			Font="#10"
+			/>
+			
+			<Menu ID="Menu" Background="#24242a" Foreground="#6b6f75" FontColorSelected="#b1e1ff" Shadow="#0" BarSelected="#68707f,#68707f" Font="#10"/>
+			<MenuBar ID="MenuBar" Rect="0,200,176,20" Padding="2,3,2,2" Background="COMMONICON|106,0,16,20|256" BackgroundLayout="2" Foreground="#FFFFFF" Font="#10"/>
+			<Text ID="Hint" Visible="false" Rect="45,202,86,16" Foreground="#FFFFFF" FontShadow="0" Background="#A0000000" Font="#10" Align="1" />
+			
+			<Text ID="CtrolBKG" Rect="13,220,151,22" Background="COMMONICON|0,87,151,22|256" BackgroundLayout="2"/>
+			<Button ID="PlayPauseButton" Rect="78,222,22,18" Bitmap="COMMONICON|0,0,66,36|256" Background="#FF000000" StateNum="2"/>
+			<Button ID="PrevButton" Rect="25,222,22,18" Bitmap="COMMONICON|0,36,66,18|256" Background="#FF000000"/>
+			<Button ID="NextButton" Rect="130,222,22,18" Bitmap="COMMONICON|0,54,66,18|256" Background="#FF000000"/>
+			
+			<Text ID="VolumeBKG" Rect="176,34,15,87" Background="COMMONICON|134,0,15,87|0x100"/>
+			<Slide ID="Volume" Rect="183,44,2,54" Slide="COMMONICON|122,0,2,54"
+				Handle="#FF000000" Style="#111" Background="#FF000000"/>
+			<Icon ID="VolumeIcon" Rect="176,99,14,18" Bitmap="COMMONICON|106,54,28,18"
+				IconNum="2" Background="#FFFF0000"/>
+			
+			<Event ID="ScreenTouched"
+				VolumeBKG="move(161,34,5,0)|wait(1000)|move(176,34,5,0)"
+				Volume="move(168,44,5,0)|wait(1000)|move(183,44,5,0)"
+				VolumeIcon="move(161,99,5,0)|wait(1000)|move(176,99,5,0)"
+				CtrolBKG="move(13,198,5,0)|wait(1000)|move(13,220,5,0)"
+				PlayPauseButton="move(78,200,5,0)|wait(1000)|move(78,222,5,0)"
+				PrevButton="move(25,200,5,0)|wait(1000)|move(25,222,5,0)"
+				NextButton="move(130,200,5,0)|wait(1000)|move(130,222,5,0)"
+			/>
+			
+			<Event ID="Stop|Pause"
+				CtrolBKG="move(13,198,5,0)"
+				PlayPauseButton="move(78,200,5,0)"
+				PrevButton="move(25,200,5,0)"
+				NextButton="move(130,200,5,0)"
+			/>
+			
+			<Event ID="Play"
+				CtrolBKG="move(13,220,5,0)"
+				PlayPauseButton="move(78,222,5,0)"
+				PrevButton="move(25,222,5,0)"
+				NextButton="move(130,222,5,0)"
+			/>
+			
+			<Event ID="VolumeChange"
+				VolumeBKG="move(161,34,5,0)|wait(1000)|move(176,34,5,0)"
+				Volume="move(168,44,5,0)|wait(1000)|move(183,44,5,0)"
+				VolumeIcon="move(161,99,5,0)|wait(1000)|move(176,99,5,0)"
+			/>
+		</Panel>
+		
+	</View>
+	
+	<View ID="Landscape">
+		<Panel ID="Main" Background="BACKGROUND_ROT" BackgroundLayout="2" Rect="0,0,220,176" TransRect="0,30,220,126">
+			<Dialog 
+				Rect="32,80,156,80" 
+				Title="#b1e1ff" Command="#b1e1ff"
+				Font="#10" Shadow="0" Foreground="#b1e1ff" 
+				Background="#24242a" />
+				
+			<Text ID="TopBKG" Rect="11,4,198,26" Background="TOPBKG_ROT|0,0,198,26|256" Foreground="#FFFFFF" Align="1"/>
+			<Text ID="Clock" Rect="14,7,40,16" Foreground="#FFFFFF" FontShadow="1" Background="#FFFF0000" Font="#10" Align="0" />
+			<Text ID="Main" Rect="80,8,20,20" Background="COMMONICON|66,0,20,20|256"/>
+			<Text ID="List" Rect="104,8,20,20" Background="COMMONICON|86,20,20,20|256"/>
+			<Text ID="Lyric" Rect="125,8,20,20" Background="COMMONICON|86,40,20,20|256"/>
+			
+			<Icon ID="SleepIcon" Rect="162,9,20,14" Bitmap="COMMONICON|66,73,40,14" IconNum="2" Background="#FFFF0000" />
+			<Icon ID="PlayIcon" Rect="179,9,16,14" Bitmap="COMMONICON|0,73,64,14" IconNum="4" Background="#FFFF0000" />
+			<Animation ID="NetAnimation" Rect="15,30,40,13" Bitmap="COMMONICON|66,60,40,13" FrameNum="2" Background="#FFFF0000"/>
+			
+			<Text ID="TitleIcon" Rect="28,98,16,20" Background="COMMONICON|106,20,16,20|256"/>
+			<Text ID="Title" Rect="46,100,136,16" Background="#FF000000" Foreground="#486a2f" Align="0" Font="#10" FontShadow="0"/>
+			
+			<Text ID="Lapse" Rect="20,116,40,20" Background="#FF000000" Foreground="#a0a0a0" Align="1" Font="#10" FontShadow="0"/>
+			<Text ID="Duration" Rect="160,116,40,20" Background="#FF000000" Foreground="#a0a0a0" Align="1" Font="#10" FontShadow="0"/>
+
+			<Text ID="CoverDefault" Rect="99,46,40,40" Background="COVER_ROT|77,1,40,40|256" Foreground="#FFFFFF" Align="1"/>
+			<Text ID="Cover" Rect="86,36,60,60" Background="#FF000000"/>
+			<Text ID="CoverBKG" Rect="72,34,76,64" Background="COVER_ROT|0,0,76,64|256" Foreground="#FFFFFF" Align="1"/>
+			
+			<Text ID="GuageBKG" Visible="flase" Rect="61,122,98,7" Background="GUAGE|0,0,98,7|256"/>
+			<Slide ID="Guage" Rect="62,124,96,3" Slide="GUAGE|0,7,96,3|256" 
+				Style="#100" Background="#FF000000" Handle="GUAGE|96,7,1,3" />
+			
+			<LyricShow ID="LyricShow" Rect="3,134,214,20" Background="#FF000000" 
+				Foreground="#486a2f" 
+				FontColorSelected="#87e4f8" FontShadow="#0"
+				Style="#110" ItemSpace="5"/>
+				
+			<Menu ID="Menu" Background="#24242a" Foreground="#6b6f75" FontColorSelected="#b1e1ff" Shadow="#0" BarSelected="#68707f,#68707f" Font="#10"/>
+			<MenuBar ID="MenuBar" Rect="0,156,220,20" Padding="2,3,2,2" Background="COMMONICON|106,0,16,20|256" BackgroundLayout="2" Foreground="#FFFFFF" Font="#10"/>
+			<Text ID="Hint" Visible="false" Rect="45,158,130,16" Foreground="#FFFFFF" FontShadow="0" Background="#A0000000" Font="#10" Align="1" />
+			
+			<Text ID="CtrolBKG" Rect="35,176,151,22" Background="COMMONICON|0,87,151,22|256" BackgroundLayout="2"/>
+			<Button ID="PlayPauseButton" Rect="100,178,22,18" Bitmap="COMMONICON|0,0,66,36|256" Background="#FF000000" StateNum="2"/>
+			<Button ID="PrevButton" Rect="47,178,22,18" Bitmap="COMMONICON|0,36,66,18|256" Background="#FF000000"/>
+			<Button ID="NextButton" Rect="152,178,22,18" Bitmap="COMMONICON|0,54,66,18|256" Background="#FF000000"/>
+			
+			<Text ID="VolumeBKG" Rect="220,34,15,87" Background="COMMONICON|134,0,15,87|0x100"/>
+			<Slide ID="Volume" Rect="227,44,2,54" Slide="COMMONICON|122,0,2,54"
+				Handle="#FF000000" Style="#111" Background="#FF000000"/>
+			<Icon ID="VolumeIcon" Rect="220,99,14,18" Bitmap="COMMONICON|106,54,28,18"
+				IconNum="2" Background="#FFFF0000"/>
+			
+			<Event ID="ScreenTouched"
+				VolumeBKG="move(205,34,5,0)|wait(1000)|move(220,34,5,0)"
+				Volume="move(212,44,5,0)|wait(1000)|move(227,44,5,0)"
+				VolumeIcon="move(205,99,5,0)|wait(1000)|move(220,99,5,0)"
+				CtrolBKG="move(35,154,5,0)|wait(1000)|move(35,176,5,0)"
+				PlayPauseButton="move(100,156,5,0)|wait(1000)|move(100,178,5,0)"
+				PrevButton="move(47,156,5,0)|wait(1000)|move(47,178,5,0)"
+				NextButton="move(152,156,5,0)|wait(1000)|move(152,178,5,0)"
+			/>
+			
+			<Event ID="Stop|Pause"
+				CtrolBKG="move(35,154,5,0)"
+				PlayPauseButton="move(100,156,5,0)"
+				PrevButton="move(47,156,5,0)"
+				NextButton="move(152,156,5,0)"
+			/>
+			
+			<Event ID="Play"
+				CtrolBKG="move(35,176,5,0)"
+				PlayPauseButton="move(100,178,5,0)"
+				PrevButton="move(47,178,5,0)"
+				NextButton="move(152,178,5,0)"
+			/>
+			
+			<Event ID="VolumeChange"
+				VolumeBKG="move(205,34,5,0)|wait(1000)|move(220,34,5,0)"
+				Volume="move(212,44,5,0)|wait(1000)|move(227,44,5,0)"
+				VolumeIcon="move(205,99,5,0)|wait(1000)|move(220,99,5,0)"
+			/>
+			
+			<Event ID="CoverBgUnloaded"
+				CoverDefault="move(99,46,15,0)"
+				Cover="move(86,36,15,0)"
+				CoverBKG="move(72,34,15,0)"
+			/>
+			
+			<Event ID="CoverBgLoaded"
+				CoverDefault="move(-50,46,15,0)"
+				Cover="move(-60,36,15,0)"
+				CoverBKG="move(220,34,15,0)"
+			/>
+			
+		</Panel>
+
+		<Panel ID="List" Background="BACKGROUND_ROT" Rect="0,0,220,176" TransRect="0,30,220,126" BackgroundFill="0,#A0">
+			
+			<Dialog 
+				Rect="32,80,156,80" 
+				Title="#b1e1ff" Command="#b1e1ff"
+				Font="#10" Shadow="0" Foreground="#b1e1ff" 
+				Background="#24242a" />
+				
+			<Text ID="TopBKG" Rect="11,4,198,26" Background="TOPBKG_ROT|0,0,198,26|256" Foreground="#FFFFFF" Align="1"/>
+			<Text ID="Clock" Rect="14,7,40,16" Foreground="#FFFFFF" FontShadow="1" Background="#FFFF0000" Font="#10" Align="0" />
+			<Text ID="Main" Rect="80,8,20,20" Background="COMMONICON|86,0,20,20|256"/>
+			<Text ID="List" Rect="104,8,20,20" Background="COMMONICON|66,20,20,20|256"/>
+			<Text ID="Lyric" Rect="125,8,20,20" Background="COMMONICON|86,40,20,20|256"/>
+			
+			<Icon ID="SleepIcon" Rect="162,9,20,14" Bitmap="COMMONICON|66,73,40,14" IconNum="2" Background="#FFFF0000" />
+			<Icon ID="PlayIcon" Rect="179,9,16,14" Bitmap="COMMONICON|0,73,64,14" IconNum="4" Background="#FFFF0000" />
+			<Animation ID="NetAnimation" Rect="15,30,40,13" Bitmap="COMMONICON|66,60,40,13" FrameNum="2" Background="#FFFF0000"/>
+			
+			<ListBox ID="PlayList" 
+			Rect="0,32,218,122" 
+			Background="#FF000000" 
+			Foreground="#486a2f" 
+			FontColorSelected="#87e4f8" 
+			BarSelected="#FF000000" 
+			ScrollBackground="#FF000000"
+			ItemSpace="10"
+			IconBitmap="LISTICONS"
+			Font="#10"
+			/>
+			
+			<Menu ID="Menu" Background="#24242a" Foreground="#6b6f75" FontColorSelected="#b1e1ff" Shadow="#0" BarSelected="#68707f,#68707f" Font="#10"/>
+			<MenuBar ID="MenuBar" Rect="0,156,220,20" Padding="2,3,2,2" Background="COMMONICON|106,0,16,20|256" BackgroundLayout="2" Foreground="#FFFFFF" Font="#10"/>
+			<Text ID="Hint" Visible="false" Rect="45,158,130,16" Foreground="#FFFFFF" FontShadow="0" Background="#A0000000" Font="#10" Align="1" />
+			
+			<Text ID="CtrolBKG" Rect="35,176,151,22" Background="COMMONICON|0,87,151,22|256" BackgroundLayout="2"/>
+			<Button ID="PlayPauseButton" Rect="100,178,22,18" Bitmap="COMMONICON|0,0,66,36|256" Background="#FF000000" StateNum="2"/>
+			<Button ID="PrevButton" Rect="47,178,22,18" Bitmap="COMMONICON|0,36,66,18|256" Background="#FF000000"/>
+			<Button ID="NextButton" Rect="152,178,22,18" Bitmap="COMMONICON|0,54,66,18|256" Background="#FF000000"/>
+			
+			<Text ID="VolumeBKG" Rect="220,34,15,87" Background="COMMONICON|134,0,15,87|0x100"/>
+			<Slide ID="Volume" Rect="227,44,2,54" Slide="COMMONICON|122,0,2,54"
+				Handle="#FF000000" Style="#111" Background="#FF000000"/>
+			<Icon ID="VolumeIcon" Rect="220,99,14,18" Bitmap="COMMONICON|106,54,28,18"
+				IconNum="2" Background="#FFFF0000"/>
+				
+			<Event ID="ScreenTouched"
+				VolumeBKG="move(205,34,5,0)|wait(1000)|move(220,34,5,0)"
+				Volume="move(212,44,5,0)|wait(1000)|move(227,44,5,0)"
+				VolumeIcon="move(205,99,5,0)|wait(1000)|move(220,99,5,0)"
+				CtrolBKG="move(35,154,5,0)|wait(1000)|move(35,176,5,0)"
+				PlayPauseButton="move(100,156,5,0)|wait(1000)|move(100,178,5,0)"
+				PrevButton="move(47,156,5,0)|wait(1000)|move(47,178,5,0)"
+				NextButton="move(152,156,5,0)|wait(1000)|move(152,178,5,0)"
+			/>
+			
+			<Event ID="Stop|Pause"
+				CtrolBKG="hide()"
+				PlayPauseButton="hide()"
+				PrevButton="hide()"
+				NextButton="hide()"
+			/>
+			
+			<Event ID="Play"
+				CtrolBKG="hide()"
+				PlayPauseButton="hide()"
+				PrevButton="hide()"
+				NextButton="hide()"
+			/>
+			
+			<Event ID="VolumeChange"
+				VolumeBKG="move(205,34,5,0)|wait(1000)|move(220,34,5,0)"
+				Volume="move(212,44,5,0)|wait(1000)|move(227,44,5,0)"
+				VolumeIcon="move(205,99,5,0)|wait(1000)|move(220,99,5,0)"
+			/>
+		</Panel>
+
+		<Panel ID="Lyric" Background="BACKGROUND_ROT" Rect="0,0,220,176" TransRect="0,30,220,126" BackgroundFill="0,#A0">
+			
+			<Dialog 
+				Rect="32,80,156,80" 
+				Title="#b1e1ff" Command="#b1e1ff"
+				Font="#10" Shadow="0" Foreground="#b1e1ff" 
+				Background="#24242a" />
+				
+			<Text ID="TopBKG" Rect="11,4,198,26" Background="TOPBKG_ROT|0,0,198,26|256" Foreground="#FFFFFF" Align="1"/>
+			<Text ID="Clock" Rect="14,7,40,16" Foreground="#FFFFFF" FontShadow="1" Background="#FFFF0000" Font="#10" Align="0" />
+			<Text ID="Main" Rect="80,8,20,20" Background="COMMONICON|86,0,20,20|256"/>
+			<Text ID="List" Rect="104,8,20,20" Background="COMMONICON|86,20,20,20|256"/>
+			<Text ID="Lyric" Rect="125,8,20,20" Background="COMMONICON|66,40,20,20|256"/>
+			
+			<Icon ID="SleepIcon" Rect="162,9,20,14" Bitmap="COMMONICON|66,73,40,14" IconNum="2" Background="#FFFF0000" />
+			<Icon ID="PlayIcon" Rect="179,9,16,14" Bitmap="COMMONICON|0,73,64,14" IconNum="4" Background="#FFFF0000" />
+			<Animation ID="NetAnimation" Rect="15,30,40,13" Bitmap="COMMONICON|66,60,40,13" FrameNum="2" Background="#FFFF0000"/>
+			
+			<LyricShow ID="LyricShow" 
+			Background="#FF000000" 
+			Rect="2,32,226,122" 
+			ItemSpace="8" 
+			Foreground="#486a2f" 
+			FontColorSelected="#87e4f8"  
+			Font="#10"
+			/>
+			
+			<Menu ID="Menu" Background="#24242a" Foreground="#6b6f75" FontColorSelected="#b1e1ff" Shadow="#0" BarSelected="#68707f,#68707f" Font="#10"/>
+			<MenuBar ID="MenuBar" Rect="0,156,220,20" Padding="2,3,2,2" Background="COMMONICON|106,0,16,20|256" BackgroundLayout="2" Foreground="#FFFFFF" Font="#10"/>
+			<Text ID="Hint" Visible="false" Rect="45,158,130,16" Foreground="#FFFFFF" FontShadow="0" Background="#A0000000" Font="#10" Align="1" />
+			
+			<Text ID="CtrolBKG" Rect="35,176,151,22" Background="COMMONICON|0,87,151,22|256" BackgroundLayout="2"/>
+			<Button ID="PlayPauseButton" Rect="100,178,22,18" Bitmap="COMMONICON|0,0,66,36|256" Background="#FF000000" StateNum="2"/>
+			<Button ID="PrevButton" Rect="47,178,22,18" Bitmap="COMMONICON|0,36,66,18|256" Background="#FF000000"/>
+			<Button ID="NextButton" Rect="152,178,22,18" Bitmap="COMMONICON|0,54,66,18|256" Background="#FF000000"/>
+			
+			<Text ID="VolumeBKG" Rect="220,34,15,87" Background="COMMONICON|134,0,15,87|0x100"/>
+			<Slide ID="Volume" Rect="227,44,2,54" Slide="COMMONICON|122,0,2,54"
+				Handle="#FF000000" Style="#111" Background="#FF000000"/>
+			<Icon ID="VolumeIcon" Rect="220,99,14,18" Bitmap="COMMONICON|106,54,28,18"
+				IconNum="2" Background="#FFFF0000"/>
+			
+			<Event ID="ScreenTouched"
+				VolumeBKG="move(205,34,5,0)|wait(1000)|move(220,34,5,0)"
+				Volume="move(212,44,5,0)|wait(1000)|move(227,44,5,0)"
+				VolumeIcon="move(205,99,5,0)|wait(1000)|move(220,99,5,0)"
+				CtrolBKG="move(35,154,5,0)|wait(1000)|move(35,176,5,0)"
+				PlayPauseButton="move(100,156,5,0)|wait(1000)|move(100,178,5,0)"
+				PrevButton="move(47,156,5,0)|wait(1000)|move(47,178,5,0)"
+				NextButton="move(152,156,5,0)|wait(1000)|move(152,178,5,0)"
+			/>
+			
+			<Event ID="Stop|Pause"
+				CtrolBKG="move(35,154,5,0)"
+				PlayPauseButton="move(100,156,5,0)"
+				PrevButton="move(47,156,5,0)"
+				NextButton="move(152,156,5,0)"
+			/>
+			
+			<Event ID="Play"
+				CtrolBKG="move(35,176,5,0)"
+				PlayPauseButton="move(100,178,5,0)"
+				PrevButton="move(47,178,5,0)"
+				NextButton="move(152,178,5,0)"
+			/>
+			
+			<Event ID="VolumeChange"
+				VolumeBKG="move(205,34,5,0)|wait(1000)|move(220,34,5,0)"
+				Volume="move(212,44,5,0)|wait(1000)|move(227,44,5,0)"
+				VolumeIcon="move(205,99,5,0)|wait(1000)|move(220,99,5,0)"
+			/>
+		</Panel>
+		
+	</View>
+
+</Theme>

@@ -1,0 +1,8 @@
+Manifest-Version: 1.0
+MIDlet-Name: UCWEB6
+MIDlet-1: UCWEB6,/l.png,WebClient
+MIDlet-Version: 6.0.0
+MIDlet-Vendor: UCFLY
+MicroEdition-Profile: MIDP-2.0
+MicroEdition-Configuration: CLDC-1.0
+MIDlet-Data-Size: 65536

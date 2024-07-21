@@ -1,0 +1,71 @@
+<html>
+  <head>
+    <style>
+      .dir_rtl{ DIRECTION:RTL; }
+      .dir_ltr{ DIRECTION:LTR; }
+      .menu_item { BACKGROUND-COLOR:#EFEFEF;BORDER-BOTTOM-COLOR:#BEBEBE;BORDER-BOTTOM-STYLE:SOLID;BORDER-BOTTOM-WIDTH:1.0PX;BORDER-LEFT-COLOR:#EFEFEF;BORDER-LEFT-STYLE:SOLID;BORDER-LEFT-WIDTH:1.0PX;BORDER-RIGHT-COLOR:#EFEFEF;BORDER-RIGHT-STYLE:SOLID;BORDER-RIGHT-WIDTH:1.0PX;BORDER-TOP-COLOR:#F9F9F9;BORDER-TOP-STYLE:SOLID;BORDER-TOP-WIDTH:1.0PX;MARGIN-BOTTOM:0.0PX;MARGIN-LEFT:0.0PX;MARGIN-RIGHT:0.0PX;MARGIN-TOP:0.0PX;PADDING-BOTTOM:7.0PX;PADDING-LEFT:5.0PX;PADDING-RIGHT:5.0PX;PADDING-TOP:7.0PX; }
+      .menu_item_table_padding1{ PADDING-BOTTOM:6.0PX;PADDING-LEFT:3.5PX;PADDING-RIGHT:4.5PX;PADDING-TOP:5.0PX; }
+	  .menu_item_text { PADDING-BOTTOM:4.0PX;PADDING-LEFT:4.0PX;PADDING-RIGHT:4.0PX;PADDING-TOP:4.0PX;FONT-SIZE:MEDIUM;COLOR:#555555;OVERFLOW:HIDDEN;WHITE-SPACE:NOWRAP; }
+      .menu_item_text_grey { COLOR:#959595; }
+      .menu_item_table { WIDTH:100.0%; }
+      .menu_item_table_right { COLOR:#555555;OVERFLOW:HIDDEN;WHITE-SPACE:NOWRAP; }
+      .arrow_cell_width { WIDTH:30.0%; }	  
+      .cell_width_16 { WIDTH:16.0PX; }
+      .title_bar_text { FONT-SIZE:SMALL;COLOR:#FFFFFF;PADDING-BOTTOM:2.0PX;PADDING-LEFT:4.0PX;PADDING-RIGHT:4.0PX;PADDING-TOP:2.0PX;MARGIN-BOTTOM:0.0PX;MARGIN-LEFT:0.0PX;MARGIN-RIGHT:0.0PX;MARGIN-TOP:0.0PX; }
+      .title_bar_item { BACKGROUND-COLOR:#343434;MARGIN-BOTTOM:0.0PX;MARGIN-LEFT:0.0PX;MARGIN-RIGHT:0.0PX;MARGIN-TOP:0.0PX;PADDING-BOTTOM:2.0PX;PADDING-LEFT:5.0PX;PADDING-RIGHT:5.0PX;PADDING-TOP:2.0PX;BACKGROUND-IMAGE:URL('file://title_bar_background.png');BACKGROUND-REPEAT:REPEAT-X; }
+      .body { BACKGROUND-COLOR:#EFEFEF; }
+      .hover { COLOR:#FFFFFF;BACKGROUND-COLOR:#44aa33;OUTLINE:NONE;BORDER-BOTTOM-COLOR:#44aa33;BORDER-BOTTOM-STYLE:SOLID;BORDER-BOTTOM-WIDTH:1.0PX;BORDER-LEFT-COLOR:#44aa33;BORDER-LEFT-STYLE:SOLID;BORDER-LEFT-WIDTH:1.0PX;BORDER-RIGHT-COLOR:#44aa33;BORDER-RIGHT-STYLE:SOLID;BORDER-RIGHT-WIDTH:1.0PX;BORDER-TOP-COLOR:#44aa33;BORDER-TOP-STYLE:SOLID;BORDER-TOP-WIDTH:1.0PX; }     
+      .hidden{DISPLAY:NONE;}
+      .shown{DISPLAY:BLOCK;}
+    </style>
+  </head>
+  <body class="body" onload="mwl.updateGroup('#searchEngineSelector', 'file://search.html');mwl.addClass('#settingsSearch', 'shown');" onshow="mwl.setGroupTarget('#settingsSearchFavicons','#stfavicon-%26$searchEngineST_STORAGE;','shown','hidden');">
+    <div class="title_bar_item  &$css_dir_ALIGNMENT;">
+      <span class="title_bar_text">&$157_STR;</span>
+    </div>
+
+    <div class="menu_item menu_item_table_padding1 &$css_dir_ALIGNMENT;" onclick="mwl.contextMenu('file://menuimagequality.html', '#image_quality')">
+      <table class="menu_item_table &$css_dir_ALIGNMENT;" rows="1" cols="2">
+        <tr>
+          <td class="&$css_dir_ALIGNMENT;"><span class="menu_item_text">&$10_STR;</span></td>
+          <td class="arrow_cell_width menu_item_table_right &$css_dir_OPPOSITE;">&$imageQuality;</td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="menu_item menu_item_table_padding1" onclick="mwl.contextMenu('file://searchselector.html', '#seng')">
+      <table class="menu_item_table &$css_dir_ALIGNMENT;" rows="1" cols="2">
+        <tr>
+          <td class="&$css_dir_ALIGNMENT;"><span class="menu_item_text">&$152_STR;</span></td>
+          <td class="cell_width_16  menu_item_table_right"><div id="searchEngineSelector">O</div></td>
+        </tr>
+      </table>
+    </div>
+	
+	<div class="title_bar_item &$css_dir_ALIGNMENT;">
+      <span class="title_bar_text">&$134_STR;</span>
+    </div>
+	
+	<div class="menu_item menu_item_table_padding1 &$css_dir_ALIGNMENT;" onclick="mwl.contextMenu('file://menucookies.html', '#cookies')">
+      <table class="menu_item_table &$css_dir_ALIGNMENT;" rows="1" cols="2">
+        <tr>
+          <td class="&$css_dir_ALIGNMENT;"><span class="menu_item_text">&$36_STR;</span></td>
+          <td class="arrow_cell_width menu_item_table_right &$css_dir_OPPOSITE;">&$cookies;</td>
+        </tr>
+      </table>
+    </div>
+
+	<div class="menu_item &$css_dir_ALIGNMENT;" onclick="mwl.execBrowserCommand('&$41_COMMANDID;')">
+      <span class="menu_item_text">&$22_STR;</span>
+    </div>
+	
+    <div class="menu_item &$css_dir_ALIGNMENT;" onclick="mwl.execBrowserCommand('&$29_COMMANDID;')">
+      <span class="menu_item_text">&$20_STR;</span>
+    </div>
+
+    <div class="menu_item &$css_dir_ALIGNMENT;" onclick="mwl.execBrowserCommand('&$42_COMMANDID;')">
+      <span class="menu_item_text">&$19_STR;</span>
+    </div>
+
+  </body>
+</html>

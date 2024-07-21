@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+MicroEdition-Configuration: CLDC-1.0
+MIDlet-Name: Android m5
+Created-By: 1.5.0_09 (Sun Microsystems Inc.)
+MIDlet-Vendor: Tea Vui Huang
+MIDlet-1: Android m5, /Androidm5.png, com.teavuihuang.Androidm5
+MIDlet-Version: 1.0
+MicroEdition-Profile: MIDP-2.0
+MIDlet-Description: Android UI by Tea Vui Huang
+

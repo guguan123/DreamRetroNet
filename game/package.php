@@ -2,7 +2,6 @@
 include_once $_SERVER["DOCUMENT_ROOT"].'/system/base.php';
 include_once $_SERVER["DOCUMENT_ROOT"].'/system/system.php';
 $title = '消息提示';
-include_once $_SERVER["DOCUMENT_ROOT"].'/M/c/header.php';
 aut();
 $id = abs(intval($_GET['id'])); # ФИЛЬТР ГЕТ
 $b = $con->query("SELECT * FROM `game` WHERE `id` = '".$id."'")->fetch_assoc();
@@ -236,7 +235,7 @@ $file_names = ''.getJarIniName($ftext, "MIDlet-Name").'';
 $file_jar = trim($file_names);
 }
 if($b['format'] == ".mrp"){
-$v=getmrp("../download/".$b['down']."");
+$v=getmrp("../downaload/".$b['down']."");
 $file_mrp = $v['xn'];
 }
 if($name=$b['cn'] ?: $file_jar ?: $file_mrp){

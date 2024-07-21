@@ -1,0 +1,14 @@
+13,6
+a5,240
+45,45,60
+45
+60,180,45,180
+zhuyide
+85032
+343,340,338,339,341,342
+zhuyide_128X128_RGBA
+futexiao_32X32_RGBA
+fu01_64X64_RGBA
+zhendi01_32X32_RGBA
+chongjibo_32X32_RGBA
+chongjibo_32X32_RGBA

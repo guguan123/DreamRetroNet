@@ -31,7 +31,6 @@ echo '<li>女性用户：'.$uo->num_rows.'</li>';
 echo '</ul></div></div>';
 $num = $con->query('SELECT * FROM `games` WHERE `id_game` = 0')->num_rows;
 echo '<h2 class="topic margin-top">网站功能</h2><ul class="list padding line bg-white">';
-echo "<li><a href='/review'>审核列表($num)</li>";
 }
 //if($user['admin_level']>=2) echo "<li><a href="/info/2">重置登录码请联系管理员</a></li>
 //<li><a href="/user/setPhone">设置我的功能机</a></li>

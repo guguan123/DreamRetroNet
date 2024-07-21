@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE wml PUBLIC "-//WAPFORUM//DTD WML 1.1//EN" "http://www.wapforum.org/DTD/wml_1.1.xml">
+<wml>
+<head>
+<meta http-equiv="Cache-Control" content="max-age=0"/>
+<meta http-equiv="Cache-control" content="no-cache"/>
+</head>
+<card id="bookmark" title="收藏本站"><p>
+1:Nokia：依次选"操作"-"增加书签"<br/>
+2:索爱：依次选"更多"-"书签"-"添加书签"-"确定"<br/>
+3:三星：依次选"上网键"-"收藏夹"-选择一个空的收藏夹地址-确认url地址-输入"wap.uc123.jvgme.cn"<br/>
+4:摩托罗拉：依次选"菜单键"-"书签"-"标记站点"-"保存"<br/>
+5:西门子："上网键"-"收藏夹"-"储存"<br/>
+6:LG："菜单"-"书签"-"标记站点"-"保存"<br/>
+7:NEC：依次选"menu"-"书签"-"标记站点"-"保存"<br/>
+8:三菱：按左功能键-"书签"-"添加新书签"-"保存"<br/>
+9:松下：选择页面左上角的"菜单"-"书签"-"标记站点"-"保存"<br/>
+10:联想：网络-"输入网址"-"输入wap.uc123.jvgme.cn"-"保存如收藏夹"<br/>
+11:夏新：访问网站时选中页面左上角-"书签"-"保存"<br/>
+12:CECT：依次选择"菜单"-"保存书签"-"保存"<br/>
+13:东信：依次选择"选项"-"保存书签"<br/>
+14:海尔：网页浏览状态下长按"*"键-"书签"-"新建"-"编辑"-"输入题目和wap.uc123.jvgme.cn"-"保存"<br/>
+-------------<br/>
+<a href="/">UC123首页</a>&gt;收藏本站
+</p>
+</card>
+</wml>

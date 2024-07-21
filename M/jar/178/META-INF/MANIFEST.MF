@@ -1,0 +1,16 @@
+Manifest-Version: 1.0
+MIDlet-Name: 轩辕剑-天之痕-四章
+Created-By: 1.4.2_11-b06 (Sun Microsystems Inc.)
+CP: 0
+MIDlet-1: 轩辕剑-天之痕-四章, icon.png, main.MainMIDlet
+locale: cn
+MicroEdition-Configuration: CLDC-1.0
+MIDlet-Install-Notify: http://59.42.254.3:8081/pay/install.do?gameid=0
+ 117&ua=N73&gv=2.5.0&cpid=0
+MIDlet-Icon: icon.png
+MIDlet-Vendor: Gameislive
+UA: N73
+MIDlet-Version: 2.5.0
+MicroEdition-Profile: MIDP-2.0
+MIDlet-Description: 轩辕剑-天之痕-四章
+

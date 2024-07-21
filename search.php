@@ -1,62 +1,28 @@
-<?php
-include "M/c/function.php";
-if(isset($_GET["local"])){
-  $_SESSION["language"] = $_GET["local"];
-}else{
-  $_SESSION["language"] = getDefalutlanguage();
-}
-$language_name = getLanguageName($_SESSION["language"]);
-if (!$language_name){
-echo '<link rel="stylesheet" href="/M/c/notice.css">';
-echo '<body id="notice"><h2 class="topic">消息提示</h2><p>我们没有找到语言包</p></body>';
-exit();
-}else{
-include "M/e/".$language_name.".inc";
-}
-
-  $language_array = array_language();
-  foreach($language_array as $key => $value){
-    if($_SESSION["language"] == $value){
-      $selected = "selected = 'selected' ";
-    }else{
-      $selected = "";
-    }
-    }
-
-  if($_GET["local"] == $value){
-      //$selected = "selected = 'selected' ";
-    }
-   echo $header;
-   
+<?php   
 include_once $_SERVER["DOCUMENT_ROOT"].'/system/base.php';
 
 include_once $_SERVER["DOCUMENT_ROOT"].'/M/c/header.php';
-aut();
+//aut();
 if($user['admin_level']=="禁言"){
 echo '<link rel="stylesheet" href="/M/c/notice.css">';
 echo '<body id="notice"><h2 class="topic">消息提示</h2><p>请登录之后再操作</p></body>';
 exit();
 }
  if(!isset($_GET['keyword'])){
-$title = ''.$search_name.'';
+$title = '搜索';
 echo '<meta itemprop="name" content="'.$title.'" />'; 
 echo '<title>'.$title.'</title>';
 echo '</head>'; 
-echo '<div id="header"><a href="#back" onclick="history.back();" class="iconfont icon-fanhui title="'.$exit.'"></a>
-';
-echo '<h1>'.$title2.'</h1><a href="/"><img src="/favicon.ico" width="32" height="32" alt="'.$title2.'logo" /><h1>'.$title2.'</h1>';
 include_once $_SERVER["DOCUMENT_ROOT"] . '/M/c/user.php';
-
-echo '<div id="nav" class="container"><a href="/">'.$zhuye.'</a><span>'.$title.'</span></div>';
-echo '<main class="container"><div id="main">';
-
-echo '<div class="area"><form action="/search'.$local2.'" method="get" class="form"><div><input type="search" name="keyword" placeholder="'.$keywords.'" required="required" value="" autocomplete="off" /><input type="submit" value="'.$sousuo.'" /></div></form>';
-echo '<h2 class="topic">'.$search_top.'</h2>';
+echo '</header><div id="where"><a href="/">首页</a>首页</div><main class="container"><div id="main">';
+echo '</header><div id="where"><a href="/">首页</a>'.$title.'</div><main class="container"><div id="main">';
+echo '<div class="area"><form action="/search" method="get" class="form"><div><input type="search" name="keyword" placeholder="在这里搜索......" required="required" value="" autocomplete="off" /><input type="submit" value="搜索" /></div></form>';
+echo '<h2 class="topic">近期热搜</h2>';
 echo '<ul class="hotwords">';
 //$keys = $con->query("SELECT * FROM `search_log` ORDER BY `id` DESC LIMIT 10");
 $keys = $con->query(" SELECT * FROM `search_log` WHERE num > 0 ORDER BY RAND() LIMIT 12");
 while($k = $keys->fetch_assoc()){
-echo '<li><a href="/search?keyword='.$k['key'].''.$local2.'">'.$k['key'].'</a></li>';
+echo '<li><a href="/search?keyword='.$k['key'].'">'.$k['key'].'</a></li>';
 }
 echo '</ul></div></main>';
 //echo '
@@ -68,14 +34,14 @@ echo '</ul></div></main>';
 }else{
 	//名字
 	$keyword = filtr($_GET['keyword']);
-	$title = ''.$_GET['keyword'].''.$search_name.'';
+	$title = ''.$_GET['keyword'].'搜索结果';
 echo '<meta itemprop="name" content="'.$title.'" />'; 
 	echo '<title>'.$title.'</title>';
 echo '</head>'; 
-echo '<body class=""><header><a href="#back" onclick="history.back();" class="iconfont icon-fanhui" title="'.$exit.'"></a>';
-echo '<h2>'.$title2.'</h2><a href="/"><img src="/favicon.ico" width="32" height="32" alt="续梦网logo" /><h1>'.$title2.'</h1>';
+echo '<body class=""><header><a href="#back" onclick="history.back();" class="iconfont icon-fanhui" title="返回"></a>';
+echo '<h2>'.$title.'</h2><a href="/"><img src="/favicon.ico" width="32" height="32" alt="续梦网logo" /><h1>'.$title.'</h1>';
 include_once $_SERVER["DOCUMENT_ROOT"] . '/M/c/user.php';
-echo '<div id="nav" class="container"><a href="/">'.$zhuye.'</a><span>'.$title.'</span></div>';
+echo '<div id="nav" class="container"><a href="/">首页</a><span>'.$title.'</span></div>';
 echo '<main class="container"><div id="main">';
 	 $key_num = $con->query(" SELECT * FROM `search_log` WHERE `key` = '$keyword'")->num_rows;
     if($key_num > 0){
@@ -105,35 +71,35 @@ $start = ($page-1) * $pagesiz;
 }
 		$ms = $con->query("SELECT * FROM `game` WHERE `name` LIKE '%$keyword%' OR  `cn` LIKE '%$keyword%' order by id DESC LIMIT $start,$pagesiz");
 if($k_post  < 1) err('抱歉，暂未收录'.$keyword.'……');
-echo '<div class="area"><form action="/search'.$local2.'" method="get" class="form"><div><input type="search" name="keyword" placeholder="'.$search.'" required="required" value="'.$keyword.'" autocomplete="off" /><input type="submit" value="'.$sousuo.'" /></div></form>';
+echo '<div class="area"><form action="/search" method="get" class="form"><div><input type="search" name="keyword" placeholder="'.$search.'" required="required" value="'.$keyword.'" autocomplete="off" /><input type="submit" value="搜索" /></div></form>';
 //echo '<span class="title">搜索</span>'.$keyword.'<div class="block">';
 
 echo '<ul class="games">';
 while($w = $ms->fetch_assoc()){
 if($name = $w['cn'] ?: $w['name']){
-echo '<li><a href="/game/'.$w['id'].'"><img src="/M/i/'.$w['icon'].'" width="46" height="46" alt="'.$name.''.$icons.'" /></a><div>';
-echo '<h3><a href="/game/'.$w['id'].''.$local1.'">'.$name.'</a></h3><div>';
+echo '<li><a href="/game/'.$w['id'].'"><img src="/M/i/'.$w['icon'].'" width="46" height="46" alt="'.$name.'图标" /></a><div>';
+echo '<h3><a href="/game/'.$w['id'].'">'.$name.'</a></h3><div>';
 }
-echo '<span>'.$w['platform'].'</span><span>'.$w['id_raz'].'</span><span>'.$w['downs'].''.$download_num.'</span><span>';
+echo '<span>'.$w['platform'].'</span><span>'.$w['id_raz'].'</span><span>'.$w['downs'].'下载</span><span>';
 $number = $con->query('SELECT * FROM `comment` WHERE `id_obmen` = "'.$w['id'].'"')->num_rows;
-echo ''.$number.''.$number_num.'</span></div></div></li>';
+echo ''.$number.'评论</span></div></div></li>';
 }
 echo '</ul>';
 while($count < 1){
-echo '<div class="pager"><span>'.$pagerss.''.$page.''.$pagerss0.'/'.$pagerss1.''.$totalPage.''.$pagerss2.'</span>';
+echo '<div class="pager"><span>第'.$page.'页/共'.$totalPage.'页</span>';
 $count++;
 }
 if($page>2){//不在第一页
-echo '<a href="/search'.$local1.'">'.$zhuye.'</a>';
+echo '<a href="/search">首页</a>';
 }
 if($page>1){//不在第一页
-echo '<a href="/search?page='.($page-1).''.$local2.'">'.$pagers1.' </a>';
+echo '<a href="/search?page='.($page-1).'">上一页</a>';
 }
 if($page < $totalPage){//不在最后一页
-echo '<a href="/search?page='.($page+1).''.$local2.'">'.$pagers1.' </a>';
+echo '<a href="/search?page='.($page+1).'">下一页</a>';
 }
 if($page < $totalPage-1){//不在最后一页
-echo '<a href="/search?page='.$totalPage.''.$local2.'">'.$pagers_total.'</a>';
+echo '<a href="/search?page='.$totalPage.'">尾页</a>';
 }
 echo '</div></div>';
 }

@@ -1,0 +1,14 @@
+Manifest-Version: 1.0
+MIDlet-Vendor: Tencent
+MIDlet-Version: 09.00.43
+MIDlet-1: QQ2009,/icon.png,com.tencent.kqq2006.ui.MainMIDlet
+MicroEdition-Configuration: CLDC-1.0
+MIDlet-Name: QQ2009
+MicroEdition-Profile: MIDP-2.0
+MIDlet-Permissions: javax.microedition.io.Connector.file.read,javax.mi
+ croedition.io.Connector.file.write,javax.microedition.io.Connector.ht
+ tp,javax.microedition.io.Connector.sms,javax.wireless.messaging.sms.s
+ end,javax.microedition.io.Connector.serversocket,javax.microedition.i
+ o.Connector.socket,javax.microedition.media.control.RecordControl,jav
+ ax.microedition.media.control.VideoControl.getSnapshot
+

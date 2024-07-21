@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+MIDlet-Vendor: HanFeng
+MIDlet-Version: 2.0.1
+MIDlet-1: 乱舞三国, /icon.png, main.MainMidlet
+MicroEdition-Configuration: CLDC-1.1
+Created-By: 1.6.0_21 (Sun Microsystems Inc.)
+MIDlet-Icon: /icon.png
+MIDlet-Name: 乱舞三国
+MicroEdition-Profile: MIDP-2.0
+

@@ -4,7 +4,7 @@ $title = '消息提示';
 include_once $_SERVER["DOCUMENT_ROOT"].'/M/c/header.php';
 aut();
 
-setcookie('login','', time()-86400*365, '/'); 
+setcookie('xm','', time()-86400*365, '/'); 
 setcookie('pass','', time()-86400*365, '/');
 setcookie('BAEID','', time()-86400*365, '/');  
 header('Location: /');

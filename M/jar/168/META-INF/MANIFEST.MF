@@ -1,0 +1,8 @@
+MicroEdition-Configuration: CLDC-1.0
+MIDlet-Version: 1.00
+MIDlet-Icon: /icon.png
+MIDlet-Vendor: Gamewave
+MIDlet-1: 凡人修仙传2-乱星海,/icon.png, Midlet
+MicroEdition-Profile: MIDP-1.0
+MIDlet-Name: 凡人修仙传2-乱星海
+MIDlet-Description: 角色扮演游戏;Nokia-N73;凡人修仙传2-乱星海

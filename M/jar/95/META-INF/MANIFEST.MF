@@ -1,0 +1,13 @@
+﻿Manifest-Version: 1.0
+MicroEdition-Configuration: CLDC-1.0
+MIDlet-Name: 手机QQ2005【通用版】
+Created-By: 1.5.0_08 (Sun Microsystems Inc.)
+MIDlet-Info-URL: http://3g.qq.com
+MIDlet-Vendor: Tencent
+MIDlet-Permissions: javax.microedition.io.Connector.socket,javax.micro
+ edition.io.Connector.http,javax.wireless.messaging.sms.send
+MIDlet-1: 手机QQ2005, /icon.png, KQQMIDlet
+MIDlet-Version: 2.3.1
+MicroEdition-Profile: MIDP-2.0
+MIDlet-Description: 手机QQ全新聊天程序
+

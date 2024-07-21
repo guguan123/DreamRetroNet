@@ -1,0 +1,14 @@
+Manifest-Version: 1.0
+Ant-Version: Apache Ant 1.7.1
+Created-By: 1.5.0_16-b02 (Sun Microsystems Inc.)
+MIDlet-1: 修仙炼妖传(华娱),/icon.png,Sword
+MicroEdition-Configuration: CLDC-1.0
+MIDlet-Vendor: 华娱无线
+MicroEdition-Profile: MIDP-1.0
+MIDlet-Icon: /icon.png
+MIDlet-Description: 御剑畅游天地间，斩妖伏魔问情缘，
+ 修仙炼妖传是一款仙侠类RPG作品。适用于NOKIA_N7610系
+ 列
+MIDlet-Version: 1.0
+MIDlet-Name: 修仙炼妖传(华娱)
+

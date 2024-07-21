@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Ant-Version: Apache Ant 1.6.5
+Created-By: 1.5.0_06-b05 (Sun Microsystems Inc.)
+MIDlet-1: Nescube,/res/bin/icon.png,NescubeMIDlet
+MIDlet-Vendor: Real Soft Makers(凌云长空)
+MIDlet-Version: 3.0
+MIDlet-Name: NES模拟器
+MicroEdition-Configuration: CLDC-1.1
+Nokia-MIDlet-no-exit: true
+MicroEdition-Profile: MIDP-2.0

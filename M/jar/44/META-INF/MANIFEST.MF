@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+MIDlet-Vendor: MIDlet Suite Vendor
+MIDlet-Version: 1.0
+MIDlet-1: 植物大战僵尸2013欧美大波版,/icon.png,com.fox.jian
+ g.GameMidlet
+MicroEdition-Configuration: CLDC-1.0
+MIDlet-Icon: /icon.png
+MIDlet-Name: 植物大战僵尸2013欧美大波版
+MicroEdition-Profile: MIDP-1.0
+

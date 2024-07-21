@@ -1,0 +1,17 @@
+Manifest-Version: 1.0
+MIDlet-Vendor: PiP
+Media-Price: .
+MIDlet-Version: 1.8
+Nokia-MIDlet-On-Screen-Keypad: no
+Nokia-MIDlet-App-Orientation: portrait
+Polish-Version: 2.0.2 (2008-03-27)
+Created-By: 1.6.0_13 (Sun Microsystems Inc.)
+MIDlet-Name: 明珠轩辕
+MIDlet-Info-URL: http://xy.pipgame.cn/
+MIDlet-Touch-Support: true
+MIDlet-1: 明珠轩辕, /icon.png, shaft._MIDlet
+MicroEdition-Configuration: CLDC-1.0
+MIDlet-Icon: /icon.png
+MIDlet-Description: 支持:摩托罗拉EX200系列触摸屏手机.
+MicroEdition-Profile: MIDP-2.0
+

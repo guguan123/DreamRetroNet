@@ -1,0 +1,10 @@
+MIDlet-1: 仙剑奇侠传之灵珠大战,/Icon.png,Midlet
+MIDlet-Description: 仙剑奇侠传之灵珠大战适合此机型
+MIDlet-Icon: Icon.png
+MIDlet-Name: 仙剑奇侠传之灵珠大战
+MIDlet-Vendor: 伟特力群
+MIDlet-Version: 1.0
+Media-Price: 8元
+MicroEdition-Configuration: CLDC-1.0
+MicroEdition-Profile: MIDP-2.0
+Manifest-Version: 1.0

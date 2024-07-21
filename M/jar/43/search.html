@@ -1,0 +1,47 @@
+<div id="searchForm" class="hidden">
+	<span id="searchFavicons">
+    <span id="favicon-nov_mwl_null" class="shown"  ><div class="inputCenter"><div class="inputLeft"><div class="inputRight"><div class="blankSearch defBack overflow_hidden" longpress="mwl.contextMenu('file://searchselector.html', '#seng');" onclick="mwl.contextMenu('file://searchselector.html', '#seng');">&$118_STR;</div></div></div></div></span>
+    <span id="favicon-google" class="hidden"><div class="inputCenter"><div class="inputLeft"><div class="inputRight">
+      <form action="http://htdocs/controlServlet" name="search" method="get">
+        <input type="text" name="novSearch" class="searchInput googleBack" longpress="mwl.contextMenu('file://searchselector.html', '#seng');" value="Google" oncomplete="1"/>
+        <input type="hidden" id="searchEngineInput" value="http://www.google.com/m/search?client=ms-nokia&channel=proxy&q=" name="searchUrl"/><input type="hidden" value="PORTAL" name="formID"/>
+        <input type="hidden" value="search" name="action"/>
+      </form></div></div></div>
+    </span>
+    <span id="favicon-bing" class="hidden"><div class="inputCenter"><div class="inputLeft"><div class="inputRight">
+      <form action="http://htdocs/controlServlet" name="search" method="get">
+        <input type="text" name="novSearch" class="searchInput bingBack" longpress="mwl.contextMenu('file://searchselector.html', '#seng');" value="Bing" oncomplete="1"/>
+        <input type="hidden" id="searchEngineInput" value="http://m.bing.com/?a=results&mid=3007&q=" name="searchUrl"/>
+        <input type="hidden" value="PORTAL" name="formID"/>
+        <input type="hidden" value="search" name="action"/>
+      </form></div></div></div>
+    </span>
+    <span id="favicon-yahoo" class="hidden"><div class="inputCenter"><div class="inputLeft"><div class="inputRight">
+      <form action="http://htdocs/controlServlet" name="search" method="get">
+        <input type="text" name="novSearch" class="searchInput yahooBack" longpress="mwl.contextMenu('file://searchselector.html', '#seng');" value="Yahoo!" oncomplete="1"/>
+        <input type="hidden" id="searchEngineInput" value="http://m.yahoo.com/w/search?.tsrc=nokiaS40&first=1&p=" name="searchUrl"/>
+        <input type="hidden" value="PORTAL" name="formID"/>
+        <input type="hidden" value="search" name="action"/>
+      </form></div></div></div>
+    </span>
+  </span>
+</div>
+<div id="searchSelector" class="hidden">
+  <div id="setSearchGoogle" class="menu_item &$css_dir_ALIGNMENT;" onclick="mwl.setItem('searchEngineST', 'google');mwl.execBrowserCommand('&$1_COMMANDID;');">
+    <img width="16" height="16" class="fav_img" src="file://google.png"/> <span class="menu_item_text">Google</span>
+  </div>
+  <div id="setSearchBing" class="menu_item &$css_dir_ALIGNMENT;"  onclick="mwl.setItem('searchEngineST', 'bing');mwl.execBrowserCommand('&$1_COMMANDID;');">
+    <img width="16" height="16" class="fav_img" src="file://bing.png"/> <span class="menu_item_text">Bing</span>
+  </div>
+  <div id="setSearchYahoo" class="menu_item &$css_dir_ALIGNMENT;" onclick="mwl.setItem('searchEngineST', 'yahoo');mwl.execBrowserCommand('&$1_COMMANDID;');">
+    <img width="16" height="16" class="fav_img" src="file://yahoo.png"/> <span class="menu_item_text">Yahoo!</span>
+  </div>
+</div>
+<div id="settingsSearch" class="hidden">
+  <span id="settingsSearchFavicons">
+    <span id="stfavicon-nov_mwl_null" class="shown"></span>
+    <span id="stfavicon-google" class="hidden"><img width="16" height="16" class="fav_img" src="file://google.png"/></span>
+    <span id="stfavicon-bing" class="hidden"><img width="16" height="16" class="fav_img" src="file://bing.png"/></span>
+    <span id="stfavicon-yahoo" class="hidden"><img width="16" height="16" class="fav_img" src="file://yahoo.png"/></span>
+  </span>
+</div>

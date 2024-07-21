@@ -1,7 +1,6 @@
-
 <?php
-$dbhost = "localhost";
+$dbhost = "mysql";
 $dbname = "wap";
 $dbuser = "wap";
-$dbpass = "MhT5cDN7c88iirWK";
+$dbpass = "5.cPfw_TUROTAxKW";
 ?>

@@ -1,0 +1,14 @@
+Manifest-Version: 1.0
+Ant-Version: Apache Ant 1.7.1
+Created-By: 1.5.0_16-b02 (Sun Microsystems Inc.)
+MIDlet-1: 聊斋2-妖魔道(华娱),/icon.png,MM
+MicroEdition-Configuration: CLDC-1.0
+MIDlet-Vendor: CWA
+MicroEdition-Profile: MIDP-1.0
+MIDlet-Icon: /icon.png
+MIDlet-Description: 这是一款情意绵绵，充满中国古典奇
+ 幻色彩的rpg游戏。适用于N73系列
+palnum: 0020
+MIDlet-Version: 1.0
+MIDlet-Name: 聊斋2-妖魔道(华娱)
+

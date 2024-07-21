@@ -57,7 +57,7 @@ header('Accept-Ranges: bytes');
 
            header('Content-Disposition: attachment; filename=' . $b['down']);
 
-           header('Content-Type: application/octet-stream; name=' . $file_name);
+           header('Content-Type: application/octet-stream; name=' . $b['down']);
 ob_end_clean();
            if(is_file($file_url) && is_readable($file_url)){
 

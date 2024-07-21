@@ -1,0 +1,15 @@
+Manifest-Version: 1.0
+MIDlet-Touch-Support: true
+MIDlet-Vendor: Tencent
+MIDlet-Version: 10.0.41
+MIDlet-1: 手机QQ,/icon.png,com.tencent.kqq2006.MainMIDlet
+MicroEdition-Configuration: CLDC-1.0
+MIDlet-Permissions-Opt: javax.wireless.messaging.sms.send,javax.microe
+ dition.io.Connector.sms,javax.microedition.med
+MIDlet-Icon: /icon.png
+MIDlet-Name: 手机QQ
+MIDlet-Info-URL: http://3g.qq.com
+MIDlet-Permissions: javax.microedition.io.Connector.socket,javax.micro
+ edition.io.Connector.http
+MicroEdition-Profile: MIDP-2.0
+

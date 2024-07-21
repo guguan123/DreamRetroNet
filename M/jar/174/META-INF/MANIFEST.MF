@@ -1,0 +1,13 @@
+Manifest-Version: 1.0
+MIDlet-Data-Size: 4096
+MicroEdition-Configuration: CLDC-1.0
+MIDlet-Name: QQ降龙
+Created-By: 1.4.2 (Sun Microsystems Inc.)
+MIDlet-Icon: /icon.png
+MIDlet-Vendor: 腾讯青霄
+MIDlet-1: QQ降龙, /icon.png, MidletSample
+SEMC-Screen-Size: 240,320
+MIDlet-Version: 2.29.2
+MicroEdition-Profile: MIDP-2.0
+MIDlet-Description: 苍穹谁主，青霄凌云！
+

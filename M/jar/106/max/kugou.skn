@@ -1,0 +1,44 @@
+﻿<name test>
+<maker opo>
+<date 09.02.19>
+//侧栏
+<sidebar_bg 0,0>
+//音量面板
+<volumebar_bg 0,30> // X,Y
+<volumebar_level 10,15,9,190,9,190,1> //num,border,level_off_X,level_off_Y,level_on_X,level_on_Y,横向或纵向(0/1)
+<volumebar_icons 14,37,14,203>
+//下方菜单
+<bottombar_bg 0,290> //X,Y
+<bottombar_menuicon 5,300> //borderX,Y
+<bottombar_time 120,317,20> //X,Y,border
+//弹出菜单
+<popmenu 26,ffffff,00ff00,3> //font,colorOff,colorOn,border
+//滚动提示
+<toptips 26,ffffff,20,35,200> //font,color,X,Y,W
+//列表提示
+<listtips 26,bbbbbb,10,55> //font,color,X,Y
+//播放器面板
+<playbar_bg 0,220> //X,Y
+<playbar_gr 40,252> //X,Y
+<playbar_icons 54,254,98,254,142,254> //icon0_X,icon0_Y,icon1_X,icon1Y...
+<playbar_timefont 7,8> //w,h
+<playbar_timeplay 5,249,6> //X,Y,border
+<playbar_timeleft 202,249,6> //X,Y,border
+<playbar_volume 6,225> //X,Y
+//歌词
+<lyrics_def 26,24,200> //font1,font2,W
+<lyrics_mini ffffff,00ff00,20,222> //colorOff,colorOn,X,Y
+<lyrics_full ffffff,00ff00,20,50,230,15> //colorOff,colorOn,X,Y,H,rows
+//列表界面
+<list_item 26,26,95ddff,ffffff,95ddff,15,40,211,248,48,2> //font1,font2,colorOff,colorOn1,colorOn2,X,Y,W,H,itemH,border
+<list_playstate 0,0> //X,Y(baseOn listItem)
+//其他信息面板
+<searchbox 26,ffffff,ffffff,0,90,120,123,33,10,120,228,110,23> //font,color_title,color_content,X,Y,titleX,titleY,titleAnchor,contentX,contentY,contentW,contentH,border
+<messagebox 26,ffffff,ffffff,0,150,120,184,33,20,190,200,100,23> //font,color_title,color_content,X,Y,titleX,titleY,titleAnchor,contentX,contentY,contentW,contentH,border
+<fileselectbox 26,ffffff,ffffff,3359A2,0,150,120,184,33,10,190,220,100,23> //font,color_title,color1,color2,X,Y,titleX,titleY,titleAnchor,contentX,contentY,contentW,contentH,border
+//蒙版
+<mask 000000,150,0,30,240,260> //color,alpha,x,y,w,h
+//休眠
+<sleeptime 20,210,200,30>
+//滚动条
+<scrollbar ffff00,ffffff,231,45,7,240>

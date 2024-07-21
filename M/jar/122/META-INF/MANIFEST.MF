@@ -1,0 +1,9 @@
+Manifest-Version: 2.0
+MicroEdition-Configuration: CLDC-1.0
+MIDlet-Name: 斗破苍穹2-双帝之战
+MIDlet-Icon: /icon.png
+MIDlet-Vendor: GameWave
+MIDlet-1: 斗破苍穹2-双帝之战, /icon.png, Midlet
+MIDlet-Version: 1.0.0
+MicroEdition-Profile: MIDP-1.0
+MIDlet-Description: 动作角色扮演游戏;NokiaN7610;

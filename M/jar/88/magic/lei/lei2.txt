@@ -1,0 +1,5 @@
+<init>
+@name:/magic/lei/lei2.ani
+@count:1
+@frames:5
+</init>

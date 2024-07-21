@@ -1,0 +1,18 @@
+Manifest-Version: 1.0
+MIDlet-Vendor: PiP
+Media-Price: .
+MIDlet-Version: 4.8
+Nokia-MIDlet-On-Screen-Keypad: no
+Polish-Version: 2.0.2 (2008-03-27)
+Created-By: 1.6.0_13 (Sun Microsystems Inc.)
+updateFlag: 0
+MIDlet-Name: 明珠西游
+MIDlet-Info-URL: http://xyj.pipgame.cn/
+BLEACH: 0
+autoLogin: 0
+MIDlet-1: 明珠西游, /icon.png, xiyou.midlet.XYMIDlet
+MicroEdition-Configuration: CLDC-1.0
+MIDlet-Icon: /icon.png
+MIDlet-Description: 支持:NokiaN73系列.
+MicroEdition-Profile: MIDP-2.0
+

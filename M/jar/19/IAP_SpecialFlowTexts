@@ -1,0 +1,25 @@
+8_EN;19;6;11;12;
+16_EN;20;7;11;12;21;
+10_EN;19;8;13;14;
+7_EN;19;6;11;12;
+4_EN;19;9;15;16;22;23;
+11_EN;19;10;17;18;
+6;Are you sure you want to buy this item? Price: %s0
+7;Are you sure you want to buy this item? Price: %s0 (GST incl.), charged to your mobile account. Help: 1-800-443-881
+8;%s0 plus the cost of one standard-rate SMS will be charged to your mobile phone bill or deducted from your prepaid credit.  By selecting "Buy Now", you confirm that you are over the age of 16 and have the bill-payer's permission to make this purchase.
+9;Denne mulighed koster %s0 + sms-takst (afhængigt af dit telefonselskabs priser) 
+10;Apakah Anda akan membeli %s1 seharga %s0 (+PPN)? CS: 021-3918614.
+11;OK
+12;Later
+13;Buy Now
+14;Cancel
+15;Køb nu
+16;Senere 
+17;Beli
+18;Batal
+19;Terms and Conditions
+20;Payment T&C
+21;(GST incl.)
+22;+ price of 1 SMS
+23;No 14-day cooling-off period
+

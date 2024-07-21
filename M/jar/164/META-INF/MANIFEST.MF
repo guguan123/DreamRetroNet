@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+MicroEdition-Configuration: CLDC-1.1
+MIDlet-Name: 3D版田园物语
+MIDlet-Icon: /icon.png
+MIDlet-Vendor: 华动飞天
+MIDlet-1: 3D版田园物语, /icon.png, current.RPGMIDlet
+MIDlet-Version: 1.0
+MicroEdition-Profile: MIDP-2.0
+MIDlet-Description: 适用于N73系列
+

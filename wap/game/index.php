@@ -1,24 +1,21 @@
 <?php
 
-include_once $_SERVER["DOCUMENT_ROOT"].'/wap/system/base.php';
+include_once $_SERVER["DOCUMENT_ROOT"].'/system/base.php';
 $id = abs(intval($_GET['id'])); # ФИЛЬТР ГЕТ
 
 $bx = $con->query("SELECT * FROM `game` WHERE `id` = '".$id."'")->fetch_assoc();
 if($bx){
 if($name = $bx['cn'] ?: $bx['name']){
-$title = ''.$name.'';
+$title = ''.$name.' - 续梦网';
+//$description =  $descriptiongame;
+//$keywords = $keywordsgame;
 }
 }
 
 include_once $_SERVER["DOCUMENT_ROOT"].'/wap/M/c/header.php';
 
-if($name = $bx['cn'] ?: $bx['name']){
-echo '<div class="header">'.$name.'</a>';
-}
 include_once $_SERVER["DOCUMENT_ROOT"] . '/wap/M/c/user.php';
-echo '<div class="wrapper"><div>';
-
-
+//echo '<div id="middle">';
 
 $b = $con->query("SELECT * FROM `game` WHERE `id` = '".$id."'")->fetch_assoc();
 //$g = $con->query("SELECT * FROM `games` WHERE `id` = '".$id."'")->
@@ -27,12 +24,7 @@ $b = $con->query("SELECT * FROM `game` WHERE `id` = '".$id."'")->fetch_assoc();
 $us = $con->query("SELECT * FROM `user` WHERE `id` = '".$x['id_user']."'")->
 fetch_assoc();
 if($b){
-if($b['id'] ->num_rows >0){
- echo '<body id="notice"><h2 class="topic">消息提示</h2><p>你防问的游戏不存在</p>';
-echo '</p><p><a href="#back" class="button">返回</a></p>';
-  exit;
-}
-$title = ''.$b['name'].'';
+//$title = ''.$b['name'].'';
 
 $size = getFilesize($_SERVER['DOCUMENT_ROOT'].'/download/'.$b['down'].'');
 
@@ -46,123 +38,46 @@ $size = getFilesize($_SERVER['DOCUMENT_ROOT'].'/download/'.$b['down'].'');
 //echo '<div class="carousel-cell"><img class="img_rms" src="/down/images/'.$w['url'].'"></div>';
 //}
 //}
-function get_basename($filename){
-    return preg_replace('/^.+[\\\\\\/]/', '', $filename);
-}
-
-/**
- * 获取文件目录列表
- * @param string $pathname 路径
- * @param integer $fileFlag 文件列表 0所有文件列表,1只读文件夹,2是只读文件(不包含文件夹)
- * @param string $pathname 路径
- * @return array
- */
-function get_file_folder_List($pathname,$fileFlag = 0, $pattern='*') {
-    $fileArray = array();
-    $pathname = rtrim($pathname,'/') . '/';
-    $list   =   glob($pathname.$pattern);
-    foreach ($list  as $i => $file) {
-        switch ($fileFlag) {
-            case 0:
-                $fileArray[]=get_basename($file);
-                break;
-                
-            case 1:
-                if (is_dir($file)) {
-                    $fileArray[]=get_basename($file);
-                }
-                break;
-
-            case 2:
-                if (is_file($file)) {
-                    $fileArray[]=get_basename($file);
-                }
-                break;
-
-            default:
-                break;
-        }
-    }
-
-    if(empty($fileArray)) $fileArray = NULL;
-    return $fileArray;
-}
-
-//读取zip文件内文本
-function readZipText($fpath, $fname)
-{
-    $result = "";
-    $zip_file = zip_open($fpath); 
-    if(is_resource($zip_file))  
-    {
-        while($zipfiles = zip_read($zip_file))
-        {
-            $file_name = zip_entry_name($zipfiles); 
-            if(strcmp($fname, $file_name)==0)
-            {
-                $file_size = zip_entry_filesize($zipfiles);
-                if(zip_entry_open($zip_file, $zipfiles))
-                {
-                    $result = zip_entry_read($zipfiles, $file_size);
-                    zip_entry_close($zipfiles);
-                }             
-                break;
-            }
-        }
-        zip_close($zip_file); 
-    }  
-    else
-    {
-        echo($zip_file . "Archive File Cannot Be Opened"); 
-    }
-    return $result;
-}
-
-//gbk转utf8
-function gbk2utf8($str){ 
-    $charset = mb_detect_encoding($str,array('UTF-8','GBK','GB2312')); 
-    $charset = strtolower($charset); 
-    if('cp936' == $charset){ 
-        $charset='GBK'; 
-    } 
-    if("utf-8" != $charset){ 
-        $str = iconv($charset,"UTF-8//IGNORE",$str); 
-    } 
-    return $str; 
-}
-
-//匹配类ini文本
-function getJarIniName($text, $key)
-{
-    $name = "";
-    $pattern = "<" . $key . ":.*>";
-    preg_match($pattern, $text, $name);  
-    $result = str_replace($key . ": ","", implode("",$name));
-    return str_replace("\n", "", $result);
-}
-
 
 //echo '<body class="subpage"><div id="header"><a href="#back" onclick="history.back();" class="iconfont icon-fanhui"></a><h1>'.$b['name'].'</h1>';
-echo '<img src="/M/i/'.$b['id'].'.png" /><a href="/games?system='.$b['platform'].'">'.$b['platform'].'</a> | <a href="/games?category='.$b['id_raz'].'">'.$b['raz'].'</a> | <a href="/games?vendor='.$b['author'].'">'.$b['author'].'</a> | <span>'.$b['downs'].'下载</span>';
-$number = $con->query('SELECT * FROM `comment` WHERE `id_obmen` = "'.$id.'"')->num_rows;
-echo ' | <span>'.$number.'评论</span></div>';
 
-echo '<h2>下载：</h2><ul>';
-$list = get_file_folder_List("jar", 2, '*');
-//foreach ($list as $i => $file) {
-    $ftext = readZipText("../../download/".$b["down"]."" . $file, "META-INF/MANIFEST.MF"); 
-echo '<li><a href="/game/download/'.$b['id'].'">'.$b['dpi'].'</a>&nbsp;v' . getJarIniName($ftext, "MIDlet-Version") . '&nbsp;'.$size.'</li>';
-echo '</ul>';
-echo '<h2>';
+if($name = $b['cn'] ?: $b['name']){
+echo '<br>'.$name.'';
+}
+//echo '<ul>';
+echo '<br>类型:<a href="/games?category='.$b['raz'].'">'.$b['raz'].'</a> 容量:'.$size.'
+<br>厂商:<a href="/games?vendor='.$b['author'].'">'.$b['author'].'</a>
+<br>系统:<a href="/games?system='.$b['platform'].'">'.$b['platform'].'</a>
+ 语言:'.$b['zh'].'
+<br>
+ 版本:'.$b['v'].'
+ 下载:'.$b['downs'].'';
+$number = $con->query('SELECT * FROM `comment` WHERE `id_obmen` = "'.$id.'"')->num_rows;
+echo '<br>评论:'.$number.'';
+$str=$b['format'];
+$str=str_replace('.','',$str);
+echo ' 分辨率:'.$b['dpi'].'
+<br>单机联机:'.$b['DJ'].'
+<br>简介:'.$b['text'].'
+<br><img src="/image/download.gif" alt="图片"><a href="/package/'.$b['platform'].'/'.$b['id'].''.$b['format'].'">点击下载安装包</a>';
+//echo '</ul>';
+//echo '<ul>';
+
+$mu = $con->query("SELECT * FROM `image` WHERE `id_game` = '".$b['id']."' ORDER BY `id` ASC");
+
+while($ms = $mu->fetch_assoc()){
+echo '<br/><img src="/jietu/'.$ms['id'].'" width="100" height="100">';
+}
+
+echo '<br>评论';
 $number = $con->query('SELECT * FROM `comment` WHERE `id_obmen` = "'.$id.'"')->num_rows;
 if ($number){
-echo '<a href="/comment/'.$b['id'].'" class="right">查看'.$number.'条</a>';
+echo '<br><a href="/comment/'.$b['id'].'" class="right">'.$view.''.$number.'</a>';
 }
-echo '评论：</h2>';
 if($user){
-echo '<form action="/comments/'.$b['id'].'" method="post"><div><input type="text" name="text" maxlength="255" /><input type="submit" name="add" value="提交" /></div></form>';
+echo '<form action="/comment/'.$b['id'].'" method="post"><input type="text" name="text" maxlength="255" /> <input type="submit" name="add" value="提交" /></form>';
 }else{
-echo '<div><a href="/login">登录</a>后才能评论哦：）</div><ul>';
+echo '<br><a href="/login">登录</a>后才能评论哦：）';
 }
 //($number = $con->query('SELECT * FROM `comment` WHERE `id_obmen` = "'.$id.'"')->num_rows;
 //echo '<div class="margin_site_title_file"><span class="title"><a href="/comment/'.$b['id'].'">评论</a>'.$number.'</span></div>';
@@ -203,9 +118,12 @@ if($user['admin_level']>=1) echo '<a href="/comment/'.$comm['id'].'&del&id_k='.$
 echo '</ul></div>';
  
 
+}else{
+	echo '<br>消息提示<br>你防问的游戏不存在';
+	echo '<br><a href="#back">返回</a>';
 }
 if($user['id']==$b['id_user'] ?: $user['admin_level']>=3){
-echo '<ul class="list icon small line bg-white margin-top"><li><a href="/game/edit/'.$b['id'].'">编辑此应用</a></li></ul>';
+echo '<ul class="list icon small line bg-white margin-top"><li><a href="/app/edit/'.$b['id'].'">编辑</a></li></ul>';
 echo'</div></div>';
 }
 include_once $_SERVER["DOCUMENT_ROOT"].'/wap/M/c/foot.php';

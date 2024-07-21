@@ -1,0 +1,18 @@
+Manifest-Version: 1.0
+Ant-Version: Apache Ant 1.7.1
+Created-By: 17.0-b17 (Sun Microsystems Inc.)
+MicroEdition-Configuration: CLDC-1.1
+MIDlet-Name: Ovi Browser
+MIDlet-Vendor: Nokia
+MIDlet-1: Ovi Browser, /midIcon58x58_24.png, com.novarra.j2me.browser.
+ nWeb
+MIDlet-Version: 1.0.0
+MicroEdition-Profile: MIDP-2.0
+MIDlet-Permissions: javax.microedition.io.Connector.http, javax.microe
+ dition.io.Connector.https, javax.microedition.io.Connector.file.read,
+  javax.microedition.io.Connector.file.write,javax.microedition.io.Con
+ nector.file.read
+MIDlet-Data-Size: 20480
+Nokia-Platform: *
+Nokia-MIDlet-Category: Application
+

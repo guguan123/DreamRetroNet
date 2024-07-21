@@ -1,0 +1,13 @@
+12,12
+a4,282
+60,60,60,60
+60,60,60
+45,45,45,60,45,45,60,45,45,45,45,45
+ren
+85022
+429,427,428,430,431
+renchangkong_128X128_RGBA
+jiantexiao_32X32_RGBA
+jiantexiao_32X32_RGBA
+renjian_64X128
+renjian_64X128
