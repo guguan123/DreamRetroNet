@@ -1,0 +1,55 @@
+services:
+  nginx:
+    image: nginx:latest
+    container_name: nginx
+    ports:
+      - 80:80
+      - 443:443
+    volumes:
+      - ./nginx/conf.d:/etc/nginx/conf.d
+      - ./html:/var/www/html
+      - ./nginx/logs:/var/log/nginx
+    depends_on:
+      - php
+      - phpmyadmin
+    networks:
+      - webnet
+
+  php:
+    build: ./php
+    container_name: php
+    volumes:
+      - ./html:/var/www/html
+    networks:
+      - webnet
+
+  mysql:
+    image: mysql:5.6
+    container_name: mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: saU76v#LmbT&bg5
+      #MYSQL_DATABASE: mydatabase
+      #MYSQL_USER: wap
+      #MYSQL_PASSWORD: 5.cPfw_TUROTAxKW
+    ports:
+      - 3306:3306
+    volumes:
+      - mysql-data:/var/lib/mysql
+    networks:
+      - webnet
+
+  phpmyadmin:
+    image: phpmyadmin
+    container_name: phpmyadmin
+    environment:
+      - PMA_ARBITRARY=1
+      - PMA_ABSOLUTE_URI=/pma/
+    networks:
+      - webnet
+
+volumes:
+  mysql-data:
+
+networks:
+  webnet:
+
