@@ -12,6 +12,8 @@ echo '<script src="/static/jquery.min.js"></script><script src="/static/webset.j
 echo '<footer>&copy; 2016-';
 echo date('Y');
 echo '<a href="//icp.gov.moe/?keyword=20240183">萌ICP备20240183号</a>
+<a href="//nyaicp.xyz/?id=20240009" target="_blank">喵ICP备20240009号</a>
+<a href="//guan.ma/hao/2024000140/" title="官码2024000140号">官ICP备2024000140号</a>
 <!-- 底部运行天数 -->
 <script>
 	//页面加载完执行下方函数

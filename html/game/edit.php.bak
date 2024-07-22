@@ -15,8 +15,9 @@ echo '<h2>'.$title.'</h2><a href="/"><img src="/favicon.ico" width="32" height="
 include_once $_SERVER["DOCUMENT_ROOT"] . '/M/c/user.php';
 echo '<div id="nav" class="container"><a href="/">首页</a><a href="/games">列表</a>';
 echo '<span>'.$name.'</span></div>';
+}
+}
 echo '<main class="container"><div id="main">';
-
 
 function get_basename($filename){
     return preg_replace('/^.+[\\\\\\/]/', '', $filename);

@@ -1,0 +1,64 @@
+2024-07-22 11:44:06,925:DEBUG:certbot._internal.main:certbot version: 2.1.0
+2024-07-22 11:44:06,925:DEBUG:certbot._internal.main:Location of certbot entry point: /usr/bin/certbot
+2024-07-22 11:44:06,925:DEBUG:certbot._internal.main:Arguments: ['--standalone', '-d', 'rmct.cn', '--email', '3475272270@qq.com', '--agree-tos', '--no-eff-email', '--non-interactive']
+2024-07-22 11:44:06,925:DEBUG:certbot._internal.main:Discovered plugins: PluginsRegistry(PluginEntryPoint#manual,PluginEntryPoint#null,PluginEntryPoint#standalone,PluginEntryPoint#webroot)
+2024-07-22 11:44:06,941:DEBUG:certbot._internal.log:Root logging level set at 30
+2024-07-22 11:44:06,945:DEBUG:certbot._internal.plugins.selection:Requested authenticator standalone and installer None
+2024-07-22 11:44:06,946:DEBUG:certbot._internal.plugins.selection:Single candidate plugin: * standalone
+Description: Spin up a temporary webserver
+Interfaces: Authenticator, Plugin
+Entry point: standalone = certbot._internal.plugins.standalone:Authenticator
+Initialized: <certbot._internal.plugins.standalone.Authenticator object at 0x7fb93cd934d0>
+Prep: True
+2024-07-22 11:44:06,947:DEBUG:certbot._internal.plugins.selection:Selected authenticator <certbot._internal.plugins.standalone.Authenticator object at 0x7fb93cd934d0> and installer None
+2024-07-22 11:44:06,947:INFO:certbot._internal.plugins.selection:Plugins selected: Authenticator standalone, Installer None
+2024-07-22 11:44:06,997:DEBUG:certbot._internal.main:Picked account: <Account(RegistrationResource(body=Registration(key=None, contact=(), agreement=None, status=None, terms_of_service_agreed=None, only_return_existing=None, external_account_binding=None), uri='https://acme-v02.api.letsencrypt.org/acme/acct/1848802907', new_authzr_uri=None, terms_of_service=None), fb2c8d92f3a0342d0b9bac78b6ed5cf1, Meta(creation_dt=datetime.datetime(2024, 7, 21, 8, 47, 9, tzinfo=<UTC>), creation_host='57a0ebe4b5ab', register_to_eff=None))>
+2024-07-22 11:44:06,998:DEBUG:acme.client:Sending GET request to https://acme-v02.api.letsencrypt.org/directory.
+2024-07-22 11:44:07,002:DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): acme-v02.api.letsencrypt.org:443
+2024-07-22 11:44:07,569:DEBUG:urllib3.connectionpool:https://acme-v02.api.letsencrypt.org:443 "GET /directory HTTP/1.1" 200 746
+2024-07-22 11:44:07,570:DEBUG:acme.client:Received response:
+HTTP 200
+Server: nginx
+Date: Mon, 22 Jul 2024 11:44:07 GMT
+Content-Type: application/json
+Content-Length: 746
+Connection: keep-alive
+Cache-Control: public, max-age=0, no-cache
+X-Frame-Options: DENY
+Strict-Transport-Security: max-age=604800
+
+{
+  "fhfQPEecPD0": "https://community.letsencrypt.org/t/adding-random-entries-to-the-directory/33417",
+  "keyChange": "https://acme-v02.api.letsencrypt.org/acme/key-change",
+  "meta": {
+    "caaIdentities": [
+      "letsencrypt.org"
+    ],
+    "termsOfService": "https://letsencrypt.org/documents/LE-SA-v1.4-April-3-2024.pdf",
+    "website": "https://letsencrypt.org"
+  },
+  "newAccount": "https://acme-v02.api.letsencrypt.org/acme/new-acct",
+  "newNonce": "https://acme-v02.api.letsencrypt.org/acme/new-nonce",
+  "newOrder": "https://acme-v02.api.letsencrypt.org/acme/new-order",
+  "renewalInfo": "https://acme-v02.api.letsencrypt.org/draft-ietf-acme-ari-03/renewalInfo",
+  "revokeCert": "https://acme-v02.api.letsencrypt.org/acme/revoke-cert"
+}
+2024-07-22 11:44:07,574:DEBUG:certbot._internal.cert_manager:Renewal conf file /etc/letsencrypt/renewal/rmct.cn-0001.conf is broken. Skipping.
+2024-07-22 11:44:07,579:DEBUG:certbot._internal.cert_manager:Traceback was:
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/certbot/_internal/cert_manager.py", line 437, in _search_lineages
+    candidate_lineage = storage.RenewableCert(renewal_file, cli_config)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/certbot/_internal/storage.py", line 506, in __init__
+    self._check_symlinks()
+  File "/usr/lib/python3/dist-packages/certbot/_internal/storage.py", line 585, in _check_symlinks
+    raise errors.CertStorageError(
+certbot.errors.CertStorageError: expected /etc/letsencrypt/live/rmct.cn-0001/cert.pem to be a symlink
+
+2024-07-22 11:44:07,594:DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): e5.o.lencr.org:80
+2024-07-22 11:44:07,612:DEBUG:urllib3.connectionpool:http://e5.o.lencr.org:80 "POST / HTTP/1.1" 200 344
+2024-07-22 11:44:07,614:DEBUG:certbot.ocsp:OCSP response for certificate /etc/letsencrypt/archive/rmct.cn-0001/cert1.pem is signed by the certificate's issuer.
+2024-07-22 11:44:07,617:DEBUG:certbot.ocsp:OCSP certificate status for /etc/letsencrypt/archive/rmct.cn-0001/cert1.pem is: OCSPCertStatus.GOOD
+2024-07-22 11:44:07,621:DEBUG:certbot._internal.display.obj:Notifying user: Certificate not yet due for renewal
+2024-07-22 11:44:07,622:INFO:certbot._internal.main:Keeping the existing certificate
+2024-07-22 11:44:07,622:DEBUG:certbot._internal.display.obj:Notifying user: Certificate not yet due for renewal; no action taken.

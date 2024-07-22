@@ -200,28 +200,38 @@ echo '
 </select></div><div>
 <label>分辨率</label>
 <select name="dpi" required="required" >
-<option value="'.$b['dpi'].'">'.$b['dpi'].'</option>
-<option value="128×128">128×128</option>
-<option value="128×160">128×160</option>
-<option value="132×176">132×176</option>
-<option value="175×220">175×220</option>
-<option value="176×208">176×208</option>
-<option value="176×220">176×220</option>
-<option value="176×240">176×240</option>
-<option value="208×208">208×208</option>
-<option value="208×320">208×320</option>
-<option value="240×240">240×240</option>
-<option value="240×320">240×320</option>
-<option value="240×400">240×400</option>
-<option value="240×432">240×432</option>
-<option value="320×240">320×240</option>
-<option value="320×480">320×480</option>
-<option value="360×640">360×640</option>
-<option value="480×640">480×640</option>
-<option value="480×700">480×700</option>
-<option value="480×720">480×720</option>
-<option value="480×800">480×800</option>
-<option value="flex">flex</option>
+    <option value="'.$b['dpi'].'">'.$b['dpi'].'</option>
+    <option value="96×65">96×65</option>
+    <option value="128×108">128×108</option>
+    <option value="128×128">128×128</option>
+    <option value="128×160">128×160</option>
+    <option value="132×176">132×176</option>
+    <option value="175×220">175×220</option>
+    <option value="175×315">175×315</option>
+    <option value="176×176">176×176</option>
+    <option value="176×208">176×208</option>
+    <option value="176×220">176×220</option>
+    <option value="176×240">176×240</option>
+    <option value="180×320">180×320</option>
+    <option value="208×208">208×208</option>
+    <option value="208×320">208×320</option>
+    <option value="282×320">282×320</option>
+    <option value="240×240">240×240</option>
+    <option value="240×320">240×320</option>
+    <option value="240×400">240×400</option>
+    <option value="240×432">240×432</option>
+    <option value="320×240">320×240</option>
+    <option value="320×480">320×480</option>
+    <option value="352×416">352×416</option>
+    <option value="360×360">360×360</option>
+    <option value="360×640">360×640</option>
+    <option value="480×640">480×640</option>
+    <option value="480×700">480×700</option>
+    <option value="480×720">480×720</option>
+    <option value="480×800">480×800</option>
+    <option value="640×360">640×360</option>
+    <option value="640×480">640×480</option>
+    <option value="flex">flex</option>
 </select></div><div>
 <label>语言：</label>
 <select name="zh" required="required">

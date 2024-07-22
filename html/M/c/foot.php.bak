@@ -8,11 +8,12 @@ $end_time = $end_array[1] + $end_array[0];
 
 $time = $end_time - $start_time;
 
-echo '<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8187058067054701"
-     crossorigin="anonymous"></script><script src="/static/jquery.min.js"></script><script src="/static/webset.js"></script><script src="/static/jvzh.org.js"></script><script src="/static/jquery.js"></script></script><script type="text/javascript" src="/static/script.js"></script>';
-echo '<footer>海口续梦互动科技有限公司 &copy; 2016-';
+echo '<script src="/static/jquery.min.js"></script><script src="/static/webset.js"></script><script src="/static/rmct.cn.js"></script><script src="/static/jquery.js"></script></script><script type="text/javascript" src="/static/script.js"></script>';
+echo '<footer>&copy; 2016-';
 echo date('Y');
-echo '<a href="//icp.gov.moe/?keyword=20220432">萌ICP备20220432号</a>
+echo '<a href="//icp.gov.moe/?keyword=20240183">萌ICP备20240183号</a>
+<a href="https://nyaicp.xyz/?id=20240009" target="_blank">喵ICP备20240009号</a>
+<a href="https://guan.ma/hao/2024000140/" title="官码2024000140号">官ICP备2024000140号</a>
 <!-- 底部运行天数 -->
 <script>
 	//页面加载完执行下方函数
@@ -47,7 +48,7 @@ echo '<a href="//icp.gov.moe/?keyword=20220432">萌ICP备20220432号</a>
 <br><span id="share_time" style="color: #E9C2A6; font-weight: bold;"></span>
 
 <script id="LA-DATA-WIDGET" crossorigin="anonymous" charset="UTF-8" src="https://v6-widget.51.la/v6/K3pGGiqjftaNJR8a/quote.js?theme=0&f=12&display=0,1,1,1,1,1,1,1"></script>
-    
+    <a href="http://wapmz.com/in/118"><img src="http://wapmz.com/cn/big/118" alt="wapmz.com"></a>
 <br><a href="/info/1">负责声明</a><a href="/info/2">联系我们</a><a href="/info/3">捐助我们</a><a href="/info/4">常见问题</a><a href="/link">友情链接</a><a href="//iniche.cn/static/JL-Iniche-ver.221006.2130-release.apk">安卓模拟器</a>';
 echo '</footer>';
 //echo '</div></div></div>';

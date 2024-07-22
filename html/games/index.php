@@ -142,7 +142,38 @@ echo '</div></div>';
 echo '<div id="aside"><a href="/games/ngage2" title="N-Gage2"><img src="/M/o/ngage.png" alt="ngage logo" /></a><div class="twobuttons margin-top"><a href="/games/upload" class="button green">上传JAR</a><a href="/games/uploadGame" class="button green">上传SIS或N-Gage</a></div>
 <form action="/games" method="get" class="form">
 <select name="system"><option value="">系统</option><option value="J2ME" >J2ME</option><option value="S60V1" >S60V1</option><option value="S60V2" >S60V2</option><option value="S60V3" >S60V3</option><option value="S60V5" >S60V5</option><option value="Symbian3" >Symbian3</option><option value="N-Gage2" >N-Gage2</option><option value="MRP" >MRP</option></select>
-<select name="resolution"><option value="">分辨率</option><option value="128×128" >128×128</option><option value="128×160" >128×160</option><option value="132×176" >132×176</option><option value="175×220" >175×220</option><option value="176×208" >176×208</option><option value="176×220" >176×220</option><option value="176×240" >176×240</option><option value="208×208" >208×208</option><option value="208×320" >208×320</option><option value="240×240" >240×240</option><option value="240×320" >240×320</option><option value="240×400" >240×400</option><option value="240×432" >240×432</option><option value="320×240" >320×240</option><option value="320×480" >320×480</option><option value="480×640" >480×640</option><option value="480×700" >480×700</option><option value="480×720" >480×720</option><option value="480×800" >480×800</option><option value="640×360" >640×360</option><option value="flex" >flex</option></select>
+<select name="resolution"><option value="">分辨率</option><option value="96×65">96×65</option>
+    <option value="128×108">128×108</option>
+    <option value="128×128">128×128</option>
+    <option value="128×160">128×160</option>
+    <option value="132×176">132×176</option>
+    <option value="175×220">175×220</option>
+    <option value="175×315">175×315</option>
+    <option value="176×176">176×176</option>
+    <option value="176×208">176×208</option>
+    <option value="176×220">176×220</option>
+    <option value="176×240">176×240</option>
+    <option value="180×320">180×320</option>
+    <option value="208×208">208×208</option>
+    <option value="208×320">208×320</option>
+    <option value="282×320">282×320</option>
+    <option value="240×240">240×240</option>
+    <option value="240×320">240×320</option>
+    <option value="240×400">240×400</option>
+    <option value="240×432">240×432</option>
+    <option value="320×240">320×240</option>
+    <option value="320×480">320×480</option>
+    <option value="352×416">352×416</option>
+    <option value="360×360">360×360</option>
+    <option value="360×640">360×640</option>
+    <option value="480×640">480×640</option>
+    <option value="480×700">480×700</option>
+    <option value="480×720">480×720</option>
+    <option value="480×800">480×800</option>
+    <option value="640×360">640×360</option>
+    <option value="640×480">640×480</option>
+    <option value="flex">flex</option>
+    </select>
 <select name="category"><option value="">类型</option><option value="ACT" >动作游戏</option><option value="ARPG" >动作角色扮演</option><option value="AVG" >冒险游戏</option><option value="ETC" >其他游戏</option><option value="FPS" >第一人称射击</option><option value="FTG" >格斗游戏</option><option value="MUG" >音乐游戏</option><option value="RAC" >赛车游戏</option><option value="RPG" >角色扮演</option><option value="RTS" >限时战略</option><option value="SLG" >战略模拟</option><option value="SPG" >体育游戏</option><option value="STG" >射击游戏</option><option value="APP" >应用软件</option></select>
 <input type="submit" value="筛选" /></div></form></div></div>';
 //}

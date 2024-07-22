@@ -46,8 +46,8 @@ services:
     image: phpmyadmin
     container_name: phpmyadmin
     environment:
-      - PMA_ARBITRARY=1
       - PMA_ABSOLUTE_URI=/pma/
+      - PMA_HOST=mysql
     networks:
       - webnet
 
