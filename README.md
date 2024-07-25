@@ -25,5 +25,5 @@ Forked from 码农李白
 #!/bin/bash
 
 SERVER_NAME=<网站域名>
-EMAIL=<你的邮箱（用于获取STL证书）>
+EMAIL=<你的邮箱（用于获取SSL证书）>
 ```
