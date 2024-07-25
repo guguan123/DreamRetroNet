@@ -1,6 +1,5 @@
-# 续梦网
+# [续梦网](rmct.cn)
 不是我开发的，这个仓库仅作为留档
-jvzh.org source code
 Forked from 码农李白
 
 ### 部署方法：
