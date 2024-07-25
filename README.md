@@ -1,4 +1,4 @@
-# [续梦网](rmct.cn)
+# [续梦网](http://rmct.cn)
 不是我开发的，这个仓库仅作为留档
 Forked from 码农李白
 
