@@ -99,10 +99,10 @@ body>footer a {
 	margin-bottom: 1rem;
 }
 form input,form select {
-	background: #e7f1cf;
+	/*background: #e7f1cf;*/
 	padding: 1rem;
 	border: none;
-	color: #fff;
+	/*color: #fedb03;*/
 }
 form.box input {
 	border: solid 1px #ccc;

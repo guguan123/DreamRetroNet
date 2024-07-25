@@ -384,9 +384,8 @@ echo '<main class="container"><div id="main">';
 	
 	echo '<h2 class="topic">上传游戏</h2>
 	<form action="" method="post" enctype="multipart/form-data" class="form"><div>
-	<label>分辨率：</label>
 	<select name="dpi" required="required">
-	<option value=""></option>
+	<option value="">分辨率</option>
     <option value="96×65">96×65</option>
     <option value="128×108">128×108</option>
     <option value="128×128">128×128</option>
@@ -419,9 +418,8 @@ echo '<main class="container"><div id="main">';
     <option value="640×480">640×480</option>
     <option value="flex">flex</option>
 	</select></div><div>
-    <label>类型：</label>
 	<select name="raz" required="required">
-	<option value=""></option>
+	<option value="">类型</option>
 	<option value="GAL">GAL - 美少女游戏</option>
 	<option value="ACT">ACT - 动作游戏</option>
 	<option value="ARPG">ARPG - 动作角色扮演</option>
@@ -439,23 +437,22 @@ echo '<main class="container"><div id="main">';
     <option value="PUZ">PUZ - 益智游戏</option>
     <option value="TAB">TAB - 桌面游戏</option>
 	</select></div><div>
-	<label>语言：</label>
 	<select name="zh" required="required">
+	<option value="">语言</option>
     <option value="中文">中文</option>
     <option value="英文">英文</option>
     <option value="其他">其他</option>
     </select></div><div>
-    <label>单人多人：</label>
 	<select name="DJ" required="required">
+	<option value="">单机联机</option>
     <option value="单机">单机</option>
     <option value="互联网">互联网</option>
     <option value="局域网">局域网</option>
     </select></div><div>
-	<label>安装包：</label>
 	<input type="file" name="userfile" required="required" id="userfile"></div><div>
 	<input type="submit" name="submit" value="提交" /></div>
 	</form></div>';
-	echo '<div id="aside"><h2 class="topic">注意事项</h2><ul class="list list1"><li>1、请选择正确的分辨率和游戏类型</li><li>2、目前仅可上传MRP,JAR格式的手机游戏</li><li>3、SIS和Ngage格式<a href="/games/uploadGame"><em>点击这里</em></a></li><li>4、最大上传容量10MB</li></ul></div></main>';
+	echo '<div id="aside"><h2 class="topic">注意事项</h2><ul class="list list1"><li>1、请选择正确的分辨率和游戏类型</li><li>2、目前仅可上传MRP,JAR格式的手机游戏</li><li>3、SIS和Ngage格式<a href="/games/uploadgame"><em>点击这里</em></a></li><li>4、最大上传容量10MB</li></ul></div></main>';
 	
 
 } else {

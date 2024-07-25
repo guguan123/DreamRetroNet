@@ -99,10 +99,10 @@ body>footer a {
 	margin-bottom: 1rem;
 }
 form input,form select {
-	background: #e7f1cf;
+	/*background: #e7f1cf;*/
 	padding: 1rem;
 	border: none;
-	color: #fff;
+	color: #fedb03;
 }
 form.box input {
 	border: solid 1px #ccc;
@@ -742,3 +742,13 @@ th {
   text-align: right;
   line-height: 4em;
 }
+
+#lightboxOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  background-color: #000;
+  filter: alpha(Opacity=80);
+  opacity: .8;
+  display: none;

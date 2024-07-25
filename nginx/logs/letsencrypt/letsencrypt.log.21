@@ -1,25 +1,25 @@
-2024-07-21 08:06:30,888:DEBUG:certbot._internal.main:certbot version: 2.1.0
-2024-07-21 08:06:30,888:DEBUG:certbot._internal.main:Location of certbot entry point: /usr/bin/certbot
-2024-07-21 08:06:30,888:DEBUG:certbot._internal.main:Arguments: ['--standalone', '-d', 'rmct.cn', '--email', '3475272270@qq.com', '--agree-tos', '--no-eff-email', '--non-interactive', '--test-cert']
-2024-07-21 08:06:30,889:DEBUG:certbot._internal.main:Discovered plugins: PluginsRegistry(PluginEntryPoint#manual,PluginEntryPoint#null,PluginEntryPoint#standalone,PluginEntryPoint#webroot)
-2024-07-21 08:06:30,899:DEBUG:certbot._internal.log:Root logging level set at 30
-2024-07-21 08:06:30,901:DEBUG:certbot._internal.plugins.selection:Requested authenticator standalone and installer None
-2024-07-21 08:06:30,901:DEBUG:certbot._internal.plugins.selection:Single candidate plugin: * standalone
+2024-07-21 08:09:15,036:DEBUG:certbot._internal.main:certbot version: 2.1.0
+2024-07-21 08:09:15,037:DEBUG:certbot._internal.main:Location of certbot entry point: /usr/bin/certbot
+2024-07-21 08:09:15,037:DEBUG:certbot._internal.main:Arguments: ['--standalone', '-d', 'rmct.cn', '--email', '3475272270@qq.com', '--agree-tos', '--no-eff-email', '--non-interactive', '--test-cert']
+2024-07-21 08:09:15,037:DEBUG:certbot._internal.main:Discovered plugins: PluginsRegistry(PluginEntryPoint#manual,PluginEntryPoint#null,PluginEntryPoint#standalone,PluginEntryPoint#webroot)
+2024-07-21 08:09:15,048:DEBUG:certbot._internal.log:Root logging level set at 30
+2024-07-21 08:09:15,050:DEBUG:certbot._internal.plugins.selection:Requested authenticator standalone and installer None
+2024-07-21 08:09:15,050:DEBUG:certbot._internal.plugins.selection:Single candidate plugin: * standalone
 Description: Spin up a temporary webserver
 Interfaces: Authenticator, Plugin
 Entry point: standalone = certbot._internal.plugins.standalone:Authenticator
-Initialized: <certbot._internal.plugins.standalone.Authenticator object at 0x7f3094322dd0>
+Initialized: <certbot._internal.plugins.standalone.Authenticator object at 0x7fe499caac10>
 Prep: True
-2024-07-21 08:06:30,902:DEBUG:certbot._internal.plugins.selection:Selected authenticator <certbot._internal.plugins.standalone.Authenticator object at 0x7f3094322dd0> and installer None
-2024-07-21 08:06:30,902:INFO:certbot._internal.plugins.selection:Plugins selected: Authenticator standalone, Installer None
-2024-07-21 08:06:30,946:DEBUG:certbot._internal.main:Picked account: <Account(RegistrationResource(body=Registration(key=None, contact=(), agreement=None, status=None, terms_of_service_agreed=None, only_return_existing=None, external_account_binding=None), uri='https://acme-staging-v02.api.letsencrypt.org/acme/acct/156523873', new_authzr_uri=None, terms_of_service=None), c970b7f70b1edaa983fc049d37b4a815, Meta(creation_dt=datetime.datetime(2024, 7, 21, 7, 33, 20, tzinfo=<UTC>), creation_host='b42953486857', register_to_eff=None))>
-2024-07-21 08:06:30,949:DEBUG:acme.client:Sending GET request to https://acme-staging-v02.api.letsencrypt.org/directory.
-2024-07-21 08:06:30,951:DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): acme-staging-v02.api.letsencrypt.org:443
-2024-07-21 08:06:31,538:DEBUG:urllib3.connectionpool:https://acme-staging-v02.api.letsencrypt.org:443 "GET /directory HTTP/1.1" 200 820
-2024-07-21 08:06:31,539:DEBUG:acme.client:Received response:
+2024-07-21 08:09:15,050:DEBUG:certbot._internal.plugins.selection:Selected authenticator <certbot._internal.plugins.standalone.Authenticator object at 0x7fe499caac10> and installer None
+2024-07-21 08:09:15,051:INFO:certbot._internal.plugins.selection:Plugins selected: Authenticator standalone, Installer None
+2024-07-21 08:09:15,099:DEBUG:certbot._internal.main:Picked account: <Account(RegistrationResource(body=Registration(key=None, contact=(), agreement=None, status=None, terms_of_service_agreed=None, only_return_existing=None, external_account_binding=None), uri='https://acme-staging-v02.api.letsencrypt.org/acme/acct/156523873', new_authzr_uri=None, terms_of_service=None), c970b7f70b1edaa983fc049d37b4a815, Meta(creation_dt=datetime.datetime(2024, 7, 21, 7, 33, 20, tzinfo=<UTC>), creation_host='b42953486857', register_to_eff=None))>
+2024-07-21 08:09:15,100:DEBUG:acme.client:Sending GET request to https://acme-staging-v02.api.letsencrypt.org/directory.
+2024-07-21 08:09:15,103:DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): acme-staging-v02.api.letsencrypt.org:443
+2024-07-21 08:09:15,658:DEBUG:urllib3.connectionpool:https://acme-staging-v02.api.letsencrypt.org:443 "GET /directory HTTP/1.1" 200 820
+2024-07-21 08:09:15,658:DEBUG:acme.client:Received response:
 HTTP 200
 Server: nginx
-Date: Sun, 21 Jul 2024 08:06:31 GMT
+Date: Sun, 21 Jul 2024 08:09:15 GMT
 Content-Type: application/json
 Content-Length: 820
 Connection: keep-alive
@@ -28,7 +28,7 @@ X-Frame-Options: DENY
 Strict-Transport-Security: max-age=604800
 
 {
-  "_2pden4E2ic": "https://community.letsencrypt.org/t/adding-random-entries-to-the-directory/33417",
+  "QRuDkP3aU0k": "https://community.letsencrypt.org/t/adding-random-entries-to-the-directory/33417",
   "keyChange": "https://acme-staging-v02.api.letsencrypt.org/acme/key-change",
   "meta": {
     "caaIdentities": [
@@ -43,10 +43,10 @@ Strict-Transport-Security: max-age=604800
   "renewalInfo": "https://acme-staging-v02.api.letsencrypt.org/draft-ietf-acme-ari-03/renewalInfo",
   "revokeCert": "https://acme-staging-v02.api.letsencrypt.org/acme/revoke-cert"
 }
-2024-07-21 08:06:31,549:DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): stg-e5.o.lencr.org:80
-2024-07-21 08:06:31,716:DEBUG:urllib3.connectionpool:http://stg-e5.o.lencr.org:80 "POST / HTTP/1.1" 200 378
-2024-07-21 08:06:31,717:DEBUG:certbot.ocsp:OCSP response for certificate /etc/letsencrypt/archive/rmct.cn/cert1.pem is signed by the certificate's issuer.
-2024-07-21 08:06:31,720:DEBUG:certbot.ocsp:OCSP certificate status for /etc/letsencrypt/archive/rmct.cn/cert1.pem is: OCSPCertStatus.GOOD
-2024-07-21 08:06:31,724:DEBUG:certbot._internal.display.obj:Notifying user: Certificate not yet due for renewal
-2024-07-21 08:06:31,724:INFO:certbot._internal.main:Keeping the existing certificate
-2024-07-21 08:06:31,725:DEBUG:certbot._internal.display.obj:Notifying user: Certificate not yet due for renewal; no action taken.
+2024-07-21 08:09:15,667:DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): stg-e5.o.lencr.org:80
+2024-07-21 08:09:15,691:DEBUG:urllib3.connectionpool:http://stg-e5.o.lencr.org:80 "POST / HTTP/1.1" 200 378
+2024-07-21 08:09:15,692:DEBUG:certbot.ocsp:OCSP response for certificate /etc/letsencrypt/archive/rmct.cn/cert1.pem is signed by the certificate's issuer.
+2024-07-21 08:09:15,694:DEBUG:certbot.ocsp:OCSP certificate status for /etc/letsencrypt/archive/rmct.cn/cert1.pem is: OCSPCertStatus.GOOD
+2024-07-21 08:09:15,699:DEBUG:certbot._internal.display.obj:Notifying user: Certificate not yet due for renewal
+2024-07-21 08:09:15,699:INFO:certbot._internal.main:Keeping the existing certificate
+2024-07-21 08:09:15,700:DEBUG:certbot._internal.display.obj:Notifying user: Certificate not yet due for renewal; no action taken.
