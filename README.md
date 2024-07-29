@@ -11,15 +11,24 @@ Forked from 码农李白
     container_name: mysql
     environment:
       MYSQL_ROOT_PASSWORD: <你希望的数据库管理员密码>
-      #MYSQL_DATABASE: mydatabase
-      #MYSQL_USER: wap
-      #MYSQL_PASSWORD: 5.cPfw_TUROTAxKW
     ports:
       - 3306:3306
     volumes:
       - mysql-data:/var/lib/mysql
     networks:
       - webnet
+# 省略其它部分...
+  ftpd:
+    image: garethflowers/ftp-server
+    container_name: ftpd
+    ports:
+      - '20-21:20-21/tcp'
+    volumes:
+      - ./html:/home/wap
+    environment:
+      - FTP_USER=<FTP用户名>
+      - FTP_PASS=<FTP密码>
+      - PUBLICHOST=<服务器IP地址>
 # 省略其它部分...
 ```
 编辑脚本 `./nginx/scripts/start.sh`：
