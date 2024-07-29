@@ -9,7 +9,7 @@ location ~* ^/games?$ {
 	rewrite ^/games?$ /wap/games/index.php last;
 }
 location ~* ^/games/([0-9]*)?$ {
-	rewrite ^/games/([0-9]*)?$ /wap/games/index.php?page=$1 last;
+	rewrite ^/games/([0-9]*)?$ /games/index.php?page=$1 last;
 }
 location ~* ^/game/([0-9]*)?$ {
 	rewrite ^/game/([0-9]*)?$ /wap/game/index.php?id=$1 last;

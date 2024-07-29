@@ -1,2 +1,2 @@
-/nginx/conf.d/letsencrypt/
-/nginx/logs/
+nginx/conf.d/letsencrypt/
+nginx/logs/

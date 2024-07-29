@@ -31,10 +31,10 @@ services:
     image: mysql:5.6
     container_name: mysql
     environment:
-      MYSQL_ROOT_PASSWORD: saU76v#LmbT&bg5
-      #MYSQL_DATABASE: mydatabase
-      #MYSQL_USER: wap
-      #MYSQL_PASSWORD: 5.cPfw_TUROTAxKW
+      - MYSQL_ROOT_PASSWORD=saU76v#LmbT&bg5
+      #- MYSQL_DATABASE=wap
+      #- MYSQL_USER=wap
+      #- MYSQL_PASSWORD=5.cPfw_TUROTAxKW
     ports:
       - 3306:3306
     volumes:
@@ -50,6 +50,18 @@ services:
       - PMA_HOST=mysql
     networks:
       - webnet
+
+  ftpd:
+    image: garethflowers/ftp-server
+    container_name: ftpd
+    ports:
+      - '20-21:20-21/tcp'
+    volumes:
+      - ./html:/home/wap
+    environment:
+      - FTP_USER=wap
+      - FTP_PASS=5.cPfw_TUROTAxKW
+      - PUBLICHOST=8.218.139.31
 
 volumes:
   mysql-data:

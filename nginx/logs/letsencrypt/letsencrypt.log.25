@@ -1,0 +1,20 @@
+2024-07-28 15:13:04,764:DEBUG:certbot._internal.main:certbot version: 2.1.0
+2024-07-28 15:13:04,765:DEBUG:certbot._internal.main:Location of certbot entry point: /usr/bin/certbot
+2024-07-28 15:13:04,765:DEBUG:certbot._internal.main:Arguments: []
+2024-07-28 15:13:04,765:DEBUG:certbot._internal.main:Discovered plugins: PluginsRegistry(PluginEntryPoint#manual,PluginEntryPoint#null,PluginEntryPoint#standalone,PluginEntryPoint#webroot)
+2024-07-28 15:13:04,777:DEBUG:certbot._internal.log:Root logging level set at 30
+2024-07-28 15:13:04,780:DEBUG:certbot._internal.display.obj:Notifying user: Processing /etc/letsencrypt/renewal/rmct.cn.conf
+2024-07-28 15:13:04,786:DEBUG:certbot._internal.plugins.selection:Requested authenticator <certbot._internal.cli.cli_utils._Default object at 0x7f3a16833d90> and installer <certbot._internal.cli.cli_utils._Default object at 0x7f3a16833d90>
+2024-07-28 15:13:04,796:DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): e6.o.lencr.org:80
+2024-07-28 15:13:04,807:DEBUG:urllib3.connectionpool:http://e6.o.lencr.org:80 "POST / HTTP/1.1" 200 345
+2024-07-28 15:13:04,808:DEBUG:certbot.ocsp:OCSP response for certificate /etc/letsencrypt/archive/rmct.cn/cert1.pem is signed by the certificate's issuer.
+2024-07-28 15:13:04,811:DEBUG:certbot.ocsp:OCSP certificate status for /etc/letsencrypt/archive/rmct.cn/cert1.pem is: OCSPCertStatus.GOOD
+2024-07-28 15:13:04,816:DEBUG:certbot._internal.display.obj:Notifying user: Certificate not yet due for renewal
+2024-07-28 15:13:04,818:DEBUG:certbot._internal.plugins.selection:Requested authenticator standalone and installer None
+2024-07-28 15:13:04,819:DEBUG:certbot._internal.display.obj:Notifying user: 
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+2024-07-28 15:13:04,819:DEBUG:certbot._internal.display.obj:Notifying user: The following certificates are not due for renewal yet:
+2024-07-28 15:13:04,819:DEBUG:certbot._internal.display.obj:Notifying user:   /etc/letsencrypt/live/rmct.cn/fullchain.pem expires on 2024-10-26 (skipped)
+2024-07-28 15:13:04,819:DEBUG:certbot._internal.display.obj:Notifying user: No renewals were attempted.
+2024-07-28 15:13:04,819:DEBUG:certbot._internal.display.obj:Notifying user: - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+2024-07-28 15:13:04,819:DEBUG:certbot._internal.renewal:no renewal failures

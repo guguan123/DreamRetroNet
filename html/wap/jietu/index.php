@@ -2,7 +2,7 @@
 include_once $_SERVER["DOCUMENT_ROOT"] . '/system/base.php';
 //include_once $_SERVER["DOCUMENT_ROOT"] . '/system/system.php';
 $id = abs(intval($_GET['id'])); # ФИЛЬТР ГЕТ
-$b = $con->query("SELECT * FROM `image` WHERE `id` = '".$id."'")->fetch_assoc();
+$b = $con->query("SELECT * FROM `image` WHERE `id` = '".$id."' and `ivent` = '通过'")->fetch_assoc();
 //$ms = $con->query("SELECT * FROM `image` WHERE `id_game` = '".$id."' ORDER BY `id` DESC");
 //echo '<title>'.$id.'</title>';
 //加水印
