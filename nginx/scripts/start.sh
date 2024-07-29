@@ -1,7 +1,7 @@
 #!/bin/bash
 
-SERVER_NAME=rmct.cn
-EMAIL=3475272270@qq.com
+SERVER_NAME=<网站域名>
+EMAIL=<邮箱地址>
 
 # 证书文件路径
 CERT_FILE="/etc/letsencrypt/live/${SERVER_NAME}/fullchain.pem"
