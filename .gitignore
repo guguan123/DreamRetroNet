@@ -1,1 +1,2 @@
-nginx\conf.d\letsencrypt
+/nginx/conf.d/letsencrypt/
+/nginx/logs/
