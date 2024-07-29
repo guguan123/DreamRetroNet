@@ -2,6 +2,10 @@
 不是我开发的，这个仓库仅作为留档
 Forked from 码农李白
 
+采用了 Nginx + PHP + MySQL + vsftp + Certbot
+
+网页根目录：`./html`
+
 ### 部署方法：
 安装Docker和Docker Compose，克隆所有文件。编辑文件 `./docker-compose.yml`：
 ```yaml
@@ -39,7 +43,7 @@ SERVER_NAME=<网站域名>
 EMAIL=<你的邮箱（用于获取SSL证书）>
 # 省略其它部分...
 ```
-编辑文件 `nginx/conf.d/default.conf`：
+编辑文件 `./nginx/conf.d/default.conf`：
 ```nginx
 server {
         listen 80;
